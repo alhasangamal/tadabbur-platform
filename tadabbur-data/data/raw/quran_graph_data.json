@@ -1,0 +1,7428 @@
+{
+  "nodes": [
+    {
+      "id": "Allah",
+      "name_ar": "الله",
+      "name_en": "Allah",
+      "type": "GOD"
+    },
+    {
+      "id": "Adam",
+      "name_ar": "آدم",
+      "name_en": "Adam",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Idris",
+      "name_ar": "إدريس",
+      "name_en": "Idris",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Noah",
+      "name_ar": "نوح",
+      "name_en": "Noah",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Hud",
+      "name_ar": "هود",
+      "name_en": "Hud",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Salih",
+      "name_ar": "صالح",
+      "name_en": "Salih",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Ibrahim",
+      "name_ar": "إبراهيم",
+      "name_en": "Ibrahim",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Lot",
+      "name_ar": "لوط",
+      "name_en": "Lot",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Ismail",
+      "name_ar": "إسماعيل",
+      "name_en": "Ismail",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Isaac",
+      "name_ar": "إسحاق",
+      "name_en": "Isaac",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Jacob",
+      "name_ar": "يعقوب",
+      "name_en": "Jacob",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Joseph",
+      "name_ar": "يوسف",
+      "name_en": "Joseph",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Shuaib",
+      "name_ar": "شعيب",
+      "name_en": "Shuaib",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Moses",
+      "name_ar": "موسى",
+      "name_en": "Moses",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Aaron",
+      "name_ar": "هارون",
+      "name_en": "Aaron",
+      "type": "PROPHET"
+    },
+    {
+      "id": "David",
+      "name_ar": "داود",
+      "name_en": "David",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Solomon",
+      "name_ar": "سليمان",
+      "name_en": "Solomon",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Job",
+      "name_ar": "أيوب",
+      "name_en": "Job",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Dhul-Kifl",
+      "name_ar": "ذو الكفل",
+      "name_en": "Dhul-Kifl",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Jonah",
+      "name_ar": "يونس",
+      "name_en": "Jonah",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Elias",
+      "name_ar": "إلياس",
+      "name_en": "Elias",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Elisha",
+      "name_ar": "اليسع",
+      "name_en": "Elisha",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Zachariah",
+      "name_ar": "زكريا",
+      "name_en": "Zachariah",
+      "type": "PROPHET"
+    },
+    {
+      "id": "John",
+      "name_ar": "يحيى",
+      "name_en": "John",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Jesus",
+      "name_ar": "عيسى",
+      "name_en": "Jesus",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Muhammad",
+      "name_ar": "محمد",
+      "name_en": "Muhammad",
+      "type": "PROPHET"
+    },
+    {
+      "id": "Mary",
+      "name_ar": "مريم",
+      "name_en": "Mary",
+      "type": "PERSON"
+    },
+    {
+      "id": "Imran",
+      "name_ar": "عمران",
+      "name_en": "Imran",
+      "type": "PERSON"
+    },
+    {
+      "id": "Luqman",
+      "name_ar": "لقمان",
+      "name_en": "Luqman",
+      "type": "PERSON"
+    },
+    {
+      "id": "Dhul-Qarnayn",
+      "name_ar": "ذو القرنين",
+      "name_en": "Dhul-Qarnayn",
+      "type": "PERSON"
+    },
+    {
+      "id": "Pharaoh",
+      "name_ar": "فرعون",
+      "name_en": "Pharaoh",
+      "type": "PERSON"
+    },
+    {
+      "id": "Haman",
+      "name_ar": "هامان",
+      "name_en": "Haman",
+      "type": "PERSON"
+    },
+    {
+      "id": "Qarun",
+      "name_ar": "قارون",
+      "name_en": "Qarun",
+      "type": "PERSON"
+    },
+    {
+      "id": "Azar",
+      "name_ar": "آزر",
+      "name_en": "Azar",
+      "type": "PERSON"
+    },
+    {
+      "id": "Wife_of_Pharaoh",
+      "name_ar": "امرأة فرعون",
+      "name_en": "Wife_of_Pharaoh",
+      "type": "PERSON"
+    },
+    {
+      "id": "Al-Samiri",
+      "name_ar": "السامري",
+      "name_en": "Al-Samiri",
+      "type": "PERSON"
+    },
+    {
+      "id": "Goliath",
+      "name_ar": "جالوت",
+      "name_en": "Goliath",
+      "type": "PERSON"
+    },
+    {
+      "id": "Talut",
+      "name_ar": "طالوت",
+      "name_en": "Talut",
+      "type": "PERSON"
+    },
+    {
+      "id": "Al-Aziz",
+      "name_ar": "العزيز",
+      "name_en": "Al-Aziz",
+      "type": "PERSON"
+    },
+    {
+      "id": "Wife_of_Al-Aziz",
+      "name_ar": "امرأة العزيز",
+      "name_en": "Wife_of_Al-Aziz",
+      "type": "PERSON"
+    },
+    {
+      "id": "Abu_Lahab",
+      "name_ar": "أبو لهب",
+      "name_en": "Abu_Lahab",
+      "type": "PERSON"
+    },
+    {
+      "id": "Wife_of_Abu_Lahab",
+      "name_ar": "امرأة أبي لهب",
+      "name_en": "Wife_of_Abu_Lahab",
+      "type": "PERSON"
+    },
+    {
+      "id": "Zayd",
+      "name_ar": "زيد بن حارثة",
+      "name_en": "Zayd",
+      "type": "PERSON"
+    },
+    {
+      "id": "Al-Khidr",
+      "name_ar": "الخضر",
+      "name_en": "Al-Khidr",
+      "type": "PERSON"
+    },
+    {
+      "id": "Sons_of_Adam",
+      "name_ar": "ابنا آدم",
+      "name_en": "Sons_of_Adam",
+      "type": "PERSON"
+    },
+    {
+      "id": "Gabriel",
+      "name_ar": "جبريل",
+      "name_en": "Gabriel",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Michael",
+      "name_ar": "ميكائيل",
+      "name_en": "Michael",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Angel_of_Death",
+      "name_ar": "ملك الموت",
+      "name_en": "Angel_of_Death",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Harut",
+      "name_ar": "هاروت",
+      "name_en": "Harut",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Marut",
+      "name_ar": "ماروت",
+      "name_en": "Marut",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Angels",
+      "name_ar": "الملائكة",
+      "name_en": "Angels",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Iblis",
+      "name_ar": "إبليس",
+      "name_en": "Iblis",
+      "type": "JINN"
+    },
+    {
+      "id": "Satan",
+      "name_ar": "الشيطان",
+      "name_en": "Satan",
+      "type": "JINN"
+    },
+    {
+      "id": "Jinn",
+      "name_ar": "الجن",
+      "name_en": "Jinn",
+      "type": "JINN"
+    },
+    {
+      "id": "Children_of_Israel",
+      "name_ar": "بنو إسرائيل",
+      "name_en": "Children_of_Israel",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Noah",
+      "name_ar": "قوم نوح",
+      "name_en": "People_of_Noah",
+      "type": "NATION"
+    },
+    {
+      "id": "Aad",
+      "name_ar": "عاد",
+      "name_en": "Aad",
+      "type": "NATION"
+    },
+    {
+      "id": "Thamud",
+      "name_ar": "ثمود",
+      "name_en": "Thamud",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Lot",
+      "name_ar": "قوم لوط",
+      "name_en": "People_of_Lot",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Madyan",
+      "name_ar": "أصحاب مدين",
+      "name_en": "People_of_Madyan",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Tubba",
+      "name_ar": "قوم تبع",
+      "name_en": "People_of_Tubba",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Al-Rass",
+      "name_ar": "أصحاب الرس",
+      "name_en": "People_of_Al-Rass",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Al-Aykah",
+      "name_ar": "أصحاب الأيكة",
+      "name_en": "People_of_Al-Aykah",
+      "type": "NATION"
+    },
+    {
+      "id": "Quraysh",
+      "name_ar": "قريش",
+      "name_en": "Quraysh",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Elephant",
+      "name_ar": "أصحاب الفيل",
+      "name_en": "People_of_Elephant",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Cave",
+      "name_ar": "أصحاب الكهف",
+      "name_en": "People_of_Cave",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Ditch",
+      "name_ar": "أصحاب الأخدود",
+      "name_en": "People_of_Ditch",
+      "type": "NATION"
+    },
+    {
+      "id": "Romans",
+      "name_ar": "الروم",
+      "name_en": "Romans",
+      "type": "NATION"
+    },
+    {
+      "id": "Hypocrites",
+      "name_ar": "المنافقون",
+      "name_en": "Hypocrites",
+      "type": "GROUP"
+    },
+    {
+      "id": "People_of_Book",
+      "name_ar": "أهل الكتاب",
+      "name_en": "People_of_Book",
+      "type": "GROUP"
+    },
+    {
+      "id": "Polytheists",
+      "name_ar": "المشركون",
+      "name_en": "Polytheists",
+      "type": "GROUP"
+    },
+    {
+      "id": "Ansar",
+      "name_ar": "الأنصار",
+      "name_en": "Ansar",
+      "type": "GROUP"
+    },
+    {
+      "id": "Muhajirin",
+      "name_ar": "المهاجرون",
+      "name_en": "Muhajirin",
+      "type": "GROUP"
+    },
+    {
+      "id": "Sheba",
+      "name_ar": "سبأ",
+      "name_en": "Sheba",
+      "type": "NATION"
+    },
+    {
+      "id": "Gog_and_Magog",
+      "name_ar": "يأجوج ومأجوج",
+      "name_en": "Gog_and_Magog",
+      "type": "NATION"
+    },
+    {
+      "id": "Disciples",
+      "name_ar": "الحواريون",
+      "name_en": "Disciples",
+      "type": "GROUP"
+    },
+    {
+      "id": "Family_of_Pharaoh",
+      "name_ar": "آل فرعون",
+      "name_en": "Family_of_Pharaoh",
+      "type": "GROUP"
+    },
+    {
+      "id": "People_of_Ibrahim",
+      "name_ar": "قوم إبراهيم",
+      "name_en": "People_of_Ibrahim",
+      "type": "NATION"
+    },
+    {
+      "id": "People_of_Pharaoh",
+      "name_ar": "قوم فرعون",
+      "name_en": "People_of_Pharaoh",
+      "type": "NATION"
+    },
+    {
+      "id": "Quran",
+      "name_ar": "القرآن",
+      "name_en": "Quran",
+      "type": "BOOK"
+    },
+    {
+      "id": "Torah",
+      "name_ar": "التوراة",
+      "name_en": "Torah",
+      "type": "BOOK"
+    },
+    {
+      "id": "Gospel",
+      "name_ar": "الإنجيل",
+      "name_en": "Gospel",
+      "type": "BOOK"
+    },
+    {
+      "id": "Psalms",
+      "name_ar": "الزبور",
+      "name_en": "Psalms",
+      "type": "BOOK"
+    },
+    {
+      "id": "Scrolls_of_Ibrahim",
+      "name_ar": "صحف إبراهيم",
+      "name_en": "Scrolls_of_Ibrahim",
+      "type": "BOOK"
+    },
+    {
+      "id": "Al-Furqan",
+      "name_ar": "الفرقان",
+      "name_en": "Al-Furqan",
+      "type": "BOOK"
+    },
+    {
+      "id": "Tablets",
+      "name_ar": "الألواح",
+      "name_en": "Tablets",
+      "type": "BOOK"
+    },
+    {
+      "id": "Makkah",
+      "name_ar": "مكة",
+      "name_en": "Makkah",
+      "type": "PLACE"
+    },
+    {
+      "id": "Madinah",
+      "name_ar": "المدينة",
+      "name_en": "Madinah",
+      "type": "PLACE"
+    },
+    {
+      "id": "Egypt",
+      "name_ar": "مصر",
+      "name_en": "Egypt",
+      "type": "PLACE"
+    },
+    {
+      "id": "Kaaba",
+      "name_ar": "الكعبة",
+      "name_en": "Kaaba",
+      "type": "PLACE"
+    },
+    {
+      "id": "Mount_Sinai",
+      "name_ar": "طور سيناء",
+      "name_en": "Mount_Sinai",
+      "type": "PLACE"
+    },
+    {
+      "id": "Badr",
+      "name_ar": "بدر",
+      "name_en": "Badr",
+      "type": "PLACE"
+    },
+    {
+      "id": "Hunayn",
+      "name_ar": "حنين",
+      "name_en": "Hunayn",
+      "type": "PLACE"
+    },
+    {
+      "id": "Al-Aqsa",
+      "name_ar": "الأقصى",
+      "name_en": "Al-Aqsa",
+      "type": "PLACE"
+    },
+    {
+      "id": "Al-Masjid_Al-Haram",
+      "name_ar": "المسجد الحرام",
+      "name_en": "Al-Masjid_Al-Haram",
+      "type": "PLACE"
+    },
+    {
+      "id": "Paradise",
+      "name_ar": "جنة",
+      "name_en": "Paradise",
+      "type": "PLACE"
+    },
+    {
+      "id": "Hell",
+      "name_ar": "النار",
+      "name_en": "Hell",
+      "type": "PLACE"
+    },
+    {
+      "id": "Al-Araf",
+      "name_ar": "الأعراف",
+      "name_en": "Al-Araf",
+      "type": "PLACE"
+    },
+    {
+      "id": "Babylon",
+      "name_ar": "بابل",
+      "name_en": "Babylon",
+      "type": "PLACE"
+    },
+    {
+      "id": "Al-Ahqaf",
+      "name_ar": "الأحقاف",
+      "name_en": "Al-Ahqaf",
+      "type": "PLACE"
+    },
+    {
+      "id": "Iram",
+      "name_ar": "إرم",
+      "name_en": "Iram",
+      "type": "PLACE"
+    },
+    {
+      "id": "Al-Hijr",
+      "name_ar": "الحجر",
+      "name_en": "Al-Hijr",
+      "type": "PLACE"
+    },
+    {
+      "id": "Sidrat_Al-Muntaha",
+      "name_ar": "سدرة المنتهى",
+      "name_en": "Sidrat_Al-Muntaha",
+      "type": "PLACE"
+    },
+    {
+      "id": "Earth",
+      "name_ar": "الأرض",
+      "name_en": "Earth",
+      "type": "PLACE"
+    },
+    {
+      "id": "Heavens",
+      "name_ar": "السماوات",
+      "name_en": "Heavens",
+      "type": "PLACE"
+    },
+    {
+      "id": "Great_Flood",
+      "name_ar": "الطوفان",
+      "name_en": "Great_Flood",
+      "type": "EVENT"
+    },
+    {
+      "id": "Day_of_Judgment",
+      "name_ar": "يوم القيامة",
+      "name_en": "Day_of_Judgment",
+      "type": "EVENT"
+    },
+    {
+      "id": "Night_Journey",
+      "name_ar": "الإسراء",
+      "name_en": "Night_Journey",
+      "type": "EVENT"
+    },
+    {
+      "id": "Ascension",
+      "name_ar": "المعراج",
+      "name_en": "Ascension",
+      "type": "EVENT"
+    },
+    {
+      "id": "Battle_of_Badr",
+      "name_ar": "غزوة بدر",
+      "name_en": "Battle_of_Badr",
+      "type": "EVENT"
+    },
+    {
+      "id": "Battle_of_Uhud",
+      "name_ar": "غزوة أحد",
+      "name_en": "Battle_of_Uhud",
+      "type": "EVENT"
+    },
+    {
+      "id": "Battle_of_Trench",
+      "name_ar": "غزوة الأحزاب",
+      "name_en": "Battle_of_Trench",
+      "type": "EVENT"
+    },
+    {
+      "id": "Conquest_of_Makkah",
+      "name_ar": "فتح مكة",
+      "name_en": "Conquest_of_Makkah",
+      "type": "EVENT"
+    },
+    {
+      "id": "Treaty_of_Hudaybiyyah",
+      "name_ar": "صلح الحديبية",
+      "name_en": "Treaty_of_Hudaybiyyah",
+      "type": "EVENT"
+    },
+    {
+      "id": "Golden_Calf",
+      "name_ar": "العجل",
+      "name_en": "Golden_Calf",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Ark_of_Noah",
+      "name_ar": "سفينة نوح",
+      "name_en": "Ark_of_Noah",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Staff_of_Moses",
+      "name_ar": "عصا موسى",
+      "name_en": "Staff_of_Moses",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Ark_of_Covenant",
+      "name_ar": "تابوت",
+      "name_en": "Ark_of_Covenant",
+      "type": "OBJECT"
+    },
+    {
+      "id": "She-Camel_of_Salih",
+      "name_ar": "ناقة صالح",
+      "name_en": "She-Camel_of_Salih",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Table_Spread",
+      "name_ar": "مائدة عيسى",
+      "name_en": "Table_Spread",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Humanity",
+      "name_ar": "الإنسانية",
+      "name_en": "Humanity",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "Eve",
+      "name_ar": "حواء",
+      "name_en": "Eve",
+      "type": "PERSON"
+    },
+    {
+      "id": "Israel",
+      "name_ar": "إسرائيل",
+      "name_en": "Israel",
+      "type": "ALIAS"
+    },
+    {
+      "id": "Disbelieving_Son_of_Noah",
+      "name_ar": "ابن نوح الكافر",
+      "name_en": "Disbelieving_Son_of_Noah",
+      "type": "PERSON"
+    },
+    {
+      "id": "Mother_of_Moses",
+      "name_ar": "أم موسى",
+      "name_en": "Mother_of_Moses",
+      "type": "PERSON"
+    },
+    {
+      "id": "Egyptian_Man",
+      "name_ar": "رجل مصري",
+      "name_en": "Egyptian_Man",
+      "type": "PERSON"
+    },
+    {
+      "id": "Wife_of_Noah",
+      "name_ar": "امرأة نوح",
+      "name_en": "Wife_of_Noah",
+      "type": "PERSON"
+    },
+    {
+      "id": "Wife_of_Lot",
+      "name_ar": "امرأة لوط",
+      "name_en": "Wife_of_Lot",
+      "type": "PERSON"
+    },
+    {
+      "id": "Brothers_of_Joseph",
+      "name_ar": "إخوة يوسف",
+      "name_en": "Brothers_of_Joseph",
+      "type": "GROUP"
+    },
+    {
+      "id": "The_Ship",
+      "name_ar": "السفينة",
+      "name_en": "The_Ship",
+      "type": "OBJECT"
+    },
+    {
+      "id": "The_Boy",
+      "name_ar": "الغلام",
+      "name_en": "The_Boy",
+      "type": "PERSON"
+    },
+    {
+      "id": "The_Wall",
+      "name_ar": "الجدار",
+      "name_en": "The_Wall",
+      "type": "OBJECT"
+    },
+    {
+      "id": "The_Cave",
+      "name_ar": "الكهف",
+      "name_en": "The_Cave",
+      "type": "PLACE"
+    },
+    {
+      "id": "309_Years",
+      "name_ar": "309 سنوات",
+      "name_en": "309_Years",
+      "type": "DURATION"
+    },
+    {
+      "id": "Pharaoh_of_Egypt",
+      "name_ar": "فرعون مصر",
+      "name_en": "Pharaoh_of_Egypt",
+      "type": "PERSON"
+    },
+    {
+      "id": "The_Whale",
+      "name_ar": "الحوت",
+      "name_en": "The_Whale",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Queen_of_Sheba",
+      "name_ar": "ملكة سبأ",
+      "name_en": "Queen_of_Sheba",
+      "type": "PERSON"
+    },
+    {
+      "id": "Dam_of_Marib",
+      "name_ar": "سدّ مأرب",
+      "name_en": "Dam_of_Marib",
+      "type": "STRUCTURE"
+    },
+    {
+      "id": "The_Prophets",
+      "name_ar": "النبيين",
+      "name_en": "The_Prophets",
+      "type": "GROUP"
+    },
+    {
+      "id": "Twelve_Tribes",
+      "name_ar": "الأسباط",
+      "name_en": "Twelve_Tribes",
+      "type": "GROUP"
+    },
+    {
+      "id": "Mothers_of_Believers",
+      "name_ar": "أمهات المؤمنين",
+      "name_en": "Mothers_of_Believers",
+      "type": "GROUP"
+    },
+    {
+      "id": "Mankind",
+      "name_ar": "الناس",
+      "name_en": "Mankind",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "The_Chamber",
+      "name_ar": "المحراب",
+      "name_en": "The_Chamber",
+      "type": "PLACE"
+    },
+    {
+      "id": "The_Wilderness",
+      "name_ar": "التيه",
+      "name_en": "The_Wilderness",
+      "type": "PLACE"
+    },
+    {
+      "id": "The_Wind",
+      "name_ar": "الريح",
+      "name_en": "The_Wind",
+      "type": "ELEMENT"
+    },
+    {
+      "id": "The_Birds",
+      "name_ar": "الطير",
+      "name_en": "The_Birds",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Zaynab_bint_Jahsh",
+      "name_ar": "زينب بنت جحش",
+      "name_en": "Zaynab_bint_Jahsh",
+      "type": "PERSON"
+    },
+    {
+      "id": "The_Muslims",
+      "name_ar": "المسلمون",
+      "name_en": "The_Muslims",
+      "type": "GROUP"
+    },
+    {
+      "id": "Believer_of_Pharaoh_Family",
+      "name_ar": "مؤمن آل فرعون",
+      "name_en": "Believer_of_Pharaoh_Family",
+      "type": "PERSON"
+    },
+    {
+      "id": "The_Sorcerers",
+      "name_ar": "السحرة",
+      "name_en": "The_Sorcerers",
+      "type": "GROUP"
+    },
+    {
+      "id": "Mother_of_Mary",
+      "name_ar": "أم مريم",
+      "name_en": "Mother_of_Mary",
+      "type": "PERSON"
+    },
+    {
+      "id": "Son_of_Luqman",
+      "name_ar": "ابن لقمان",
+      "name_en": "Son_of_Luqman",
+      "type": "PERSON"
+    },
+    {
+      "id": "The_Idols",
+      "name_ar": "الأصنام",
+      "name_en": "The_Idols",
+      "type": "OBJECT"
+    },
+    {
+      "id": "بني_آدم",
+      "name_ar": "بني آدم",
+      "name_en": "Sons of Adam",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "Uzayr",
+      "name_ar": "عزير",
+      "name_en": "Uzayr",
+      "type": "PERSON"
+    },
+    {
+      "id": "Namrud",
+      "name_ar": "النمرود",
+      "name_en": "Nimrod",
+      "type": "PERSON"
+    },
+    {
+      "id": "Magicians_of_Pharaoh",
+      "name_ar": "سحرة فرعون",
+      "name_en": "Magicians_of_Pharaoh",
+      "type": "GROUP"
+    },
+    {
+      "id": "Israfil",
+      "name_ar": "إسرافيل",
+      "name_en": "Israfil",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Malik",
+      "name_ar": "مالك",
+      "name_en": "Malik",
+      "type": "ANGEL"
+    },
+    {
+      "id": "Sheba_Kingdom",
+      "name_ar": "مملكة سبأ",
+      "name_en": "Kingdom_of_Sheba",
+      "type": "PLACE"
+    },
+    {
+      "id": "Uhud",
+      "name_ar": "أُحد",
+      "name_en": "Uhud",
+      "type": "PLACE"
+    },
+    {
+      "id": "The_Trench",
+      "name_ar": "الخندق",
+      "name_en": "The_Trench",
+      "type": "PLACE"
+    },
+    {
+      "id": "Red_Sea",
+      "name_ar": "البحر",
+      "name_en": "The_Sea",
+      "type": "PLACE"
+    },
+    {
+      "id": "Mountains",
+      "name_ar": "الجبال",
+      "name_en": "Mountains",
+      "type": "ELEMENT"
+    },
+    {
+      "id": "Cow_of_Israel",
+      "name_ar": "بقرة بني إسرائيل",
+      "name_en": "Cow_of_Israel",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Hoopoe",
+      "name_ar": "الهدهد",
+      "name_en": "Hoopoe",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Ant",
+      "name_ar": "النملة",
+      "name_en": "The_Ant",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Crow",
+      "name_ar": "الغراب",
+      "name_en": "The_Crow",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Dog_of_Cave",
+      "name_ar": "كلب أصحاب الكهف",
+      "name_en": "Dog_of_Cave",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Wolf_Joseph",
+      "name_ar": "الذئب",
+      "name_en": "The_Wolf",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Donkey_Uzayr",
+      "name_ar": "حمار عزير",
+      "name_en": "Donkey_of_Uzayr",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Spider",
+      "name_ar": "العنكبوت",
+      "name_en": "The_Spider",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Bee",
+      "name_ar": "النحل",
+      "name_en": "The_Bee",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Sabbath_Breakers",
+      "name_ar": "أصحاب السبت",
+      "name_en": "Sabbath_Breakers",
+      "type": "GROUP"
+    },
+    {
+      "id": "People_of_Garden",
+      "name_ar": "أصحاب الجنة",
+      "name_en": "People_of_Garden",
+      "type": "GROUP"
+    },
+    {
+      "id": "People_of_Village",
+      "name_ar": "أصحاب القرية",
+      "name_en": "People_of_Village",
+      "type": "GROUP"
+    },
+    {
+      "id": "Shirt_Joseph",
+      "name_ar": "قميص يوسف",
+      "name_en": "Shirt_of_Joseph",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Throne_Sheba",
+      "name_ar": "عرش سبأ",
+      "name_en": "Throne_of_Sheba",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Plagues_Egypt",
+      "name_ar": "آيات مصر",
+      "name_en": "Plagues_of_Egypt",
+      "type": "EVENT"
+    },
+    {
+      "id": "Idols_Nuh",
+      "name_ar": "أصنام قوم نوح",
+      "name_en": "Idols_of_Noah_People",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Wadd",
+      "name_ar": "ودّ",
+      "name_en": "Wadd",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Suwa",
+      "name_ar": "سُواع",
+      "name_en": "Suwa",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Yaghuth",
+      "name_ar": "يغوث",
+      "name_en": "Yaghuth",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Yauq",
+      "name_ar": "يعوق",
+      "name_en": "Yauq",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Nasr",
+      "name_ar": "نسر",
+      "name_en": "Nasr",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Baal",
+      "name_ar": "بعل",
+      "name_en": "Baal",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Al_Lat",
+      "name_ar": "اللات",
+      "name_en": "Al-Lat",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Al_Uzza",
+      "name_ar": "العزى",
+      "name_en": "Al-Uzza",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Manat",
+      "name_ar": "مناة",
+      "name_en": "Manat",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Ruined_Town",
+      "name_ar": "القرية الخربة",
+      "name_en": "Ruined_Town",
+      "type": "PLACE"
+    },
+    {
+      "id": "Messengers_Village",
+      "name_ar": "رسل القرية",
+      "name_en": "Messengers_of_Village",
+      "type": "GROUP"
+    },
+    {
+      "id": "Man_Two_Gardens",
+      "name_ar": "صاحب الجنتين",
+      "name_en": "Man_of_Two_Gardens",
+      "type": "PERSON"
+    },
+    {
+      "id": "Two_Women_Madyan",
+      "name_ar": "المرأتان",
+      "name_en": "Two_Women_of_Madyan",
+      "type": "PERSON"
+    },
+    {
+      "id": "950_Years",
+      "name_ar": "950 سنة",
+      "name_en": "950_Years",
+      "type": "DURATION"
+    },
+    {
+      "id": "40_Nights",
+      "name_ar": "40 ليلة",
+      "name_en": "40_Nights",
+      "type": "DURATION"
+    },
+    {
+      "id": "40_Years",
+      "name_ar": "40 سنة",
+      "name_en": "40_Years",
+      "type": "DURATION"
+    },
+    {
+      "id": "100_Years",
+      "name_ar": "100 سنة",
+      "name_en": "100_Years",
+      "type": "DURATION"
+    },
+    {
+      "id": "30_Plus_10",
+      "name_ar": "30+10 ليلة",
+      "name_en": "30_Plus_10_Nights",
+      "type": "DURATION"
+    },
+    {
+      "id": "Palace_of_Haman",
+      "name_ar": "صرح هامان",
+      "name_en": "Palace_of_Haman",
+      "type": "STRUCTURE"
+    },
+    {
+      "id": "Barrier_of_DhulQarnayn",
+      "name_ar": "ردم ذي القرنين",
+      "name_en": "Barrier_of_Dhul-Qarnayn",
+      "type": "STRUCTURE"
+    },
+    {
+      "id": "3_Days",
+      "name_ar": "3 أيام",
+      "name_en": "3_Days",
+      "type": "DURATION"
+    },
+    {
+      "id": "3_Nights",
+      "name_ar": "3 ليال",
+      "name_en": "3_Nights",
+      "type": "DURATION"
+    },
+    {
+      "id": "Twelve_Springs",
+      "name_ar": "12 عيناً",
+      "name_en": "Twelve_Springs",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Manna_Quails",
+      "name_ar": "المنّ والسلوى",
+      "name_en": "Manna_and_Quails",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Clouds_Shade",
+      "name_ar": "الغمام",
+      "name_en": "Clouds_of_Shade",
+      "type": "ELEMENT"
+    },
+    {
+      "id": "Staff_Solomon",
+      "name_ar": "منسأة سليمان",
+      "name_en": "Staff_of_Solomon",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Jews",
+      "name_ar": "اليهود",
+      "name_en": "Jews",
+      "type": "GROUP"
+    },
+    {
+      "id": "Christians",
+      "name_ar": "النصارى",
+      "name_en": "Christians",
+      "type": "GROUP"
+    },
+    {
+      "id": "Sabeans",
+      "name_ar": "الصابئون",
+      "name_en": "Sabeans",
+      "type": "GROUP"
+    },
+    {
+      "id": "Magians",
+      "name_ar": "المجوس",
+      "name_en": "Magians",
+      "type": "GROUP"
+    },
+    {
+      "id": "Bedouins",
+      "name_ar": "الأعراب",
+      "name_en": "Bedouins",
+      "type": "GROUP"
+    },
+    {
+      "id": "Yathrib",
+      "name_ar": "يثرب",
+      "name_en": "Yathrib",
+      "type": "PLACE"
+    },
+    {
+      "id": "Bakkah",
+      "name_ar": "بكّة",
+      "name_en": "Bakkah",
+      "type": "PLACE"
+    },
+    {
+      "id": "Mount_Judi",
+      "name_ar": "الجودي",
+      "name_en": "Mount_Judi",
+      "type": "PLACE"
+    },
+    {
+      "id": "Valley_Tuwa",
+      "name_ar": "الوادي المقدس طوى",
+      "name_en": "Valley_of_Tuwa",
+      "type": "PLACE"
+    },
+    {
+      "id": "Madyan_Place",
+      "name_ar": "مدين",
+      "name_en": "Madyan",
+      "type": "PLACE"
+    },
+    {
+      "id": "Throne_of_God",
+      "name_ar": "العرش",
+      "name_en": "Throne_of_God",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Kursi",
+      "name_ar": "الكرسي",
+      "name_en": "Footstool",
+      "type": "OBJECT"
+    },
+    {
+      "id": "Preserved_Tablet",
+      "name_ar": "اللوح المحفوظ",
+      "name_en": "Preserved_Tablet",
+      "type": "OBJECT"
+    },
+    {
+      "id": "The_Pen",
+      "name_ar": "القلم",
+      "name_en": "The_Pen",
+      "type": "OBJECT"
+    },
+    {
+      "id": "The_Scales",
+      "name_ar": "الميزان",
+      "name_en": "The_Scales",
+      "type": "OBJECT"
+    },
+    {
+      "id": "The_Sirat",
+      "name_ar": "الصراط",
+      "name_en": "The_Sirat",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "Al_Barzakh",
+      "name_ar": "البرزخ",
+      "name_en": "Al-Barzakh",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "Zaqqum",
+      "name_ar": "شجرة الزقوم",
+      "name_en": "Zaqqum_Tree",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Kawthar",
+      "name_ar": "الكوثر",
+      "name_en": "Al-Kawthar",
+      "type": "PLACE"
+    },
+    {
+      "id": "Salsabil",
+      "name_ar": "سلسبيل",
+      "name_en": "Salsabil",
+      "type": "PLACE"
+    },
+    {
+      "id": "Tasnim",
+      "name_ar": "تسنيم",
+      "name_en": "Tasnim",
+      "type": "PLACE"
+    },
+    {
+      "id": "Tooba",
+      "name_ar": "طوبى",
+      "name_en": "Tooba",
+      "type": "CONCEPT"
+    },
+    {
+      "id": "The_Fly",
+      "name_ar": "الذباب",
+      "name_en": "The_Fly",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Laylat_Al_Qadr",
+      "name_ar": "ليلة القدر",
+      "name_en": "Night_of_Power",
+      "type": "EVENT"
+    },
+    {
+      "id": "Bayat_Ridwan",
+      "name_ar": "بيعة الرضوان",
+      "name_en": "Pledge_of_Ridwan",
+      "type": "EVENT"
+    },
+    {
+      "id": "Horses_Solomon",
+      "name_ar": "الصافنات الجياد",
+      "name_en": "Horses_of_Solomon",
+      "type": "CREATURE"
+    },
+    {
+      "id": "Beast_of_Earth",
+      "name_ar": "دابة الأرض",
+      "name_en": "Beast_of_Earth",
+      "type": "CREATURE"
+    }
+  ],
+  "links": [
+    {
+      "source": "Adam",
+      "target": "Humanity",
+      "rel_ar": "أبو البشر",
+      "rel_en": "FATHER_OF_HUMANITY",
+      "verses": "2:30, 2:31, 2:34",
+      "vc": 3
+    },
+    {
+      "source": "Eve",
+      "target": "Adam",
+      "rel_ar": "زوجة",
+      "rel_en": "WIFE_OF",
+      "verses": "2:35, 7:19, 4:1",
+      "vc": 3
+    },
+    {
+      "source": "Adam",
+      "target": "Sons_of_Adam",
+      "rel_ar": "أبو",
+      "rel_en": "FATHER_OF",
+      "verses": "5:27",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Azar",
+      "rel_ar": "ابن",
+      "rel_en": "SON_OF",
+      "verses": "6:74",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Ismail",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "2:125, 14:39, 2:127",
+      "vc": 3
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Isaac",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "11:71, 14:39, 37:112",
+      "vc": 3
+    },
+    {
+      "source": "Isaac",
+      "target": "Jacob",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "11:71, 21:72, 29:27",
+      "vc": 3
+    },
+    {
+      "source": "Jacob",
+      "target": "Joseph",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "12:4, 12:16, 12:67",
+      "vc": 3
+    },
+    {
+      "source": "Jacob",
+      "target": "Israel",
+      "rel_ar": "يُسمى أيضاً",
+      "rel_en": "ALSO_KNOWN_AS",
+      "verses": "3:93, 19:58",
+      "vc": 2
+    },
+    {
+      "source": "Imran",
+      "target": "Mary",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "3:35, 3:36, 66:12",
+      "vc": 3
+    },
+    {
+      "source": "Mary",
+      "target": "Jesus",
+      "rel_ar": "أم",
+      "rel_en": "MOTHER_OF",
+      "verses": "3:36, 19:22, 23:50",
+      "vc": 3
+    },
+    {
+      "source": "Zachariah",
+      "target": "Mary",
+      "rel_ar": "كفل",
+      "rel_en": "GUARDIAN_OF",
+      "verses": "3:37",
+      "vc": 1
+    },
+    {
+      "source": "Zachariah",
+      "target": "John",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "3:39, 19:7, 21:90",
+      "vc": 3
+    },
+    {
+      "source": "Noah",
+      "target": "Disbelieving_Son_of_Noah",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "11:42, 11:45, 11:46",
+      "vc": 3
+    },
+    {
+      "source": "Lot",
+      "target": "Ibrahim",
+      "rel_ar": "ابن أخ",
+      "rel_en": "NEPHEW_OF",
+      "verses": "29:26, 21:71",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Aaron",
+      "rel_ar": "أخ",
+      "rel_en": "BROTHER_OF",
+      "verses": "20:30, 7:142, 28:34",
+      "vc": 3
+    },
+    {
+      "source": "Moses",
+      "target": "Mother_of_Moses",
+      "rel_ar": "ابن",
+      "rel_en": "SON_OF",
+      "verses": "28:7, 20:38, 20:40",
+      "vc": 3
+    },
+    {
+      "source": "David",
+      "target": "Solomon",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "27:16, 34:13, 21:78",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Wife_of_Pharaoh",
+      "rel_ar": "زوج",
+      "rel_en": "HUSBAND_OF",
+      "verses": "28:9, 66:11",
+      "vc": 2
+    },
+    {
+      "source": "Abu_Lahab",
+      "target": "Wife_of_Abu_Lahab",
+      "rel_ar": "زوج",
+      "rel_en": "HUSBAND_OF",
+      "verses": "111:4",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Zaynab_bint_Jahsh",
+      "rel_ar": "تزوج",
+      "rel_en": "MARRIED",
+      "verses": "33:37",
+      "vc": 1
+    },
+    {
+      "source": "Zayd",
+      "target": "Muhammad",
+      "rel_ar": "تبنّاه",
+      "rel_en": "ADOPTED_BY",
+      "verses": "33:37",
+      "vc": 1
+    },
+    {
+      "source": "Zayd",
+      "target": "Zaynab_bint_Jahsh",
+      "rel_ar": "طلّق",
+      "rel_en": "DIVORCED",
+      "verses": "33:37",
+      "vc": 1
+    },
+    {
+      "source": "Luqman",
+      "target": "Son_of_Luqman",
+      "rel_ar": "أب",
+      "rel_en": "FATHER_OF",
+      "verses": "31:13, 31:16, 31:17",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Noah",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:59, 11:25, 23:23, 71:1",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Hud",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:65, 11:50, 26:124",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Salih",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:73, 11:61, 26:142",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "29:16, 21:51",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Lot",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:80, 26:161, 29:28",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Shuaib",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:85, 11:84, 29:36",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:103, 10:75, 20:24, 28:32, 51:38",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Jesus",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "3:49, 5:46, 61:6",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "33:45, 48:29, 3:144, 47:2",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "2:251, 34:10",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Solomon",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "27:15, 34:12, 38:30",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Jonah",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "10:98, 37:139, 68:48",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Elias",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "37:123",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Elisha",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "6:86, 38:48",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Job",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "21:83, 38:41",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Idris",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "19:56, 21:85",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Dhul-Kifl",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "21:85, 38:48",
+      "vc": 2
+    },
+    {
+      "source": "Noah",
+      "target": "People_of_Noah",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:59, 11:25, 23:23, 71:1",
+      "vc": 4
+    },
+    {
+      "source": "Hud",
+      "target": "Aad",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:65, 11:50, 26:124, 46:21",
+      "vc": 4
+    },
+    {
+      "source": "Salih",
+      "target": "Thamud",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:73, 11:61, 26:142, 27:45",
+      "vc": 4
+    },
+    {
+      "source": "Ibrahim",
+      "target": "People_of_Ibrahim",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "29:16, 21:51",
+      "vc": 2
+    },
+    {
+      "source": "Lot",
+      "target": "People_of_Lot",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:80, 26:161, 29:28",
+      "vc": 3
+    },
+    {
+      "source": "Shuaib",
+      "target": "People_of_Madyan",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:85, 11:84, 29:36",
+      "vc": 3
+    },
+    {
+      "source": "Shuaib",
+      "target": "People_of_Al-Aykah",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "26:176",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Pharaoh",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:103, 10:75, 20:24, 43:46, 51:38, 73:15, 79:17",
+      "vc": 7
+    },
+    {
+      "source": "Moses",
+      "target": "Children_of_Israel",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "2:49, 7:105, 17:101, 20:47, 26:17",
+      "vc": 5
+    },
+    {
+      "source": "Jesus",
+      "target": "Children_of_Israel",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "3:49, 5:72, 43:59, 61:6",
+      "vc": 4
+    },
+    {
+      "source": "Muhammad",
+      "target": "Mankind",
+      "rel_ar": "أُرسل إلى",
+      "rel_en": "SENT_TO",
+      "verses": "7:158, 21:107, 34:28, 4:79",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "أمر بالسجود لـ",
+      "rel_en": "COMMANDED_PROSTRATION_TO",
+      "verses": "2:34, 7:11, 15:29, 17:61, 18:50, 20:116",
+      "vc": 6
+    },
+    {
+      "source": "Angels",
+      "target": "Adam",
+      "rel_ar": "سجدوا لـ",
+      "rel_en": "PROSTRATED_TO",
+      "verses": "2:34, 7:11, 15:30, 17:61, 18:50, 20:116",
+      "vc": 6
+    },
+    {
+      "source": "Iblis",
+      "target": "Adam",
+      "rel_ar": "رفض السجود لـ",
+      "rel_en": "REFUSED_PROSTRATION_TO",
+      "verses": "2:34, 7:11, 15:31, 17:61, 18:50, 20:116, 38:74",
+      "vc": 7
+    },
+    {
+      "source": "Iblis",
+      "target": "Adam",
+      "rel_ar": "استكبر على",
+      "rel_en": "WAS_ARROGANT_TOWARD",
+      "verses": "2:34, 7:12, 38:76",
+      "vc": 3
+    },
+    {
+      "source": "Iblis",
+      "target": "Adam",
+      "rel_ar": "أغوى",
+      "rel_en": "TEMPTED",
+      "verses": "2:36, 7:20, 20:120",
+      "vc": 3
+    },
+    {
+      "source": "Satan",
+      "target": "Humanity",
+      "rel_ar": "عدو لـ",
+      "rel_en": "ENEMY_OF",
+      "verses": "2:168, 2:208, 7:22, 12:5, 35:6, 36:60",
+      "vc": 6
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Golden_Calf",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "2:51, 2:92, 7:148, 20:88",
+      "vc": 4
+    },
+    {
+      "source": "Al-Samiri",
+      "target": "Golden_Calf",
+      "rel_ar": "صنع",
+      "rel_en": "MADE",
+      "verses": "20:85, 20:87, 20:95",
+      "vc": 3
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Kaaba",
+      "rel_ar": "بنى",
+      "rel_en": "BUILT",
+      "verses": "2:127",
+      "vc": 1
+    },
+    {
+      "source": "Ismail",
+      "target": "Kaaba",
+      "rel_ar": "بنى",
+      "rel_en": "BUILT",
+      "verses": "2:127",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "The_Idols",
+      "rel_ar": "حطّم",
+      "rel_en": "DESTROYED",
+      "verses": "21:58, 37:93",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Quran",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED",
+      "verses": "2:185, 17:106, 25:1, 76:23, 97:1",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED_TO",
+      "verses": "2:185, 47:2, 48:29",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Torah",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED",
+      "verses": "3:3, 3:93, 5:44",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "أنزل التوراة على",
+      "rel_en": "REVEALED_TORAH_TO",
+      "verses": "2:53, 6:91, 11:110, 23:49, 25:35, 28:43",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Gospel",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED",
+      "verses": "3:3, 5:46, 57:27",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Jesus",
+      "rel_ar": "أنزل الإنجيل على",
+      "rel_en": "REVEALED_GOSPEL_TO",
+      "verses": "5:46, 57:27",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Psalms",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED",
+      "verses": "4:163, 17:55",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "أنزل الزبور على",
+      "rel_en": "REVEALED_PSALMS_TO",
+      "verses": "4:163, 17:55",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Scrolls_of_Ibrahim",
+      "rel_ar": "أنزل",
+      "rel_en": "REVEALED",
+      "verses": "87:19, 53:36",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "أعطى",
+      "rel_en": "GAVE",
+      "verses": "2:53, 7:145",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Tablets",
+      "rel_ar": "تلقّى",
+      "rel_en": "RECEIVED",
+      "verses": "7:145, 7:150, 7:154",
+      "vc": 3
+    },
+    {
+      "source": "People_of_Noah",
+      "target": "Noah",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "7:59, 11:32, 23:25, 26:105, 54:9, 71:21",
+      "vc": 6
+    },
+    {
+      "source": "Aad",
+      "target": "Hud",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "7:65, 11:53, 26:123, 41:15, 46:21, 54:18",
+      "vc": 6
+    },
+    {
+      "source": "Thamud",
+      "target": "Salih",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "7:73, 11:62, 26:141, 27:45, 54:23, 91:11",
+      "vc": 6
+    },
+    {
+      "source": "People_of_Ibrahim",
+      "target": "Ibrahim",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "21:68, 29:16, 29:24, 37:97",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Lot",
+      "target": "Lot",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "7:80, 26:160, 27:56, 54:33",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Madyan",
+      "target": "Shuaib",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "7:85, 11:84, 26:176, 29:36",
+      "vc": 4
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Moses",
+      "rel_ar": "كذّب",
+      "rel_en": "DENIED",
+      "verses": "10:75, 20:56, 23:45, 26:23, 40:24, 43:46, 79:21",
+      "vc": 7
+    },
+    {
+      "source": "Family_of_Pharaoh",
+      "target": "Moses",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "3:11, 8:52, 8:54, 54:41",
+      "vc": 4
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Jesus",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "3:52, 5:70, 61:14",
+      "vc": 3
+    },
+    {
+      "source": "Quraysh",
+      "target": "Muhammad",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "6:33, 10:2, 25:4, 34:43, 38:4",
+      "vc": 5
+    },
+    {
+      "source": "Polytheists",
+      "target": "Muhammad",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "6:33, 25:4, 34:43",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Noah",
+      "rel_ar": "أغرق",
+      "rel_en": "DROWNED",
+      "verses": "7:64, 10:73, 11:37, 23:27, 25:37, 26:120, 29:14, 71:25",
+      "vc": 8
+    },
+    {
+      "source": "Allah",
+      "target": "Aad",
+      "rel_ar": "أهلك بالريح",
+      "rel_en": "DESTROYED_BY_WIND",
+      "verses": "7:72, 41:16, 46:25, 51:41, 54:19, 69:6",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Thamud",
+      "rel_ar": "أهلك بالصيحة",
+      "rel_en": "DESTROYED_BY_BLAST",
+      "verses": "7:78, 11:67, 15:83, 41:17, 51:44, 54:31, 69:5, 91:14",
+      "vc": 8
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Lot",
+      "rel_ar": "أهلك بالخسف",
+      "rel_en": "DESTROYED_BY_OVERTURN",
+      "verses": "7:84, 11:82, 15:74, 26:173, 27:58, 29:34, 54:34",
+      "vc": 7
+    },
+    {
+      "source": "Allah",
+      "target": "Pharaoh",
+      "rel_ar": "أغرق",
+      "rel_en": "DROWNED",
+      "verses": "2:50, 7:136, 8:54, 10:90, 17:103, 20:78, 26:66, 28:40, 43:55, 44:24",
+      "vc": 10
+    },
+    {
+      "source": "Allah",
+      "target": "Family_of_Pharaoh",
+      "rel_ar": "أغرق",
+      "rel_en": "DROWNED",
+      "verses": "2:49, 3:11, 8:54",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Qarun",
+      "rel_ar": "خسف بـ",
+      "rel_en": "SWALLOWED_EARTH",
+      "verses": "28:81, 29:40",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Al-Aykah",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "15:78, 26:189",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Elephant",
+      "rel_ar": "أرسل طيراً أبابيل على",
+      "rel_en": "SENT_BIRDS_AGAINST",
+      "verses": "105:3",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Madyan",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "7:91, 11:94, 29:37",
+      "vc": 3
+    },
+    {
+      "source": "Thamud",
+      "target": "She-Camel_of_Salih",
+      "rel_ar": "عقروا",
+      "rel_en": "KILLED",
+      "verses": "7:77, 11:65, 26:157, 54:29, 91:14",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "علّم الأسماء",
+      "rel_en": "TAUGHT_NAMES_TO",
+      "verses": "2:31",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "فلق البحر لـ",
+      "rel_en": "SPLIT_SEA_FOR",
+      "verses": "2:50, 7:138, 20:77, 26:63, 44:24",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "كلّم",
+      "rel_en": "SPOKE_TO",
+      "verses": "4:164, 7:143, 7:144, 19:52, 20:11, 28:30",
+      "vc": 6
+    },
+    {
+      "source": "Moses",
+      "target": "Staff_of_Moses",
+      "rel_ar": "ألقى",
+      "rel_en": "THREW",
+      "verses": "7:107, 20:20, 26:32, 27:10, 28:31",
+      "vc": 5
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "أحيا الموتى بإذن",
+      "rel_en": "RAISED_DEAD_BY_PERMISSION_OF",
+      "verses": "3:49, 5:110",
+      "vc": 2
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "أبرأ الأكمه والأبرص بإذن",
+      "rel_en": "HEALED_BY_PERMISSION_OF",
+      "verses": "3:49, 5:110",
+      "vc": 2
+    },
+    {
+      "source": "Jesus",
+      "target": "Children_of_Israel",
+      "rel_ar": "تكلّم في المهد",
+      "rel_en": "SPOKE_IN_CRADLE",
+      "verses": "3:46, 5:110, 19:29",
+      "vc": 3
+    },
+    {
+      "source": "Solomon",
+      "target": "Jinn",
+      "rel_ar": "سُخّر له",
+      "rel_en": "WAS_GIVEN_POWER_OVER",
+      "verses": "27:17, 34:12, 38:36",
+      "vc": 3
+    },
+    {
+      "source": "Solomon",
+      "target": "The_Birds",
+      "rel_ar": "علّمه الله منطق",
+      "rel_en": "TAUGHT_LANGUAGE_OF",
+      "verses": "27:16",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "The_Wind",
+      "rel_ar": "سُخّر له",
+      "rel_en": "WAS_GIVEN_POWER_OVER",
+      "verses": "21:81, 34:12, 38:36",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "ألان الحديد لـ",
+      "rel_en": "SOFTENED_IRON_FOR",
+      "verses": "34:10",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "آتى الحكمة",
+      "rel_en": "GAVE_WISDOM_TO",
+      "verses": "2:251, 38:20",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Luqman",
+      "rel_ar": "آتى الحكمة",
+      "rel_en": "GAVE_WISDOM_TO",
+      "verses": "31:12",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Talut",
+      "rel_ar": "آتى الملك",
+      "rel_en": "GAVE_KINGSHIP_TO",
+      "verses": "2:247",
+      "vc": 1
+    },
+    {
+      "source": "Noah",
+      "target": "Ark_of_Noah",
+      "rel_ar": "بنى",
+      "rel_en": "BUILT",
+      "verses": "11:37, 23:27, 54:13",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Ark_of_Noah",
+      "rel_ar": "أنجى في",
+      "rel_en": "SAVED_IN",
+      "verses": "11:40, 23:27, 29:15",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Jesus",
+      "rel_ar": "رفع",
+      "rel_en": "RAISED",
+      "verses": "3:55, 4:158",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Cave",
+      "rel_ar": "ألقى النوم على أصحاب",
+      "rel_en": "PUT_TO_SLEEP",
+      "verses": "18:11, 18:18, 18:25",
+      "vc": 3
+    },
+    {
+      "source": "Jonah",
+      "target": "The_Whale",
+      "rel_ar": "ابتلعه",
+      "rel_en": "SWALLOWED_BY",
+      "verses": "37:142, 68:48",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Jonah",
+      "rel_ar": "أنجى من الحوت",
+      "rel_en": "SAVED_FROM_WHALE",
+      "verses": "21:87, 37:143",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "ابتلى",
+      "rel_en": "TESTED",
+      "verses": "2:124, 37:102",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Job",
+      "rel_ar": "ابتلى",
+      "rel_en": "TESTED",
+      "verses": "21:83, 38:41",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Jacob",
+      "rel_ar": "ابتلى",
+      "rel_en": "TESTED",
+      "verses": "12:18, 12:86",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Joseph",
+      "rel_ar": "ابتلى",
+      "rel_en": "TESTED",
+      "verses": "12:33, 12:35",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "نجّى من النار",
+      "rel_en": "SAVED_FROM_FIRE",
+      "verses": "21:69, 29:24, 37:97",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Job",
+      "rel_ar": "شفى",
+      "rel_en": "HEALED",
+      "verses": "21:84, 38:42",
+      "vc": 2
+    },
+    {
+      "source": "Brothers_of_Joseph",
+      "target": "Joseph",
+      "rel_ar": "ألقوا في الجبّ",
+      "rel_en": "THREW_IN_WELL",
+      "verses": "12:10, 12:15",
+      "vc": 2
+    },
+    {
+      "source": "Al-Aziz",
+      "target": "Joseph",
+      "rel_ar": "اشترى",
+      "rel_en": "BOUGHT",
+      "verses": "12:21",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Al-Aziz",
+      "target": "Joseph",
+      "rel_ar": "راودت",
+      "rel_en": "SEDUCED",
+      "verses": "12:23, 12:26, 12:30, 12:32, 12:51",
+      "vc": 5
+    },
+    {
+      "source": "Joseph",
+      "target": "Egypt",
+      "rel_ar": "سُجن في",
+      "rel_en": "IMPRISONED_IN",
+      "verses": "12:33, 12:35, 12:36",
+      "vc": 3
+    },
+    {
+      "source": "Joseph",
+      "target": "Pharaoh_of_Egypt",
+      "rel_ar": "فسّر حلم",
+      "rel_en": "INTERPRETED_DREAM_OF",
+      "verses": "12:43, 12:47, 12:54",
+      "vc": 3
+    },
+    {
+      "source": "Joseph",
+      "target": "Egypt",
+      "rel_ar": "عزيز",
+      "rel_en": "BECAME_MINISTER_OF",
+      "verses": "12:54, 12:56",
+      "vc": 2
+    },
+    {
+      "source": "Joseph",
+      "target": "Brothers_of_Joseph",
+      "rel_ar": "سامح",
+      "rel_en": "FORGAVE",
+      "verses": "12:92",
+      "vc": 1
+    },
+    {
+      "source": "Jacob",
+      "target": "Joseph",
+      "rel_ar": "فقد البصر حزناً على",
+      "rel_en": "LOST_SIGHT_GRIEVING",
+      "verses": "12:84",
+      "vc": 1
+    },
+    {
+      "source": "Jacob",
+      "target": "Joseph",
+      "rel_ar": "استعاد البصر بقميص",
+      "rel_en": "REGAINED_SIGHT_BY_SHIRT_OF",
+      "verses": "12:96",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Pharaoh",
+      "rel_ar": "طلب من",
+      "rel_en": "DEMANDED_FROM",
+      "verses": "7:105, 20:47, 26:17",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Children_of_Israel",
+      "rel_ar": "استعبد",
+      "rel_en": "ENSLAVED",
+      "verses": "2:49, 7:127, 7:141, 14:6, 28:4",
+      "vc": 5
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Children_of_Israel",
+      "rel_ar": "قتل أبناء",
+      "rel_en": "KILLED_SONS_OF",
+      "verses": "2:49, 7:127, 7:141, 14:6, 28:4",
+      "vc": 5
+    },
+    {
+      "source": "Mother_of_Moses",
+      "target": "Moses",
+      "rel_ar": "ألقت في اليمّ",
+      "rel_en": "CAST_IN_RIVER",
+      "verses": "20:39, 28:7",
+      "vc": 2
+    },
+    {
+      "source": "Wife_of_Pharaoh",
+      "target": "Moses",
+      "rel_ar": "التقطت",
+      "rel_en": "PICKED_UP",
+      "verses": "28:9",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Pharaoh",
+      "target": "Allah",
+      "rel_ar": "آمنت بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "66:11",
+      "vc": 1
+    },
+    {
+      "source": "Haman",
+      "target": "Pharaoh",
+      "rel_ar": "وزير",
+      "rel_en": "MINISTER_OF",
+      "verses": "28:6, 28:38, 29:39, 40:24, 40:36",
+      "vc": 5
+    },
+    {
+      "source": "Qarun",
+      "target": "Moses",
+      "rel_ar": "من قوم",
+      "rel_en": "FROM_PEOPLE_OF",
+      "verses": "28:76",
+      "vc": 1
+    },
+    {
+      "source": "Qarun",
+      "target": "Children_of_Israel",
+      "rel_ar": "بغى على",
+      "rel_en": "OPPRESSED",
+      "verses": "28:76",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Egyptian_Man",
+      "rel_ar": "قتل",
+      "rel_en": "KILLED",
+      "verses": "28:15, 28:33, 26:14",
+      "vc": 3
+    },
+    {
+      "source": "Moses",
+      "target": "Shuaib",
+      "rel_ar": "تزوج بنت",
+      "rel_en": "MARRIED_DAUGHTER_OF",
+      "verses": "28:27, 28:28",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Al-Khidr",
+      "rel_ar": "صاحَبَ",
+      "rel_en": "ACCOMPANIED",
+      "verses": "18:66, 18:71, 18:74, 18:78",
+      "vc": 4
+    },
+    {
+      "source": "Al-Khidr",
+      "target": "The_Ship",
+      "rel_ar": "خرق",
+      "rel_en": "DAMAGED",
+      "verses": "18:71, 18:79",
+      "vc": 2
+    },
+    {
+      "source": "Al-Khidr",
+      "target": "The_Boy",
+      "rel_ar": "قتل",
+      "rel_en": "KILLED",
+      "verses": "18:74, 18:80",
+      "vc": 2
+    },
+    {
+      "source": "Al-Khidr",
+      "target": "The_Wall",
+      "rel_ar": "أقام",
+      "rel_en": "REPAIRED",
+      "verses": "18:77, 18:82",
+      "vc": 2
+    },
+    {
+      "source": "David",
+      "target": "Goliath",
+      "rel_ar": "قتل",
+      "rel_en": "KILLED",
+      "verses": "2:251",
+      "vc": 1
+    },
+    {
+      "source": "Talut",
+      "target": "Children_of_Israel",
+      "rel_ar": "قاد",
+      "rel_en": "LED",
+      "verses": "2:247, 2:249",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "آتى",
+      "rel_en": "GAVE_KINGSHIP_TO",
+      "verses": "2:251, 38:20",
+      "vc": 2
+    },
+    {
+      "source": "Solomon",
+      "target": "David",
+      "rel_ar": "ورث ملك",
+      "rel_en": "INHERITED_KINGDOM_FROM",
+      "verses": "27:16",
+      "vc": 1
+    },
+    {
+      "source": "Queen_of_Sheba",
+      "target": "Sheba",
+      "rel_ar": "حكمت",
+      "rel_en": "RULED",
+      "verses": "27:23, 27:32",
+      "vc": 2
+    },
+    {
+      "source": "Solomon",
+      "target": "Queen_of_Sheba",
+      "rel_ar": "راسل",
+      "rel_en": "SENT_LETTER_TO",
+      "verses": "27:28, 27:31",
+      "vc": 2
+    },
+    {
+      "source": "Queen_of_Sheba",
+      "target": "Solomon",
+      "rel_ar": "أسلمت مع",
+      "rel_en": "SUBMITTED_WITH",
+      "verses": "27:44",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "أخذ ميثاق من",
+      "rel_en": "TOOK_COVENANT_FROM",
+      "verses": "2:40, 2:63, 2:83, 2:84, 2:93, 5:12, 5:70",
+      "vc": 7
+    },
+    {
+      "source": "Allah",
+      "target": "The_Prophets",
+      "rel_ar": "أخذ ميثاق من",
+      "rel_en": "TOOK_COVENANT_FROM",
+      "verses": "3:81, 33:7",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "أخذ ميثاق من",
+      "rel_en": "TOOK_COVENANT_FROM",
+      "verses": "20:115",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Makkah",
+      "rel_ar": "دعا الله لـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "2:126, 14:35, 14:37",
+      "vc": 3
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Muhammad",
+      "rel_ar": "دعا الله لإرسال",
+      "rel_en": "PRAYED_FOR_SENDING",
+      "verses": "2:129",
+      "vc": 1
+    },
+    {
+      "source": "Disciples",
+      "target": "Jesus",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "3:52, 5:111, 61:14",
+      "vc": 3
+    },
+    {
+      "source": "Wife_of_Pharaoh",
+      "target": "Allah",
+      "rel_ar": "دعت",
+      "rel_en": "PRAYED_TO",
+      "verses": "66:11",
+      "vc": 1
+    },
+    {
+      "source": "Believer_of_Pharaoh_Family",
+      "target": "Moses",
+      "rel_ar": "دافع عن",
+      "rel_en": "DEFENDED",
+      "verses": "40:28",
+      "vc": 1
+    },
+    {
+      "source": "The_Sorcerers",
+      "target": "Moses",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "7:120, 20:70, 26:46",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh",
+      "target": "The_Sorcerers",
+      "rel_ar": "هدّد",
+      "rel_en": "THREATENED",
+      "verses": "7:124, 20:71, 26:49",
+      "vc": 3
+    },
+    {
+      "source": "Iblis",
+      "target": "Jinn",
+      "rel_ar": "كان من",
+      "rel_en": "WAS_FROM",
+      "verses": "18:50",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Iblis",
+      "rel_ar": "أنظر",
+      "rel_en": "GAVE_RESPITE_TO",
+      "verses": "7:15, 15:37, 38:80",
+      "vc": 3
+    },
+    {
+      "source": "Iblis",
+      "target": "بني_آدم",
+      "rel_ar": "توعّد",
+      "rel_en": "VOWED_TO_MISLEAD",
+      "verses": "7:16, 15:39, 17:62",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Iblis",
+      "rel_ar": "لعن",
+      "rel_en": "CURSED",
+      "verses": "4:118, 7:18, 15:35, 38:78",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Iblis",
+      "rel_ar": "طرد",
+      "rel_en": "EXPELLED",
+      "verses": "7:13, 7:18, 15:34, 38:77",
+      "vc": 4
+    },
+    {
+      "source": "Gabriel",
+      "target": "Muhammad",
+      "rel_ar": "نزل بالوحي على",
+      "rel_en": "BROUGHT_REVELATION_TO",
+      "verses": "2:97, 26:193, 53:5, 81:19",
+      "vc": 4
+    },
+    {
+      "source": "Gabriel",
+      "target": "Mary",
+      "rel_ar": "تمثّل لـ",
+      "rel_en": "APPEARED_TO",
+      "verses": "19:17",
+      "vc": 1
+    },
+    {
+      "source": "Gabriel",
+      "target": "Jesus",
+      "rel_ar": "أيّد",
+      "rel_en": "SUPPORTED",
+      "verses": "2:87, 2:253, 5:110",
+      "vc": 3
+    },
+    {
+      "source": "Angels",
+      "target": "Battle_of_Badr",
+      "rel_ar": "نزلوا في",
+      "rel_en": "DESCENDED_IN",
+      "verses": "3:123, 3:124, 3:125, 8:9",
+      "vc": 4
+    },
+    {
+      "source": "Harut",
+      "target": "Babylon",
+      "rel_ar": "أُنزل في",
+      "rel_en": "SENT_TO",
+      "verses": "2:102",
+      "vc": 1
+    },
+    {
+      "source": "Marut",
+      "target": "Babylon",
+      "rel_ar": "أُنزل في",
+      "rel_en": "SENT_TO",
+      "verses": "2:102",
+      "vc": 1
+    },
+    {
+      "source": "Harut",
+      "target": "Mankind",
+      "rel_ar": "علّما",
+      "rel_en": "TAUGHT_MAGIC_TO",
+      "verses": "2:102",
+      "vc": 1
+    },
+    {
+      "source": "Marut",
+      "target": "Mankind",
+      "rel_ar": "علّما",
+      "rel_en": "TAUGHT_MAGIC_TO",
+      "verses": "2:102",
+      "vc": 1
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Gog_and_Magog",
+      "rel_ar": "بنى السد ضد",
+      "rel_en": "BUILT_BARRIER_AGAINST",
+      "verses": "18:94, 18:95, 18:96",
+      "vc": 3
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Earth",
+      "rel_ar": "مكّنه الله في",
+      "rel_en": "EMPOWERED_IN",
+      "verses": "18:84",
+      "vc": 1
+    },
+    {
+      "source": "Gog_and_Magog",
+      "target": "Earth",
+      "rel_ar": "يُفسدون في",
+      "rel_en": "CORRUPT_IN",
+      "verses": "18:94, 21:96",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Cave",
+      "target": "The_Cave",
+      "rel_ar": "لجؤوا إلى",
+      "rel_en": "FLED_TO",
+      "verses": "18:10, 18:16",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Cave",
+      "target": "Allah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "18:13",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Cave",
+      "target": "309_Years",
+      "rel_ar": "ناموا",
+      "rel_en": "SLEPT_FOR",
+      "verses": "18:25",
+      "vc": 1
+    },
+    {
+      "source": "Jesus",
+      "target": "Table_Spread",
+      "rel_ar": "دعا الله بـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "5:114",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Table_Spread",
+      "rel_ar": "أنزل",
+      "rel_en": "SENT_DOWN",
+      "verses": "5:115",
+      "vc": 1
+    },
+    {
+      "source": "Disciples",
+      "target": "Table_Spread",
+      "rel_ar": "طلبوا",
+      "rel_en": "REQUESTED",
+      "verses": "5:112",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Makkah",
+      "rel_ar": "هاجر إلى",
+      "rel_en": "MIGRATED_TO",
+      "verses": "14:37",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Babylon",
+      "rel_ar": "هاجر من",
+      "rel_en": "MIGRATED_FROM",
+      "verses": "21:71, 29:26",
+      "vc": 2
+    },
+    {
+      "source": "Lot",
+      "target": "Ibrahim",
+      "rel_ar": "هاجر مع",
+      "rel_en": "MIGRATED_WITH",
+      "verses": "21:71, 29:26",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Egypt",
+      "rel_ar": "نشأ في",
+      "rel_en": "GREW_UP_IN",
+      "verses": "28:3, 28:14",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "People_of_Madyan",
+      "rel_ar": "هرب إلى",
+      "rel_en": "FLED_TO",
+      "verses": "28:22, 28:25",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Mount_Sinai",
+      "rel_ar": "كُلّم عند",
+      "rel_en": "SPOKE_TO_GOD_AT",
+      "verses": "19:52, 20:12, 28:30, 79:16",
+      "vc": 4
+    },
+    {
+      "source": "Muhammad",
+      "target": "Madinah",
+      "rel_ar": "هاجر إلى",
+      "rel_en": "MIGRATED_TO",
+      "verses": "9:100, 9:117",
+      "vc": 2
+    },
+    {
+      "source": "Muhammad",
+      "target": "Al-Aqsa",
+      "rel_ar": "أُسري به إلى",
+      "rel_en": "NIGHT_JOURNEY_TO",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Joseph",
+      "target": "Egypt",
+      "rel_ar": "عاش في",
+      "rel_en": "LIVED_IN",
+      "verses": "12:21, 12:56, 12:99",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "اتّخذ خليلاً",
+      "rel_en": "TOOK_AS_FRIEND",
+      "verses": "4:125",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "كلّم تكليماً",
+      "rel_en": "SPOKE_DIRECTLY_TO",
+      "verses": "4:164",
+      "vc": 1
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "كلمة الله",
+      "rel_en": "WORD_OF",
+      "verses": "3:45, 4:171",
+      "vc": 2
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "روح من",
+      "rel_en": "SPIRIT_FROM",
+      "verses": "4:171",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "جعل خليفة",
+      "rel_en": "MADE_VICEGERENT",
+      "verses": "2:30",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "اصطفى",
+      "rel_en": "CHOSE",
+      "verses": "3:33",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Noah",
+      "rel_ar": "اصطفى",
+      "rel_en": "CHOSE",
+      "verses": "3:33",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "اصطفى آل",
+      "rel_en": "CHOSE_FAMILY_OF",
+      "verses": "3:33",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Imran",
+      "rel_ar": "اصطفى آل",
+      "rel_en": "CHOSE_FAMILY_OF",
+      "verses": "3:33",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Mary",
+      "rel_ar": "اصطفى",
+      "rel_en": "CHOSE",
+      "verses": "3:42",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "The_Prophets",
+      "rel_ar": "خاتم",
+      "rel_en": "SEAL_OF",
+      "verses": "33:40",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "فضّل على العالمين",
+      "rel_en": "FAVORED_OVER_ALL",
+      "verses": "2:47, 2:122, 44:32, 45:16",
+      "vc": 4
+    },
+    {
+      "source": "Noah",
+      "target": "People_of_Noah",
+      "rel_ar": "دعا على",
+      "rel_en": "PRAYED_AGAINST",
+      "verses": "71:26, 54:10",
+      "vc": 2
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Ismail",
+      "rel_ar": "دعا لـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "14:39",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Isaac",
+      "rel_ar": "دعا لـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "14:39",
+      "vc": 1
+    },
+    {
+      "source": "Zachariah",
+      "target": "John",
+      "rel_ar": "دعا الله لـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "3:38, 19:5, 21:89",
+      "vc": 3
+    },
+    {
+      "source": "Job",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "CALLED_UPON",
+      "verses": "21:83, 38:41",
+      "vc": 2
+    },
+    {
+      "source": "Jonah",
+      "target": "The_Whale",
+      "rel_ar": "دعا من بطن",
+      "rel_en": "CALLED_FROM_BELLY_OF",
+      "verses": "21:87, 37:143",
+      "vc": 2
+    },
+    {
+      "source": "Luqman",
+      "target": "Son_of_Luqman",
+      "rel_ar": "نهى عن الشرك",
+      "rel_en": "WARNED_AGAINST_POLYTHEISM",
+      "verses": "31:13",
+      "vc": 1
+    },
+    {
+      "source": "Luqman",
+      "target": "Son_of_Luqman",
+      "rel_ar": "أمر بالصلاة والمعروف",
+      "rel_en": "COMMANDED_PRAYER_AND_GOOD",
+      "verses": "31:17",
+      "vc": 1
+    },
+    {
+      "source": "Luqman",
+      "target": "Son_of_Luqman",
+      "rel_ar": "نهى عن التكبّر",
+      "rel_en": "WARNED_AGAINST_ARROGANCE",
+      "verses": "31:18",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Day_of_Judgment",
+      "rel_ar": "يبعث في",
+      "rel_en": "RESURRECTS_ON",
+      "verses": "2:28, 22:7, 36:51, 50:42",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Day_of_Judgment",
+      "rel_ar": "يحاسب في",
+      "rel_en": "JUDGES_ON",
+      "verses": "2:281, 3:25, 39:69, 40:17",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Paradise",
+      "rel_ar": "أعدّ للمؤمنين",
+      "rel_en": "PREPARED_FOR_BELIEVERS",
+      "verses": "2:25, 3:133, 4:57, 9:72, 47:15",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Hell",
+      "rel_ar": "أعدّ للكافرين",
+      "rel_en": "PREPARED_FOR_DISBELIEVERS",
+      "verses": "2:24, 3:131, 4:56, 9:68, 14:16",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Ark_of_Covenant",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "2:248",
+      "vc": 1
+    },
+    {
+      "source": "Ark_of_Covenant",
+      "target": "Children_of_Israel",
+      "rel_ar": "حمله إلى",
+      "rel_en": "CARRIED_TO",
+      "verses": "2:248",
+      "vc": 1
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Battle_of_Badr",
+      "rel_ar": "قاتلوا في",
+      "rel_en": "FOUGHT_IN",
+      "verses": "3:13, 3:123, 8:5, 8:7",
+      "vc": 4
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Battle_of_Uhud",
+      "rel_ar": "قاتلوا في",
+      "rel_en": "FOUGHT_IN",
+      "verses": "3:121, 3:140, 3:152, 3:155",
+      "vc": 4
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Battle_of_Trench",
+      "rel_ar": "قاتلوا في",
+      "rel_en": "FOUGHT_IN",
+      "verses": "33:9, 33:10, 33:22, 33:25",
+      "vc": 4
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Battle_of_Badr",
+      "rel_ar": "انتصروا في",
+      "rel_en": "WON",
+      "verses": "3:123, 8:9, 8:10",
+      "vc": 3
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Battle_of_Trench",
+      "rel_ar": "حوصروا في",
+      "rel_en": "BESIEGED_IN",
+      "verses": "33:10, 33:11",
+      "vc": 2
+    },
+    {
+      "source": "Muhammad",
+      "target": "Battle_of_Badr",
+      "rel_ar": "قاد",
+      "rel_en": "LED",
+      "verses": "8:5, 8:42",
+      "vc": 2
+    },
+    {
+      "source": "Sheba",
+      "target": "Dam_of_Marib",
+      "rel_ar": "كان لهم",
+      "rel_en": "HAD",
+      "verses": "34:15, 34:16",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Sheba",
+      "rel_ar": "أرسل سيل العرم على",
+      "rel_en": "SENT_FLOOD_AGAINST",
+      "verses": "34:16",
+      "vc": 1
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "ليس ابن",
+      "rel_en": "NOT_SON_OF",
+      "verses": "5:17, 5:72, 9:30, 19:35",
+      "vc": 4
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "عبد",
+      "rel_en": "SERVANT_OF",
+      "verses": "4:172, 19:30, 43:59",
+      "vc": 3
+    },
+    {
+      "source": "Jesus",
+      "target": "Adam",
+      "rel_ar": "مثله كمثل",
+      "rel_en": "LIKENED_TO",
+      "verses": "3:59",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "David",
+      "rel_ar": "جعل نبيّاً ملكاً",
+      "rel_en": "MADE_PROPHET_KING",
+      "verses": "2:251, 38:20",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Solomon",
+      "rel_ar": "جعل نبيّاً ملكاً",
+      "rel_en": "MADE_PROPHET_KING",
+      "verses": "27:15, 38:30",
+      "vc": 2
+    },
+    {
+      "source": "Disbelieving_Son_of_Noah",
+      "target": "Ark_of_Noah",
+      "rel_ar": "رفض ركوب",
+      "rel_en": "REFUSED_TO_BOARD",
+      "verses": "11:42, 11:43",
+      "vc": 2
+    },
+    {
+      "source": "Wife_of_Noah",
+      "target": "Noah",
+      "rel_ar": "خانت",
+      "rel_en": "BETRAYED",
+      "verses": "66:10",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Lot",
+      "target": "Lot",
+      "rel_ar": "خانت",
+      "rel_en": "BETRAYED",
+      "verses": "7:83, 11:81, 15:60, 26:171, 27:57, 29:32, 29:33, 66:10",
+      "vc": 8
+    },
+    {
+      "source": "Abu_Lahab",
+      "target": "Muhammad",
+      "rel_ar": "عمّ",
+      "rel_en": "UNCLE_OF",
+      "verses": "111:1",
+      "vc": 1
+    },
+    {
+      "source": "Abu_Lahab",
+      "target": "Muhammad",
+      "rel_ar": "عادى",
+      "rel_en": "OPPOSED",
+      "verses": "111:1, 111:3",
+      "vc": 2
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Ismail",
+      "rel_ar": "رأى في المنام ذبح",
+      "rel_en": "DREAMT_OF_SACRIFICING",
+      "verses": "37:102",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Ismail",
+      "rel_ar": "همّ بذبح",
+      "rel_en": "ATTEMPTED_TO_SACRIFICE",
+      "verses": "37:102, 37:103, 37:107",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Ismail",
+      "rel_ar": "فدى بذبح عظيم",
+      "rel_en": "RANSOMED_WITH_SACRIFICE",
+      "verses": "37:107",
+      "vc": 1
+    },
+    {
+      "source": "Mother_of_Mary",
+      "target": "Mary",
+      "rel_ar": "نذرت",
+      "rel_en": "VOWED",
+      "verses": "3:35",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "The_Chamber",
+      "rel_ar": "تعبّدت في",
+      "rel_en": "WORSHIPPED_IN",
+      "verses": "3:37, 19:16",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Mary",
+      "rel_ar": "رزق",
+      "rel_en": "PROVIDED_FOR",
+      "verses": "3:37",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "أنزل المنّ والسلوى على",
+      "rel_en": "SENT_MANNA_AND_QUAILS_TO",
+      "verses": "2:57, 7:160, 20:80",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "فجّر لهم 12 عيناً لـ",
+      "rel_en": "GUSHED_12_SPRINGS_FOR",
+      "verses": "2:60, 7:160",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "ظلّل بالغمام",
+      "rel_en": "SHADED_WITH_CLOUDS",
+      "verses": "2:57, 7:160",
+      "vc": 2
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "The_Wilderness",
+      "rel_ar": "تاهوا في",
+      "rel_en": "WANDERED_IN",
+      "verses": "5:26",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "أسرى بـ",
+      "rel_en": "TOOK_ON_NIGHT_JOURNEY",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Al-Masjid_Al-Haram",
+      "rel_ar": "أُسري به من",
+      "rel_en": "NIGHT_JOURNEY_FROM",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Sidrat_Al-Muntaha",
+      "rel_ar": "رأى عند",
+      "rel_en": "SAW_REVELATION_AT",
+      "verses": "53:14, 53:16",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "خلق",
+      "rel_en": "CREATED",
+      "verses": "2:30, 3:59, 7:11, 15:26, 15:28, 38:71",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Heavens",
+      "rel_ar": "خلق",
+      "rel_en": "CREATED",
+      "verses": "2:29, 6:1, 7:54, 10:3, 21:30, 41:9",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Earth",
+      "rel_ar": "خلق",
+      "rel_en": "CREATED",
+      "verses": "2:29, 6:1, 7:54, 10:3, 21:30, 41:9",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Angels",
+      "rel_ar": "خلق",
+      "rel_en": "CREATED",
+      "verses": "35:1",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Jinn",
+      "rel_ar": "خلق",
+      "rel_en": "CREATED",
+      "verses": "15:27, 51:56, 55:15",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Iblis",
+      "rel_ar": "خلق من نار",
+      "rel_en": "CREATED_FROM_FIRE",
+      "verses": "7:12, 38:76",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "خلق من طين",
+      "rel_en": "CREATED_FROM_CLAY",
+      "verses": "3:59, 6:2, 7:12, 15:26, 23:12, 32:7, 38:71",
+      "vc": 7
+    },
+    {
+      "source": "Noah",
+      "target": "People_of_Noah",
+      "rel_ar": "دعا إلى التوحيد",
+      "rel_en": "CALLED_TO_MONOTHEISM",
+      "verses": "7:59, 11:26, 23:23, 71:2",
+      "vc": 4
+    },
+    {
+      "source": "Hud",
+      "target": "Aad",
+      "rel_ar": "دعا إلى التوحيد",
+      "rel_en": "CALLED_TO_MONOTHEISM",
+      "verses": "7:65, 11:50, 26:124",
+      "vc": 3
+    },
+    {
+      "source": "Salih",
+      "target": "Thamud",
+      "rel_ar": "دعا إلى التوحيد",
+      "rel_en": "CALLED_TO_MONOTHEISM",
+      "verses": "7:73, 11:61, 26:142",
+      "vc": 3
+    },
+    {
+      "source": "Shuaib",
+      "target": "People_of_Madyan",
+      "rel_ar": "دعا إلى العدل في الميزان",
+      "rel_en": "CALLED_TO_FAIR_MEASURE",
+      "verses": "7:85, 11:84, 26:181",
+      "vc": 3
+    },
+    {
+      "source": "Jacob",
+      "target": "Twelve_Tribes",
+      "rel_ar": "أب لـ",
+      "rel_en": "FATHER_OF",
+      "verses": "2:136, 2:140, 3:84, 4:163",
+      "vc": 4
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Jacob",
+      "rel_ar": "جدّ",
+      "rel_en": "GRANDFATHER_OF",
+      "verses": "2:133, 11:71, 29:27",
+      "vc": 3
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Children_of_Israel",
+      "rel_ar": "جدّ",
+      "rel_en": "GRANDFATHER_OF",
+      "verses": "2:40, 2:47",
+      "vc": 2
+    },
+    {
+      "source": "Ismail",
+      "target": "Muhammad",
+      "rel_ar": "جدّ",
+      "rel_en": "ANCESTOR_OF",
+      "verses": "2:129",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Mothers_of_Believers",
+      "rel_ar": "قيل له عن أزواجه",
+      "rel_en": "ADDRESSED_ABOUT_WIVES",
+      "verses": "33:28, 33:30, 33:32, 33:50, 33:51, 33:52, 33:59, 66:1, 66:3, 66:4, 66:5",
+      "vc": 11
+    },
+    {
+      "source": "Ibrahim",
+      "target": "The_Prophets",
+      "rel_ar": "أبو الأنبياء",
+      "rel_en": "PATRIARCH_OF",
+      "verses": "22:78, 2:130, 3:95, 4:125, 6:161, 16:123",
+      "vc": 6
+    },
+    {
+      "source": "Quran",
+      "target": "Torah",
+      "rel_ar": "مصدّق لـ",
+      "rel_en": "CONFIRMS",
+      "verses": "2:41, 2:91, 2:97, 3:3, 5:48, 6:92, 46:12",
+      "vc": 7
+    },
+    {
+      "source": "Quran",
+      "target": "Gospel",
+      "rel_ar": "مصدّق لـ",
+      "rel_en": "CONFIRMS",
+      "verses": "3:3, 5:46, 5:48",
+      "vc": 3
+    },
+    {
+      "source": "Quran",
+      "target": "Torah",
+      "rel_ar": "مهيمن على",
+      "rel_en": "SUPERSEDES",
+      "verses": "5:48",
+      "vc": 1
+    },
+    {
+      "source": "Quran",
+      "target": "Gospel",
+      "rel_ar": "مهيمن على",
+      "rel_en": "SUPERSEDES",
+      "verses": "5:48",
+      "vc": 1
+    },
+    {
+      "source": "Jesus",
+      "target": "Muhammad",
+      "rel_ar": "بشّر بـ",
+      "rel_en": "FORETOLD",
+      "verses": "61:6",
+      "vc": 1
+    },
+    {
+      "source": "Torah",
+      "target": "Muhammad",
+      "rel_ar": "بشّرت بـ",
+      "rel_en": "FORETOLD",
+      "verses": "7:157, 48:29",
+      "vc": 2
+    },
+    {
+      "source": "Gospel",
+      "target": "Muhammad",
+      "rel_ar": "بشّر بـ",
+      "rel_en": "FORETOLD",
+      "verses": "7:157, 48:29",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Pharaoh",
+      "target": "Pharaoh",
+      "rel_ar": "تبعوا",
+      "rel_en": "FOLLOWED",
+      "verses": "3:11, 8:52, 8:54, 54:41",
+      "vc": 5
+    },
+    {
+      "source": "People_of_Pharaoh",
+      "target": "Moses",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "3:11, 8:52, 8:54, 40:46, 54:41",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Pharaoh",
+      "rel_ar": "عاقب",
+      "rel_en": "PUNISHED",
+      "verses": "3:11, 7:130, 7:133, 8:54, 54:42",
+      "vc": 5
+    },
+    {
+      "source": "People_of_Pharaoh",
+      "target": "Children_of_Israel",
+      "rel_ar": "استعبدوا",
+      "rel_en": "ENSLAVED",
+      "verses": "2:49, 7:127, 7:141, 14:6, 28:4",
+      "vc": 5
+    },
+    {
+      "source": "People_of_Pharaoh",
+      "target": "Egypt",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "7:137, 10:87, 28:4, 43:51",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Pharaoh",
+      "rel_ar": "أرسل الطوفان والجراد على",
+      "rel_en": "SENT_PLAGUES_ON",
+      "verses": "7:130, 7:133, 7:134, 7:135, 7:136",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Romans",
+      "rel_ar": "تنبّأ بانتصار",
+      "rel_en": "FORETOLD_VICTORY_OF",
+      "verses": "30:2, 30:3, 30:4",
+      "vc": 3
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Muhammad",
+      "rel_ar": "أظهروا الإيمان لـ",
+      "rel_en": "PRETENDED_FAITH_TO",
+      "verses": "2:8, 2:14, 4:142, 9:64, 63:1",
+      "vc": 5
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Allah",
+      "rel_ar": "خادعوا",
+      "rel_en": "DECEIVED",
+      "verses": "2:9, 4:142",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Hypocrites",
+      "rel_ar": "توعّد",
+      "rel_en": "WARNED",
+      "verses": "4:145, 9:68, 33:73, 48:6, 63:6",
+      "vc": 5
+    },
+    {
+      "source": "Hypocrites",
+      "target": "The_Muslims",
+      "rel_ar": "ثبّطوا",
+      "rel_en": "UNDERMINED",
+      "verses": "3:167, 9:42, 9:45, 9:81, 33:12",
+      "vc": 5
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Hell",
+      "rel_ar": "مصيرهم",
+      "rel_en": "DESTINED_FOR",
+      "verses": "4:145, 9:68, 57:13",
+      "vc": 3
+    },
+    {
+      "source": "People_of_Book",
+      "target": "Torah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "3:23, 3:93, 4:44, 5:43",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Book",
+      "target": "Gospel",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "5:47, 5:65, 5:68, 57:27",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Book",
+      "target": "Muhammad",
+      "rel_ar": "دُعوا لتصديق",
+      "rel_en": "CALLED_TO_BELIEVE_IN",
+      "verses": "3:20, 3:64, 3:110, 5:15, 98:1",
+      "vc": 5
+    },
+    {
+      "source": "People_of_Book",
+      "target": "Quran",
+      "rel_ar": "دُعوا للإيمان بـ",
+      "rel_en": "CALLED_TO_BELIEVE_IN",
+      "verses": "2:41, 2:91, 3:70, 4:47",
+      "vc": 4
+    },
+    {
+      "source": "Ansar",
+      "target": "Muhammad",
+      "rel_ar": "نصروا",
+      "rel_en": "SUPPORTED",
+      "verses": "8:72, 8:74, 9:100, 9:117",
+      "vc": 4
+    },
+    {
+      "source": "Ansar",
+      "target": "Madinah",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "9:100, 9:117, 59:9",
+      "vc": 3
+    },
+    {
+      "source": "Muhajirin",
+      "target": "Makkah",
+      "rel_ar": "هاجروا من",
+      "rel_en": "EMIGRATED_FROM",
+      "verses": "2:218, 8:72, 8:74, 9:100, 16:110",
+      "vc": 5
+    },
+    {
+      "source": "Muhajirin",
+      "target": "Madinah",
+      "rel_ar": "هاجروا إلى",
+      "rel_en": "EMIGRATED_TO",
+      "verses": "2:218, 8:72, 9:100, 59:8",
+      "vc": 4
+    },
+    {
+      "source": "Muhajirin",
+      "target": "Muhammad",
+      "rel_ar": "اتّبعوا",
+      "rel_en": "FOLLOWED",
+      "verses": "9:100, 9:117",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Ansar",
+      "rel_ar": "رضي عن",
+      "rel_en": "PLEASED_WITH",
+      "verses": "9:100",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Muhajirin",
+      "rel_ar": "رضي عن",
+      "rel_en": "PLEASED_WITH",
+      "verses": "9:100",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Ditch",
+      "target": "Allah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "85:4, 85:7, 85:8",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Ditch",
+      "rel_ar": "لعن قاتلي",
+      "rel_en": "CURSED_KILLERS_OF",
+      "verses": "85:4, 85:10",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Tubba",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "44:37, 50:14",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Tubba",
+      "target": "Muhammad",
+      "rel_ar": "كذّبوا الرسل قبل",
+      "rel_en": "DENIED_MESSENGERS",
+      "verses": "44:37, 50:14",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Al-Rass",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "25:38, 50:12",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Al-Rass",
+      "target": "Allah",
+      "rel_ar": "كذّبوا الرسل",
+      "rel_en": "DENIED_MESSENGERS",
+      "verses": "25:38, 50:12",
+      "vc": 2
+    },
+    {
+      "source": "Polytheists",
+      "target": "Allah",
+      "rel_ar": "أشركوا بـ",
+      "rel_en": "ASSOCIATED_PARTNERS_WITH",
+      "verses": "6:1, 6:22, 6:136, 16:35, 39:3",
+      "vc": 5
+    },
+    {
+      "source": "Polytheists",
+      "target": "The_Idols",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "6:74, 14:35, 21:52, 26:71, 37:85",
+      "vc": 5
+    },
+    {
+      "source": "Polytheists",
+      "target": "Muhammad",
+      "rel_ar": "حاربوا",
+      "rel_en": "FOUGHT",
+      "verses": "8:30, 8:36, 9:1, 9:5, 33:25",
+      "vc": 5
+    },
+    {
+      "source": "Michael",
+      "target": "Allah",
+      "rel_ar": "ملاك",
+      "rel_en": "ANGEL_OF",
+      "verses": "2:98",
+      "vc": 1
+    },
+    {
+      "source": "Michael",
+      "target": "Gabriel",
+      "rel_ar": "معاً ذُكرا",
+      "rel_en": "MENTIONED_WITH",
+      "verses": "2:98",
+      "vc": 1
+    },
+    {
+      "source": "Angel_of_Death",
+      "target": "Allah",
+      "rel_ar": "يقبض الأرواح بأمر",
+      "rel_en": "TAKES_SOULS_BY_COMMAND_OF",
+      "verses": "6:61, 32:11",
+      "vc": 2
+    },
+    {
+      "source": "Angel_of_Death",
+      "target": "Mankind",
+      "rel_ar": "يتوفّى",
+      "rel_en": "TAKES_SOULS_OF",
+      "verses": "6:61, 32:11",
+      "vc": 2
+    },
+    {
+      "source": "Israfil",
+      "target": "Day_of_Judgment",
+      "rel_ar": "ينفخ في الصور يوم",
+      "rel_en": "BLOWS_TRUMPET_ON",
+      "verses": "18:99, 20:102, 27:87, 36:51, 39:68, 69:13, 78:18",
+      "vc": 7
+    },
+    {
+      "source": "Malik",
+      "target": "Hell",
+      "rel_ar": "خازن",
+      "rel_en": "GUARDIAN_OF",
+      "verses": "43:77",
+      "vc": 1
+    },
+    {
+      "source": "Aaron",
+      "target": "Children_of_Israel",
+      "rel_ar": "خليفة موسى على",
+      "rel_en": "DEPUTY_OVER",
+      "verses": "7:142",
+      "vc": 1
+    },
+    {
+      "source": "Aaron",
+      "target": "Moses",
+      "rel_ar": "وزير",
+      "rel_en": "MINISTER_OF",
+      "verses": "20:29, 20:30, 25:35, 28:35",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Aaron",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "4:163, 6:84, 10:75, 23:45, 37:114",
+      "vc": 5
+    },
+    {
+      "source": "Aaron",
+      "target": "Golden_Calf",
+      "rel_ar": "نهى عن عبادة",
+      "rel_en": "WARNED_AGAINST",
+      "verses": "20:90, 20:92, 20:94",
+      "vc": 3
+    },
+    {
+      "source": "Al-Aziz",
+      "target": "Egypt",
+      "rel_ar": "حكم في",
+      "rel_en": "RULED_IN",
+      "verses": "12:21, 12:30, 12:51",
+      "vc": 3
+    },
+    {
+      "source": "Al-Samiri",
+      "target": "Children_of_Israel",
+      "rel_ar": "أضلّ",
+      "rel_en": "MISLED",
+      "verses": "20:85, 20:87, 20:88, 20:95",
+      "vc": 4
+    },
+    {
+      "source": "Moses",
+      "target": "Al-Samiri",
+      "rel_ar": "عاقب",
+      "rel_en": "PUNISHED",
+      "verses": "20:95, 20:97",
+      "vc": 2
+    },
+    {
+      "source": "Namrud",
+      "target": "Ibrahim",
+      "rel_ar": "حاجّ",
+      "rel_en": "ARGUED_WITH",
+      "verses": "2:258",
+      "vc": 1
+    },
+    {
+      "source": "Namrud",
+      "target": "Allah",
+      "rel_ar": "ادّعى الربوبية أمام",
+      "rel_en": "CLAIMED_LORDSHIP_BEFORE",
+      "verses": "2:258",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Namrud",
+      "rel_ar": "حاجّ",
+      "rel_en": "DEBATED",
+      "verses": "2:258",
+      "vc": 1
+    },
+    {
+      "source": "Goliath",
+      "target": "Talut",
+      "rel_ar": "حارب",
+      "rel_en": "FOUGHT",
+      "verses": "2:249, 2:250, 2:251",
+      "vc": 3
+    },
+    {
+      "source": "Goliath",
+      "target": "Children_of_Israel",
+      "rel_ar": "حارب",
+      "rel_en": "FOUGHT",
+      "verses": "2:249, 2:250, 2:251",
+      "vc": 3
+    },
+    {
+      "source": "Talut",
+      "target": "Ark_of_Covenant",
+      "rel_ar": "جاء بـ",
+      "rel_en": "CAME_WITH",
+      "verses": "2:248",
+      "vc": 1
+    },
+    {
+      "source": "Haman",
+      "target": "Pharaoh",
+      "rel_ar": "بنى صرحاً لـ",
+      "rel_en": "BUILT_TOWER_FOR",
+      "verses": "28:38, 40:36, 40:37",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Haman",
+      "rel_ar": "أغرق",
+      "rel_en": "DROWNED",
+      "verses": "28:40, 29:39",
+      "vc": 2
+    },
+    {
+      "source": "Uzayr",
+      "target": "Allah",
+      "rel_ar": "قالوا ابن",
+      "rel_en": "FALSELY_CALLED_SON_OF",
+      "verses": "9:30",
+      "vc": 1
+    },
+    {
+      "source": "Uzayr",
+      "target": "Children_of_Israel",
+      "rel_ar": "عُظّم من قبل",
+      "rel_en": "REVERED_BY",
+      "verses": "9:30",
+      "vc": 1
+    },
+    {
+      "source": "Magicians_of_Pharaoh",
+      "target": "Pharaoh",
+      "rel_ar": "خدموا",
+      "rel_en": "SERVED",
+      "verses": "7:113, 7:116, 20:60, 26:37, 26:38",
+      "vc": 5
+    },
+    {
+      "source": "Magicians_of_Pharaoh",
+      "target": "Moses",
+      "rel_ar": "تحدّوا",
+      "rel_en": "CHALLENGED",
+      "verses": "7:116, 20:65, 26:43, 26:44",
+      "vc": 4
+    },
+    {
+      "source": "Magicians_of_Pharaoh",
+      "target": "Allah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "7:120, 7:121, 20:70, 26:46, 26:47, 26:48",
+      "vc": 6
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Magicians_of_Pharaoh",
+      "rel_ar": "هدّد بالقتل",
+      "rel_en": "THREATENED_TO_KILL",
+      "verses": "7:124, 20:71, 26:49",
+      "vc": 3
+    },
+    {
+      "source": "Great_Flood",
+      "target": "People_of_Noah",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "7:64, 10:73, 11:37, 25:37, 26:120, 29:14, 71:25",
+      "vc": 7
+    },
+    {
+      "source": "Allah",
+      "target": "Great_Flood",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "7:64, 11:40, 29:14, 71:25",
+      "vc": 4
+    },
+    {
+      "source": "Noah",
+      "target": "Great_Flood",
+      "rel_ar": "نجا من",
+      "rel_en": "SURVIVED",
+      "verses": "11:40, 23:27, 29:15, 37:76",
+      "vc": 4
+    },
+    {
+      "source": "Ark_of_Noah",
+      "target": "Great_Flood",
+      "rel_ar": "نجّت من",
+      "rel_en": "SAVED_FROM",
+      "verses": "11:40, 23:27, 29:15, 54:13",
+      "vc": 4
+    },
+    {
+      "source": "Night_Journey",
+      "target": "Al-Masjid_Al-Haram",
+      "rel_ar": "انطلق من",
+      "rel_en": "STARTED_FROM",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Night_Journey",
+      "target": "Al-Aqsa",
+      "rel_ar": "انتهى إلى",
+      "rel_en": "ENDED_AT",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Night_Journey",
+      "rel_ar": "قام بـ",
+      "rel_en": "UNDERTOOK",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Ascension",
+      "target": "Sidrat_Al-Muntaha",
+      "rel_ar": "وصل إلى",
+      "rel_en": "REACHED",
+      "verses": "53:14, 53:16",
+      "vc": 2
+    },
+    {
+      "source": "Muhammad",
+      "target": "Ascension",
+      "rel_ar": "عرج في",
+      "rel_en": "ASCENDED_IN",
+      "verses": "53:7, 53:8, 53:9, 53:13, 53:14",
+      "vc": 5
+    },
+    {
+      "source": "Gabriel",
+      "target": "Night_Journey",
+      "rel_ar": "رافق في",
+      "rel_en": "ACCOMPANIED_IN",
+      "verses": "53:5, 53:6, 53:7, 81:19",
+      "vc": 4
+    },
+    {
+      "source": "Battle_of_Badr",
+      "target": "Badr",
+      "rel_ar": "وقعت في",
+      "rel_en": "TOOK_PLACE_AT",
+      "verses": "3:123",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Battle_of_Badr",
+      "rel_ar": "قاتلوا في",
+      "rel_en": "FOUGHT_IN",
+      "verses": "8:5, 8:7, 8:36, 8:42, 8:48",
+      "vc": 5
+    },
+    {
+      "source": "Battle_of_Uhud",
+      "target": "Uhud",
+      "rel_ar": "وقعت في",
+      "rel_en": "TOOK_PLACE_AT",
+      "verses": "3:121",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Battle_of_Uhud",
+      "rel_ar": "قاتلوا في",
+      "rel_en": "FOUGHT_IN",
+      "verses": "3:121, 3:140, 3:152",
+      "vc": 3
+    },
+    {
+      "source": "Battle_of_Trench",
+      "target": "The_Trench",
+      "rel_ar": "وقعت في",
+      "rel_en": "TOOK_PLACE_AT",
+      "verses": "33:9",
+      "vc": 1
+    },
+    {
+      "source": "Conquest_of_Makkah",
+      "target": "Makkah",
+      "rel_ar": "فُتحت",
+      "rel_en": "CONQUEST_OF",
+      "verses": "48:1, 48:18, 48:27, 110:1",
+      "vc": 4
+    },
+    {
+      "source": "Muhammad",
+      "target": "Conquest_of_Makkah",
+      "rel_ar": "قاد",
+      "rel_en": "LED",
+      "verses": "48:1, 48:18, 110:1",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Conquest_of_Makkah",
+      "rel_ar": "وعد بـ",
+      "rel_en": "PROMISED",
+      "verses": "48:1, 48:27",
+      "vc": 2
+    },
+    {
+      "source": "Treaty_of_Hudaybiyyah",
+      "target": "Muhammad",
+      "rel_ar": "عقد",
+      "rel_en": "MADE_BY",
+      "verses": "48:1, 48:10, 48:18",
+      "vc": 3
+    },
+    {
+      "source": "Treaty_of_Hudaybiyyah",
+      "target": "Quraysh",
+      "rel_ar": "مع",
+      "rel_en": "WITH",
+      "verses": "48:1, 48:24, 48:25",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Treaty_of_Hudaybiyyah",
+      "rel_ar": "سمّاه فتحاً",
+      "rel_en": "CALLED_IT_VICTORY",
+      "verses": "48:1",
+      "vc": 1
+    },
+    {
+      "source": "Hunayn",
+      "target": "The_Muslims",
+      "rel_ar": "قاتل فيها",
+      "rel_en": "FOUGHT_AT",
+      "verses": "9:25, 9:26, 9:27",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Hunayn",
+      "rel_ar": "نصر المسلمين في",
+      "rel_en": "GAVE_VICTORY_AT",
+      "verses": "9:25, 9:26",
+      "vc": 2
+    },
+    {
+      "source": "Aad",
+      "target": "Al-Ahqaf",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "46:21",
+      "vc": 1
+    },
+    {
+      "source": "Aad",
+      "target": "Iram",
+      "rel_ar": "بنوا",
+      "rel_en": "BUILT",
+      "verses": "89:7, 89:8",
+      "vc": 2
+    },
+    {
+      "source": "Thamud",
+      "target": "Al-Hijr",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "15:80",
+      "vc": 1
+    },
+    {
+      "source": "Sheba",
+      "target": "Sheba_Kingdom",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "34:15",
+      "vc": 1
+    },
+    {
+      "source": "Queen_of_Sheba",
+      "target": "Sheba_Kingdom",
+      "rel_ar": "حكمت",
+      "rel_en": "RULED",
+      "verses": "27:23",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Lot",
+      "rel_ar": "آوى",
+      "rel_en": "SHELTERED",
+      "verses": "21:71, 29:26",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Aaron",
+      "rel_ar": "طلب من الله مساعدة",
+      "rel_en": "ASKED_GOD_FOR_HELP_OF",
+      "verses": "20:29, 20:30, 20:31, 20:32, 28:34",
+      "vc": 5
+    },
+    {
+      "source": "Jesus",
+      "target": "Muhammad",
+      "rel_ar": "بشّر بقدوم",
+      "rel_en": "FORETOLD_COMING_OF",
+      "verses": "61:6",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Muhammad",
+      "rel_ar": "ملّة",
+      "rel_en": "RELIGIOUS_ANCESTOR_OF",
+      "verses": "2:130, 2:135, 3:95, 4:125, 6:161, 16:123, 22:78",
+      "vc": 7
+    },
+    {
+      "source": "Noah",
+      "target": "Ibrahim",
+      "rel_ar": "سبق",
+      "rel_en": "PRECEDED",
+      "verses": "3:33, 6:84, 19:58, 57:26",
+      "vc": 4
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Moses",
+      "rel_ar": "سبق",
+      "rel_en": "PRECEDED",
+      "verses": "2:136, 3:84, 4:163, 87:19",
+      "vc": 4
+    },
+    {
+      "source": "Moses",
+      "target": "Jesus",
+      "rel_ar": "سبق",
+      "rel_en": "PRECEDED",
+      "verses": "2:87, 2:136, 5:46, 61:6",
+      "vc": 4
+    },
+    {
+      "source": "Jesus",
+      "target": "Muhammad",
+      "rel_ar": "سبق",
+      "rel_en": "PRECEDED",
+      "verses": "3:144, 33:40, 47:2, 61:6",
+      "vc": 4
+    },
+    {
+      "source": "Eve",
+      "target": "Paradise",
+      "rel_ar": "سكنت في",
+      "rel_en": "LIVED_IN",
+      "verses": "2:35, 7:19",
+      "vc": 2
+    },
+    {
+      "source": "Eve",
+      "target": "Allah",
+      "rel_ar": "عصت",
+      "rel_en": "DISOBEYED",
+      "verses": "7:22, 20:121",
+      "vc": 2
+    },
+    {
+      "source": "Adam",
+      "target": "Paradise",
+      "rel_ar": "سكن في",
+      "rel_en": "LIVED_IN",
+      "verses": "2:35, 7:19",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "أخرج من الجنة",
+      "rel_en": "EXPELLED_FROM_PARADISE",
+      "verses": "2:36, 7:24, 20:123",
+      "vc": 3
+    },
+    {
+      "source": "Adam",
+      "target": "Earth",
+      "rel_ar": "أُهبط إلى",
+      "rel_en": "DESCENDED_TO",
+      "verses": "2:36, 7:24, 20:123",
+      "vc": 3
+    },
+    {
+      "source": "Quran",
+      "target": "Mankind",
+      "rel_ar": "هدى لـ",
+      "rel_en": "GUIDANCE_FOR",
+      "verses": "2:185, 3:138, 10:57, 16:89, 17:9",
+      "vc": 5
+    },
+    {
+      "source": "Quran",
+      "target": "Al-Furqan",
+      "rel_ar": "يُسمى أيضاً",
+      "rel_en": "ALSO_KNOWN_AS",
+      "verses": "25:1",
+      "vc": 1
+    },
+    {
+      "source": "Al-Furqan",
+      "target": "Muhammad",
+      "rel_ar": "أُنزل على",
+      "rel_en": "REVEALED_TO",
+      "verses": "25:1",
+      "vc": 1
+    },
+    {
+      "source": "Tablets",
+      "target": "Mount_Sinai",
+      "rel_ar": "أُعطيت عند",
+      "rel_en": "GIVEN_AT",
+      "verses": "7:145",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "She-Camel_of_Salih",
+      "rel_ar": "أرسل كآية",
+      "rel_en": "SENT_AS_SIGN",
+      "verses": "7:73, 11:64, 17:59, 26:155, 54:27, 91:13",
+      "vc": 6
+    },
+    {
+      "source": "Ark_of_Noah",
+      "target": "Mount_Sinai",
+      "rel_ar": "رست قرب",
+      "rel_en": "RESTED_NEAR",
+      "verses": "11:44",
+      "vc": 1
+    },
+    {
+      "source": "Paradise",
+      "target": "Adam",
+      "rel_ar": "سكن فيها",
+      "rel_en": "INHABITED_BY",
+      "verses": "2:35, 7:19",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Paradise",
+      "rel_ar": "أعدّ للمتقين",
+      "rel_en": "PREPARED_FOR_RIGHTEOUS",
+      "verses": "3:133, 3:136, 4:57, 47:15, 57:21",
+      "vc": 5
+    },
+    {
+      "source": "Iblis",
+      "target": "Hell",
+      "rel_ar": "يُقاد إلى",
+      "rel_en": "LED_TO",
+      "verses": "7:18, 15:43, 38:85",
+      "vc": 3
+    },
+    {
+      "source": "Day_of_Judgment",
+      "target": "Earth",
+      "rel_ar": "تبدّل فيه",
+      "rel_en": "TRANSFORMS",
+      "verses": "14:48, 18:47, 20:105, 69:14, 81:1",
+      "vc": 5
+    },
+    {
+      "source": "Day_of_Judgment",
+      "target": "Heavens",
+      "rel_ar": "تُطوى فيه",
+      "rel_en": "FOLDED_IN",
+      "verses": "21:104, 39:67, 81:11",
+      "vc": 3
+    },
+    {
+      "source": "Golden_Calf",
+      "target": "Children_of_Israel",
+      "rel_ar": "عُبد من قبل",
+      "rel_en": "WORSHIPPED_BY",
+      "verses": "2:51, 2:54, 2:92, 7:148, 7:152, 20:88",
+      "vc": 6
+    },
+    {
+      "source": "Moses",
+      "target": "Golden_Calf",
+      "rel_ar": "حرّق ونسف",
+      "rel_en": "BURNED_AND_DESTROYED",
+      "verses": "20:97",
+      "vc": 1
+    },
+    {
+      "source": "Ark_of_Covenant",
+      "target": "Children_of_Israel",
+      "rel_ar": "سكينة لـ",
+      "rel_en": "TRANQUILITY_FOR",
+      "verses": "2:248",
+      "vc": 1
+    },
+    {
+      "source": "Ark_of_Covenant",
+      "target": "Talut",
+      "rel_ar": "جاء في عهد",
+      "rel_en": "CAME_IN_ERA_OF",
+      "verses": "2:248",
+      "vc": 1
+    },
+    {
+      "source": "Table_Spread",
+      "target": "Disciples",
+      "rel_ar": "نزلت لـ",
+      "rel_en": "SENT_DOWN_FOR",
+      "verses": "5:112, 5:113, 5:114, 5:115",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Cave",
+      "target": "Allah",
+      "rel_ar": "فتية آمنوا بـ",
+      "rel_en": "YOUTHS_WHO_BELIEVED_IN",
+      "verses": "18:13, 18:14",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Cave",
+      "rel_ar": "بعثهم",
+      "rel_en": "RESURRECTED",
+      "verses": "18:12, 18:19",
+      "vc": 2
+    },
+    {
+      "source": "Gog_and_Magog",
+      "target": "Day_of_Judgment",
+      "rel_ar": "يخرجون قبل",
+      "rel_en": "EMERGE_BEFORE",
+      "verses": "21:96",
+      "vc": 1
+    },
+    {
+      "source": "Al-Araf",
+      "target": "Paradise",
+      "rel_ar": "بين الجنة",
+      "rel_en": "BETWEEN_PARADISE",
+      "verses": "7:46, 7:48, 7:49",
+      "vc": 3
+    },
+    {
+      "source": "Al-Araf",
+      "target": "Hell",
+      "rel_ar": "والنار",
+      "rel_en": "AND_HELL",
+      "verses": "7:46, 7:48, 7:49",
+      "vc": 3
+    },
+    {
+      "source": "Al-Masjid_Al-Haram",
+      "target": "Makkah",
+      "rel_ar": "يقع في",
+      "rel_en": "LOCATED_IN",
+      "verses": "2:144, 2:149, 2:150, 2:217, 5:2",
+      "vc": 5
+    },
+    {
+      "source": "Al-Masjid_Al-Haram",
+      "target": "Kaaba",
+      "rel_ar": "يحيط بـ",
+      "rel_en": "SURROUNDS",
+      "verses": "2:125, 2:144, 22:25",
+      "vc": 3
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Al-Masjid_Al-Haram",
+      "rel_ar": "رفع قواعد",
+      "rel_en": "RAISED_FOUNDATIONS_OF",
+      "verses": "2:127, 22:26",
+      "vc": 2
+    },
+    {
+      "source": "Al-Aqsa",
+      "target": "Allah",
+      "rel_ar": "بارك حوله",
+      "rel_en": "BLESSED_SURROUNDINGS_BY",
+      "verses": "17:1",
+      "vc": 1
+    },
+    {
+      "source": "Mount_Sinai",
+      "target": "Moses",
+      "rel_ar": "كُلّم عنده",
+      "rel_en": "SPOKEN_TO_AT",
+      "verses": "7:143, 19:52, 20:12, 28:30",
+      "vc": 4
+    },
+    {
+      "source": "Mount_Sinai",
+      "target": "Tablets",
+      "rel_ar": "أُعطيت عنده",
+      "rel_en": "TABLETS_GIVEN_AT",
+      "verses": "7:145",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Mount_Sinai",
+      "rel_ar": "أقسم بـ",
+      "rel_en": "SWORE_BY",
+      "verses": "95:2",
+      "vc": 1
+    },
+    {
+      "source": "Earth",
+      "target": "Adam",
+      "rel_ar": "أُهبط إليها",
+      "rel_en": "DESCENDED_TO_BY",
+      "verses": "2:36, 7:24",
+      "vc": 2
+    },
+    {
+      "source": "Heavens",
+      "target": "Angels",
+      "rel_ar": "سكنتها",
+      "rel_en": "INHABITED_BY",
+      "verses": "53:26, 21:19, 21:20",
+      "vc": 3
+    },
+    {
+      "source": "Sidrat_Al-Muntaha",
+      "target": "Muhammad",
+      "rel_ar": "رأى عندها",
+      "rel_en": "SAW_AT",
+      "verses": "53:14, 53:16",
+      "vc": 2
+    },
+    {
+      "source": "Sidrat_Al-Muntaha",
+      "target": "Heavens",
+      "rel_ar": "في",
+      "rel_en": "LOCATED_IN",
+      "verses": "53:14, 53:15",
+      "vc": 2
+    },
+    {
+      "source": "Madinah",
+      "target": "Muhammad",
+      "rel_ar": "هاجر إليها",
+      "rel_en": "EMIGRATED_TO",
+      "verses": "9:100, 9:117",
+      "vc": 2
+    },
+    {
+      "source": "Madinah",
+      "target": "Hypocrites",
+      "rel_ar": "فيها",
+      "rel_en": "CONTAINED",
+      "verses": "9:101, 63:1, 63:7, 63:8",
+      "vc": 4
+    },
+    {
+      "source": "Badr",
+      "target": "Makkah",
+      "rel_ar": "قرب",
+      "rel_en": "NEAR",
+      "verses": "3:123",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Makkah",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "106:1, 106:2, 106:3",
+      "vc": 3
+    },
+    {
+      "source": "Quraysh",
+      "target": "Kaaba",
+      "rel_ar": "حافظوا على",
+      "rel_en": "MAINTAINED",
+      "verses": "106:3",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Quraysh",
+      "rel_ar": "أطعمهم من جوع وآمنهم",
+      "rel_en": "FED_AND_SECURED",
+      "verses": "106:4",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Elephant",
+      "target": "Kaaba",
+      "rel_ar": "أرادوا هدم",
+      "rel_en": "TRIED_TO_DESTROY",
+      "verses": "105:1, 105:2",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Elephant",
+      "target": "Makkah",
+      "rel_ar": "هاجموا",
+      "rel_en": "ATTACKED",
+      "verses": "105:1",
+      "vc": 1
+    },
+    {
+      "source": "Abu_Lahab",
+      "target": "Hell",
+      "rel_ar": "مصيره",
+      "rel_en": "DESTINED_FOR",
+      "verses": "111:1, 111:3",
+      "vc": 2
+    },
+    {
+      "source": "Wife_of_Abu_Lahab",
+      "target": "Hell",
+      "rel_ar": "مصيرها",
+      "rel_en": "DESTINED_FOR",
+      "verses": "111:4, 111:5",
+      "vc": 2
+    },
+    {
+      "source": "Wife_of_Abu_Lahab",
+      "target": "Muhammad",
+      "rel_ar": "آذت",
+      "rel_en": "HARMED",
+      "verses": "111:4",
+      "vc": 1
+    },
+    {
+      "source": "Zayd",
+      "target": "Zaynab_bint_Jahsh",
+      "rel_ar": "كان زوج",
+      "rel_en": "WAS_HUSBAND_OF",
+      "verses": "33:37",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Pharaoh",
+      "target": "Paradise",
+      "rel_ar": "دعت الله بـ",
+      "rel_en": "PRAYED_FOR",
+      "verses": "66:11",
+      "vc": 1
+    },
+    {
+      "source": "Luqman",
+      "target": "Allah",
+      "rel_ar": "آتاه الحكمة",
+      "rel_en": "GIVEN_WISDOM_BY",
+      "verses": "31:12",
+      "vc": 1
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Egypt",
+      "rel_ar": "سكنوا في",
+      "rel_en": "LIVED_IN",
+      "verses": "2:49, 7:137, 10:87, 26:59",
+      "vc": 4
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Red_Sea",
+      "rel_ar": "عبروا",
+      "rel_en": "CROSSED",
+      "verses": "2:50, 7:138, 10:90, 20:77, 26:63, 44:24",
+      "vc": 6
+    },
+    {
+      "source": "Allah",
+      "target": "Red_Sea",
+      "rel_ar": "فلق لـ بني إسرائيل",
+      "rel_en": "SPLIT_FOR",
+      "verses": "2:50, 7:138, 26:63",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Red_Sea",
+      "rel_ar": "غرق في",
+      "rel_en": "DROWNED_IN",
+      "verses": "2:50, 10:90, 17:103, 20:78, 26:66, 28:40, 43:55",
+      "vc": 7
+    },
+    {
+      "source": "Satan",
+      "target": "Adam",
+      "rel_ar": "أغوى",
+      "rel_en": "TEMPTED",
+      "verses": "2:36, 7:20, 20:120",
+      "vc": 3
+    },
+    {
+      "source": "Satan",
+      "target": "Eve",
+      "rel_ar": "أغوى",
+      "rel_en": "TEMPTED",
+      "verses": "7:20, 7:22, 20:120, 20:121",
+      "vc": 4
+    },
+    {
+      "source": "Satan",
+      "target": "بني_آدم",
+      "rel_ar": "عدو لـ",
+      "rel_en": "ENEMY_OF",
+      "verses": "2:168, 2:208, 7:22, 12:5, 35:6, 36:60",
+      "vc": 6
+    },
+    {
+      "source": "Satan",
+      "target": "Iblis",
+      "rel_ar": "يُسمى أيضاً",
+      "rel_en": "ALSO_KNOWN_AS",
+      "verses": "2:34, 7:11, 18:50",
+      "vc": 3
+    },
+    {
+      "source": "Jinn",
+      "target": "Allah",
+      "rel_ar": "خُلقوا لعبادة",
+      "rel_en": "CREATED_TO_WORSHIP",
+      "verses": "51:56",
+      "vc": 1
+    },
+    {
+      "source": "Jinn",
+      "target": "Solomon",
+      "rel_ar": "سُخّروا لـ",
+      "rel_en": "SUBJUGATED_TO",
+      "verses": "27:17, 27:39, 34:12, 34:14, 38:37",
+      "vc": 5
+    },
+    {
+      "source": "Jinn",
+      "target": "Quran",
+      "rel_ar": "سمعوا",
+      "rel_en": "HEARD",
+      "verses": "46:29, 46:30, 72:1, 72:2",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "Mother_of_Moses",
+      "rel_ar": "أوحى إلى",
+      "rel_en": "INSPIRED",
+      "verses": "20:38, 28:7",
+      "vc": 2
+    },
+    {
+      "source": "Mother_of_Moses",
+      "target": "Moses",
+      "rel_ar": "أرضعته",
+      "rel_en": "NURSED",
+      "verses": "28:7, 28:12, 28:13",
+      "vc": 3
+    },
+    {
+      "source": "Mother_of_Mary",
+      "target": "Imran",
+      "rel_ar": "زوجة",
+      "rel_en": "WIFE_OF",
+      "verses": "3:35",
+      "vc": 1
+    },
+    {
+      "source": "Sons_of_Adam",
+      "target": "Allah",
+      "rel_ar": "قرّبا قرباناً لـ",
+      "rel_en": "OFFERED_SACRIFICE_TO",
+      "verses": "5:27",
+      "vc": 1
+    },
+    {
+      "source": "Sons_of_Adam",
+      "target": "Adam",
+      "rel_ar": "أبناء",
+      "rel_en": "SONS_OF",
+      "verses": "5:27",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Al-Aykah",
+      "target": "Shuaib",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "26:176, 26:177",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Al-Aykah",
+      "rel_ar": "عذاب الظلّة",
+      "rel_en": "PUNISHED_WITH_SHADE",
+      "verses": "26:189",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Madyan",
+      "target": "Moses",
+      "rel_ar": "استأجروا",
+      "rel_en": "HIRED",
+      "verses": "28:26, 28:27",
+      "vc": 2
+    },
+    {
+      "source": "Disciples",
+      "target": "Jesus",
+      "rel_ar": "أنصار",
+      "rel_en": "HELPERS_OF",
+      "verses": "3:52, 5:111, 61:14",
+      "vc": 3
+    },
+    {
+      "source": "Family_of_Pharaoh",
+      "target": "Pharaoh",
+      "rel_ar": "تبعوا",
+      "rel_en": "FOLLOWED",
+      "verses": "11:97, 28:8, 40:46",
+      "vc": 3
+    },
+    {
+      "source": "Family_of_Pharaoh",
+      "target": "Hell",
+      "rel_ar": "مصيرهم",
+      "rel_en": "DESTINED_FOR",
+      "verses": "3:11, 8:52, 28:42, 40:46",
+      "vc": 4
+    },
+    {
+      "source": "Believer_of_Pharaoh_Family",
+      "target": "Family_of_Pharaoh",
+      "rel_ar": "من",
+      "rel_en": "MEMBER_OF",
+      "verses": "40:28",
+      "vc": 1
+    },
+    {
+      "source": "Believer_of_Pharaoh_Family",
+      "target": "Allah",
+      "rel_ar": "آمن بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "40:28",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "Jesus",
+      "rel_ar": "حملت بـ",
+      "rel_en": "CONCEIVED",
+      "verses": "19:22, 3:47",
+      "vc": 2
+    },
+    {
+      "source": "Mary",
+      "target": "Imran",
+      "rel_ar": "ابنة",
+      "rel_en": "DAUGHTER_OF",
+      "verses": "3:36, 66:12",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Mary",
+      "rel_ar": "طهّر واصطفى",
+      "rel_en": "PURIFIED_AND_CHOSE",
+      "verses": "3:42",
+      "vc": 1
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Muhammad",
+      "rel_ar": "اتّبعوا",
+      "rel_en": "FOLLOWED",
+      "verses": "3:32, 4:59, 8:1, 33:21",
+      "vc": 4
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Quran",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "2:3, 2:4, 2:121, 2:177",
+      "vc": 4
+    },
+    {
+      "source": "Sheba",
+      "target": "Allah",
+      "rel_ar": "كفروا بنعمة",
+      "rel_en": "WERE_UNGRATEFUL_TO",
+      "verses": "34:15, 34:16, 34:17",
+      "vc": 3
+    },
+    {
+      "source": "Qarun",
+      "target": "Earth",
+      "rel_ar": "خُسف به",
+      "rel_en": "SWALLOWED_BY",
+      "verses": "28:81, 29:40",
+      "vc": 2
+    },
+    {
+      "source": "Qarun",
+      "target": "Allah",
+      "rel_ar": "بغى",
+      "rel_en": "REBELLED_AGAINST",
+      "verses": "28:76, 28:78",
+      "vc": 2
+    },
+    {
+      "source": "Idris",
+      "target": "Allah",
+      "rel_ar": "صدّيق نبي",
+      "rel_en": "TRUTHFUL_PROPHET_OF",
+      "verses": "19:56, 19:57",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Idris",
+      "rel_ar": "رفع مكاناً عليّاً",
+      "rel_en": "RAISED_TO_HIGH_STATION",
+      "verses": "19:57",
+      "vc": 1
+    },
+    {
+      "source": "Dhul-Kifl",
+      "target": "Allah",
+      "rel_ar": "صابر",
+      "rel_en": "PATIENT_SERVANT_OF",
+      "verses": "21:85, 38:48",
+      "vc": 2
+    },
+    {
+      "source": "Jonah",
+      "target": "Allah",
+      "rel_ar": "سبّح في بطن الحوت",
+      "rel_en": "GLORIFIED_IN_WHALE",
+      "verses": "21:87, 37:143, 37:144",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Jonah",
+      "rel_ar": "أنبت عليه شجرة يقطين",
+      "rel_en": "GREW_GOURD_OVER",
+      "verses": "37:146",
+      "vc": 1
+    },
+    {
+      "source": "Job",
+      "target": "Allah",
+      "rel_ar": "صبر على البلاء من",
+      "rel_en": "PATIENT_WITH_TRIALS_FROM",
+      "verses": "21:83, 38:41, 38:44",
+      "vc": 3
+    },
+    {
+      "source": "David",
+      "target": "Allah",
+      "rel_ar": "سبّح",
+      "rel_en": "GLORIFIED",
+      "verses": "34:10, 38:17, 38:18",
+      "vc": 3
+    },
+    {
+      "source": "David",
+      "target": "Mountains",
+      "rel_ar": "سبّحت معه",
+      "rel_en": "MOUNTAINS_GLORIFIED_WITH",
+      "verses": "21:79, 34:10, 38:18",
+      "vc": 3
+    },
+    {
+      "source": "Solomon",
+      "target": "Queen_of_Sheba",
+      "rel_ar": "استدعى",
+      "rel_en": "SUMMONED",
+      "verses": "27:27, 27:28, 27:29, 27:38, 27:42",
+      "vc": 5
+    },
+    {
+      "source": "Solomon",
+      "target": "The_Wind",
+      "rel_ar": "سُخّرت له",
+      "rel_en": "WIND_SUBJUGATED_TO",
+      "verses": "21:81, 34:12, 38:36",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Zachariah",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "6:85, 19:2, 21:89",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Zachariah",
+      "rel_ar": "استجاب دعاء",
+      "rel_en": "ANSWERED_PRAYER_OF",
+      "verses": "3:38, 3:39, 19:7, 21:90",
+      "vc": 4
+    },
+    {
+      "source": "Zachariah",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "3:38, 19:4, 19:5, 21:89",
+      "vc": 4
+    },
+    {
+      "source": "Allah",
+      "target": "John",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "6:85, 19:7",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "John",
+      "rel_ar": "سمّاه",
+      "rel_en": "NAMED",
+      "verses": "19:7",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "John",
+      "rel_ar": "آتاه الحكم صبياً",
+      "rel_en": "GAVE_WISDOM_AS_CHILD",
+      "verses": "19:12",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Isaac",
+      "rel_ar": "بشّر بـ",
+      "rel_en": "GAVE_GLAD_TIDINGS_OF",
+      "verses": "11:71, 37:112, 51:28",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Isaac",
+      "rel_ar": "بارك",
+      "rel_en": "BLESSED",
+      "verses": "37:113",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Idris",
+      "rel_ar": "رفع مكاناً علياً",
+      "rel_en": "RAISED_TO_HIGH_PLACE",
+      "verses": "19:57",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Dhul-Kifl",
+      "rel_ar": "اصطفى",
+      "rel_en": "CHOSE",
+      "verses": "21:85, 38:48",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Ismail",
+      "rel_ar": "أرسل",
+      "rel_en": "SENT",
+      "verses": "2:136, 4:163, 6:86",
+      "vc": 3
+    },
+    {
+      "source": "Ismail",
+      "target": "Allah",
+      "rel_ar": "صبر",
+      "rel_en": "WAS_PATIENT_WITH",
+      "verses": "37:102",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Jacob",
+      "rel_ar": "بارك",
+      "rel_en": "BLESSED",
+      "verses": "11:71, 21:72",
+      "vc": 2
+    },
+    {
+      "source": "Jacob",
+      "target": "Allah",
+      "rel_ar": "أوصى أبناءه بعبادة",
+      "rel_en": "ADVISED_SONS_TO_WORSHIP",
+      "verses": "2:132, 2:133",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Joseph",
+      "rel_ar": "آتى علم تأويل الأحاديث",
+      "rel_en": "GAVE_INTERPRETATION_OF_DREAMS",
+      "verses": "12:6, 12:21, 12:22, 12:101",
+      "vc": 4
+    },
+    {
+      "source": "Joseph",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "12:33, 12:101",
+      "vc": 2
+    },
+    {
+      "source": "Noah",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "11:45, 11:47, 23:26, 54:10, 71:26",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Noah",
+      "rel_ar": "استجاب",
+      "rel_en": "ANSWERED_PRAYER_OF",
+      "verses": "21:76, 37:75, 54:11",
+      "vc": 3
+    },
+    {
+      "source": "Hud",
+      "target": "Allah",
+      "rel_ar": "توكّل على",
+      "rel_en": "RELIED_ON",
+      "verses": "11:56",
+      "vc": 1
+    },
+    {
+      "source": "Salih",
+      "target": "Allah",
+      "rel_ar": "دعا قومه لعبادة",
+      "rel_en": "CALLED_TO_WORSHIP",
+      "verses": "7:73, 11:61",
+      "vc": 2
+    },
+    {
+      "source": "Shuaib",
+      "target": "Allah",
+      "rel_ar": "توكّل على",
+      "rel_en": "RELIED_ON",
+      "verses": "11:88",
+      "vc": 1
+    },
+    {
+      "source": "Lot",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "26:169, 29:26",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Lot",
+      "rel_ar": "أنجى",
+      "rel_en": "SAVED",
+      "verses": "7:83, 11:81, 15:59, 21:71, 26:170, 27:57, 29:32, 29:33",
+      "vc": 8
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "2:126, 2:127, 2:128, 2:129, 14:35, 14:37, 14:40, 26:83",
+      "vc": 8
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "استجاب",
+      "rel_en": "ANSWERED_PRAYER_OF",
+      "verses": "2:127, 14:39, 21:69",
+      "vc": 3
+    },
+    {
+      "source": "Moses",
+      "target": "Allah",
+      "rel_ar": "دعا",
+      "rel_en": "PRAYED_TO",
+      "verses": "7:151, 7:155, 10:88, 20:25, 20:114, 28:16",
+      "vc": 6
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "عبد",
+      "rel_en": "WORSHIPPED",
+      "verses": "5:72, 5:117, 19:30",
+      "vc": 3
+    },
+    {
+      "source": "Muhammad",
+      "target": "Allah",
+      "rel_ar": "توكّل على",
+      "rel_en": "RELIED_ON",
+      "verses": "3:159, 8:61, 9:51, 33:3, 33:48",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "أيّد بالنصر",
+      "rel_en": "SUPPORTED_WITH_VICTORY",
+      "verses": "3:123, 8:10, 48:1, 48:3, 110:1",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "عصم من الناس",
+      "rel_en": "PROTECTED",
+      "verses": "5:67",
+      "vc": 1
+    },
+    {
+      "source": "Azar",
+      "target": "The_Idols",
+      "rel_ar": "عبد",
+      "rel_en": "WORSHIPPED",
+      "verses": "6:74",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Azar",
+      "rel_ar": "دعاه للتوحيد",
+      "rel_en": "CALLED_TO_MONOTHEISM",
+      "verses": "6:74, 19:42, 19:43, 19:44, 19:45, 19:46",
+      "vc": 6
+    },
+    {
+      "source": "Wife_of_Al-Aziz",
+      "target": "Egypt",
+      "rel_ar": "عاشت في",
+      "rel_en": "LIVED_IN",
+      "verses": "12:30",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Al-Aziz",
+      "target": "Allah",
+      "rel_ar": "اعترفت بذنبها أمام",
+      "rel_en": "CONFESSED_BEFORE",
+      "verses": "12:32, 12:51",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Dhul-Qarnayn",
+      "rel_ar": "مكّن في الأرض",
+      "rel_en": "EMPOWERED",
+      "verses": "18:84, 18:92",
+      "vc": 2
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Allah",
+      "rel_ar": "اتّبع أمر",
+      "rel_en": "FOLLOWED_COMMAND_OF",
+      "verses": "18:86, 18:88, 18:91, 18:98",
+      "vc": 4
+    },
+    {
+      "source": "Qarun",
+      "target": "Pharaoh",
+      "rel_ar": "من عصر",
+      "rel_en": "FROM_ERA_OF",
+      "verses": "28:76, 29:39",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Aaron",
+      "rel_ar": "اصطفى",
+      "rel_en": "CHOSE",
+      "verses": "19:53, 20:30, 20:36",
+      "vc": 3
+    },
+    {
+      "source": "Elias",
+      "target": "Children_of_Israel",
+      "rel_ar": "دعا قومه",
+      "rel_en": "CALLED_HIS_PEOPLE",
+      "verses": "37:124, 37:125, 37:126",
+      "vc": 3
+    },
+    {
+      "source": "Elisha",
+      "target": "Children_of_Israel",
+      "rel_ar": "من أنبياء",
+      "rel_en": "PROPHET_OF",
+      "verses": "6:86, 38:48",
+      "vc": 2
+    },
+    {
+      "source": "John",
+      "target": "Children_of_Israel",
+      "rel_ar": "نبي في",
+      "rel_en": "PROPHET_AMONG",
+      "verses": "3:39, 19:12, 19:14",
+      "vc": 3
+    },
+    {
+      "source": "John",
+      "target": "Zachariah",
+      "rel_ar": "ابن",
+      "rel_en": "SON_OF",
+      "verses": "3:39, 19:7",
+      "vc": 2
+    },
+    {
+      "source": "Isaac",
+      "target": "Ibrahim",
+      "rel_ar": "ابن",
+      "rel_en": "SON_OF",
+      "verses": "11:71, 14:39, 37:112",
+      "vc": 3
+    },
+    {
+      "source": "Al-Ahqaf",
+      "target": "Aad",
+      "rel_ar": "موطن",
+      "rel_en": "HOMELAND_OF",
+      "verses": "46:21",
+      "vc": 1
+    },
+    {
+      "source": "Iram",
+      "target": "Aad",
+      "rel_ar": "مدينة",
+      "rel_en": "CITY_OF",
+      "verses": "89:7",
+      "vc": 1
+    },
+    {
+      "source": "Al-Hijr",
+      "target": "Thamud",
+      "rel_ar": "موطن",
+      "rel_en": "HOMELAND_OF",
+      "verses": "15:80",
+      "vc": 1
+    },
+    {
+      "source": "Al-Araf",
+      "target": "Day_of_Judgment",
+      "rel_ar": "يوم",
+      "rel_en": "ON_DAY_OF",
+      "verses": "7:46, 7:48, 7:49",
+      "vc": 3
+    },
+    {
+      "source": "The_Ship",
+      "target": "People_of_Madyan",
+      "rel_ar": "كانت لمساكين",
+      "rel_en": "BELONGED_TO_POOR",
+      "verses": "18:79",
+      "vc": 1
+    },
+    {
+      "source": "The_Boy",
+      "target": "Al-Khidr",
+      "rel_ar": "قتله لحكمة",
+      "rel_en": "KILLED_FOR_WISDOM",
+      "verses": "18:80, 18:81",
+      "vc": 2
+    },
+    {
+      "source": "The_Wall",
+      "target": "Al-Khidr",
+      "rel_ar": "أقامه ليحمي كنز يتيمين",
+      "rel_en": "BUILT_TO_PROTECT_TREASURE",
+      "verses": "18:82",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Mother_of_Moses",
+      "rel_ar": "ردّ إليها موسى",
+      "rel_en": "RETURNED_MOSES_TO",
+      "verses": "20:40, 28:13",
+      "vc": 2
+    },
+    {
+      "source": "Wife_of_Noah",
+      "target": "Hell",
+      "rel_ar": "مصيرها",
+      "rel_en": "DESTINED_FOR",
+      "verses": "66:10",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Lot",
+      "target": "Hell",
+      "rel_ar": "مصيرها",
+      "rel_en": "DESTINED_FOR",
+      "verses": "66:10",
+      "vc": 1
+    },
+    {
+      "source": "Wife_of_Lot",
+      "target": "People_of_Lot",
+      "rel_ar": "من",
+      "rel_en": "MEMBER_OF",
+      "verses": "7:83, 11:81, 15:60, 27:57",
+      "vc": 4
+    },
+    {
+      "source": "Pharaoh_of_Egypt",
+      "target": "Egypt",
+      "rel_ar": "حكم",
+      "rel_en": "RULED",
+      "verses": "12:43, 12:50, 12:54",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh_of_Egypt",
+      "target": "Joseph",
+      "rel_ar": "استدعى",
+      "rel_en": "SUMMONED",
+      "verses": "12:50, 12:54",
+      "vc": 2
+    },
+    {
+      "source": "Sons_of_Adam",
+      "target": "Earth",
+      "rel_ar": "أول قتل على",
+      "rel_en": "FIRST_MURDER_ON",
+      "verses": "5:27, 5:30",
+      "vc": 2
+    },
+    {
+      "source": "The_Sorcerers",
+      "target": "Pharaoh",
+      "rel_ar": "تحدّوا موسى بأمر",
+      "rel_en": "CHALLENGED_MOSES_FOR",
+      "verses": "7:112, 7:113, 7:116, 20:60, 26:38, 26:43",
+      "vc": 6
+    },
+    {
+      "source": "Disciples",
+      "target": "Allah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "3:52, 5:111, 61:14",
+      "vc": 3
+    },
+    {
+      "source": "Mountains",
+      "target": "Solomon",
+      "rel_ar": "سُخّرت لـ",
+      "rel_en": "SUBJUGATED_TO",
+      "verses": "21:79, 34:10, 38:18",
+      "vc": 3
+    },
+    {
+      "source": "Queen_of_Sheba",
+      "target": "Allah",
+      "rel_ar": "أسلمت لـ",
+      "rel_en": "SUBMITTED_TO",
+      "verses": "27:44",
+      "vc": 1
+    },
+    {
+      "source": "Babylon",
+      "target": "Children_of_Israel",
+      "rel_ar": "تعلّموا السحر في",
+      "rel_en": "LEARNED_MAGIC_IN",
+      "verses": "2:102",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Elephant",
+      "rel_ar": "دمّر",
+      "rel_en": "DESTROYED",
+      "verses": "105:1, 105:2, 105:3, 105:4, 105:5",
+      "vc": 5
+    },
+    {
+      "source": "Allah",
+      "target": "Kaaba",
+      "rel_ar": "جعل حرماً آمناً",
+      "rel_en": "MADE_SACRED",
+      "verses": "2:125, 3:96, 3:97, 5:97",
+      "vc": 4
+    },
+    {
+      "source": "Paradise",
+      "target": "Day_of_Judgment",
+      "rel_ar": "تقرّب يوم",
+      "rel_en": "BROUGHT_NEAR_ON",
+      "verses": "26:90, 50:31, 81:13",
+      "vc": 3
+    },
+    {
+      "source": "Hell",
+      "target": "Day_of_Judgment",
+      "rel_ar": "تسعّر يوم",
+      "rel_en": "BLAZING_ON",
+      "verses": "81:12, 82:4",
+      "vc": 2
+    },
+    {
+      "source": "Israfil",
+      "target": "Allah",
+      "rel_ar": "ملاك",
+      "rel_en": "ANGEL_OF",
+      "verses": "78:18",
+      "vc": 1
+    },
+    {
+      "source": "Malik",
+      "target": "Allah",
+      "rel_ar": "ملاك",
+      "rel_en": "ANGEL_OF",
+      "verses": "43:77",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Great_Flood",
+      "rel_ar": "أرسل على قوم نوح",
+      "rel_en": "SENT_UPON_PEOPLE_OF_NOAH",
+      "verses": "7:64, 11:40, 29:14",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Red_Sea",
+      "rel_ar": "فلق",
+      "rel_en": "SPLIT",
+      "verses": "2:50, 7:138, 26:63",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Children_of_Israel",
+      "rel_ar": "أمر بذبح",
+      "rel_en": "COMMANDED_TO_SLAUGHTER",
+      "verses": "2:67",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Cow_of_Israel",
+      "rel_ar": "أمر بذبحها",
+      "rel_en": "COMMANDED_SLAUGHTER_OF",
+      "verses": "2:67, 2:71",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Children_of_Israel",
+      "rel_ar": "أبلغهم أمر البقرة",
+      "rel_en": "CONVEYED_COW_COMMAND_TO",
+      "verses": "2:67",
+      "vc": 1
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Cow_of_Israel",
+      "rel_ar": "سألوا عن صفاتها",
+      "rel_en": "ASKED_ABOUT",
+      "verses": "2:68, 2:69, 2:70",
+      "vc": 3
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Cow_of_Israel",
+      "rel_ar": "ذبحوها",
+      "rel_en": "SLAUGHTERED",
+      "verses": "2:71",
+      "vc": 1
+    },
+    {
+      "source": "Cow_of_Israel",
+      "target": "Children_of_Israel",
+      "rel_ar": "أحيت قتيلاً لـ",
+      "rel_en": "REVIVED_DEAD_FOR",
+      "verses": "2:72, 2:73",
+      "vc": 2
+    },
+    {
+      "source": "Hoopoe",
+      "target": "Solomon",
+      "rel_ar": "أخبر عن سبأ",
+      "rel_en": "INFORMED_ABOUT_SHEBA",
+      "verses": "27:22, 27:28",
+      "vc": 2
+    },
+    {
+      "source": "Solomon",
+      "target": "Hoopoe",
+      "rel_ar": "تفقّد غيابه",
+      "rel_en": "NOTICED_ABSENCE_OF",
+      "verses": "27:20",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "Hoopoe",
+      "rel_ar": "هدّد بالعذاب",
+      "rel_en": "THREATENED",
+      "verses": "27:21",
+      "vc": 1
+    },
+    {
+      "source": "Hoopoe",
+      "target": "Queen_of_Sheba",
+      "rel_ar": "أخبر عن عرشها",
+      "rel_en": "REPORTED_THRONE_OF",
+      "verses": "27:23",
+      "vc": 1
+    },
+    {
+      "source": "Ant",
+      "target": "Solomon",
+      "rel_ar": "حذّرت قومها من جيش",
+      "rel_en": "WARNED_COLONY_ABOUT",
+      "verses": "27:18",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "Ant",
+      "rel_ar": "سمع كلامها",
+      "rel_en": "HEARD_SPEECH_OF",
+      "verses": "27:19",
+      "vc": 1
+    },
+    {
+      "source": "Crow",
+      "target": "Sons_of_Adam",
+      "rel_ar": "علّم دفن الميت",
+      "rel_en": "TAUGHT_BURIAL",
+      "verses": "5:31",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Crow",
+      "rel_ar": "أرسل ليعلّم الدفن",
+      "rel_en": "SENT_TO_TEACH_BURIAL",
+      "verses": "5:31",
+      "vc": 1
+    },
+    {
+      "source": "Dog_of_Cave",
+      "target": "People_of_Cave",
+      "rel_ar": "رافق",
+      "rel_en": "ACCOMPANIED",
+      "verses": "18:18, 18:22",
+      "vc": 2
+    },
+    {
+      "source": "Dog_of_Cave",
+      "target": "The_Cave",
+      "rel_ar": "نام عند باب",
+      "rel_en": "SLEPT_AT_ENTRANCE_OF",
+      "verses": "18:18",
+      "vc": 1
+    },
+    {
+      "source": "Brothers_of_Joseph",
+      "target": "Wolf_Joseph",
+      "rel_ar": "ادّعوا أنه أكل يوسف",
+      "rel_en": "CLAIMED_ATE_JOSEPH",
+      "verses": "12:13, 12:14, 12:17",
+      "vc": 3
+    },
+    {
+      "source": "Jacob",
+      "target": "Wolf_Joseph",
+      "rel_ar": "خشي على يوسف منه",
+      "rel_en": "FEARED_FOR_JOSEPH",
+      "verses": "12:13",
+      "vc": 1
+    },
+    {
+      "source": "Wolf_Joseph",
+      "target": "Joseph",
+      "rel_ar": "لم يأكله",
+      "rel_en": "DID_NOT_EAT",
+      "verses": "12:17, 12:18",
+      "vc": 2
+    },
+    {
+      "source": "Shirt_Joseph",
+      "target": "Joseph",
+      "rel_ar": "دليل براءة",
+      "rel_en": "PROOF_OF_INNOCENCE",
+      "verses": "12:25, 12:26, 12:27, 12:28",
+      "vc": 4
+    },
+    {
+      "source": "Shirt_Joseph",
+      "target": "Jacob",
+      "rel_ar": "أعاد له البصر",
+      "rel_en": "RESTORED_SIGHT_OF",
+      "verses": "12:93, 12:96",
+      "vc": 2
+    },
+    {
+      "source": "Brothers_of_Joseph",
+      "target": "Shirt_Joseph",
+      "rel_ar": "لطّخوه بدم كذب",
+      "rel_en": "STAINED_WITH_FALSE_BLOOD",
+      "verses": "12:18",
+      "vc": 1
+    },
+    {
+      "source": "Brothers_of_Joseph",
+      "target": "Shirt_Joseph",
+      "rel_ar": "حملوه لأبيهم",
+      "rel_en": "CARRIED_TO_FATHER",
+      "verses": "12:93",
+      "vc": 1
+    },
+    {
+      "source": "Uzayr",
+      "target": "Ruined_Town",
+      "rel_ar": "مرّ عليها",
+      "rel_en": "PASSED_BY",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Uzayr",
+      "rel_ar": "أماته مئة عام",
+      "rel_en": "CAUSED_TO_DIE_100_YEARS",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Uzayr",
+      "rel_ar": "بعثه بعد مئة عام",
+      "rel_en": "RESURRECTED_AFTER_100_YEARS",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Donkey_Uzayr",
+      "rel_ar": "أحيا عظامه",
+      "rel_en": "REVIVED_BONES_OF",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Donkey_Uzayr",
+      "target": "Uzayr",
+      "rel_ar": "آية له",
+      "rel_en": "SIGN_FOR",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Spider",
+      "target": "Allah",
+      "rel_ar": "ضُرب مثلاً",
+      "rel_en": "USED_AS_PARABLE_BY",
+      "verses": "29:41",
+      "vc": 1
+    },
+    {
+      "source": "Spider",
+      "target": "Polytheists",
+      "rel_ar": "مثل ضعف أوليائهم",
+      "rel_en": "PARABLE_OF_WEAK_PROTECTORS",
+      "verses": "29:41",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Bee",
+      "rel_ar": "أوحى إليها",
+      "rel_en": "INSPIRED",
+      "verses": "16:68",
+      "vc": 1
+    },
+    {
+      "source": "Bee",
+      "target": "Mankind",
+      "rel_ar": "فيها شفاء للناس",
+      "rel_en": "HEALING_FOR",
+      "verses": "16:69",
+      "vc": 1
+    },
+    {
+      "source": "Sabbath_Breakers",
+      "target": "Children_of_Israel",
+      "rel_ar": "من",
+      "rel_en": "FROM",
+      "verses": "2:65, 7:163",
+      "vc": 2
+    },
+    {
+      "source": "Sabbath_Breakers",
+      "target": "Allah",
+      "rel_ar": "اعتدوا في السبت",
+      "rel_en": "VIOLATED_SABBATH_OF",
+      "verses": "2:65, 7:163, 7:164",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Sabbath_Breakers",
+      "rel_ar": "مسخهم قردة",
+      "rel_en": "TRANSFORMED_TO_APES",
+      "verses": "2:65, 7:166",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Plagues_Egypt",
+      "rel_ar": "أرسل على فرعون",
+      "rel_en": "SENT_UPON_PHARAOH",
+      "verses": "7:133",
+      "vc": 1
+    },
+    {
+      "source": "Plagues_Egypt",
+      "target": "People_of_Pharaoh",
+      "rel_ar": "ابتلت",
+      "rel_en": "AFFLICTED",
+      "verses": "7:130, 7:133, 7:134, 7:135",
+      "vc": 4
+    },
+    {
+      "source": "Plagues_Egypt",
+      "target": "Pharaoh",
+      "rel_ar": "لم يؤمن رغمها",
+      "rel_en": "DID_NOT_BELIEVE_DESPITE",
+      "verses": "7:133, 7:134, 7:135, 7:136",
+      "vc": 4
+    },
+    {
+      "source": "People_of_Noah",
+      "target": "Idols_Nuh",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Idols_Nuh",
+      "target": "Wadd",
+      "rel_ar": "منها",
+      "rel_en": "INCLUDES",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Idols_Nuh",
+      "target": "Suwa",
+      "rel_ar": "منها",
+      "rel_en": "INCLUDES",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Idols_Nuh",
+      "target": "Yaghuth",
+      "rel_ar": "منها",
+      "rel_en": "INCLUDES",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Idols_Nuh",
+      "target": "Yauq",
+      "rel_ar": "منها",
+      "rel_en": "INCLUDES",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Idols_Nuh",
+      "target": "Nasr",
+      "rel_ar": "منها",
+      "rel_en": "INCLUDES",
+      "verses": "71:23",
+      "vc": 1
+    },
+    {
+      "source": "Elias",
+      "target": "Baal",
+      "rel_ar": "نهى قومه عن عبادة",
+      "rel_en": "FORBADE_WORSHIP_OF",
+      "verses": "37:125",
+      "vc": 1
+    },
+    {
+      "source": "Baal",
+      "target": "Children_of_Israel",
+      "rel_ar": "عُبد من قبل بعض",
+      "rel_en": "WORSHIPPED_BY_SOME",
+      "verses": "37:125",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Al_Lat",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "53:19",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Al_Uzza",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "53:19",
+      "vc": 1
+    },
+    {
+      "source": "Quraysh",
+      "target": "Manat",
+      "rel_ar": "عبدوا",
+      "rel_en": "WORSHIPPED",
+      "verses": "53:20",
+      "vc": 1
+    },
+    {
+      "source": "Queen_of_Sheba",
+      "target": "Throne_Sheba",
+      "rel_ar": "جلست على",
+      "rel_en": "SAT_ON",
+      "verses": "27:23",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "Throne_Sheba",
+      "rel_ar": "أمر بإحضاره",
+      "rel_en": "ORDERED_BROUGHT",
+      "verses": "27:38",
+      "vc": 1
+    },
+    {
+      "source": "Jinn",
+      "target": "Throne_Sheba",
+      "rel_ar": "عرض إحضاره",
+      "rel_en": "OFFERED_TO_BRING",
+      "verses": "27:39",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Garden",
+      "target": "Allah",
+      "rel_ar": "أقسموا بلا استثناء",
+      "rel_en": "SWORE_WITHOUT_EXCEPTION",
+      "verses": "68:17, 68:18",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Garden",
+      "rel_ar": "دمّر جنتهم",
+      "rel_en": "DESTROYED_GARDEN_OF",
+      "verses": "68:19, 68:20",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Village",
+      "rel_ar": "أرسل إليهم رسلاً",
+      "rel_en": "SENT_MESSENGERS_TO",
+      "verses": "36:13, 36:14",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Village",
+      "target": "Messengers_Village",
+      "rel_ar": "كذّبوا",
+      "rel_en": "DENIED",
+      "verses": "36:15, 36:18",
+      "vc": 2
+    },
+    {
+      "source": "Messengers_Village",
+      "target": "People_of_Village",
+      "rel_ar": "أُرسلوا إلى",
+      "rel_en": "SENT_TO",
+      "verses": "36:13, 36:14",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Village",
+      "rel_ar": "أهلك",
+      "rel_en": "DESTROYED",
+      "verses": "36:29",
+      "vc": 1
+    },
+    {
+      "source": "Man_Two_Gardens",
+      "target": "Allah",
+      "rel_ar": "كفر بنعمة",
+      "rel_en": "WAS_UNGRATEFUL_TO",
+      "verses": "18:35, 18:36",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Man_Two_Gardens",
+      "rel_ar": "دمّر جنتيه",
+      "rel_en": "DESTROYED_GARDENS_OF",
+      "verses": "18:42",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Two_Women_Madyan",
+      "rel_ar": "سقى لهما",
+      "rel_en": "WATERED_FLOCKS_FOR",
+      "verses": "28:23, 28:24",
+      "vc": 2
+    },
+    {
+      "source": "Two_Women_Madyan",
+      "target": "Shuaib",
+      "rel_ar": "ابنتا",
+      "rel_en": "DAUGHTERS_OF",
+      "verses": "28:26, 28:27",
+      "vc": 2
+    },
+    {
+      "source": "Two_Women_Madyan",
+      "target": "Moses",
+      "rel_ar": "استأجرتاه",
+      "rel_en": "HIRED",
+      "verses": "28:26",
+      "vc": 1
+    },
+    {
+      "source": "Joseph",
+      "target": "Egypt",
+      "rel_ar": "حكم خزائن",
+      "rel_en": "MANAGED_TREASURES_OF",
+      "verses": "12:55, 12:56",
+      "vc": 2
+    },
+    {
+      "source": "Jacob",
+      "target": "Joseph",
+      "rel_ar": "أوصاه ألا يقصّ رؤياه",
+      "rel_en": "WARNED_NOT_TO_TELL_DREAM",
+      "verses": "12:5",
+      "vc": 1
+    },
+    {
+      "source": "People_of_Ibrahim",
+      "target": "Ibrahim",
+      "rel_ar": "ألقوه في النار",
+      "rel_en": "THREW_IN_FIRE",
+      "verses": "21:68, 37:97",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "جعل النار برداً وسلاماً",
+      "rel_en": "MADE_FIRE_COOL_FOR",
+      "verses": "21:69",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Allah",
+      "rel_ar": "سأل كيف تُحيي الموتى",
+      "rel_en": "ASKED_HOW_TO_REVIVE_DEAD",
+      "verses": "2:260",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Ibrahim",
+      "rel_ar": "أمره بأربعة طيور",
+      "rel_en": "COMMANDED_FOUR_BIRDS",
+      "verses": "2:260",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "Allah",
+      "rel_ar": "مات متكئاً على عصاه",
+      "rel_en": "DIED_LEANING_ON_STAFF",
+      "verses": "34:14",
+      "vc": 1
+    },
+    {
+      "source": "Jinn",
+      "target": "Solomon",
+      "rel_ar": "لم يعلموا بموته",
+      "rel_en": "DID_NOT_KNOW_OF_DEATH",
+      "verses": "34:14",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "Jesus",
+      "rel_ar": "ولدته عند جذع النخلة",
+      "rel_en": "GAVE_BIRTH_AT_PALM_TREE",
+      "verses": "19:23, 19:25",
+      "vc": 2
+    },
+    {
+      "source": "Adam",
+      "target": "Allah",
+      "rel_ar": "تاب إلى",
+      "rel_en": "REPENTED_TO",
+      "verses": "2:37, 7:23, 20:122",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "تاب عليه",
+      "rel_en": "FORGAVE",
+      "verses": "2:37, 20:122",
+      "vc": 2
+    },
+    {
+      "source": "Noah",
+      "target": "Allah",
+      "rel_ar": "سأل عن ابنه",
+      "rel_en": "ASKED_ABOUT_SON",
+      "verses": "11:45",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Noah",
+      "rel_ar": "ليس من أهلك",
+      "rel_en": "TOLD_NOT_OF_FAMILY",
+      "verses": "11:46",
+      "vc": 1
+    },
+    {
+      "source": "David",
+      "target": "Children_of_Israel",
+      "rel_ar": "حكم بين الخصمين",
+      "rel_en": "JUDGED_BETWEEN_DISPUTANTS",
+      "verses": "38:21, 38:22, 38:23, 38:24",
+      "vc": 4
+    },
+    {
+      "source": "Muhammad",
+      "target": "Allah",
+      "rel_ar": "عبس وتولّى",
+      "rel_en": "FROWNED_AND_TURNED",
+      "verses": "80:1, 80:2",
+      "vc": 2
+    },
+    {
+      "source": "Noah",
+      "target": "950_Years",
+      "rel_ar": "لبث في قومه",
+      "rel_en": "STAYED_AMONG_PEOPLE",
+      "verses": "29:14",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "40_Nights",
+      "rel_ar": "واعد الله",
+      "rel_en": "MET_GOD_FOR",
+      "verses": "2:51, 7:142",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "30_Plus_10",
+      "rel_ar": "أتمّ الميقات",
+      "rel_en": "COMPLETED_APPOINTMENT",
+      "verses": "7:142",
+      "vc": 1
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "40_Years",
+      "rel_ar": "تاهوا",
+      "rel_en": "WANDERED_FOR",
+      "verses": "5:26",
+      "vc": 1
+    },
+    {
+      "source": "Uzayr",
+      "target": "100_Years",
+      "rel_ar": "أماته الله",
+      "rel_en": "DIED_FOR",
+      "verses": "2:259",
+      "vc": 1
+    },
+    {
+      "source": "Haman",
+      "target": "Palace_of_Haman",
+      "rel_ar": "بنى",
+      "rel_en": "BUILT",
+      "verses": "28:38, 40:36, 40:37",
+      "vc": 3
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Palace_of_Haman",
+      "rel_ar": "أمر ببنائه",
+      "rel_en": "ORDERED_BUILT",
+      "verses": "28:38, 40:36",
+      "vc": 2
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Barrier_of_DhulQarnayn",
+      "rel_ar": "بنى",
+      "rel_en": "BUILT",
+      "verses": "18:95, 18:96, 18:97",
+      "vc": 3
+    },
+    {
+      "source": "Barrier_of_DhulQarnayn",
+      "target": "Gog_and_Magog",
+      "rel_ar": "لحجز",
+      "rel_en": "TO_BLOCK",
+      "verses": "18:94, 18:95, 18:97",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Barrier_of_DhulQarnayn",
+      "rel_ar": "يُدكّ يوم القيامة",
+      "rel_en": "DESTROYED_ON_JUDGMENT_DAY",
+      "verses": "18:98, 21:96",
+      "vc": 2
+    },
+    {
+      "source": "Thamud",
+      "target": "3_Days",
+      "rel_ar": "أمهلوا",
+      "rel_en": "GIVEN_RESPITE",
+      "verses": "11:65",
+      "vc": 1
+    },
+    {
+      "source": "Zachariah",
+      "target": "3_Nights",
+      "rel_ar": "لم يكلم الناس",
+      "rel_en": "COULD_NOT_SPEAK_FOR",
+      "verses": "19:10",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "3_Days",
+      "rel_ar": "لم تكلم الناس",
+      "rel_en": "COULD_NOT_SPEAK_FOR",
+      "verses": "19:26",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Twelve_Springs",
+      "rel_ar": "فجّر من الحجر",
+      "rel_en": "GUSHED_FROM_ROCK",
+      "verses": "2:60, 7:160",
+      "vc": 2
+    },
+    {
+      "source": "Twelve_Springs",
+      "target": "Children_of_Israel",
+      "rel_ar": "لكل سبط عين",
+      "rel_en": "ONE_FOR_EACH_TRIBE",
+      "verses": "2:60, 7:160",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Manna_Quails",
+      "rel_ar": "أنزل على بني إسرائيل",
+      "rel_en": "SENT_DOWN_FOR",
+      "verses": "2:57, 7:160, 20:80",
+      "vc": 3
+    },
+    {
+      "source": "Manna_Quails",
+      "target": "Children_of_Israel",
+      "rel_ar": "طعام لـ",
+      "rel_en": "FOOD_FOR",
+      "verses": "2:57, 7:160, 20:80",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Clouds_Shade",
+      "rel_ar": "ظلّل على بني إسرائيل",
+      "rel_en": "SHADED_OVER",
+      "verses": "2:57, 7:160",
+      "vc": 2
+    },
+    {
+      "source": "Staff_Solomon",
+      "target": "Solomon",
+      "rel_ar": "تآكلت فسقط",
+      "rel_en": "ATE_THROUGH_CAUSING_FALL",
+      "verses": "34:14",
+      "vc": 1
+    },
+    {
+      "source": "Jews",
+      "target": "Allah",
+      "rel_ar": "ادّعوا أنهم أبناء الله",
+      "rel_en": "CLAIMED_SONS_OF",
+      "verses": "5:18",
+      "vc": 1
+    },
+    {
+      "source": "Jews",
+      "target": "Uzayr",
+      "rel_ar": "قالوا ابن الله",
+      "rel_en": "CALLED_SON_OF_GOD",
+      "verses": "9:30",
+      "vc": 1
+    },
+    {
+      "source": "Jews",
+      "target": "Christians",
+      "rel_ar": "خلاف مع",
+      "rel_en": "IN_DISPUTE_WITH",
+      "verses": "2:113",
+      "vc": 1
+    },
+    {
+      "source": "Jews",
+      "target": "Torah",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "5:43, 5:44",
+      "vc": 2
+    },
+    {
+      "source": "Jews",
+      "target": "Children_of_Israel",
+      "rel_ar": "من",
+      "rel_en": "FROM",
+      "verses": "2:40, 5:12",
+      "vc": 2
+    },
+    {
+      "source": "Christians",
+      "target": "Jesus",
+      "rel_ar": "ادّعوا ابن الله",
+      "rel_en": "CLAIMED_SON_OF_GOD",
+      "verses": "9:30",
+      "vc": 1
+    },
+    {
+      "source": "Christians",
+      "target": "Allah",
+      "rel_ar": "قالوا ثالث ثلاثة",
+      "rel_en": "CLAIMED_TRINITY",
+      "verses": "5:73",
+      "vc": 1
+    },
+    {
+      "source": "Christians",
+      "target": "Gospel",
+      "rel_ar": "آمنوا بـ",
+      "rel_en": "BELIEVED_IN",
+      "verses": "5:46, 5:47",
+      "vc": 2
+    },
+    {
+      "source": "Sabeans",
+      "target": "Allah",
+      "rel_ar": "ذُكروا مع المؤمنين",
+      "rel_en": "MENTIONED_WITH_BELIEVERS",
+      "verses": "2:62, 5:69, 22:17",
+      "vc": 3
+    },
+    {
+      "source": "Magians",
+      "target": "Allah",
+      "rel_ar": "ذُكروا يوم القيامة",
+      "rel_en": "MENTIONED_ON_JUDGMENT",
+      "verses": "22:17",
+      "vc": 1
+    },
+    {
+      "source": "Bedouins",
+      "target": "Muhammad",
+      "rel_ar": "تخلّف بعضهم عن",
+      "rel_en": "SOME_STAYED_BEHIND",
+      "verses": "9:90, 9:97, 48:11, 48:16",
+      "vc": 4
+    },
+    {
+      "source": "Bedouins",
+      "target": "Allah",
+      "rel_ar": "منهم من آمن",
+      "rel_en": "SOME_BELIEVED_IN",
+      "verses": "9:99",
+      "vc": 1
+    },
+    {
+      "source": "Bedouins",
+      "target": "Allah",
+      "rel_ar": "بعضهم أشد كفراً",
+      "rel_en": "SOME_WORST_IN_DISBELIEF",
+      "verses": "9:97",
+      "vc": 1
+    },
+    {
+      "source": "Yathrib",
+      "target": "Madinah",
+      "rel_ar": "الاسم القديم لـ",
+      "rel_en": "OLD_NAME_OF",
+      "verses": "33:13",
+      "vc": 1
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Yathrib",
+      "rel_ar": "أرادوا الرجوع إلى",
+      "rel_en": "WANTED_TO_RETURN_TO",
+      "verses": "33:13",
+      "vc": 1
+    },
+    {
+      "source": "Bakkah",
+      "target": "Makkah",
+      "rel_ar": "الاسم القديم لـ",
+      "rel_en": "OLD_NAME_OF",
+      "verses": "3:96",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Bakkah",
+      "rel_ar": "جعل فيها أول بيت",
+      "rel_en": "PLACED_FIRST_HOUSE_IN",
+      "verses": "3:96",
+      "vc": 1
+    },
+    {
+      "source": "Ark_of_Noah",
+      "target": "Mount_Judi",
+      "rel_ar": "استوت على",
+      "rel_en": "RESTED_ON",
+      "verses": "11:44",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Moses",
+      "rel_ar": "كلّمه في الوادي",
+      "rel_en": "SPOKE_TO_IN_VALLEY",
+      "verses": "20:12, 79:16",
+      "vc": 2
+    },
+    {
+      "source": "Valley_Tuwa",
+      "target": "Moses",
+      "rel_ar": "نودي فيه",
+      "rel_en": "CALLED_IN",
+      "verses": "20:12, 79:16",
+      "vc": 2
+    },
+    {
+      "source": "Valley_Tuwa",
+      "target": "Mount_Sinai",
+      "rel_ar": "قرب",
+      "rel_en": "NEAR",
+      "verses": "20:12",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Madyan_Place",
+      "rel_ar": "هرب إلى",
+      "rel_en": "FLED_TO",
+      "verses": "28:22",
+      "vc": 1
+    },
+    {
+      "source": "Shuaib",
+      "target": "Madyan_Place",
+      "rel_ar": "عاش في",
+      "rel_en": "LIVED_IN",
+      "verses": "7:85, 11:84",
+      "vc": 2
+    },
+    {
+      "source": "People_of_Madyan",
+      "target": "Madyan_Place",
+      "rel_ar": "سكنوا",
+      "rel_en": "LIVED_IN",
+      "verses": "7:85",
+      "vc": 1
+    },
+    {
+      "source": "Two_Women_Madyan",
+      "target": "Madyan_Place",
+      "rel_ar": "سقتا فيها",
+      "rel_en": "WATERED_IN",
+      "verses": "28:23",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Throne_of_God",
+      "rel_ar": "استوى على",
+      "rel_en": "ROSE_OVER",
+      "verses": "7:54, 10:3, 13:2, 20:5, 25:59, 32:4, 57:4",
+      "vc": 7
+    },
+    {
+      "source": "Throne_of_God",
+      "target": "Allah",
+      "rel_ar": "حملته الملائكة",
+      "rel_en": "CARRIED_BY_ANGELS",
+      "verses": "40:7, 69:17",
+      "vc": 2
+    },
+    {
+      "source": "Angels",
+      "target": "Throne_of_God",
+      "rel_ar": "يحملون",
+      "rel_en": "CARRY",
+      "verses": "40:7, 69:17",
+      "vc": 2
+    },
+    {
+      "source": "Kursi",
+      "target": "Allah",
+      "rel_ar": "وسع السماوات والأرض",
+      "rel_en": "ENCOMPASSES_HEAVENS_AND_EARTH",
+      "verses": "2:255",
+      "vc": 1
+    },
+    {
+      "source": "Quran",
+      "target": "Preserved_Tablet",
+      "rel_ar": "محفوظ في",
+      "rel_en": "PRESERVED_IN",
+      "verses": "85:22",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "The_Pen",
+      "rel_ar": "أقسم بـ",
+      "rel_en": "SWORE_BY",
+      "verses": "68:1",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "The_Pen",
+      "rel_ar": "علّم به الإنسان",
+      "rel_en": "TAUGHT_MAN_WITH",
+      "verses": "96:4",
+      "vc": 1
+    },
+    {
+      "source": "The_Scales",
+      "target": "Day_of_Judgment",
+      "rel_ar": "توضع يوم",
+      "rel_en": "SET_UP_ON",
+      "verses": "7:8, 21:47, 101:6",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "The_Scales",
+      "rel_ar": "يزن الأعمال بـ",
+      "rel_en": "WEIGHS_DEEDS_WITH",
+      "verses": "7:8, 21:47",
+      "vc": 2
+    },
+    {
+      "source": "The_Sirat",
+      "target": "Day_of_Judgment",
+      "rel_ar": "يُنصب يوم",
+      "rel_en": "SET_ON",
+      "verses": "37:23, 36:66",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "The_Sirat",
+      "rel_ar": "يهدي إلى المستقيم",
+      "rel_en": "GUIDES_TO_STRAIGHT",
+      "verses": "1:6, 6:161",
+      "vc": 2
+    },
+    {
+      "source": "Al_Barzakh",
+      "target": "Day_of_Judgment",
+      "rel_ar": "بين الموت ويوم",
+      "rel_en": "BETWEEN_DEATH_AND",
+      "verses": "23:100",
+      "vc": 1
+    },
+    {
+      "source": "Mankind",
+      "target": "Al_Barzakh",
+      "rel_ar": "يمرّ بـ بعد الموت",
+      "rel_en": "ENTERS_AFTER_DEATH",
+      "verses": "23:100",
+      "vc": 1
+    },
+    {
+      "source": "Zaqqum",
+      "target": "Hell",
+      "rel_ar": "تنبت في",
+      "rel_en": "GROWS_IN",
+      "verses": "37:64, 44:43",
+      "vc": 2
+    },
+    {
+      "source": "Zaqqum",
+      "target": "Hell",
+      "rel_ar": "طعام أهل النار",
+      "rel_en": "FOOD_OF_PEOPLE_OF",
+      "verses": "37:66, 44:44, 56:52",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "Zaqqum",
+      "rel_ar": "جعل فتنة للظالمين",
+      "rel_en": "MADE_AS_TRIAL",
+      "verses": "37:63",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Kawthar",
+      "rel_ar": "أعطى لمحمد",
+      "rel_en": "GAVE_TO_MUHAMMAD",
+      "verses": "108:1",
+      "vc": 1
+    },
+    {
+      "source": "Kawthar",
+      "target": "Muhammad",
+      "rel_ar": "أُعطي",
+      "rel_en": "GIVEN_TO",
+      "verses": "108:1",
+      "vc": 1
+    },
+    {
+      "source": "Kawthar",
+      "target": "Paradise",
+      "rel_ar": "نهر في",
+      "rel_en": "RIVER_IN",
+      "verses": "108:1",
+      "vc": 1
+    },
+    {
+      "source": "Salsabil",
+      "target": "Paradise",
+      "rel_ar": "عين في",
+      "rel_en": "SPRING_IN",
+      "verses": "76:18",
+      "vc": 1
+    },
+    {
+      "source": "Tasnim",
+      "target": "Paradise",
+      "rel_ar": "عين في",
+      "rel_en": "SPRING_IN",
+      "verses": "83:27",
+      "vc": 1
+    },
+    {
+      "source": "Tasnim",
+      "target": "Angels",
+      "rel_ar": "يشرب بها المقربون",
+      "rel_en": "DRUNK_BY_CLOSE_ONES",
+      "verses": "83:28",
+      "vc": 1
+    },
+    {
+      "source": "Tooba",
+      "target": "Paradise",
+      "rel_ar": "في",
+      "rel_en": "IN",
+      "verses": "13:29",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Tooba",
+      "rel_ar": "للذين آمنوا",
+      "rel_en": "FOR_BELIEVERS",
+      "verses": "13:29",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Romans",
+      "rel_ar": "أخبر بغلبهم",
+      "rel_en": "FORETOLD_DEFEAT_OF",
+      "verses": "30:2, 30:3",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Romans",
+      "rel_ar": "أخبر بانتصارهم بعدها",
+      "rel_en": "FORETOLD_LATER_VICTORY",
+      "verses": "30:3, 30:4",
+      "vc": 2
+    },
+    {
+      "source": "Psalms",
+      "target": "David",
+      "rel_ar": "أُنزل على",
+      "rel_en": "REVEALED_TO",
+      "verses": "4:163, 17:55",
+      "vc": 2
+    },
+    {
+      "source": "The_Fly",
+      "target": "Allah",
+      "rel_ar": "ضُرب مثلاً",
+      "rel_en": "USED_AS_PARABLE",
+      "verses": "22:73",
+      "vc": 1
+    },
+    {
+      "source": "The_Fly",
+      "target": "Polytheists",
+      "rel_ar": "لا يستطيعون خلقه",
+      "rel_en": "CANNOT_CREATE",
+      "verses": "22:73",
+      "vc": 1
+    },
+    {
+      "source": "Quran",
+      "target": "Laylat_Al_Qadr",
+      "rel_ar": "أُنزل في",
+      "rel_en": "REVEALED_IN",
+      "verses": "97:1, 44:3",
+      "vc": 2
+    },
+    {
+      "source": "Laylat_Al_Qadr",
+      "target": "Allah",
+      "rel_ar": "خير من ألف شهر",
+      "rel_en": "BETTER_THAN_1000_MONTHS",
+      "verses": "97:3",
+      "vc": 1
+    },
+    {
+      "source": "Angels",
+      "target": "Laylat_Al_Qadr",
+      "rel_ar": "تتنزّل فيها",
+      "rel_en": "DESCEND_IN",
+      "verses": "97:4",
+      "vc": 1
+    },
+    {
+      "source": "Gabriel",
+      "target": "Laylat_Al_Qadr",
+      "rel_ar": "ينزل فيها",
+      "rel_en": "DESCENDS_IN",
+      "verses": "97:4",
+      "vc": 1
+    },
+    {
+      "source": "The_Muslims",
+      "target": "Bayat_Ridwan",
+      "rel_ar": "بايعوا تحت الشجرة",
+      "rel_en": "PLEDGED_UNDER_TREE",
+      "verses": "48:18",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Bayat_Ridwan",
+      "rel_ar": "رضي عن المبايعين",
+      "rel_en": "PLEASED_WITH_PLEDGERS",
+      "verses": "48:18",
+      "vc": 1
+    },
+    {
+      "source": "Bayat_Ridwan",
+      "target": "Muhammad",
+      "rel_ar": "بايعوا",
+      "rel_en": "PLEDGED_TO",
+      "verses": "48:10, 48:18",
+      "vc": 2
+    },
+    {
+      "source": "Bayat_Ridwan",
+      "target": "Treaty_of_Hudaybiyyah",
+      "rel_ar": "سبقت",
+      "rel_en": "PRECEDED",
+      "verses": "48:18",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "Allah",
+      "rel_ar": "اصطفاها",
+      "rel_en": "CHOSEN_BY",
+      "verses": "3:42",
+      "vc": 1
+    },
+    {
+      "source": "Mary",
+      "target": "Allah",
+      "rel_ar": "قانتة",
+      "rel_en": "DEVOUT_TO",
+      "verses": "66:12",
+      "vc": 1
+    },
+    {
+      "source": "Iblis",
+      "target": "Jinn",
+      "rel_ar": "كان من",
+      "rel_en": "WAS_AMONG",
+      "verses": "18:50",
+      "vc": 1
+    },
+    {
+      "source": "Iblis",
+      "target": "Angels",
+      "rel_ar": "كان بينهم",
+      "rel_en": "WAS_AMONG",
+      "verses": "2:34, 15:31, 18:50",
+      "vc": 3
+    },
+    {
+      "source": "Solomon",
+      "target": "Horses_Solomon",
+      "rel_ar": "عُرضت عليه",
+      "rel_en": "PRESENTED_TO",
+      "verses": "38:31",
+      "vc": 1
+    },
+    {
+      "source": "Solomon",
+      "target": "Horses_Solomon",
+      "rel_ar": "مسح سوقها وأعناقها",
+      "rel_en": "STRUCK_THEIR_LEGS",
+      "verses": "38:33",
+      "vc": 1
+    },
+    {
+      "source": "Beast_of_Earth",
+      "target": "Day_of_Judgment",
+      "rel_ar": "تخرج قبل",
+      "rel_en": "EMERGES_BEFORE",
+      "verses": "27:82",
+      "vc": 1
+    },
+    {
+      "source": "Beast_of_Earth",
+      "target": "Mankind",
+      "rel_ar": "تكلّم الناس",
+      "rel_en": "SPEAKS_TO",
+      "verses": "27:82",
+      "vc": 1
+    },
+    {
+      "source": "Adam",
+      "target": "Eve",
+      "rel_ar": "زوج",
+      "rel_en": "HUSBAND_OF",
+      "verses": "2:35, 7:19",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Adam",
+      "rel_ar": "نهى عن الشجرة",
+      "rel_en": "FORBADE_TREE",
+      "verses": "2:35, 7:19",
+      "vc": 2
+    },
+    {
+      "source": "Ismail",
+      "target": "Kaaba",
+      "rel_ar": "بنى مع أبيه",
+      "rel_en": "CO_BUILT",
+      "verses": "2:127",
+      "vc": 1
+    },
+    {
+      "source": "Staff_of_Moses",
+      "target": "Pharaoh",
+      "rel_ar": "تحولت لحية أمام",
+      "rel_en": "TURNED_TO_SERPENT_BEFORE",
+      "verses": "7:107, 20:20, 26:32, 26:45",
+      "vc": 4
+    },
+    {
+      "source": "Aaron",
+      "target": "Pharaoh",
+      "rel_ar": "واجه مع موسى",
+      "rel_en": "CONFRONTED_WITH_MOSES",
+      "verses": "7:104, 10:75, 20:47, 23:45, 26:16",
+      "vc": 5
+    },
+    {
+      "source": "Aaron",
+      "target": "Golden_Calf",
+      "rel_ar": "لم يستطع منعهم",
+      "rel_en": "COULD_NOT_PREVENT",
+      "verses": "20:90, 20:94",
+      "vc": 2
+    },
+    {
+      "source": "Moses",
+      "target": "Aaron",
+      "rel_ar": "عاتبه على العجل",
+      "rel_en": "BLAMED_ABOUT_CALF",
+      "verses": "7:150, 20:92, 20:94",
+      "vc": 3
+    },
+    {
+      "source": "Joseph",
+      "target": "Allah",
+      "rel_ar": "رأى رؤيا",
+      "rel_en": "HAD_VISION_FROM",
+      "verses": "12:4",
+      "vc": 1
+    },
+    {
+      "source": "Joseph",
+      "target": "Jacob",
+      "rel_ar": "لقي أباه في مصر",
+      "rel_en": "REUNITED_WITH",
+      "verses": "12:99, 12:100",
+      "vc": 2
+    },
+    {
+      "source": "David",
+      "target": "Allah",
+      "rel_ar": "صنع الدروع بإذن",
+      "rel_en": "MADE_ARMOR_BY_PERMISSION",
+      "verses": "21:80, 34:10, 34:11",
+      "vc": 3
+    },
+    {
+      "source": "Solomon",
+      "target": "Allah",
+      "rel_ar": "طلب ملكاً لا ينبغي لأحد",
+      "rel_en": "ASKED_FOR_UNIQUE_KINGDOM",
+      "verses": "38:35",
+      "vc": 1
+    },
+    {
+      "source": "Jinn",
+      "target": "Solomon",
+      "rel_ar": "بنوا له محاريب وتماثيل",
+      "rel_en": "BUILT_STRUCTURES_FOR",
+      "verses": "34:13",
+      "vc": 1
+    },
+    {
+      "source": "Noah",
+      "target": "Ark_of_Noah",
+      "rel_ar": "حمل من كل زوجين",
+      "rel_en": "CARRIED_PAIRS",
+      "verses": "11:40, 23:27",
+      "vc": 2
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Allah",
+      "rel_ar": "رأى ملكوت السماوات",
+      "rel_en": "SHOWN_KINGDOM_OF_HEAVENS",
+      "verses": "6:75",
+      "vc": 1
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Allah",
+      "rel_ar": "حاجّ قومه بالكواكب",
+      "rel_en": "ARGUED_WITH_STARS",
+      "verses": "6:76, 6:77, 6:78, 6:80",
+      "vc": 4
+    },
+    {
+      "source": "Lot",
+      "target": "People_of_Lot",
+      "rel_ar": "عرض بناته بديلاً",
+      "rel_en": "OFFERED_DAUGHTERS",
+      "verses": "11:78, 15:71",
+      "vc": 2
+    },
+    {
+      "source": "Angels",
+      "target": "People_of_Lot",
+      "rel_ar": "جاؤوا لإهلاك",
+      "rel_en": "CAME_TO_DESTROY",
+      "verses": "11:77, 11:81, 15:61",
+      "vc": 3
+    },
+    {
+      "source": "Angels",
+      "target": "Ibrahim",
+      "rel_ar": "بشّروه بإسحاق",
+      "rel_en": "GAVE_GLAD_TIDINGS_OF_ISAAC",
+      "verses": "11:69, 11:71, 15:53, 51:28",
+      "vc": 4
+    },
+    {
+      "source": "Angels",
+      "target": "Lot",
+      "rel_ar": "أنذروه بالعذاب",
+      "rel_en": "WARNED_OF_PUNISHMENT",
+      "verses": "11:81, 15:65",
+      "vc": 2
+    },
+    {
+      "source": "Jesus",
+      "target": "Allah",
+      "rel_ar": "خلق من الطين كهيئة الطير",
+      "rel_en": "CREATED_BIRD_FROM_CLAY",
+      "verses": "3:49, 5:110",
+      "vc": 2
+    },
+    {
+      "source": "Jesus",
+      "target": "Disciples",
+      "rel_ar": "سأل من أنصاري إلى الله",
+      "rel_en": "ASKED_FOR_HELPERS",
+      "verses": "3:52, 61:14",
+      "vc": 2
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Jesus",
+      "rel_ar": "أرادوا قتله",
+      "rel_en": "ATTEMPTED_TO_KILL",
+      "verses": "4:157",
+      "vc": 1
+    },
+    {
+      "source": "Muhammad",
+      "target": "Quran",
+      "rel_ar": "تلقّى",
+      "rel_en": "RECEIVED",
+      "verses": "2:185, 96:1, 73:1",
+      "vc": 3
+    },
+    {
+      "source": "Muhammad",
+      "target": "Quraysh",
+      "rel_ar": "هاجر من بطشهم",
+      "rel_en": "EMIGRATED_FROM_PERSECUTION",
+      "verses": "8:30, 9:40",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "ما ودّعك وما قلى",
+      "rel_en": "DID_NOT_ABANDON",
+      "verses": "93:3",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Muhammad",
+      "rel_ar": "شرح صدره",
+      "rel_en": "EXPANDED_CHEST_OF",
+      "verses": "94:1",
+      "vc": 1
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Moses",
+      "rel_ar": "طارد",
+      "rel_en": "PURSUED",
+      "verses": "20:78, 26:60",
+      "vc": 2
+    },
+    {
+      "source": "Pharaoh",
+      "target": "Allah",
+      "rel_ar": "آمن عند الغرق",
+      "rel_en": "BELIEVED_WHEN_DROWNING",
+      "verses": "10:90, 10:91",
+      "vc": 2
+    },
+    {
+      "source": "Allah",
+      "target": "Pharaoh",
+      "rel_ar": "حفظ جسده آية",
+      "rel_en": "PRESERVED_BODY_AS_SIGN",
+      "verses": "10:92",
+      "vc": 1
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Moses",
+      "rel_ar": "طلبوا رؤية الله",
+      "rel_en": "ASKED_TO_SEE_GOD",
+      "verses": "2:55, 4:153, 7:155",
+      "vc": 3
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Moses",
+      "rel_ar": "اشتكوا من الطعام",
+      "rel_en": "COMPLAINED_ABOUT_FOOD",
+      "verses": "2:61",
+      "vc": 1
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Allah",
+      "rel_ar": "نقضوا الميثاق",
+      "rel_en": "BROKE_COVENANT",
+      "verses": "2:83, 4:155, 5:13",
+      "vc": 3
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Allah",
+      "rel_ar": "قتلوا الأنبياء",
+      "rel_en": "KILLED_PROPHETS",
+      "verses": "2:61, 2:87, 3:21, 4:155",
+      "vc": 4
+    },
+    {
+      "source": "Children_of_Israel",
+      "target": "Moses",
+      "rel_ar": "عبدوا العجل في غيابه",
+      "rel_en": "WORSHIPPED_CALF_IN_ABSENCE",
+      "verses": "2:51, 7:148, 20:85",
+      "vc": 3
+    },
+    {
+      "source": "Allah",
+      "target": "People_of_Cave",
+      "rel_ar": "ضرب على آذانهم",
+      "rel_en": "SEALED_EARS",
+      "verses": "18:11",
+      "vc": 1
+    },
+    {
+      "source": "Al-Khidr",
+      "target": "Allah",
+      "rel_ar": "عبد آتاه رحمة وعلماً",
+      "rel_en": "SERVANT_WITH_MERCY",
+      "verses": "18:65",
+      "vc": 1
+    },
+    {
+      "source": "Moses",
+      "target": "Al-Khidr",
+      "rel_ar": "طلب أن يتبعه",
+      "rel_en": "ASKED_TO_FOLLOW",
+      "verses": "18:66",
+      "vc": 1
+    },
+    {
+      "source": "Al-Khidr",
+      "target": "Moses",
+      "rel_ar": "اشترط عدم السؤال",
+      "rel_en": "CONDITIONED_NO_QUESTIONS",
+      "verses": "18:70",
+      "vc": 1
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Earth",
+      "rel_ar": "بلغ مغرب الشمس",
+      "rel_en": "REACHED_WEST",
+      "verses": "18:86",
+      "vc": 1
+    },
+    {
+      "source": "Dhul-Qarnayn",
+      "target": "Earth",
+      "rel_ar": "بلغ مطلع الشمس",
+      "rel_en": "REACHED_EAST",
+      "verses": "18:90",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Job",
+      "rel_ar": "أمره بضرب الأرض برجله",
+      "rel_en": "COMMANDED_TO_STRIKE_GROUND",
+      "verses": "38:42",
+      "vc": 1
+    },
+    {
+      "source": "Allah",
+      "target": "Job",
+      "rel_ar": "وهب له أهله ومثلهم",
+      "rel_en": "RESTORED_FAMILY_DOUBLED",
+      "verses": "21:84, 38:43",
+      "vc": 2
+    },
+    {
+      "source": "Jonah",
+      "target": "Allah",
+      "rel_ar": "ذهب مغاضباً",
+      "rel_en": "LEFT_IN_ANGER",
+      "verses": "21:87",
+      "vc": 1
+    },
+    {
+      "source": "Jonah",
+      "target": "Mankind",
+      "rel_ar": "أُرسل إلى مائة ألف",
+      "rel_en": "SENT_TO_100000",
+      "verses": "37:147",
+      "vc": 1
+    },
+    {
+      "source": "Jinn",
+      "target": "Allah",
+      "rel_ar": "منهم مسلمون ومنهم قاسطون",
+      "rel_en": "SOME_MUSLIM_SOME_DEVIANT",
+      "verses": "72:14, 72:15",
+      "vc": 2
+    },
+    {
+      "source": "Angels",
+      "target": "Allah",
+      "rel_ar": "لا يعصون ما أمرهم",
+      "rel_en": "NEVER_DISOBEY",
+      "verses": "66:6, 21:19, 21:20",
+      "vc": 3
+    },
+    {
+      "source": "Angels",
+      "target": "Mankind",
+      "rel_ar": "يكتبون الأعمال",
+      "rel_en": "RECORD_DEEDS",
+      "verses": "82:10, 82:11, 50:17, 50:18",
+      "vc": 4
+    },
+    {
+      "source": "Angels",
+      "target": "The_Muslims",
+      "rel_ar": "يستغفرون للمؤمنين",
+      "rel_en": "SEEK_FORGIVENESS_FOR",
+      "verses": "40:7, 42:5",
+      "vc": 2
+    },
+    {
+      "source": "Quraysh",
+      "target": "Allah",
+      "rel_ar": "إيلاف رحلة الشتاء والصيف",
+      "rel_en": "TRADE_JOURNEYS_FROM",
+      "verses": "106:1, 106:2",
+      "vc": 2
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Muhammad",
+      "rel_ar": "شهدوا كذباً",
+      "rel_en": "FALSELY_TESTIFIED",
+      "verses": "63:1",
+      "vc": 1
+    },
+    {
+      "source": "Hypocrites",
+      "target": "Battle_of_Uhud",
+      "rel_ar": "تخلّفوا في",
+      "rel_en": "STAYED_BEHIND_IN",
+      "verses": "3:167, 3:168",
+      "vc": 2
+    },
+    {
+      "source": "Ibrahim",
+      "target": "Scrolls_of_Ibrahim",
+      "rel_ar": "أُنزلت عليه",
+      "rel_en": "RECEIVED",
+      "verses": "87:19, 53:36",
+      "vc": 2
+    }
+  ]
+}
