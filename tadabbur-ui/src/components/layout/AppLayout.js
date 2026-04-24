@@ -62,10 +62,10 @@ const AppLayout = ({ children }) => {
       {/* Global Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 border-b border-emerald-100 dark:border-gray-700 shadow-sm transition-colors duration-300 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-[auto_1fr_auto] items-center gap-2 h-20 md:hidden" dir="ltr">
+          <div className="flex justify-between items-center gap-3 h-20 md:hidden w-full">
             <button
               onClick={toggleTheme}
-              className="p-2 text-gray-500 dark:text-gray-400 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
+              className="p-2 text-gray-500 dark:text-gray-400 hover:text-gold-600 dark:hover:text-gold-400 transition-colors shrink-0"
               title="تغيير المظهر"
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -73,8 +73,7 @@ const AppLayout = ({ children }) => {
 
             <Link
               to="/"
-              dir={isRtl ? 'rtl' : 'ltr'}
-              className="mx-auto flex min-w-0 max-w-full items-center justify-center gap-2"
+              className="flex min-w-0 items-center justify-center gap-2 flex-1"
               onClick={() => {
                 setJurisMenuOpen(false);
                 setRhetoricMenuOpen(false);
@@ -82,19 +81,19 @@ const AppLayout = ({ children }) => {
                 setMobileMenuOpen(false);
               }}
             >
-              <span className="min-w-0 truncate text-lg font-bold tracking-tight font-serif">
-                <span className="text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>{' '}
-                <span className="text-gold-600 dark:text-gold-500 text-xl border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>{' '}
-                <span className="text-emerald-800 dark:text-emerald-400">{t(lang, 'platform_name_last')}</span>
-              </span>
               <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
                 <Book className="w-5 h-5 text-gold-500" />
               </div>
+              <span className="min-w-0 truncate text-lg font-bold tracking-tight font-serif flex items-baseline gap-1">
+                <span className="text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>
+                <span className="text-gold-600 dark:text-gold-500 text-xl border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>
+                <span className="text-emerald-800 dark:text-emerald-400">{t(lang, 'platform_name_last')}</span>
+              </span>
             </Link>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-gray-600 dark:text-gray-400 hover:text-emerald-600 transition-colors"
+              className="p-2 text-gray-600 dark:text-gray-400 hover:text-emerald-600 transition-colors shrink-0"
               aria-label={mobileMenuOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
