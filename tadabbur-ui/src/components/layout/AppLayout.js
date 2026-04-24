@@ -62,15 +62,19 @@ const AppLayout = ({ children }) => {
       {/* Global Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 border-b border-emerald-100 dark:border-gray-700 shadow-sm transition-colors duration-300 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center gap-3 h-20">
             {/* Logo area */}
-            <Link to="/" className="flex items-center gap-3" onClick={() => { setJurisMenuOpen(false); setRhetoricMenuOpen(false); }}>
-              <div className="p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
-                < Book className="w-6 h-6 text-gold-500" />
+            <Link
+              to="/"
+              className="flex min-w-0 items-center gap-2 sm:gap-3"
+              onClick={() => { setJurisMenuOpen(false); setRhetoricMenuOpen(false); }}
+            >
+              <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
+                <Book className="w-5 h-5 sm:w-6 sm:h-6 text-gold-500" />
               </div>
-              <span className="text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1.5">
-                <span className="text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>
-                <span className="text-gold-600 dark:text-gold-500 text-3xl pb-1 border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>
+              <span className="min-w-0 truncate text-lg sm:text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1 sm:gap-1.5">
+                <span className="truncate text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>
+                <span className="truncate text-gold-600 dark:text-gold-500 text-xl sm:text-3xl pb-1 border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>
                 <span className="text-emerald-800 dark:text-emerald-400">{t(lang, 'platform_name_last')}</span>
               </span>
             </Link>
@@ -243,7 +247,7 @@ const AppLayout = ({ children }) => {
             </nav>
 
             {/* Action Buttons */}
-            <div className="flex items-center gap-2 md:gap-4">
+            <div className="shrink-0 flex items-center gap-2 md:gap-4">
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
