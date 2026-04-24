@@ -120,9 +120,8 @@ export default function AmthalPage() {
                 </div>
 
                 {/* The Verse Card */}
-                <div className="bg-sand-50/30 dark:bg-gray-900/20 rounded-[2.5rem] p-10 border border-emerald-50/50 dark:border-gray-800/50 relative group-hover:bg-sand-50/50 dark:group-hover:bg-gray-800/40 transition-colors">
-                   <ImageIcon className="absolute top-6 left-6 text-emerald-100 dark:text-emerald-900/30 w-12 h-12" />
-                   <p className="text-3xl md:text-3xl quran-text drop-shadow-sm">
+                <div className="verse-card">
+                   <p className="quran-text">
                      {item.ayah_text}
                    </p>
                 </div>

@@ -132,9 +132,8 @@ export default function AhkamPage() {
                 </div>
 
                 {/* Ayah Text (Centered below Title) */}
-                <div className="relative py-4">
-                  <span className="absolute -top-4 -right-4 text-emerald-50 dark:text-emerald-900/10 text-6xl font-serif pointer-events-none opacity-50">«</span>
-                  <p className="text-3xl md:text-3xl quran-text bg-emerald-50/30 dark:bg-emerald-900/10 rounded-3xl p-6">
+                <div className="verse-card">
+                  <p className="quran-text">
                     {item.ayah_text}
                   </p>
                 </div>

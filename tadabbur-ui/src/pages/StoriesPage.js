@@ -283,7 +283,7 @@ const StoriesPage = () => {
                                 <div className="absolute top-4 left-4 opacity-10 group-hover:scale-110 transition-transform">
                                    <MapPin className="w-12 h-12 text-emerald-800" />
                                 </div>
-                                <div className="text-3xl md:text-3xl font-me-quran select-none leading-[2.2] md:leading-[2.5] text-center md:text-right">
+                                <div className="quran-text">
                                   {mowda.text}
                                 </div>
                               </div>

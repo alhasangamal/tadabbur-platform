@@ -107,8 +107,8 @@ export default function ContrastsPage() {
                           </span>
                           <BookOpen className="w-4 h-4 text-emerald-300 dark:text-emerald-600" />
                        </div>
-                       <div className="p-8 bg-[#fcfbf7] dark:bg-gray-900/40 rounded-[3rem] border border-emerald-50/50 dark:border-gray-700 min-h-[160px] flex items-center justify-center relative w-full group-hover:border-emerald-200 transition-colors">
-                          <p className={`text-xl md:text-2xl quran-text ${aIdx % 2 === 0 ? 'text-emerald-900 dark:text-emerald-100' : 'text-amber-900 dark:text-amber-100'}`}>
+                       <div className="verse-card min-h-[160px] flex items-center justify-center w-full group-hover:border-emerald-200 transition-colors">
+                          <p className={`quran-text ${aIdx % 2 === 0 ? 'text-emerald-900 dark:text-emerald-100' : 'text-amber-900 dark:text-amber-100'}`}>
                              {ayah.ayah_text}
                           </p>
                        </div>

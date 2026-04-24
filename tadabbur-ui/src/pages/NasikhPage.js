@@ -132,7 +132,7 @@ export default function NasikhPage() {
                          المنسوخ (Abrogated)
                        </div>
                        <div className="relative bg-amber-50/20 dark:bg-amber-900/5 rounded-[2rem] p-8 border border-amber-100/30 dark:border-amber-900/20 transition-all group-hover/verse:bg-amber-50/40 dark:group-hover/verse:bg-amber-900/10">
-                          <p className="text-2xl md:text-3xl quran-text opacity-70 group-hover/verse:opacity-100 transition-opacity">
+                          <p className="quran-text opacity-70 group-hover/verse:opacity-100 transition-opacity">
                             {item.mansukh_text}
                           </p>
                        </div>
@@ -155,7 +155,7 @@ export default function NasikhPage() {
                          الناسخ (Abrogating)
                        </div>
                        <div className="bg-emerald-50/40 dark:bg-emerald-900/20 rounded-[2rem] p-8 border border-emerald-100/50 dark:border-emerald-900/30 transition-all group-hover/verse:bg-emerald-50/60 dark:group-hover/verse:bg-amber-900/30 shadow-inner">
-                          <p className="text-2xl md:text-4xl quran-text drop-shadow-sm">
+                          <p className="quran-text">
                             {item.nasikh_text}
                           </p>
                        </div>

@@ -245,7 +245,7 @@ export default function SurahDetailsPage() {
                               {topicVerses[topic.id]?.length > 0 ? (
                                 topicVerses[topic.id].map((v, i) => (
                                   <div key={i} className="bg-white dark:bg-gray-800/50 rounded-2xl p-6 border border-emerald-50 dark:border-emerald-900/30 mb-4 shadow-sm">
-                                    <p className="text-3xl quran-text">
+                                    <p className="quran-text">
                                       {v.text_uthmani} 
                                       <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 text-sm mr-4 border border-emerald-100 dark:border-emerald-800 font-bold">
                                         {v.ayah_key.split(':')[1]}
