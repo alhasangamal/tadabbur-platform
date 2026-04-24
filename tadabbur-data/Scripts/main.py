@@ -319,7 +319,7 @@ def get_graph_data():
     RETURN 
         s.slug AS s_slug, s.name_ar AS s_name, s.name_en AS s_name_en, s.entity_type AS s_type,
         t.slug AS t_slug, t.name_ar AS t_name, t.name_en AS t_name_en, t.entity_type AS t_type,
-        r.relation_label_ar AS label,
+        r.source_basis AS label,
         r.evidence_notes AS evidence_notes
     LIMIT 2000
     """
@@ -340,12 +340,14 @@ def get_graph_data():
                     "name_en": rec["t_name_en"], "type": rec["t_type"],
                     "x": None, "y": None
                 }
-            links.append({
-                "source": rec["s_slug"],
-                "target": rec["t_slug"],
-                "label": rec["label"] or "",
-                "evidence_notes": rec["evidence_notes"] or ""
-            })
+            MATCH (s:Entity)-[r:RELATES]->(t:Entity)
+RETURN 
+    s.slug AS s_slug, s.name_ar AS s_name, s.name_en AS s_name_en, s.entity_type AS s_type,
+    t.slug AS t_slug, t.name_ar AS t_name, t.name_en AS t_name_en, t.entity_type AS t_type,
+    r.relation_label_ar AS label,
+    r.source_basis AS relation_type,
+    r.evidence_notes AS evidence_notes
+    LIMIT 2000
         return {"nodes": list(nodes.values()), "links": links}
 
 
