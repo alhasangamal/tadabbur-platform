@@ -1,19 +1,37 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useQuranData } from '../../context/QuranDataContext';
-import { Moon, Sun, Languages, Search, Book, Network, Library, Gavel, ArrowLeftRight, ChevronDown, Scale, Sparkles, Copy, Bookmark, ArrowUp, User, Menu, X } from 'lucide-react';
+import {
+  Moon,
+  Sun,
+  Book,
+  Network,
+  Library,
+  Gavel,
+  ArrowLeftRight,
+  ChevronDown,
+  Scale,
+  Sparkles,
+  Copy,
+  ArrowUp,
+  User,
+  Menu,
+  X,
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import GlobalSearchBar from './GlobalSearchBar';
 import { t } from '../../locales';
 
 const AppLayout = ({ children }) => {
-  const { theme, toggleTheme, lang, toggleLang, isRtl } = useQuranData();
+  const { theme, toggleTheme, lang, isRtl } = useQuranData();
   const location = useLocation();
+
   const [jurisMenuOpen, setJurisMenuOpen] = React.useState(false);
   const [rhetoricMenuOpen, setRhetoricMenuOpen] = React.useState(false);
   const [storiesMenuOpen, setStoriesMenuOpen] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  
+  const [mobileJurisOpen, setMobileJurisOpen] = React.useState(false);
+  const [mobileRhetoricOpen, setMobileRhetoricOpen] = React.useState(false);
+  const [mobileStoriesOpen, setMobileStoriesOpen] = React.useState(false);
   const [showScroll, setShowScroll] = React.useState(false);
 
   React.useEffect(() => {
@@ -24,6 +42,7 @@ const AppLayout = ({ children }) => {
         setShowScroll(false);
       }
     };
+
     window.addEventListener('scroll', checkScroll);
     return () => window.removeEventListener('scroll', checkScroll);
   }, [showScroll]);
@@ -50,16 +69,84 @@ const AppLayout = ({ children }) => {
     { nameEn: 'Quranic Stories', nameAr: 'القصص القرآنية', path: '/stories', icon: Library },
   ];
 
-  const isJurisActive = jurisprudenceLinks.some(link => location.pathname === link.path);
-  const isRhetoricActive = rhetoricLinks.some(link => location.pathname === link.path);
-  const isStoriesActive = storiesLinks.some(link => location.pathname === link.path);
+  const isJurisActive = jurisprudenceLinks.some((link) => location.pathname === link.path);
+  const isRhetoricActive = rhetoricLinks.some((link) => location.pathname === link.path);
+  const isStoriesActive = storiesLinks.some((link) => location.pathname === link.path);
+
+  React.useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileJurisOpen(isJurisActive);
+      setMobileRhetoricOpen(isRhetoricActive);
+      setMobileStoriesOpen(isStoriesActive);
+    }
+  }, [mobileMenuOpen, isJurisActive, isRhetoricActive, isStoriesActive]);
+
+  const closeAllMenus = () => {
+    setJurisMenuOpen(false);
+    setRhetoricMenuOpen(false);
+    setStoriesMenuOpen(false);
+    setMobileMenuOpen(false);
+  };
+
+  const closeDesktopMenus = () => {
+    setJurisMenuOpen(false);
+    setRhetoricMenuOpen(false);
+    setStoriesMenuOpen(false);
+  };
+
+  const renderMobileAccordion = (titleAr, titleEn, Icon, isOpen, setOpen, links, isActive) => (
+    <div className="pt-2">
+      <button
+        onClick={() => setOpen((open) => !open)}
+        className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all ${
+          isActive
+            ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
+            : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50'
+        }`}
+      >
+        <span className="flex items-center gap-3 text-sm font-bold">
+          <Icon className="w-4 h-4" />
+          <span>{isRtl ? titleAr : titleEn}</span>
+        </span>
+        <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <div className="mt-1 space-y-1 pr-4">
+              {links.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
+                    location.pathname === link.path
+                      ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
+                      : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                  }`}
+                >
+                  <link.icon className="w-4 h-4" />
+                  <span>{isRtl ? link.nameAr : link.nameEn}</span>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 
   return (
     <div className={`min-h-screen transition-colors duration-500 font-sans ${isRtl ? 'rtl' : 'ltr'}`} dir={isRtl ? 'rtl' : 'ltr'}>
-      {/* Global Background */}
       <div className="fixed inset-0 z-[-1] bg-[#f8f6f1] dark:bg-[#0f172a] transition-colors duration-500" />
-      
-      {/* Global Header */}
+
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 border-b border-emerald-100 dark:border-gray-700 shadow-sm transition-colors duration-300 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-3 h-20 md:hidden w-full">
@@ -74,12 +161,7 @@ const AppLayout = ({ children }) => {
             <Link
               to="/"
               className="flex min-w-0 items-center justify-center gap-2 flex-1"
-              onClick={() => {
-                setJurisMenuOpen(false);
-                setRhetoricMenuOpen(false);
-                setStoriesMenuOpen(false);
-                setMobileMenuOpen(false);
-              }}
+              onClick={closeAllMenus}
             >
               <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
                 <Book className="w-5 h-5 text-gold-500" />
@@ -92,7 +174,7 @@ const AppLayout = ({ children }) => {
             </Link>
 
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => setMobileMenuOpen((open) => !open)}
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-emerald-600 transition-colors shrink-0"
               aria-label={mobileMenuOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
             >
@@ -101,16 +183,10 @@ const AppLayout = ({ children }) => {
           </div>
 
           <div className="hidden md:flex justify-between items-center gap-3 h-20">
-            {/* Logo area */}
             <Link
               to="/"
               className="flex min-w-0 items-center gap-2 sm:gap-3"
-              onClick={() => {
-                setJurisMenuOpen(false);
-                setRhetoricMenuOpen(false);
-                setStoriesMenuOpen(false);
-                setMobileMenuOpen(false);
-              }}
+              onClick={closeAllMenus}
             >
               <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
                 <Book className="w-5 h-5 sm:w-6 sm:h-6 text-gold-500" />
@@ -122,7 +198,6 @@ const AppLayout = ({ children }) => {
               </span>
             </Link>
 
-            {/* Global Nav Links */}
             <nav className="hidden md:flex gap-6 items-center">
               {navLinks.map((link) => {
                 const active = location.pathname === link.path;
@@ -130,9 +205,11 @@ const AppLayout = ({ children }) => {
                   <Link
                     key={link.path}
                     to={link.path}
-                    onClick={() => { setJurisMenuOpen(false); setRhetoricMenuOpen(false); }}
+                    onClick={closeDesktopMenus}
                     className={`flex items-center gap-2 font-medium transition-all ${
-                      active ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500' : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
+                      active
+                        ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500'
+                        : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
                     } py-2`}
                   >
                     <link.icon className="w-4 h-4" />
@@ -141,13 +218,18 @@ const AppLayout = ({ children }) => {
                 );
               })}
 
-              {/* Jurisprudence Dropdown */}
               <div className="relative">
                 <button
-                  onMouseEnter={() => { setJurisMenuOpen(true); setRhetoricMenuOpen(false); }}
-                  onClick={() => setJurisMenuOpen(!jurisMenuOpen)}
+                  onMouseEnter={() => {
+                    setJurisMenuOpen(true);
+                    setRhetoricMenuOpen(false);
+                    setStoriesMenuOpen(false);
+                  }}
+                  onClick={() => setJurisMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
-                    isJurisActive ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500' : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
+                    isJurisActive
+                      ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
+                      : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
                   }`}
                 >
                   <Gavel className="w-4 h-4" />
@@ -186,13 +268,18 @@ const AppLayout = ({ children }) => {
                 </AnimatePresence>
               </div>
 
-              {/* Rhetoric Dropdown */}
               <div className="relative">
                 <button
-                  onMouseEnter={() => { setRhetoricMenuOpen(true); setJurisMenuOpen(false); setStoriesMenuOpen(false); }}
-                  onClick={() => setRhetoricMenuOpen(!rhetoricMenuOpen)}
+                  onMouseEnter={() => {
+                    setRhetoricMenuOpen(true);
+                    setJurisMenuOpen(false);
+                    setStoriesMenuOpen(false);
+                  }}
+                  onClick={() => setRhetoricMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
-                    isRhetoricActive ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500' : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
+                    isRhetoricActive
+                      ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
+                      : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
                   }`}
                 >
                   <Sparkles className="w-4 h-4" />
@@ -231,13 +318,18 @@ const AppLayout = ({ children }) => {
                 </AnimatePresence>
               </div>
 
-              {/* Stories Dropdown */}
               <div className="relative">
                 <button
-                  onMouseEnter={() => { setStoriesMenuOpen(true); setJurisMenuOpen(false); setRhetoricMenuOpen(false); }}
-                  onClick={() => setStoriesMenuOpen(!storiesMenuOpen)}
+                  onMouseEnter={() => {
+                    setStoriesMenuOpen(true);
+                    setJurisMenuOpen(false);
+                    setRhetoricMenuOpen(false);
+                  }}
+                  onClick={() => setStoriesMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
-                    isStoriesActive ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500' : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
+                    isStoriesActive
+                      ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
+                      : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
                   }`}
                 >
                   <Library className="w-4 h-4" />
@@ -276,12 +368,13 @@ const AppLayout = ({ children }) => {
                 </AnimatePresence>
               </div>
 
-              {/* About Link */}
               <Link
                 to="/about"
-                onClick={() => { setJurisMenuOpen(false); setRhetoricMenuOpen(false); setStoriesMenuOpen(false); }}
+                onClick={closeDesktopMenus}
                 className={`flex items-center gap-2 font-medium transition-all ${
-                  location.pathname === '/about' ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500' : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
+                  location.pathname === '/about'
+                    ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
                 } py-2`}
               >
                 <User className="w-4 h-4" />
@@ -289,9 +382,7 @@ const AppLayout = ({ children }) => {
               </Link>
             </nav>
 
-            {/* Action Buttons */}
             <div className="shrink-0 flex items-center gap-2 md:gap-4">
-              {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
                 className="p-2 text-gray-500 dark:text-gray-400 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
@@ -303,7 +394,6 @@ const AppLayout = ({ children }) => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
@@ -314,58 +404,35 @@ const AppLayout = ({ children }) => {
               className="md:hidden overflow-hidden border-t border-emerald-100 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg"
             >
               <nav className="p-4 space-y-1 max-h-[70vh] overflow-y-auto">
-                {/* Main Links */}
                 {navLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${
-                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                    }`}>
+                      location.pathname === link.path
+                        ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
+                        : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                    }`}
+                  >
                     <link.icon className="w-5 h-5" />
                     <span>{t(lang, link.name)}</span>
                   </Link>
                 ))}
 
-                {/* Jurisprudence Section */}
-                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'الأحكام' : 'Jurisprudence'}</span></div>
-                {jurisprudenceLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
-                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                    }`}>
-                    <link.icon className="w-4 h-4" />
-                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
-                  </Link>
-                ))}
+                {renderMobileAccordion('الأحكام', 'Jurisprudence', Gavel, mobileJurisOpen, setMobileJurisOpen, jurisprudenceLinks, isJurisActive)}
+                {renderMobileAccordion('البلاغة', 'Rhetoric', Sparkles, mobileRhetoricOpen, setMobileRhetoricOpen, rhetoricLinks, isRhetoricActive)}
+                {renderMobileAccordion('القصص', 'Stories', Library, mobileStoriesOpen, setMobileStoriesOpen, storiesLinks, isStoriesActive)}
 
-                {/* Rhetoric Section */}
-                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'البلاغة' : 'Rhetoric'}</span></div>
-                {rhetoricLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
-                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                    }`}>
-                    <link.icon className="w-4 h-4" />
-                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
-                  </Link>
-                ))}
-
-                {/* Stories Section */}
-                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'القصص' : 'Stories'}</span></div>
-                {storiesLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
-                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                    }`}>
-                    <link.icon className="w-4 h-4" />
-                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
-                  </Link>
-                ))}
-
-                {/* About */}
-                <Link to="/about" onClick={() => setMobileMenuOpen(false)}
+                <Link
+                  to="/about"
+                  onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
-                    location.pathname === '/about' ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                  }`}>
+                    location.pathname === '/about'
+                      ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
+                      : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                  }`}
+                >
                   <User className="w-4 h-4" />
                   <span>{t(lang, 'about')}</span>
                 </Link>
@@ -375,12 +442,10 @@ const AppLayout = ({ children }) => {
         </AnimatePresence>
       </header>
 
-      {/* Main Content Area */}
       <main className={`${location.pathname === '/graph' ? '' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12'} relative animate-fade`}>
         {children}
       </main>
 
-      {/* Global Scroll to Top Button */}
       <AnimatePresence>
         {showScroll && (
           <motion.button
