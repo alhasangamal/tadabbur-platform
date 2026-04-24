@@ -348,7 +348,7 @@ RETURN
     r.source_basis AS relation_type,
     r.evidence_notes AS evidence_notes
     LIMIT 2000
-        return {"nodes": list(nodes.values()), "links": links}
+    return {"nodes": list(nodes.values()), "links": links}
 
 
 @app.get("/topics/entity/{slug}")
