@@ -1,9 +1,12 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from neo4j import GraphDatabase
 import psycopg2
 import os
+import smtplib
+from email.message import EmailMessage
 from dotenv import load_dotenv
+from pydantic import BaseModel
 
 load_dotenv()
 
@@ -28,6 +31,61 @@ driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 def get_pg_conn():
     return psycopg2.connect(os.getenv("DATABASE_URL", "postgresql://postgres:123456@localhost/TadabburData"))
 
+
+class ContactMessage(BaseModel):
+    type: str = "general"
+    name: str = ""
+    email: str = ""
+    page: str = ""
+    message: str
+
+
+def send_contact_email(payload: ContactMessage):
+    smtp_host = os.getenv("SMTP_HOST")
+    smtp_port = int(os.getenv("SMTP_PORT", "587"))
+    smtp_username = os.getenv("SMTP_USERNAME")
+    smtp_password = os.getenv("SMTP_PASSWORD")
+    smtp_from_email = os.getenv("SMTP_FROM_EMAIL", smtp_username or "noreply@example.com")
+    contact_email_to = os.getenv("CONTACT_EMAIL_TO", "alhasangamal19@gmail.com")
+    smtp_use_tls = os.getenv("SMTP_USE_TLS", "true").lower() != "false"
+
+    if not smtp_host or not smtp_username or not smtp_password or not contact_email_to:
+        raise RuntimeError("SMTP settings are not configured")
+
+    subject_map = {
+        "bug": "بلاغ عن خطأ",
+        "suggestion": "اقتراح جديد",
+        "correction": "تصحيح بيانات",
+        "general": "رسالة عامة",
+    }
+    message_type_label = subject_map.get(payload.type, payload.type or "رسالة")
+
+    body_lines = [
+        "وصلك نموذج تواصل جديد من منصة تدبر.",
+        "",
+        f"نوع الرسالة: {message_type_label}",
+        f"الاسم: {payload.name.strip() or 'غير مذكور'}",
+        f"البريد الإلكتروني: {payload.email.strip() or 'غير مذكور'}",
+        f"الصفحة/القسم: {payload.page.strip() or 'غير مذكور'}",
+        "",
+        "نص الرسالة:",
+        payload.message.strip(),
+    ]
+
+    email_message = EmailMessage()
+    email_message["Subject"] = f"[منصة تدبر] {message_type_label}"
+    email_message["From"] = smtp_from_email
+    email_message["To"] = contact_email_to
+    if payload.email.strip():
+        email_message["Reply-To"] = payload.email.strip()
+    email_message.set_content("\n".join(body_lines))
+
+    with smtplib.SMTP(smtp_host, smtp_port, timeout=20) as server:
+        if smtp_use_tls:
+            server.starttls()
+        server.login(smtp_username, smtp_password)
+        server.send_message(email_message)
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
@@ -36,6 +94,21 @@ def health():
 @app.get("/")
 def root():
     return {"message": "Tadabbur Graph API is running"}
+
+
+@app.post("/contact")
+def submit_contact_message(payload: ContactMessage):
+    if not payload.message or not payload.message.strip():
+        raise HTTPException(status_code=400, detail="Message is required")
+
+    try:
+        send_contact_email(payload)
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail="Failed to send message") from exc
+
+    return {"success": True, "message": "Contact message sent successfully"}
 
 
 @app.get("/surahs/map")

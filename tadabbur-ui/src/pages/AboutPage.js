@@ -1,40 +1,83 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useQuranData } from '../context/QuranDataContext';
-import { Mail, User, Code, Database, BrainCircuit, MessageSquare, Send, CheckCircle2, AlertCircle, Sparkles, BookOpen, Globe, MessageCircle } from 'lucide-react';
+import {
+  Mail,
+  Code,
+  Database,
+  BrainCircuit,
+  MessageSquare,
+  Send,
+  CheckCircle2,
+  AlertCircle,
+  Sparkles,
+  BookOpen,
+  Globe,
+  MessageCircle,
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function AboutPage() {
-  const { lang, isRtl } = useQuranData();
+const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
 
+export default function AboutPage() {
+  const { isRtl } = useQuranData();
   const [formData, setFormData] = useState({
     type: 'general',
     name: '',
     email: '',
     page: '',
-    message: ''
+    message: '',
   });
-  const [status, setStatus] = useState('idle'); // idle, submitting, success, error
+  const [status, setStatus] = useState('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleTypeSelect = (type) => {
-    setFormData(prev => ({ ...prev, type }));
+    setFormData((prev) => ({ ...prev, type }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setErrorMessage('');
     setStatus('submitting');
 
-    // محاكاة إرسال البيانات (يمكن ربطه لاحقاً بـ API حقيقي)
-    setTimeout(() => {
+    try {
+      const response = await fetch(`${API_BASE}/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          page: formData.page.trim(),
+          message: formData.message.trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        let detail = 'تعذر إرسال الرسالة حالياً.';
+        try {
+          const data = await response.json();
+          detail = data.detail || detail;
+        } catch {
+          // Ignore non-JSON error responses.
+        }
+        throw new Error(detail);
+      }
+
       setStatus('success');
       setFormData({ type: 'general', name: '', email: '', page: '', message: '' });
       setTimeout(() => setStatus('idle'), 5000);
-    }, 1500);
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage(error.message || 'تعذر إرسال الرسالة حالياً.');
+    }
   };
 
   const messageTypes = [
@@ -45,31 +88,41 @@ export default function AboutPage() {
   ];
 
   const pages = [
-    'الصفحة الرئيسية', 'فهرس السور', 'عرض السورة', 'الرسم البياني للمفاهيم',
-    'آيات الأحكام', 'الناسخ والمنسوخ', 'التشريعات', 'الأمثال القرآنية',
-    'المتشابهات', 'الثنائيات', 'القصص القرآنية', 'أخرى'
+    'الصفحة الرئيسية',
+    'فهرس السور',
+    'عرض السورة',
+    'الرسم البياني للمفاهيم',
+    'آيات الأحكام',
+    'الناسخ والمنسوخ',
+    'التشريعات',
+    'الأمثال القرآنية',
+    'المتشابهات',
+    'الثنائيات',
+    'القصص القرآنية',
+    'أخرى',
   ];
 
   return (
     <div className="w-full max-w-5xl mx-auto space-y-12 animate-fade pb-20 px-4 md:px-0">
       <Helmet>
         <title>عن المنصة وتواصل معنا | منصة تدبر</title>
-        <meta name="description" content="تعرف على مطور منصة تدبر وتواصل معنا لتقديم اقتراحاتك أو الإبلاغ عن الأخطاء." />
+        <meta
+          name="description"
+          content="تعرّف على مطور منصة تدبر وتواصل معنا لتقديم اقتراحاتك أو الإبلاغ عن الأخطاء."
+        />
       </Helmet>
 
-      {/* Header */}
       <div className="text-center space-y-4 pt-4">
         <h1 className="text-4xl md:text-5xl font-bold font-kufi text-emerald-900 dark:text-emerald-400">
           من نحن
         </h1>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          منصة تهدف إلى توظيف أحدث تقنيات الويب والذكاء الاصطناعي لخدمة كتاب الله، وتيسير تدبره، وعرض علومه بطريقة معاصرة، تفاعلية، وميسرة.
+          منصة تهدف إلى توظيف أحدث تقنيات الويب والذكاء الاصطناعي لخدمة كتاب الله، وتيسير تدبره،
+          وعرض علومه بطريقة معاصرة وتفاعلية وميسرة.
         </p>
       </div>
 
       <div className="flex flex-col gap-10">
-
-        {/* Developer Profile Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,18 +141,17 @@ export default function AboutPage() {
                   className="w-full h-full object-cover object-top"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "https://ui-avatars.com/api/?name=Alhassan+Gamal&background=047857&color=fff";
+                    e.target.src = 'https://ui-avatars.com/api/?name=Alhassan+Gamal&background=047857&color=fff';
                   }}
                 />
               </div>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center md:items-start text-center md:text-right">
+            <div className={`relative z-10 flex flex-col items-center ${isRtl ? 'md:items-start md:text-right' : 'md:items-start md:text-left'} text-center`}>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">الحسن جمال</h2>
               <p className="text-gold-400 font-medium tracking-wide text-lg md:text-xl">عالم بيانات وخبير تحليلات استراتيجية</p>
               <p className="text-emerald-100/80 text-md mt-1" dir="ltr">Data Scientist & Strategic Analytics Expert</p>
 
-              {/* Social Links */}
               <div className="flex items-center gap-3 mt-6">
                 <a href="https://www.linkedin.com/in/alhasan-gamal-480473173/" target="_blank" rel="noopener noreferrer" className="p-2.5 bg-white/10 hover:bg-white/20 hover:scale-110 rounded-full transition-all text-white border border-white/10 hover:border-white/30 shadow-lg" title="LinkedIn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -134,10 +186,13 @@ export default function AboutPage() {
                 عن المطور
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg text-justify">
-                متخصص في هندسة البيانات وبناء نماذج الذكاء الاصطناعي (AI & Machine Learning)، مع خبرة واسعة في تصميم حلول ذكاء الأعمال (Business Intelligence) التي تخدم المؤسسات التقنية والرقمية الكبرى. تدرجت في العمل كخبير بيانات وموجه تقني في عدة برامج محلية وعالمية، منها (NCSI) في سلطنة عمان، بالإضافة إلى دوري كمدرب ومرشد في مبادرات تعليمية مرموقة مثل (Samsung Innovation Campus) ومعهد تكنولوجيا المعلومات (ITI).
+                متخصص في هندسة البيانات وبناء نماذج الذكاء الاصطناعي، مع خبرة في تصميم حلول ذكاء الأعمال
+                والتحليلات المتقدمة. جاءت منصة تدبر كامتداد لهذه الخبرة لتقديم تجربة قرآنية معاصرة
+                تُسهل التدبر والاستكشاف وتربط المعاني والعلاقات بأسلوب بصري وتقني حديث.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg text-justify mt-4">
-                تعتمد فلسفتي التقنية على تحويل البيانات المعقدة إلى معرفة عملية ميسرة. ومن هذا المنطلق، وُلدت فكرة هذه المنصة؛ لتكون عملاً تقنياً احترافياً وصدقة جارية تهدف لخدمة كتاب الله، من خلال تسخير أحدث أدوات التكنولوجيا لتحليل بنية القرآن، واستكشاف العلاقات بين الآيات، وتسهيل التدبر بأسلوب عصري يجمع بين الأصالة والحداثة.
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg text-justify">
+                الهدف من المشروع هو بناء عمل نافع يخدم كتاب الله، ويوظف التقنية في تسهيل الوصول إلى
+                المفاهيم، والموضوعات، والروابط بين السور والآيات في بيئة استخدام واضحة ومريحة.
               </p>
             </div>
 
@@ -147,10 +202,11 @@ export default function AboutPage() {
                 التقنيات وراء المنصة
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg mb-4">
-                تم بناء المنصة باستخدام هيكلية متطورة (Modern Tech Stack) لضمان السرعة والتوسعية:
+                تم بناء المنصة باستخدام هيكلية حديثة تجمع بين الواجهة التفاعلية، وواجهات برمجة
+                التطبيقات السريعة، وقواعد البيانات العلائقية والرسمية.
               </p>
               <div className="flex flex-wrap gap-3">
-                {['Python', 'FastAPI', 'React', 'Neo4j (Graph DB)', 'PostgreSQL', 'TailwindCSS', 'Playwright', 'Machine Learning'].map(tech => (
+                {['Python', 'FastAPI', 'React', 'Neo4j', 'PostgreSQL', 'TailwindCSS', 'Playwright', 'Machine Learning'].map((tech) => (
                   <span key={tech} className="px-4 py-2 bg-sand-100 dark:bg-gray-700 text-emerald-800 dark:text-emerald-300 rounded-full text-md font-medium border border-sand-200 dark:border-gray-600 shadow-sm transition-transform hover:scale-105" dir="ltr">
                     {tech}
                   </span>
@@ -160,7 +216,6 @@ export default function AboutPage() {
           </div>
         </motion.div>
 
-        {/* Contact Form Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -172,13 +227,11 @@ export default function AboutPage() {
               تواصل معنا
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
-              نسعد بتواصلكم معنا لتقديم الاقتراحات أو تصحيح أي أخطاء لتطوير المنصة.
+              يمكنك إرسال اقتراح، بلاغ خطأ، أو تصحيح بيانات، وسيتم إرساله فعليًا إلى البريد المخصص للاستقبال.
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
-
-            {/* Message Type Selection */}
             <div className="space-y-3">
               <label className="block text-sm font-bold text-gray-700 dark:text-gray-300">
                 نوع الرسالة <span className="text-red-500">*</span>
@@ -189,10 +242,11 @@ export default function AboutPage() {
                     key={type.id}
                     type="button"
                     onClick={() => handleTypeSelect(type.id)}
-                    className={`flex flex-col items-center justify-center p-4 rounded-2xl border-2 transition-all duration-300 ${formData.type === type.id
-                      ? `${type.bg} ${type.border} ${type.color} shadow-md scale-[1.02]`
-                      : 'border-gray-100 dark:border-gray-700 hover:border-emerald-200 dark:hover:border-emerald-800 text-gray-500 bg-gray-50 dark:bg-gray-800/50'
-                      }`}
+                    className={`flex flex-col items-center justify-center p-4 rounded-2xl border-2 transition-all duration-300 ${
+                      formData.type === type.id
+                        ? `${type.bg} ${type.border} ${type.color} shadow-md scale-[1.02]`
+                        : 'border-gray-100 dark:border-gray-700 hover:border-emerald-200 dark:hover:border-emerald-800 text-gray-500 bg-gray-50 dark:bg-gray-800/50'
+                    }`}
                   >
                     <type.icon className={`w-6 h-6 mb-2 ${formData.type === type.id ? type.color : 'text-gray-400'}`} />
                     <span className="font-medium text-sm">{type.label}</span>
@@ -201,11 +255,10 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Inputs */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="block text-sm font-bold text-gray-700 dark:text-gray-300">
-                  الاسم (اختياري)
+                  الاسم
                 </label>
                 <input
                   type="text"
@@ -218,7 +271,7 @@ export default function AboutPage() {
               </div>
               <div className="space-y-2">
                 <label className="block text-sm font-bold text-gray-700 dark:text-gray-300">
-                  البريد الإلكتروني (اختياري)
+                  البريد الإلكتروني
                 </label>
                 <input
                   type="email"
@@ -243,8 +296,8 @@ export default function AboutPage() {
                 className="w-full bg-sand-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all appearance-none"
               >
                 <option value="">-- اختر الصفحة (اختياري) --</option>
-                {pages.map(p => (
-                  <option key={p} value={p}>{p}</option>
+                {pages.map((page) => (
+                  <option key={page} value={page}>{page}</option>
                 ))}
               </select>
             </div>
@@ -259,7 +312,7 @@ export default function AboutPage() {
                 onChange={handleChange}
                 required
                 rows={5}
-                placeholder="اكتب تفاصيل الاقتراح أو المشكلة هنا بدقة..."
+                placeholder="اكتب تفاصيل الرسالة هنا بدقة..."
                 className="w-full bg-sand-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none"
               ></textarea>
             </div>
@@ -284,11 +337,22 @@ export default function AboutPage() {
               {status === 'success' && (
                 <>
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>تم الإرسال بنجاح! شكراً لتواصلك.</span>
+                  <span>تم الإرسال بنجاح. شكرًا لتواصلك.</span>
+                </>
+              )}
+              {status === 'error' && (
+                <>
+                  <AlertCircle className="w-5 h-5" />
+                  <span>إعادة المحاولة</span>
                 </>
               )}
             </button>
 
+            {status === 'error' && (
+              <div className="rounded-xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 px-4 py-3 text-sm text-red-700 dark:text-red-300">
+                {errorMessage || 'حدث خطأ أثناء إرسال الرسالة.'}
+              </div>
+            )}
           </form>
         </motion.div>
       </div>
