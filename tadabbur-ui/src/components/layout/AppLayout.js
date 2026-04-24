@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useQuranData } from '../../context/QuranDataContext';
-import { Moon, Sun, Languages, Search, Book, Network, Library, Gavel, ArrowLeftRight, ChevronDown, Scale, Sparkles, Copy, Bookmark, ArrowUp, User } from 'lucide-react';
+import { Moon, Sun, Languages, Search, Book, Network, Library, Gavel, ArrowLeftRight, ChevronDown, Scale, Sparkles, Copy, Bookmark, ArrowUp, User, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GlobalSearchBar from './GlobalSearchBar';
 import { t } from '../../locales';
@@ -12,6 +12,7 @@ const AppLayout = ({ children }) => {
   const [jurisMenuOpen, setJurisMenuOpen] = React.useState(false);
   const [rhetoricMenuOpen, setRhetoricMenuOpen] = React.useState(false);
   const [storiesMenuOpen, setStoriesMenuOpen] = React.useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   
   const [showScroll, setShowScroll] = React.useState(false);
 
@@ -251,9 +252,87 @@ const AppLayout = ({ children }) => {
               >
                 {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
+              {/* Mobile Menu Toggle */}
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 text-gray-600 dark:text-gray-400 hover:text-emerald-600 transition-colors"
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="md:hidden overflow-hidden border-t border-emerald-100 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg"
+            >
+              <nav className="p-4 space-y-1 max-h-[70vh] overflow-y-auto">
+                {/* Main Links */}
+                {navLinks.map((link) => (
+                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${
+                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                    }`}>
+                    <link.icon className="w-5 h-5" />
+                    <span>{t(lang, link.name)}</span>
+                  </Link>
+                ))}
+
+                {/* Jurisprudence Section */}
+                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'الأحكام' : 'Jurisprudence'}</span></div>
+                {jurisprudenceLinks.map((link) => (
+                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
+                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                    }`}>
+                    <link.icon className="w-4 h-4" />
+                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
+                  </Link>
+                ))}
+
+                {/* Rhetoric Section */}
+                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'البلاغة' : 'Rhetoric'}</span></div>
+                {rhetoricLinks.map((link) => (
+                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
+                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                    }`}>
+                    <link.icon className="w-4 h-4" />
+                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
+                  </Link>
+                ))}
+
+                {/* Stories Section */}
+                <div className="pt-2 pb-1 px-4"><span className="text-xs font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">{isRtl ? 'القصص' : 'Stories'}</span></div>
+                {storiesLinks.map((link) => (
+                  <Link key={link.path} to={link.path} onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
+                      location.pathname === link.path ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                    }`}>
+                    <link.icon className="w-4 h-4" />
+                    <span>{isRtl ? link.nameAr : link.nameEn}</span>
+                  </Link>
+                ))}
+
+                {/* About */}
+                <Link to="/about" onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
+                    location.pathname === '/about' ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold' : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
+                  }`}>
+                  <User className="w-4 h-4" />
+                  <span>{t(lang, 'about')}</span>
+                </Link>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       {/* Main Content Area */}
