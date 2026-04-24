@@ -3,6 +3,7 @@ import axios from "axios";
 import { X, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuranData } from "../../context/QuranDataContext";
+import { getRelationLabel } from "./relationLabels";
 
 export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRtl }) {
   const { isLight } = useQuranData();
@@ -64,7 +65,7 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
     if (evidenceNotes && !versesData[relIndex]) {
       setVersesLoading(true);
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/verses/by-keys`, { params: { keys: evidenceNotes } });
+        const res = await axios.get(`${API_BASE}/verses/by-keys`, { params: { keys: evidenceNotes } });
         setVersesData(prev => ({ ...prev, [relIndex]: res.data.verses || [] }));
       } catch (err) {
         console.error("Error fetching verses:", err);
@@ -144,7 +145,7 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
           relations.map((rel, idx) => {
             const isSource = rel.source_slug === entity.id;
             const otherLabel = isSource ? rel.target_name_ar : rel.source_name_ar;
-            const relationLabel = rel.relation_label_ar || rel.relation_type || "علاقة";
+            const relationLabel = getRelationLabel(rel, lang);
             const isExp = expandedRel === idx;
             const evidenceNotes = rel.evidence_notes || "";
 

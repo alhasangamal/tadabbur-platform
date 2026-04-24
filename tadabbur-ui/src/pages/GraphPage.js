@@ -3,6 +3,7 @@ import ForceGraph2D from "react-force-graph-2d";
 import { Loader2, Search, X, Plus, Minus, Maximize2 } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import GraphSidePanel from "../components/graph/GraphSidePanel";
+import { getRelationLabel } from "../components/graph/relationLabels";
 import { AnimatePresence } from "framer-motion";
 
 // ─── Colors matching i-quran.com ───
@@ -65,7 +66,7 @@ export default function GraphPage() {
     graphData.links.forEach(l => {
       const s = typeof l.source === 'object' ? l.source.id : l.source;
       const t = typeof l.target === 'object' ? l.target.id : l.target;
-      const labelText = l.label || l.label_ar || l.type || '';
+      const labelText = getRelationLabel(l, lang);
       // Sort source and target so direction doesn't duplicate the same relation
       const key = [s, t].sort().join('-') + '-' + labelText;
       if (!uniqueLinksMap.has(key)) {
@@ -100,7 +101,7 @@ export default function GraphPage() {
       }
     });
     return { nodes, links };
-  }, [graphData]);
+  }, [graphData, lang]);
 
   // Build type counts for legend
   const typeCounts = {};
@@ -302,12 +303,13 @@ export default function GraphPage() {
     }
 
     // Label pill
-    if (link.label && !isDim && (gs > 0.3 || isHL)) {
+    const relationLabel = getRelationLabel(link, lang);
+    if (relationLabel && !isDim && (gs > 0.3 || isHL)) {
       const fs = (isHL ? 9 : 7)/gs;
       ctx.font = `600 ${fs}px 'Noto Kufi Arabic',sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      const tw = ctx.measureText(link.label).width;
+      const tw = ctx.measureText(relationLabel).width;
       const px = 4/gs, py = 2/gs, bw = tw+px*2, bh = fs+py*2, br = bh/2;
       const bx = labelPoint.x-bw/2, by = labelPoint.y-bh/2;
 
@@ -328,11 +330,11 @@ export default function GraphPage() {
       ctx.stroke();
 
       ctx.fillStyle = isLight ? '#0f766e' : '#2dd4bf';
-      ctx.fillText(link.label, labelPoint.x, labelPoint.y);
+      ctx.fillText(relationLabel, labelPoint.x, labelPoint.y);
     }
 
     ctx.restore();
-  }, [selectedEntity, isLight]);
+  }, [selectedEntity, isLight, lang]);
 
   // Search
   const suggestions = searchValue && graphData?.nodes
