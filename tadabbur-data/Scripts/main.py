@@ -4,6 +4,7 @@ from neo4j import GraphDatabase
 import psycopg2
 import os
 import smtplib
+import re
 from email.message import EmailMessage
 from dotenv import load_dotenv
 from pydantic import BaseModel
@@ -74,7 +75,11 @@ def send_contact_email(payload: ContactMessage):
 
     email_message = EmailMessage()
     email_message["Subject"] = f"[منصة تدبر] {message_type_label}"
-    email_message["From"] = smtp_from_email
+    if payload.name.strip():
+        email_message["From"] = f"{payload.name.strip()} <{payload.email.strip() or smtp_from_email}>"
+    else:
+        email_message["From"] = payload.email.strip() or smtp_from_email
+        
     email_message["To"] = contact_email_to
     if payload.email.strip():
         email_message["Reply-To"] = payload.email.strip()
@@ -99,7 +104,15 @@ def root():
 @app.post("/contact")
 def submit_contact_message(payload: ContactMessage):
     if not payload.message or not payload.message.strip():
-        raise HTTPException(status_code=400, detail="Message is required")
+        raise HTTPException(status_code=400, detail="الرسالة مطلوبة")
+    
+    if not payload.email or not payload.email.strip():
+        raise HTTPException(status_code=400, detail="البريد الإلكتروني مطلوب")
+        
+    # Basic email regex validation
+    email_regex = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+    if not re.match(email_regex, payload.email.strip()):
+        raise HTTPException(status_code=400, detail="يرجى إدخال بريد إلكتروني صحيح")
 
     try:
         send_contact_email(payload)
