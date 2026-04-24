@@ -88,7 +88,7 @@ export default function GraphPage() {
     Object.values(linkGroups).forEach(group => {
       if (group.length > 1) {
         group.forEach((l, i) => {
-          const step = 0.4; // Distance between arrows
+          const step = 0.7; // Distance between arrows
           const baseCurv = (i - (group.length - 1) / 2) * step;
           const s = typeof l.source === 'object' ? l.source.id : l.source;
           const t = typeof l.target === 'object' ? l.target.id : l.target;

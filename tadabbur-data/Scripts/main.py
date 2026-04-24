@@ -228,7 +228,7 @@ def get_all_graph_relations():
         t.name_ar AS target_name_ar,
         t.entity_type AS target_type,
         type(r) AS relation_type,
-        r.relation_label_ar AS relation_label_ar,
+        r.source_basis AS relation_label_ar,
         r.evidence_notes AS evidence_notes
     LIMIT 2000
     """
@@ -250,7 +250,7 @@ def get_entity_neighbors(slug: str):
         x.name_ar AS target_name_ar,
         x.entity_type AS target_type,
         type(r) AS relation_type,
-        r.relation_label_ar AS relation_label_ar,
+        r.source_basis AS relation_label_ar,
         r.evidence_notes AS evidence_notes
     UNION
     MATCH (x:Entity)-[r]->(e:Entity {slug:$slug})
@@ -261,7 +261,7 @@ def get_entity_neighbors(slug: str):
         e.name_ar AS target_name_ar,
         x.entity_type AS target_type,
         type(r) AS relation_type,
-        r.relation_label_ar AS relation_label_ar,
+        r.source_basis AS relation_label_ar,
         r.evidence_notes AS evidence_notes
     LIMIT 200
     """
