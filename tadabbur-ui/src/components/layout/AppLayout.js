@@ -69,7 +69,9 @@ const AppLayout = ({ children }) => {
 
   const storiesLinks = [
     { nameEn: 'Quranic Stories', nameAr: 'القصص القرآنية', path: '/stories', icon: Library },
+    { nameEn: 'Quranic Characters', nameAr: 'شخصيات القرآن', path: '/characters', icon: User },
   ];
+
 
   const isJurisActive = jurisprudenceLinks.some((link) => location.pathname === link.path);
   const isRhetoricActive = rhetoricLinks.some((link) => location.pathname === link.path);
@@ -371,19 +373,6 @@ const AppLayout = ({ children }) => {
               </div>
 
               <Link
-                to="/ask-quran"
-                onClick={closeDesktopMenus}
-                className={`flex items-center gap-2 font-medium transition-all ${
-                  location.pathname === '/ask-quran'
-                    ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
-                } py-2`}
-              >
-                <Sparkles className="w-4 h-4" />
-                <span>{t(lang, 'ask_quran')}</span>
-              </Link>
-
-              <Link
                 to="/about"
                 onClick={closeDesktopMenus}
                 className={`flex items-center gap-2 font-medium transition-all ${
@@ -438,19 +427,6 @@ const AppLayout = ({ children }) => {
                 {renderMobileAccordion('الأحكام', 'Jurisprudence', Gavel, mobileJurisOpen, setMobileJurisOpen, jurisprudenceLinks, isJurisActive)}
                 {renderMobileAccordion('البلاغة', 'Rhetoric', Sparkles, mobileRhetoricOpen, setMobileRhetoricOpen, rhetoricLinks, isRhetoricActive)}
                 {renderMobileAccordion('القصص', 'Stories', Library, mobileStoriesOpen, setMobileStoriesOpen, storiesLinks, isStoriesActive)}
-
-                <Link
-                  to="/ask-quran"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${
-                    location.pathname === '/ask-quran'
-                      ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
-                      : 'text-gray-600 dark:text-gray-400 hover:bg-emerald-50/50'
-                  }`}
-                >
-                  <Sparkles className="w-5 h-5" />
-                  <span>{t(lang, 'ask_quran')}</span>
-                </Link>
 
                 <Link
                   to="/about"
