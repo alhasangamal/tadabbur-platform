@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext, useRef, useEffect } from 'r
 const AudioContext = createContext();
 
 export const RECITERS = [
-  { id: 7, name: 'مشاري راشد العفاسي', englishName: 'Mishary Rashid Alafasy' },
+  { id: 3, name: 'أبو بكر الشاطري', englishName: 'Abu Bakr Al-Shatri' },
   { id: 1, name: 'عبد الباسط عبد الصمد', englishName: 'AbdulBaset AbdulSamad' },
   { id: 6, name: 'محمود خليل الحصري', englishName: 'Mahmoud Khalil Al-Husary' },
   { id: 5, name: 'سعد الغامدي', englishName: 'Saad Al-Ghamdi' }
@@ -11,7 +11,7 @@ export const RECITERS = [
 
 export const AudioProvider = ({ children }) => {
   const [currentSurah, setCurrentSurah] = useState(null);
-  const [reciterId, setReciterId] = useState(7);
+  const [reciterId, setReciterId] = useState(3);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

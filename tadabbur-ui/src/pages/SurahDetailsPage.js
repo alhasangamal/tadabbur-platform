@@ -4,7 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { useQuranData } from "../context/QuranDataContext";
 import { useAudio, RECITERS } from "../context/AudioContext";
-import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, Play, Pause, ChevronDown } from "lucide-react";
+import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, Play, Pause, ChevronDown, BookMarked, X } from "lucide-react";
+
+const TAFSIR_OPTIONS = [
+  { id: 14, name: 'تفسير ابن كثير', slug: 'ar-tafsir-ibn-kathir' },
+  { id: 90, name: 'تفسير القرطبي', slug: 'ar-tafseer-al-qurtubi' },
+  { id: 16, name: 'التفسير الميسر', slug: 'ar-tafsir-muyassar' },
+  { id: 91, name: 'تفسير السعدي', slug: 'ar-tafseer-al-saddi' },
+  { id: 93, name: 'التفسير الوسيط (طنطاوي)', slug: 'ar-tafsir-al-wasit' },
+  { id: 94, name: 'تفسير البغوي', slug: 'ar-tafsir-al-baghawi' },
+  { id: 15, name: 'تفسير الطبري', slug: 'ar-tafsir-al-tabari' },
+];
 
 export default function SurahDetailsPage() {
   const { id } = useParams();
@@ -16,6 +26,14 @@ export default function SurahDetailsPage() {
   const [expandedTopic, setExpandedTopic] = useState(null);
   const [topicVerses, setTopicVerses] = useState({}); // Cache for verses
   const [versesLoading, setVersesLoading] = useState(false);
+
+  // Tafsir state
+  const [showTafsirMenu, setShowTafsirMenu] = useState(false);
+  const [selectedTafsir, setSelectedTafsir] = useState(null);
+  const [tafsirData, setTafsirData] = useState([]);
+  const [tafsirLoading, setTafsirLoading] = useState(false);
+  const [tafsirPage, setTafsirPage] = useState(1);
+  const [tafsirPagination, setTafsirPagination] = useState(null);
 
   const surahObj = surahs?.[id] || {};
   const surahName = surahObj?.name_ar || `سورة ${id}`;
@@ -42,6 +60,14 @@ export default function SurahDetailsPage() {
     fetchTopics();
   }, [id]);
 
+  // Reset tafsir when surah changes
+  useEffect(() => {
+    setSelectedTafsir(null);
+    setTafsirData([]);
+    setTafsirPage(1);
+    setTafsirPagination(null);
+  }, [id]);
+
   const handleToggleTopic = async (topicId) => {
     if (expandedTopic === topicId) {
       setExpandedTopic(null);
@@ -61,6 +87,47 @@ export default function SurahDetailsPage() {
         setVersesLoading(false);
       }
     }
+  };
+
+  const fetchTafsir = async (tafsirId, page = 1) => {
+    setTafsirLoading(true);
+    try {
+      const QURAN_API = 'https://api.quran.com/api/v4';
+      const res = await axios.get(`${QURAN_API}/tafsirs/${tafsirId}/by_chapter/${id}?per_page=10&page=${page}`);
+      const tafsirs = res.data?.tafsirs || [];
+      setTafsirData(prev => page === 1 ? tafsirs : [...prev, ...tafsirs]);
+      setTafsirPagination(res.data?.pagination || null);
+    } catch (err) {
+      console.error("Error fetching tafsir:", err);
+    } finally {
+      setTafsirLoading(false);
+    }
+  };
+
+  const handleSelectTafsir = (tafsir) => {
+    setSelectedTafsir(tafsir);
+    setShowTafsirMenu(false);
+    setTafsirData([]);
+    setTafsirPage(1);
+    fetchTafsir(tafsir.id, 1);
+  };
+
+  const handleLoadMore = () => {
+    const nextPage = tafsirPage + 1;
+    setTafsirPage(nextPage);
+    fetchTafsir(selectedTafsir.id, nextPage);
+  };
+
+  const closeTafsir = () => {
+    setSelectedTafsir(null);
+    setTafsirData([]);
+    setTafsirPage(1);
+    setTafsirPagination(null);
+  };
+
+  const stripHtml = (html) => {
+    if (!html) return '';
+    return html.replace(/<[^>]*>?/gm, '');
   };
 
   if (loading) {
@@ -105,7 +172,7 @@ export default function SurahDetailsPage() {
         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
         
         <div className="relative z-10 flex flex-col items-center">
-            <div className="flex items-center gap-6 mb-8">
+            <div className="flex items-center gap-4 md:gap-6 mb-8 flex-wrap justify-center">
                <div className="w-16 h-16 bg-emerald-800/50 border border-emerald-700 rounded-2xl flex items-center justify-center text-gold-400 text-2xl font-bold">
                  {id}
                </div>
@@ -133,6 +200,50 @@ export default function SurahDetailsPage() {
                     </span>
                   )}
                </button>
+
+               {/* Tafsir Dropdown Button */}
+               <div className="relative">
+                 <button
+                   onClick={() => setShowTafsirMenu(!showTafsirMenu)}
+                   className={`flex items-center gap-2 px-5 py-3 rounded-2xl transition-all duration-300 font-bold ${
+                     selectedTafsir
+                       ? 'bg-gold-500 text-black shadow-[0_0_20px_rgba(217,119,6,0.3)]'
+                       : 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
+                   }`}
+                 >
+                   <BookMarked className="w-5 h-5" />
+                   <span>{selectedTafsir ? selectedTafsir.name : 'التفاسير'}</span>
+                   <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${showTafsirMenu ? 'rotate-180' : ''}`} />
+                 </button>
+
+                 <AnimatePresence>
+                   {showTafsirMenu && (
+                     <motion.div
+                       initial={{ opacity: 0, y: -8, scale: 0.95 }}
+                       animate={{ opacity: 1, y: 0, scale: 1 }}
+                       exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                       transition={{ duration: 0.2 }}
+                       className="absolute top-full mt-2 right-0 w-64 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden z-50"
+                     >
+                       <div className="p-2 max-h-72 overflow-y-auto">
+                         {TAFSIR_OPTIONS.map((tafsir) => (
+                           <button
+                             key={tafsir.id}
+                             onClick={() => handleSelectTafsir(tafsir)}
+                             className={`w-full text-right px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                               selectedTafsir?.id === tafsir.id
+                                 ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300'
+                                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                             }`}
+                           >
+                             {tafsir.name}
+                           </button>
+                         ))}
+                       </div>
+                     </motion.div>
+                   )}
+                 </AnimatePresence>
+               </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-serif text-white font-bold mb-2 tracking-tight" style={{ lineHeight: '1.2' }}>
@@ -179,6 +290,86 @@ export default function SurahDetailsPage() {
             )}
         </div>
       </div>
+
+      {/* Tafsir Section */}
+      <AnimatePresence>
+        {selectedTafsir && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-xl border border-gold-200 dark:border-gold-900/30 overflow-hidden"
+          >
+            {/* Tafsir Header */}
+            <div className="bg-gradient-to-l from-gold-50 to-amber-50 dark:from-gray-800 dark:to-gray-900 px-8 py-6 flex items-center justify-between border-b border-gold-100 dark:border-gray-700">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-gold-500/20 dark:bg-gold-500/10 flex items-center justify-center">
+                  <BookMarked className="w-5 h-5 text-gold-600 dark:text-gold-400" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">{selectedTafsir.name}</h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">سورة {surahName}</p>
+                </div>
+              </div>
+              <button
+                onClick={closeTafsir}
+                className="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-red-100 dark:hover:bg-red-900/30 flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Tafsir Content */}
+            <div className="p-6 md:p-8 max-h-[70vh] overflow-y-auto" style={{ direction: 'rtl' }}>
+              {tafsirLoading && tafsirData.length === 0 ? (
+                <div className="flex flex-col items-center justify-center py-16 gap-4">
+                  <Loader2 className="w-10 h-10 text-gold-500 animate-spin" />
+                  <p className="text-gray-500 dark:text-gray-400 font-medium">جاري تحميل التفسير...</p>
+                </div>
+              ) : tafsirData.length === 0 ? (
+                <div className="text-center py-16 text-gray-400 dark:text-gray-500">
+                  لا يوجد تفسير متاح لهذه السورة حالياً.
+                </div>
+              ) : (
+                <div className="space-y-6">
+                  {tafsirData.map((item, idx) => (
+                    <div key={idx} className="bg-sand-50/50 dark:bg-gray-900/30 rounded-2xl p-6 border border-gray-100 dark:border-gray-700/50">
+                      <div className="flex items-center gap-2 mb-4">
+                        <span className="inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 text-sm font-bold border border-emerald-200 dark:border-emerald-800">
+                          {item.verse_key?.split(':')[1] || idx + 1}
+                        </span>
+                        <span className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+                          الآية {item.verse_key}
+                        </span>
+                      </div>
+                      <p className="text-gray-800 dark:text-gray-200 leading-loose text-base font-medium whitespace-pre-wrap">
+                        {stripHtml(item.text)}
+                      </p>
+                    </div>
+                  ))}
+
+                  {/* Load More */}
+                  {tafsirPagination && tafsirPagination.next_page && (
+                    <div className="flex justify-center pt-4 pb-2">
+                      <button
+                        onClick={handleLoadMore}
+                        disabled={tafsirLoading}
+                        className="flex items-center gap-2 px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl transition-colors shadow-lg disabled:opacity-50"
+                      >
+                        {tafsirLoading ? (
+                          <Loader2 className="w-5 h-5 animate-spin" />
+                        ) : (
+                          'تحميل المزيد'
+                        )}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="mt-12">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">

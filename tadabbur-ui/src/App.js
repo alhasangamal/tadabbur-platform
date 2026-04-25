@@ -26,6 +26,8 @@ const SurahDetailsPage = lazy(() => import("./pages/SurahDetailsPage"));
 const SearchResultsPage = lazy(() => import("./pages/SearchResultsPage"));
 const BookmarksPage = lazy(() => import("./pages/BookmarksPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
+const EndingsPage = lazy(() => import("./pages/EndingsPage"));
+const AskQuranPage = lazy(() => import("./pages/AskQuranPage"));
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -54,6 +56,8 @@ function App() {
                       <Route path="/mutash" element={<MutashPage />} />
                       <Route path="/contrasts" element={<ContrastsPage />} />
                       <Route path="/stories" element={<StoriesPage />} />
+                      <Route path="/endings" element={<EndingsPage />} />
+                      <Route path="/ask-quran" element={<AskQuranPage />} />
                       <Route path="/about" element={<AboutPage />} />
                       <Route path="*" element={<HomePage />} />
                     </Routes>
