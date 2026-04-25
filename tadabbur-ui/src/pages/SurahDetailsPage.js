@@ -46,7 +46,7 @@ export default function SurahDetailsPage() {
   const isCurrentPlaying = isPlaying && currentSurah?.surah_number === parseInt(id);
 
   useEffect(() => {
-    const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+    const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
     const fetchTopics = async () => {
       try {
         const res = await axios.get(`${API_BASE}/surahs/${id}/topics`);
@@ -76,7 +76,7 @@ export default function SurahDetailsPage() {
     setExpandedTopic(topicId);
     
     if (!topicVerses[topicId]) {
-      const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+      const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
       setVersesLoading(true);
       try {
         const res = await axios.get(`${API_BASE}/topics/${topicId}/verses`);

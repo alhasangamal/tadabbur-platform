@@ -15,7 +15,7 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
   const [surahMap, setSurahMap] = useState({});
 
   // Fetch surah names map once
-  const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+  const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
 
   // Fetch surah names map once
   useEffect(() => {

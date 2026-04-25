@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
 
 export default function AboutPage() {
   const { isRtl } = useQuranData();

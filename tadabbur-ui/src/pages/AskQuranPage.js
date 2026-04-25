@@ -30,7 +30,7 @@ export default function AskQuranPage() {
   ]);
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
-  const API_BASE = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+  const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
 
   const [isInitialMount, setIsInitialMount] = useState(true);
 
