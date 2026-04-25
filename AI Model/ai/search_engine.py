@@ -32,11 +32,24 @@ class QuranSearchEngine:
             print(f"Neo4j connection error: {e}")
             self.driver = None
 
-        self.stories_path = r"c:\Users\ALHASSANGAMAL\Desktop\tadabbur-platform\tadabbur-ui\src\data\stories_data.json"
-        self.endings_path = r"c:\Users\ALHASSANGAMAL\Desktop\tadabbur-platform\tadabbur-data\data\Scripts\quran_endings.json"
+        # Use absolute paths relative to this file
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        stories_path = os.path.join(base_dir, "..", "..", "tadabbur-data", "data", "Scripts", "القصص.json")
+        endings_path = os.path.join(base_dir, "..", "..", "tadabbur-data", "data", "Scripts", "quran_endings.json")
         
-        self.stories = self._load_json(self.stories_path)
-        self.endings = self._load_json(self.endings_path)
+        try:
+            with open(stories_path, "r", encoding="utf-8") as f:
+                self.stories = json.load(f)
+        except Exception as e:
+            print(f"Error loading stories: {e}")
+            self.stories = []
+
+        try:
+            with open(endings_path, "r", encoding="utf-8") as f:
+                self.endings = json.load(f)
+        except Exception as e:
+            print(f"Error loading endings: {e}")
+            self.endings = []
 
     def _load_json(self, path):
         if os.path.exists(path):
