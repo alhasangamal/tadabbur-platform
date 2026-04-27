@@ -2,8 +2,10 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import Fuse from 'fuse.js';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Search, BookOpen, ExternalLink, ArrowRightLeft, Sparkles, Scale, Gavel, Library, Copy } from 'lucide-react';
 import { useQuranData } from '../context/QuranDataContext';
+import CardSkeleton from '../components/common/CardSkeleton';
 
 // Import all data
 import ahkamData from '../data/ahkam_data.json';
@@ -81,6 +83,10 @@ export default function SearchResultsPage() {
 
   return (
     <div className="space-y-12 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade font-sans">
+      <Helmet>
+        <title>{isRtl ? 'نتائج البحث | منصة تدبر' : 'Search Results | Tadabbur'}</title>
+        <meta name="description" content={isRtl ? 'نتائج البحث الشامل في آيات وأحكام وقصص القرآن الكريم.' : 'Global search results for Quranic verses, rulings, and stories.'} />
+      </Helmet>
       <section className="text-center space-y-4 mb-12">
         <h1 className="title-primary flex items-center justify-center gap-4">
            <Search className="w-12 h-12 text-gold-500" />
@@ -99,9 +105,12 @@ export default function SearchResultsPage() {
         </div>
       )}
 
+
       {isSearching ? (
-        <div className="flex justify-center py-20">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-emerald-600"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <CardSkeleton key={i} />
+          ))}
         </div>
       ) : results.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

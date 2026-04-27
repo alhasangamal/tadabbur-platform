@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { X, Loader2 } from "lucide-react";
+import { X, Loader2, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { useQuranData } from "../../context/QuranDataContext";
 import { getRelationLabel } from "./relationLabels";
 
 export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRtl }) {
   const { isLight } = useQuranData();
+  const navigate = useNavigate();
   const [relations, setRelations] = useState([]);
   const [loading, setLoading] = useState(true);
   const [expandedRel, setExpandedRel] = useState(null);
@@ -120,14 +122,32 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
           {lang === 'ar' ? (entity.name_en || '') : entity.label}
         </div>
         <div style={{
-          display: 'inline-block', marginTop: 3,
-          padding: '2px 7px', borderRadius: 14,
-          fontSize: '.5rem', fontWeight: 600,
-          background: config.color + '15',
-          color: config.color,
-          border: `1px solid ${config.color}30`,
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 3
         }}>
-          {isRtl ? config.label : entity.type}
+          <div style={{
+            display: 'inline-block',
+            padding: '2px 7px', borderRadius: 14,
+            fontSize: '.5rem', fontWeight: 600,
+            background: config.color + '15',
+            color: config.color,
+            border: `1px solid ${config.color}30`,
+          }}>
+            {isRtl ? config.label : entity.type}
+          </div>
+          
+          {(entity.type === 'prophet' || entity.type === 'person' || entity.type === 'character') && (
+            <button 
+              onClick={() => navigate('/characters')}
+              style={{
+                background: 'none', border: 'none', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 3,
+                fontSize: '.5rem', fontWeight: 700, color: '#0f766e'
+              }}
+            >
+              <span>تفاصيل أكثر</span>
+              <ExternalLink className="w-2.5 h-2.5" />
+            </button>
+          )}
         </div>
       </div>
 

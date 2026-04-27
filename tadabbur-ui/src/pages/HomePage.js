@@ -25,10 +25,51 @@ export default function HomePage() {
       <Helmet>
         <title>منصة تدبر القرآن الكريم | الرئيسية</title>
         <meta name="description" content="منصة متقدمة لتدبر القرآن الكريم، استكشاف الأحكام، القصص، المتشابهات، البلاغة، باستخدام أحدث تقنيات البحث وتصور البيانات." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "منصة تدبر",
+            "url": window.location.origin,
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": `${window.location.origin}/search?q={search_term_string}`,
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "منصة تدبر",
+            "url": window.location.origin,
+            "logo": `${window.location.origin}/logo512.png`
+          })}
+        </script>
       </Helmet>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 shadow-2xl p-10 md:p-20 text-center transform-gpu animate-fade">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d4af37\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
+      <section className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#064e3b] via-[#022c22] to-[#065f46] shadow-2xl p-10 md:p-20 text-center transform-gpu">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <motion.div 
+            animate={{ 
+              rotate: [0, 90, 180, 270, 360],
+              scale: [1, 1.2, 1, 1.1, 1]
+            }}
+            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+            className="absolute -top-1/2 -right-1/4 w-[100%] h-[100%] opacity-[0.03] border-[2px] border-gold-500 rounded-full"
+          />
+          <motion.div 
+            animate={{ 
+              rotate: [360, 270, 180, 90, 0],
+              scale: [1, 1.1, 1.2, 1, 1]
+            }}
+            transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+            className="absolute -bottom-1/2 -left-1/4 w-[80%] h-[80%] opacity-[0.02] border-[1px] border-gold-400 rounded-[40%]"
+          />
+          <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M30 0l2.5 10h10l-7.5 7.5L37.5 30 30 22.5 22.5 30l2.5-12.5L17.5 10h10L30 0z\' fill=\'%23d4af37\' fill-opacity=\'1\'/%3E%3C/svg%3E")' }} />
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -65,8 +106,13 @@ export default function HomePage() {
             { n: "60", l: "حزب" },
             { n: "23", l: "سنة نزول" }
           ].map((stat, i) => (
-            <motion.div key={i} variants={itemVars} className="glass-card p-8 flex flex-col items-center justify-center text-center">
-              <span className="text-4xl md:text-5xl text-gradient-gold font-serif mb-3 font-bold">{stat.n}</span>
+            <motion.div 
+              key={i} 
+              variants={itemVars} 
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="glass-card p-8 flex flex-col items-center justify-center text-center group cursor-default"
+            >
+              <span className="text-4xl md:text-5xl text-gradient-gold font-serif mb-3 font-bold group-hover:scale-110 transition-transform">{stat.n}</span>
               <span className="text-base md:text-lg text-ink-light dark:text-sand-300 font-medium">{stat.l}</span>
             </motion.div>
           ))}
@@ -223,7 +269,12 @@ export default function HomePage() {
             { n: 30, text: "مَثَل قرآني", desc: "مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ كَمَثَلِ حَبَّةٍ · مَثَلُهُمْ كَمَثَلِ الَّذِي اسْتَوْقَدَ نَارًا..." },
             { n: 53, text: "دعاء قرآني", desc: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً · رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ · رَبِّ اشْرَحْ لِي صَدْرِي..." },
           ].reverse().map((item, i) => (
-            <div key={i} className="group glass-card p-5 text-center cursor-default relative overflow-hidden flex flex-col justify-center min-h-[180px]">
+            <motion.div 
+              key={i} 
+              variants={itemVars}
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group glass-card p-5 text-center cursor-default relative overflow-hidden flex flex-col justify-center min-h-[180px]"
+            >
               <div className="transition-transform duration-500 ease-out group-hover:-translate-y-10 z-10 w-full flex flex-col items-center justify-center">
                 <span className="block text-3xl text-gradient-gold font-serif mb-2 font-bold">{item.n}</span>
                 <span className="block text-sm font-medium text-ink dark:text-sand-50">{item.text}</span>
@@ -231,7 +282,9 @@ export default function HomePage() {
               <div className="absolute inset-x-3 bottom-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 z-10">
                 <span className="block text-[11px] text-ink-light dark:text-sand-300 leading-relaxed font-light">{item.desc}</span>
               </div>
-            </div>
+              {/* Subtle hover overlay */}
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+            </motion.div>
           ))}
         </div>
       </section>

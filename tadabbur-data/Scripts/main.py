@@ -10,11 +10,11 @@ import sys
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
-# Add AI Model to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "AI Model")))
-from ai.quran_ai import ask_quran_ai
-
 load_dotenv()
+
+# Add AI Model to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "AI Model")))
+from ai.quran_ai import ask_quran_ai
 
 app = FastAPI(title="Tadabbur Graph API")
 

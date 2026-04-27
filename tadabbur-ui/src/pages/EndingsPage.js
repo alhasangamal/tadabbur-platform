@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, BookOpen, Lightbulb, ChevronDown, Hash, MapPin, Filter, Layers, Sparkles, BarChart3, Moon } from "lucide-react";
+import { List } from "react-window";
 import { useQuranData } from "../context/QuranDataContext";
 import endingsData from "../data/quran_endings.json";
 import insightsData from "../data/insights_data.json";
@@ -357,27 +358,59 @@ export default function EndingsPage() {
                                   الآيات ({pair.references.length})
                                 </span>
                               </h4>
-                              <div className="space-y-3 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
-                                {pair.references.map((ref, ri) => (
-                                  <div
-                                    key={ri}
-                                    className="bg-sand-50/50 dark:bg-gray-900/30 rounded-2xl p-5 border border-gray-100 dark:border-gray-700/50 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors"
+                              <div className="space-y-3">
+                                {pair.references.length > 10 ? (
+                                  <List
+                                    height={400}
+                                    itemCount={pair.references.length}
+                                    itemSize={130}
+                                    width="100%"
+                                    className="custom-scrollbar"
                                   >
-                                    <div className="flex items-center gap-2 mb-3">
-                                      <span className="inline-flex items-center justify-center min-w-[2rem] h-7 px-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 text-xs font-bold border border-emerald-200 dark:border-emerald-800">
-                                        {ref.ayah}
-                                      </span>
-                                      <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
-                                        سورة {ref.surah}
-                                      </span>
-                                    </div>
-                                    {ref.text && (
-                                      <p className="quran-text text-base leading-[2.2]">
-                                        {ref.text}
-                                      </p>
+                                    {({ index, style }) => (
+                                      <div style={style} className="pr-2 pb-3">
+                                        <div className="bg-sand-50/50 dark:bg-gray-900/30 rounded-2xl p-5 border border-gray-100 dark:border-gray-700/50 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors h-full">
+                                          <div className="flex items-center gap-2 mb-2">
+                                            <span className="inline-flex items-center justify-center min-w-[2rem] h-7 px-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 text-xs font-bold border border-emerald-200 dark:border-emerald-800">
+                                              {pair.references[index].ayah}
+                                            </span>
+                                            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                                              سورة {pair.references[index].surah}
+                                            </span>
+                                          </div>
+                                          {pair.references[index].text && (
+                                            <p className="quran-text text-sm leading-[1.8] truncate">
+                                              {pair.references[index].text}
+                                            </p>
+                                          )}
+                                        </div>
+                                      </div>
                                     )}
+                                  </List>
+                                ) : (
+                                  <div className="space-y-3 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+                                    {pair.references.map((ref, ri) => (
+                                      <div
+                                        key={ri}
+                                        className="bg-sand-50/50 dark:bg-gray-900/30 rounded-2xl p-5 border border-gray-100 dark:border-gray-700/50 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors"
+                                      >
+                                        <div className="flex items-center gap-2 mb-3">
+                                          <span className="inline-flex items-center justify-center min-w-[2rem] h-7 px-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 text-xs font-bold border border-emerald-200 dark:border-emerald-800">
+                                            {ref.ayah}
+                                          </span>
+                                          <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                                            سورة {ref.surah}
+                                          </span>
+                                        </div>
+                                        {ref.text && (
+                                          <p className="quran-text text-base leading-[2.2]">
+                                            {ref.text}
+                                          </p>
+                                        )}
+                                      </div>
+                                    ))}
                                   </div>
-                                ))}
+                                )}
                               </div>
                             </div>
                           </div>

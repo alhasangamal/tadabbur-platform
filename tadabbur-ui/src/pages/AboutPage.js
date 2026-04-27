@@ -108,7 +108,7 @@ export default function AboutPage() {
         <title>عن المنصة وتواصل معنا | منصة تدبر</title>
         <meta
           name="description"
-          content="تعرّف على مطور منصة تدبر وتواصل معنا لتقديم اقتراحاتك أو الإبلاغ عن الأخطاء."
+          content="تعرّف على منصة تدبر، مشروع غير ربحي خالص لوجه الله يهدف لخدمة كتاب الله وتسهيل تدبر آياته."
         />
       </Helmet>
 
@@ -117,8 +117,8 @@ export default function AboutPage() {
           من نحن
         </h1>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          منصة تهدف إلى توظيف أحدث تقنيات الويب والذكاء الاصطناعي لخدمة كتاب الله، وتيسير تدبره،
-          وعرض علومه بطريقة معاصرة وتفاعلية وميسرة.
+          مشروع تقني غير ربحي، قائم على الجهود الذاتية، يهدف إلى توظيف أحدث تقنيات الويب والذكاء الاصطناعي لخدمة كتاب الله، وتيسير تدبره،
+          وعرض علومه بطريقة معاصرة وتفاعلية.
         </p>
       </div>
 
@@ -190,8 +190,22 @@ export default function AboutPage() {
                 والتحليلات المتقدمة. جاءت منصة تدبر كامتداد لهذه الخبرة لتقديم تجربة قرآنية معاصرة
                 تُسهل التدبر والاستكشاف وتربط المعاني والعلاقات بأسلوب بصري وتقني حديث.
               </p>
+              
+              <div className="bg-emerald-50/50 dark:bg-emerald-900/20 border-r-4 border-emerald-600 p-6 rounded-2xl space-y-3">
+                <h4 className="text-xl font-bold text-emerald-900 dark:text-emerald-400 flex items-center gap-2">
+                  <Sparkles className="w-5 h-5 text-gold-500" />
+                  النية والاحتساب
+                </h4>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg italic">
+                  "هذا العمل خالصٌ لوجه الله تعالى، لا نبتغي منه جزاءً ولا شكوراً، بل هو صدقة جارية تهدف لخدمة كتاب الله وتيسير تدبره لكل مسلم ومسلمة حول العالم. نسأل الله أن يتقبل هذا الجهد المتواضع ويجعله في ميزان الحسنات."
+                </p>
+                <div className="text-emerald-800 dark:text-emerald-500 font-serif text-xl text-center pt-2">
+                  ﴿ إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا ﴾
+                </div>
+              </div>
+
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg text-justify">
-                الهدف من المشروع هو بناء عمل نافع يخدم كتاب الله، ويوظف التقنية في تسهيل الوصول إلى
+                المشروع غير ربحي تماماً، والهدف الوحيد هو توظيف التقنية في تسهيل الوصول إلى
                 المفاهيم، والموضوعات، والروابط بين السور والآيات في بيئة استخدام واضحة ومريحة.
               </p>
             </div>

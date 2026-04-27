@@ -136,35 +136,53 @@ export default function SurahsPage() {
         key={filterType}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
       >
-        {filteredSurahs.map((surah) => (
-          <MotionLink
-            to={`/surahs/${surah.id}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            key={surah.id}
-            className="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:border-emerald-300 dark:hover:border-emerald-600 transition-all duration-300 cursor-pointer block"
-          >
-            {/* Corner Ribbon / Decoration */}
-            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-emerald-50 to-emerald-100/20 dark:from-emerald-900/40 dark:to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+        {filteredSurahs.map((surah) => {
+          const isMakki = surah.revelation_type?.toLowerCase().includes('mak') || surah.revelation_type?.toLowerCase().includes('mec');
+          return (
+            <MotionLink
+              to={`/surahs/${surah.id}`}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              key={surah.id}
+              className={`group relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl p-5 border shadow-sm transition-all duration-300 cursor-pointer block ${
+                isMakki 
+                  ? 'border-amber-100/50 dark:border-amber-900/30 hover:border-amber-300 dark:hover:border-amber-700 hover:shadow-amber-900/10' 
+                  : 'border-emerald-100/50 dark:border-emerald-900/30 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-emerald-900/10'
+              }`}
+            >
+              {/* Corner Ribbon / Decoration */}
+              <div className={`absolute top-0 right-0 w-16 h-16 rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity ${
+                isMakki 
+                  ? 'bg-gradient-to-br from-amber-50 to-transparent dark:from-amber-900/20' 
+                  : 'bg-gradient-to-br from-emerald-50 to-transparent dark:from-emerald-900/20'
+              }`} />
 
-            <div className="flex justify-between items-start mb-6">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-sand-100 dark:bg-gray-700 text-emerald-800 dark:text-emerald-400 font-bold text-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                {surah.id}
+              <div className="flex justify-between items-start mb-6">
+                <div className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-lg transition-colors ${
+                  isMakki 
+                    ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-400 group-hover:bg-amber-500 group-hover:text-white' 
+                    : 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white'
+                }`}>
+                  {surah.id}
+                </div>
+                <div className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs font-bold border transition-colors ${
+                  isMakki 
+                    ? 'bg-amber-50/50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-500 border-amber-100 dark:border-amber-900/50' 
+                    : 'bg-emerald-50/50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-500 border-emerald-100 dark:border-emerald-900/50'
+                }`}>
+                  {isMakki ? (
+                    <>
+                      <Moon className="w-3 h-3" />
+                      <span>{isRtl ? 'مكية' : 'Meccan'}</span>
+                    </>
+                  ) : (
+                    <>
+                      <MapPin className="w-3 h-3" />
+                      <span>{isRtl ? 'مدنية' : 'Medinan'}</span>
+                    </>
+                  )}
+                </div>
               </div>
-              <div className="flex items-center gap-1 text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-900/50 px-2 py-1 rounded-md text-xs font-medium border border-gray-100 dark:border-gray-700">
-                {surah.revelation_type?.toLowerCase().includes('mak') || surah.revelation_type?.toLowerCase().includes('mec') ? (
-                  <>
-                    <Moon className="w-3 h-3" />
-                    <span>{isRtl ? 'مكية' : 'Meccan'}</span>
-                  </>
-                ) : (
-                  <>
-                    <MapPin className="w-3 h-3" />
-                    <span>{isRtl ? 'مدنية' : 'Medinan'}</span>
-                  </>
-                )}
-              </div>
-            </div>
 
             <div className={`text-2xl font-bold text-gray-900 dark:text-white mb-1 tracking-tight ${isRtl ? 'font-serif' : ''}`}>
               {surah.name_ar}
@@ -178,8 +196,9 @@ export default function SurahsPage() {
               <span>{t.juz} {SURAH_JUZ_MAP[surah.id - 1] || 30}</span>
             </div>
           </MotionLink>
-        ))}
-      </div>
+        );
+      })}
+    </div>
       
       {filteredSurahs.length === 0 && (
         <div className="text-center py-20 text-gray-500 dark:text-gray-400 text-lg">

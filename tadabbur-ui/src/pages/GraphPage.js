@@ -198,10 +198,10 @@ export default function GraphPage() {
     ctx.stroke();
 
     // Label
-    if (gs > 0.25 || isHL) {
+    if (gs > 0.15 || isHL) {
       const lbl = lang === 'ar' ? node.label : (node.name_en || node.label);
-      const fs = Math.max(10, r * 1.2) / gs;
-      ctx.font = `700 ${fs}px 'Amiri',serif`;
+      const fs = Math.max(15, r * 2) / gs;
+      ctx.font = `700 ${fs}px 'Amiri Quran', serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'bottom';
       ctx.strokeStyle = isLight ? 'rgba(248,246,241,.92)' : 'rgba(6,8,16,.92)';
@@ -304,13 +304,13 @@ export default function GraphPage() {
 
     // Label pill
     const relationLabel = getRelationLabel(link, lang);
-    if (relationLabel && !isDim && (gs > 0.3 || isHL)) {
-      const fs = (isHL ? 9 : 7)/gs;
-      ctx.font = `600 ${fs}px 'Noto Kufi Arabic',sans-serif`;
+    if (relationLabel && !isDim && (gs > 0.2 || isHL)) {
+      const fs = (isHL ? 16 : 13)/gs;
+      ctx.font = `700 ${fs}px 'Noto Kufi Arabic', sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       const tw = ctx.measureText(relationLabel).width;
-      const px = 4/gs, py = 2/gs, bw = tw+px*2, bh = fs+py*2, br = bh/2;
+      const px = 8/gs, py = 4/gs, bw = tw+px*2, bh = fs+py*2, br = bh/2;
       const bx = labelPoint.x-bw/2, by = labelPoint.y-bh/2;
 
       ctx.beginPath();
@@ -411,15 +411,52 @@ export default function GraphPage() {
       </div>
 
       {/* ─── Controls (top left) ─── */}
-      <div className="absolute top-3 left-3 z-10 flex gap-1.5">
-        {filteredData && (
-          <button onClick={() => { setFilteredData(null); setSelectedEntity(null); }}
-            style={{ background: isLight?'#fff':'#151d30', border:`1px solid ${isLight?'#e0dcd4':'#1e293b'}`,
-              borderRadius:8, padding:'3px 8px', fontSize:'.58rem', cursor:'pointer', color: isLight?'#7a7a9a':'#94a3b8',
-              boxShadow:'0 2px 8px rgba(0,0,0,.15)', whiteSpace:'nowrap' }}>
-            🔄 عرض الكل
-          </button>
-        )}
+      <div className="absolute top-3 left-3 z-10 flex flex-col gap-2">
+        <div className="flex gap-2">
+          {filteredData && (
+            <button onClick={() => { setFilteredData(null); setSelectedEntity(null); }}
+              className="glass-card !rounded-xl px-4 py-2 text-xs font-bold text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all shadow-lg"
+            >
+              🔄 عرض الكل
+            </button>
+          )}
+        </div>
+        
+        {/* Type Filters */}
+        <div className="flex flex-wrap gap-1.5 max-w-xs md:max-w-md">
+          {Object.entries(LBL).filter(([k]) => k !== 'default').map(([type, label]) => {
+            const isActive = processedData?.nodes?.some(n => n.type === type) && (!filteredData || filteredData.nodes.some(n => n.type === type));
+            return (
+              <button
+                key={type}
+                onClick={() => {
+                  const nodes = processedData.nodes.filter(n => n.type === type);
+                  const nodeIds = new Set(nodes.map(n => n.id));
+                  const links = processedData.links.filter(l => {
+                    const s = typeof l.source === 'object' ? l.source.id : l.source;
+                    const t = typeof l.target === 'object' ? l.target.id : l.target;
+                    return nodeIds.has(s) || nodeIds.has(t);
+                  });
+                  // Also include the connected nodes
+                  const connectedIds = new Set(nodeIds);
+                  links.forEach(l => {
+                    connectedIds.add(typeof l.source === 'object' ? l.source.id : l.source);
+                    connectedIds.add(typeof l.target === 'object' ? l.target.id : l.target);
+                  });
+                  setFilteredData({ nodes: processedData.nodes.filter(n => connectedIds.has(n.id)), links });
+                }}
+                className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all border ${
+                  isActive 
+                    ? 'bg-white dark:bg-gray-800 border-emerald-500 text-emerald-600 shadow-md scale-105' 
+                    : 'bg-white/40 dark:bg-gray-900/40 border-transparent text-gray-400 opacity-60 hover:opacity-100'
+                }`}
+                style={isActive ? { borderColor: COL[type] || COL.default, color: COL[type] || COL.default } : {}}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* ─── Zoom Controls (bottom left) ─── */}

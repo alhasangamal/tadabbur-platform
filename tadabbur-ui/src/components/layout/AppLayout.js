@@ -7,7 +7,9 @@ import {
   Book,
   Network,
   Library,
+  History,
   Gavel,
+  Hand,
   ArrowLeftRight,
   ChevronDown,
   Scale,
@@ -18,21 +20,42 @@ import {
   Menu,
   X,
   Hash,
+  MessageSquare,
+  Globe,
+  FlaskConical,
+  Scroll,
+  Binary,
+  Church,
+  Bot,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { t } from '../../locales';
+import StatsFooter from './StatsFooter';
+import CommandPalette from './CommandPalette';
+
 
 const AppLayout = ({ children }) => {
   const { theme, toggleTheme, lang, isRtl } = useQuranData();
   const location = useLocation();
 
+  const { scrollYProgress: rawScrollProgress } = useScroll();
+  const scrollYProgress = useSpring(rawScrollProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   const [jurisMenuOpen, setJurisMenuOpen] = React.useState(false);
   const [rhetoricMenuOpen, setRhetoricMenuOpen] = React.useState(false);
   const [storiesMenuOpen, setStoriesMenuOpen] = React.useState(false);
+  const [scienceMenuOpen, setScienceMenuOpen] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const [mobileJurisOpen, setMobileJurisOpen] = React.useState(false);
   const [mobileRhetoricOpen, setMobileRhetoricOpen] = React.useState(false);
   const [mobileStoriesOpen, setMobileStoriesOpen] = React.useState(false);
+  const [mobileScienceOpen, setMobileScienceOpen] = React.useState(false);
+  const [worshipMenuOpen, setWorshipMenuOpen] = React.useState(false);
+  const [mobileWorshipOpen, setMobileWorshipOpen] = React.useState(false);
   const [showScroll, setShowScroll] = React.useState(false);
 
   React.useEffect(() => {
@@ -67,28 +90,46 @@ const AppLayout = ({ children }) => {
     { nameEn: 'Endings', nameAr: 'الفواصل القرآنية', path: '/endings', icon: Hash },
   ];
 
+  const scienceLinks = [
+    { nameEn: 'Cosmic Verses', nameAr: 'الآيات الكونية', path: '/cosmic', icon: Globe },
+    { nameEn: 'Oaths of Allah', nameAr: 'أقسام الله', path: '/aqsam', icon: Scroll },
+    { nameEn: 'Quranic Numbers', nameAr: 'الأرقام القرآنية', path: '/arqam', icon: Binary },
+    { nameEn: 'Revelation Causes', nameAr: 'أسباب النزول', path: '/asbab', icon: History },
+  ];
+
   const storiesLinks = [
     { nameEn: 'Quranic Stories', nameAr: 'القصص القرآنية', path: '/stories', icon: Library },
     { nameEn: 'Quranic Characters', nameAr: 'شخصيات القرآن', path: '/characters', icon: User },
+    { nameEn: 'Quranic Dialogues', nameAr: 'الحوارات القرآنية', path: '/dialogues', icon: MessageSquare },
+  ];
+
+  const worshipLinks = [
+    { nameEn: 'Quranic Duas', nameAr: 'الأدعية القرآنية', path: '/duas', icon: Hand },
+    { nameEn: 'Names of Allah', nameAr: 'أسماء الله الحسنى', path: '/asma', icon: Sparkles },
   ];
 
 
   const isJurisActive = jurisprudenceLinks.some((link) => location.pathname === link.path);
   const isRhetoricActive = rhetoricLinks.some((link) => location.pathname === link.path);
   const isStoriesActive = storiesLinks.some((link) => location.pathname === link.path);
+  const isScienceActive = scienceLinks.some((link) => location.pathname === link.path);
+  const isWorshipActive = worshipLinks.some((link) => location.pathname === link.path);
 
   React.useEffect(() => {
     if (mobileMenuOpen) {
       setMobileJurisOpen(isJurisActive);
       setMobileRhetoricOpen(isRhetoricActive);
       setMobileStoriesOpen(isStoriesActive);
+      setMobileScienceOpen(isScienceActive);
+      setMobileWorshipOpen(isWorshipActive);
     }
-  }, [mobileMenuOpen, isJurisActive, isRhetoricActive, isStoriesActive]);
+  }, [mobileMenuOpen, isJurisActive, isRhetoricActive, isStoriesActive, isScienceActive, isWorshipActive]);
 
   const closeAllMenus = () => {
     setJurisMenuOpen(false);
     setRhetoricMenuOpen(false);
     setStoriesMenuOpen(false);
+    setScienceMenuOpen(false);
     setMobileMenuOpen(false);
   };
 
@@ -96,6 +137,8 @@ const AppLayout = ({ children }) => {
     setJurisMenuOpen(false);
     setRhetoricMenuOpen(false);
     setStoriesMenuOpen(false);
+    setScienceMenuOpen(false);
+    setWorshipMenuOpen(false);
   };
 
   const renderMobileAccordion = (titleAr, titleEn, Icon, isOpen, setOpen, links, isActive) => (
@@ -150,6 +193,11 @@ const AppLayout = ({ children }) => {
   return (
     <div className={`min-h-screen transition-colors duration-500 font-sans ${isRtl ? 'rtl' : 'ltr'}`} dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="fixed inset-0 z-[-1] bg-[#f8f6f1] dark:bg-[#0f172a] transition-colors duration-500" />
+
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-emerald-600 z-[60] origin-left"
+        style={{ scaleX: scrollYProgress }}
+      />
 
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 border-b border-emerald-100 dark:border-gray-700 shadow-sm transition-colors duration-300 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -228,6 +276,8 @@ const AppLayout = ({ children }) => {
                     setJurisMenuOpen(true);
                     setRhetoricMenuOpen(false);
                     setStoriesMenuOpen(false);
+                    setScienceMenuOpen(false);
+                    setWorshipMenuOpen(false);
                   }}
                   onClick={() => setJurisMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
@@ -278,6 +328,8 @@ const AppLayout = ({ children }) => {
                     setRhetoricMenuOpen(true);
                     setJurisMenuOpen(false);
                     setStoriesMenuOpen(false);
+                    setScienceMenuOpen(false);
+                    setWorshipMenuOpen(false);
                   }}
                   onClick={() => setRhetoricMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
@@ -328,6 +380,8 @@ const AppLayout = ({ children }) => {
                     setStoriesMenuOpen(true);
                     setJurisMenuOpen(false);
                     setRhetoricMenuOpen(false);
+                    setScienceMenuOpen(false);
+                    setWorshipMenuOpen(false);
                   }}
                   onClick={() => setStoriesMenuOpen((open) => !open)}
                   className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
@@ -356,6 +410,110 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setStoriesMenuOpen(false)}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                              location.pathname === link.path
+                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                            }`}
+                          >
+                            <link.icon className="w-4 h-4" />
+                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="relative">
+                <button
+                  onMouseEnter={() => {
+                    setScienceMenuOpen(true);
+                    setJurisMenuOpen(false);
+                    setRhetoricMenuOpen(false);
+                    setStoriesMenuOpen(false);
+                    setWorshipMenuOpen(false);
+                  }}
+                  onClick={() => setScienceMenuOpen((open) => !open)}
+                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                    isScienceActive
+                      ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
+                      : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
+                  }`}
+                >
+                  <FlaskConical className="w-4 h-4" />
+                  <span>{isRtl ? 'العلوم' : 'Science'}</span>
+                  <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${scienceMenuOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                <AnimatePresence>
+                  {scienceMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      onMouseLeave={() => setScienceMenuOpen(false)}
+                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                    >
+                      <div className="p-2 space-y-1">
+                        {scienceLinks.map((link) => (
+                          <Link
+                            key={link.path}
+                            to={link.path}
+                            onClick={() => setScienceMenuOpen(false)}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                              location.pathname === link.path
+                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                            }`}
+                          >
+                            <link.icon className="w-4 h-4" />
+                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="relative">
+                <button
+                  onMouseEnter={() => {
+                    setWorshipMenuOpen(true);
+                    setJurisMenuOpen(false);
+                    setRhetoricMenuOpen(false);
+                    setStoriesMenuOpen(false);
+                    setScienceMenuOpen(false);
+                  }}
+                  onClick={() => setWorshipMenuOpen((open) => !open)}
+                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                    isWorshipActive
+                      ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
+                      : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
+                  }`}
+                >
+                  <Church className="w-4 h-4" />
+                  <span>{isRtl ? 'العبادات' : 'Worship'}</span>
+                  <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${worshipMenuOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                <AnimatePresence>
+                  {worshipMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      onMouseLeave={() => setWorshipMenuOpen(false)}
+                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                    >
+                      <div className="p-2 space-y-1">
+                        {worshipLinks.map((link) => (
+                          <Link
+                            key={link.path}
+                            to={link.path}
+                            onClick={() => setWorshipMenuOpen(false)}
                             className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
                               location.pathname === link.path
                                 ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
@@ -427,6 +585,8 @@ const AppLayout = ({ children }) => {
                 {renderMobileAccordion('الأحكام', 'Jurisprudence', Gavel, mobileJurisOpen, setMobileJurisOpen, jurisprudenceLinks, isJurisActive)}
                 {renderMobileAccordion('البلاغة', 'Rhetoric', Sparkles, mobileRhetoricOpen, setMobileRhetoricOpen, rhetoricLinks, isRhetoricActive)}
                 {renderMobileAccordion('القصص', 'Stories', Library, mobileStoriesOpen, setMobileStoriesOpen, storiesLinks, isStoriesActive)}
+                {renderMobileAccordion('العلوم', 'Science', FlaskConical, mobileScienceOpen, setMobileScienceOpen, scienceLinks, isScienceActive)}
+                {renderMobileAccordion('العبادات', 'Worship', Church, mobileWorshipOpen, setMobileWorshipOpen, worshipLinks, isWorshipActive)}
 
                 <Link
                   to="/about"
@@ -449,6 +609,10 @@ const AppLayout = ({ children }) => {
       <main className={`${location.pathname === '/graph' ? '' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12'} relative animate-fade`}>
         {children}
       </main>
+
+      <CommandPalette />
+
+      {location.pathname === '/' && <StatsFooter />}
 
       <AnimatePresence>
         {showScroll && (

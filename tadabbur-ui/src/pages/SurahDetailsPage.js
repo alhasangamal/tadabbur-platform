@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import { useQuranData } from "../context/QuranDataContext";
 import { useAudio, RECITERS } from "../context/AudioContext";
-import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, Play, Pause, ChevronDown, BookMarked, X } from "lucide-react";
+import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, Play, Pause, ChevronDown, BookMarked, X, Share2 } from "lucide-react";
+import { toast } from "react-hot-toast";
 
 const TAFSIR_OPTIONS = [
   { id: 14, name: 'تفسير ابن كثير', slug: 'ar-tafsir-ibn-kathir' },
@@ -21,8 +24,6 @@ export default function SurahDetailsPage() {
   const { isRtl, theme, surahs } = useQuranData();
   const { playSurah, isPlaying, currentSurah, isLoading: audioLoading, resetAudio } = useAudio();
   
-  const [topics, setTopics] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [expandedTopic, setExpandedTopic] = useState(null);
   const [topicVerses, setTopicVerses] = useState({}); // Cache for verses
   const [versesLoading, setVersesLoading] = useState(false);
@@ -45,20 +46,61 @@ export default function SurahDetailsPage() {
   
   const isCurrentPlaying = isPlaying && currentSurah?.surah_number === parseInt(id);
 
-  useEffect(() => {
-    const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
-    const fetchTopics = async () => {
-      try {
-        const res = await axios.get(`${API_BASE}/surahs/${id}/topics`);
-        setTopics(res.data.topics || []);
-      } catch (err) {
-        console.error("Error fetching topics:", err);
-      } finally {
-        setLoading(false);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": window.location.origin
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "فهرس السور",
+        "item": `${window.location.origin}/surahs`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": surahName,
+        "item": window.location.href
       }
-    };
-    fetchTopics();
-  }, [id]);
+    ]
+  };
+
+  const surahJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": surahName,
+    "alternateName": surahObj?.surah_name_en || surahObj?.name_en,
+    "description": namingReason || `تفاصيل ومحاور ${surahName}`,
+    "publisher": {
+      "@type": "Organization",
+      "name": "منصة تدبر"
+    },
+    "genre": "Religious Text",
+    "about": {
+      "@type": "Thing",
+      "name": "القرآن الكريم"
+    }
+  };
+
+  const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
+ 
+  const { data: topicsData, isLoading: topicsLoading } = useQuery({
+    queryKey: ['surah-topics', id],
+    queryFn: async () => {
+      const res = await axios.get(`${API_BASE}/surahs/${id}/topics`);
+      return res.data.topics || [];
+    },
+    staleTime: 1000 * 60 * 30, // 30 mins cache
+  });
+ 
+  const topics = topicsData || [];
+  const loading = topicsLoading;
 
   // Reset tafsir when surah changes
   useEffect(() => {
@@ -125,6 +167,11 @@ export default function SurahDetailsPage() {
     setTafsirPagination(null);
   };
 
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    toast.success(isRtl ? "تم نسخ رابط السورة بنجاح" : "Surah link copied successfully!");
+  };
+ 
   const stripHtml = (html) => {
     if (!html) return '';
     return html.replace(/<[^>]*>?/gm, '');
@@ -156,6 +203,16 @@ export default function SurahDetailsPage() {
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-8 animate-fade pb-20">
+      <Helmet>
+        <title>{surahName} | منصة تدبر</title>
+        <meta name="description" content={`تصفح سورة ${surahName}، استكشف محاورها، مسمياتها، وسبب التسمية مع تلاوات صوتية وتفاسير متنوعة.`} />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(surahJsonLd)}
+        </script>
+      </Helmet>
       {/* Back Navigation */}
       <div className="flex items-center">
         <Link 
