@@ -14,6 +14,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js')
       .then(reg => {
+        reg.update(); // Force check for update
         console.log('Service Worker registered', reg);
         // Add listener for updates
         reg.onupdatefound = () => {
