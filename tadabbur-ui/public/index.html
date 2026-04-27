@@ -27,6 +27,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Safety net for stale cache/404 resource errors
+      window.addEventListener('error', function(e) {
+        if (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK') {
+          const lastReload = localStorage.getItem('last-resource-retry');
+          const now = Date.now();
+          // Only retry once every 10 seconds to avoid infinite loops
+          if (!lastReload || (now - lastReload > 10000)) {
+            localStorage.setItem('last-resource-retry', now);
+            console.log('Resource failed to load. Likely stale cache. Force reloading...');
+            location.reload(true);
+          }
+        }
+      }, true);
+    </script>
     <title>منصة تدبر القران</title>
   </head>
   <body>
