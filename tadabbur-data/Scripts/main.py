@@ -12,9 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Add AI Model to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "AI Model")))
-from ai.quran_ai import ask_quran_ai
+
 
 app = FastAPI(title="Tadabbur Graph API")
 
@@ -508,18 +506,4 @@ def get_verses_by_keys_full(keys: str = Query(...)):
     ]}
 
 
-class AIQuery(BaseModel):
-    question: str
 
-
-@app.post("/ai/ask")
-def ask_ai(payload: AIQuery):
-    if not payload.question.strip():
-        raise HTTPException(status_code=400, detail="السؤال مطلوب")
-    
-    try:
-        result = ask_quran_ai(payload.question)
-        return result
-    except Exception as e:
-        print(f"AI Error: {e}")
-        raise HTTPException(status_code=500, detail="حدث خطأ في محرك الذكاء الاصطناعي")
