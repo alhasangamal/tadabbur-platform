@@ -27,6 +27,24 @@ const categoryIcons = {
   'رزق': CloudRain,
   'صبر': Moon,
   'أنبياء': Heart,
+  'توبة': Shield,
+  'ذرية': Heart,
+  'جامع': Zap,
+  'استعاذة': Shield,
+  'نصر': Zap,
+  'رحمة': CloudRain,
+  'ثبات': Shield,
+  'يقين': Sun,
+  'آخرة': Sparkles,
+  'نجاة': Zap,
+  'حسن الخاتمة': Sparkles,
+  'شكر': Heart,
+  'صلاة': BookOpen,
+  'والدين': Heart,
+  'توفيق': Sparkles,
+  'تفكر': BookOpen,
+  'عبادة يومية': BookOpen,
+  'قبول العمل': Sparkles,
   'default': Sparkles
 };
 
@@ -139,8 +157,8 @@ const DuasPage = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <div className="flex flex-wrap gap-2 p-2 w-full md:w-auto justify-center">
-            {allCategories.slice(0, 6).map(cat => (
+          <div className="flex flex-wrap gap-2 p-2 w-full justify-center">
+            {allCategories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}

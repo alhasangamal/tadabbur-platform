@@ -422,41 +422,7 @@ export default function GraphPage() {
           )}
         </div>
         
-        {/* Type Filters */}
-        <div className="flex flex-wrap gap-1.5 max-w-xs md:max-w-md">
-          {Object.entries(LBL).filter(([k]) => k !== 'default').map(([type, label]) => {
-            const isActive = processedData?.nodes?.some(n => n.type === type) && (!filteredData || filteredData.nodes.some(n => n.type === type));
-            return (
-              <button
-                key={type}
-                onClick={() => {
-                  const nodes = processedData.nodes.filter(n => n.type === type);
-                  const nodeIds = new Set(nodes.map(n => n.id));
-                  const links = processedData.links.filter(l => {
-                    const s = typeof l.source === 'object' ? l.source.id : l.source;
-                    const t = typeof l.target === 'object' ? l.target.id : l.target;
-                    return nodeIds.has(s) || nodeIds.has(t);
-                  });
-                  // Also include the connected nodes
-                  const connectedIds = new Set(nodeIds);
-                  links.forEach(l => {
-                    connectedIds.add(typeof l.source === 'object' ? l.source.id : l.source);
-                    connectedIds.add(typeof l.target === 'object' ? l.target.id : l.target);
-                  });
-                  setFilteredData({ nodes: processedData.nodes.filter(n => connectedIds.has(n.id)), links });
-                }}
-                className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all border ${
-                  isActive 
-                    ? 'bg-white dark:bg-gray-800 border-emerald-500 text-emerald-600 shadow-md scale-105' 
-                    : 'bg-white/40 dark:bg-gray-900/40 border-transparent text-gray-400 opacity-60 hover:opacity-100'
-                }`}
-                style={isActive ? { borderColor: COL[type] || COL.default, color: COL[type] || COL.default } : {}}
-              >
-                {label}
-              </button>
-            );
-          })}
-        </div>
+        
       </div>
 
       {/* ─── Zoom Controls (bottom left) ─── */}
