@@ -11,9 +11,11 @@ export const QuranDataProvider = ({ children }) => {
   const [graphData, setGraphData] = useState({ nodes: [], links: [] });
   const [loading, setLoading] = useState(true);
   
-  // Theme & Language State
-  const [theme, setTheme] = useState('light');
-  const [lang, setLang] = useState('ar');
+  // Hardcoded to Arabic
+  const theme_state = useState('light');
+  const theme = theme_state[0];
+  const setTheme = theme_state[1];
+  const lang = 'ar';
 
   useEffect(() => {
     // Basic System Theme initialization
@@ -60,10 +62,6 @@ export const QuranDataProvider = ({ children }) => {
     });
   };
 
-  const toggleLang = () => {
-    setLang(prev => prev === 'ar' ? 'en' : 'ar');
-  };
-
   const value = {
     surahs,
     surahsList,
@@ -72,8 +70,7 @@ export const QuranDataProvider = ({ children }) => {
     theme,
     toggleTheme,
     lang,
-    toggleLang,
-    isRtl: lang === 'ar'
+    isRtl: true
   };
 
   return (

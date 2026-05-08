@@ -339,7 +339,7 @@ export default function GraphPage() {
 
   // Search
   const suggestions = searchValue && graphData?.nodes
-    ? graphData.nodes.filter(n => (n.label?.includes(searchValue)) || (n.name_en?.toLowerCase().includes(searchValue.toLowerCase()))).slice(0, 10)
+    ? graphData.nodes.filter(n => (n.label?.includes(searchValue))).slice(0, 10)
     : [];
 
   if (loading) {
@@ -347,7 +347,7 @@ export default function GraphPage() {
       <div className="flex flex-col items-center justify-center min-h-[60vh]">
         <Loader2 className="w-12 h-12 text-emerald-600 animate-spin" />
         <p className="mt-4 text-emerald-800 dark:text-emerald-400 font-medium">
-          {isRtl ? 'جاري بناء شبكة المعرفة...' : 'Building Knowledge Graph...'}
+          جاري بناء شبكة المعرفة...
         </p>
       </div>
     );
@@ -362,12 +362,10 @@ export default function GraphPage() {
             <Database className="w-10 h-10 text-red-500" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-            {isRtl ? 'خطأ في الاتصال بقاعدة البيانات' : 'Database Connection Error'}
+            خطأ في الاتصال بقاعدة البيانات
           </h2>
           <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
-            {isRtl 
-              ? 'تعذر الوصول إلى قاعدة بيانات العلاقات (Neo4j). يرجى التأكد من تشغيل السيرفر وقاعدة البيانات بشكل صحيح.' 
-              : 'Could not connect to the Knowledge Graph database (Neo4j). Please ensure the database service is running.'}
+            تعذر الوصول إلى قاعدة بيانات العلاقات (Neo4j). يرجى التأكد من تشغيل السيرفر وقاعدة البيانات بشكل صحيح.
           </p>
           <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-2xl text-xs font-mono text-red-600 dark:text-red-400 break-all">
             {graphData?.error || 'Empty nodes received'}
@@ -376,7 +374,7 @@ export default function GraphPage() {
             onClick={() => window.location.reload()}
             className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold transition-all shadow-lg shadow-emerald-200 dark:shadow-none"
           >
-            {isRtl ? 'إعادة المحاولة' : 'Try Again'}
+            إعادة المحاولة
           </button>
         </div>
       </div>
@@ -397,7 +395,7 @@ export default function GraphPage() {
           <span style={{ position:'absolute', left:9, top:'50%', transform:'translateY(-50%)', fontSize:'.75rem', color:'#64748b', pointerEvents:'none' }}>🔎</span>
           <input
             type="text"
-            placeholder={isRtl ? "ابحث عن كيان... / Search entity..." : "Search entity..."}
+            placeholder="ابحث عن كيان..."
             value={searchValue}
             onChange={(e) => { setSearchValue(e.target.value); setShowDropdown(true); }}
             onFocus={() => setShowDropdown(true)}

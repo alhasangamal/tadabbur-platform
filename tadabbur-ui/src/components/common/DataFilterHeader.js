@@ -18,11 +18,11 @@ const DataFilterHeader = ({
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-gold-500/10 to-emerald-500/10 blur-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500" />
         <div className="relative bg-white/70 dark:bg-gray-900/70 backdrop-blur-3xl p-2 rounded-[2rem] shadow-2xl border border-emerald-500/10 ring-1 ring-white/20 dark:ring-black/20 flex flex-col md:flex-row items-center gap-2">
           <div className="relative flex-1 w-full">
-            <Search className={`absolute ${isRtl ? 'right-6' : 'left-6'} top-1/2 -translate-y-1/2 text-emerald-500 w-5 h-5 group-focus-within:scale-110 transition-transform`} />
+            <Search className={`absolute right-6 top-1/2 -translate-y-1/2 text-emerald-500 w-5 h-5 group-focus-within:scale-110 transition-transform`} />
             <input
               type="text"
               placeholder={placeholder}
-              className={`w-full ${isRtl ? 'pr-16 pl-8' : 'pl-16 pr-8'} py-5 bg-emerald-50/20 dark:bg-emerald-950/20 rounded-[1.5rem] border-none focus:ring-2 focus:ring-gold-500/50 transition-all text-emerald-950 dark:text-white placeholder:text-emerald-900/30 dark:placeholder:text-emerald-100/10 font-bold text-lg`}
+              className={`w-full pr-16 pl-8 py-5 bg-emerald-50/20 dark:bg-emerald-950/20 rounded-[1.5rem] border-none focus:ring-2 focus:ring-gold-500/50 transition-all text-emerald-950 dark:text-white placeholder:text-emerald-900/30 dark:placeholder:text-emerald-100/10 font-bold text-lg`}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -33,7 +33,7 @@ const DataFilterHeader = ({
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   onClick={() => setSearchTerm('')}
-                  className={`absolute ${isRtl ? 'left-6' : 'right-6'} top-1/2 -translate-y-1/2 p-2 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 rounded-full transition-colors`}
+                  className={`absolute left-6 top-1/2 -translate-y-1/2 p-2 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 rounded-full transition-colors`}
                 >
                   <X className="w-4 h-4 text-gray-400" />
                 </motion.button>

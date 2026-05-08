@@ -131,12 +131,12 @@ export default function SurahsPage() {
                   {isMakki ? (
                     <>
                       <Moon className="w-3 h-3" />
-                      <span>{isRtl ? 'مكية' : 'Meccan'}</span>
+                      <span>مكية</span>
                     </>
                   ) : (
                     <>
                       <MapPin className="w-3 h-3" />
-                      <span>{isRtl ? 'مدنية' : 'Medinan'}</span>
+                      <span>مدنية</span>
                     </>
                   )}
                 </div>
@@ -146,7 +146,7 @@ export default function SurahsPage() {
               {surah.name_ar}
             </div>
             <div className="text-gray-500 dark:text-gray-400 font-medium text-sm mb-6">
-              {surah.name_en}
+              سورة {surah.id}
             </div>
 
             <div className="flex justify-between items-center text-xs font-semibold text-gray-400 dark:text-gray-500 pt-4 border-t border-gray-100 dark:border-gray-700">

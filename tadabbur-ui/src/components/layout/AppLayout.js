@@ -66,34 +66,34 @@ const AppLayout = ({ children }) => {
   ];
 
   const jurisprudenceLinks = [
-    { nameEn: 'Rulings', nameAr: 'آيات الأحكام', path: '/ahkam', icon: Gavel },
-    { nameEn: 'Abrogation', nameAr: 'الناسخ والمنسوخ', path: '/nasikh', icon: ArrowLeftRight },
-    { nameEn: 'Legislations', nameAr: 'التشريعات', path: '/tashriaat', icon: Scale },
+    { name: 'آيات الأحكام', path: '/ahkam', icon: Gavel },
+    { name: 'الناسخ والمنسوخ', path: '/nasikh', icon: ArrowLeftRight },
+    { name: 'التشريعات', path: '/tashriaat', icon: Scale },
   ];
 
   const rhetoricLinks = [
-    { nameEn: 'Parables', nameAr: 'الأمثال القرآنية', path: '/amthal', icon: Sparkles },
-    { nameEn: 'Similarities', nameAr: 'المتشابهات والروابط', path: '/mutash', icon: Copy },
-    { nameEn: 'Dualities', nameAr: 'الثنائيات القرآنية', path: '/contrasts', icon: Scale },
-    { nameEn: 'Endings', nameAr: 'الفواصل القرآنية', path: '/endings', icon: Hash },
+    { name: 'الأمثال القرآنية', path: '/amthal', icon: Sparkles },
+    { name: 'المتشابهات والروابط', path: '/mutash', icon: Copy },
+    { name: 'الثنائيات القرآنية', path: '/contrasts', icon: Scale },
+    { name: 'الفواصل القرآنية', path: '/endings', icon: Hash },
   ];
 
   const scienceLinks = [
-    { nameEn: 'Cosmic Verses', nameAr: 'الآيات الكونية', path: '/cosmic', icon: Globe },
-    { nameEn: 'Oaths of Allah', nameAr: 'أقسام الله', path: '/aqsam', icon: Scroll },
-    { nameEn: 'Quranic Numbers', nameAr: 'الأرقام القرآنية', path: '/arqam', icon: Binary },
-    { nameEn: 'Revelation Causes', nameAr: 'أسباب النزول', path: '/asbab', icon: History },
+    { name: 'الآيات الكونية', path: '/cosmic', icon: Globe },
+    { name: 'أقسام الله', path: '/aqsam', icon: Scroll },
+    { name: 'الأرقام القرآنية', path: '/arqam', icon: Binary },
+    { name: 'أسباب النزول', path: '/asbab', icon: History },
   ];
 
   const storiesLinks = [
-    { nameEn: 'Quranic Stories', nameAr: 'القصص القرآنية', path: '/stories', icon: Library },
-    { nameEn: 'Quranic Characters', nameAr: 'شخصيات القرآن', path: '/characters', icon: User },
-    { nameEn: 'Quranic Dialogues', nameAr: 'الحوارات القرآنية', path: '/dialogues', icon: MessageSquare },
+    { name: 'القصص القرآنية', path: '/stories', icon: Library },
+    { name: 'شخصيات القرآن', path: '/characters', icon: User },
+    { name: 'الحوارات القرآنية', path: '/dialogues', icon: MessageSquare },
   ];
 
   const worshipLinks = [
-    { nameEn: 'Quranic Duas', nameAr: 'الأدعية القرآنية', path: '/duas', icon: Hand },
-    { nameEn: 'Names of Allah', nameAr: 'أسماء الله الحسنى', path: '/asma', icon: Sparkles },
+    { name: 'الأدعية القرآنية', path: '/duas', icon: Hand },
+    { name: 'أسماء الله الحسنى', path: '/asma', icon: Sparkles },
   ];
 
 
@@ -141,7 +141,7 @@ const AppLayout = ({ children }) => {
       >
         <span className="flex items-center gap-3 text-sm font-bold">
           <Icon className="w-4 h-4" />
-          <span>{isRtl ? titleAr : titleEn}</span>
+          <span>{titleAr}</span>
         </span>
         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
@@ -168,7 +168,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <link.icon className="w-4 h-4" />
-                  <span>{isRtl ? link.nameAr : link.nameEn}</span>
+                  <span>{link.name}</span>
                 </Link>
               ))}
             </div>
@@ -570,11 +570,11 @@ const AppLayout = ({ children }) => {
                   </Link>
                 ))}
 
-                {renderMobileAccordion('الأحكام', 'Jurisprudence', Gavel, mobileJurisOpen, setMobileJurisOpen, jurisprudenceLinks, isJurisActive)}
-                {renderMobileAccordion('البلاغة', 'Rhetoric', Sparkles, mobileRhetoricOpen, setMobileRhetoricOpen, rhetoricLinks, isRhetoricActive)}
-                {renderMobileAccordion('القصص', 'Stories', Library, mobileStoriesOpen, setMobileStoriesOpen, storiesLinks, isStoriesActive)}
-                {renderMobileAccordion('العلوم', 'Science', FlaskConical, mobileScienceOpen, setMobileScienceOpen, scienceLinks, isScienceActive)}
-                {renderMobileAccordion('العبادات', 'Worship', Church, mobileWorshipOpen, setMobileWorshipOpen, worshipLinks, isWorshipActive)}
+                {renderMobileAccordion('الأحكام', '', Gavel, mobileJurisOpen, setMobileJurisOpen, jurisprudenceLinks, isJurisActive)}
+                {renderMobileAccordion('البلاغة', '', Sparkles, mobileRhetoricOpen, setMobileRhetoricOpen, rhetoricLinks, isRhetoricActive)}
+                {renderMobileAccordion('القصص', '', Library, mobileStoriesOpen, setMobileStoriesOpen, storiesLinks, isStoriesActive)}
+                {renderMobileAccordion('العلوم', '', FlaskConical, mobileScienceOpen, setMobileScienceOpen, scienceLinks, isScienceActive)}
+                {renderMobileAccordion('العبادات', '', Church, mobileWorshipOpen, setMobileWorshipOpen, worshipLinks, isWorshipActive)}
 
                 <Link
                   to="/about"

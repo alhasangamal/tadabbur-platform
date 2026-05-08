@@ -78,18 +78,18 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center max-w-5xl mx-auto space-y-10"
         >
           <div className="inline-block px-8 py-2.5 rounded-full bg-emerald-950/40 border border-gold-500/30 text-gold-400 text-sm md:text-lg font-serif tracking-widest shadow-inner backdrop-blur-sm">
-            {isRtl ? "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ" : "In the name of Allah"}
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-5xl font-serif font-bold text-white leading-tight drop-shadow-lg" style={{ lineHeight: '1.6' }}>
-            {isRtl ? "﴿ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ ﴾" : "A blessed Book which We have revealed to you"}
+            ﴿ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ ﴾
           </h1>
           <p className="text-emerald-50 text-lg md:text-2xl max-w-3xl leading-relaxed font-light opacity-90">
-            {isRtl ? "منصة شاملة لتدبّر القرآن — استكشف البنية العددية والمعمارية الموضوعية والأنماط اللغوية للقرآن الكريم برؤية تقنية معاصرة." : "A comprehensive platform for Quranic contemplation."}
+            منصة شاملة لتدبّر القرآن — استكشف البنية العددية والمعمارية الموضوعية والأنماط اللغوية للقرآن الكريم برؤية تقنية معاصرة.
           </p>
           
           <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-100 text-[10px] font-bold uppercase tracking-[0.2em] mt-4">
             <Sparkles className="w-3 h-3 text-gold-400" />
-            V1.5 - MODERNIZED INTERFACE
+            إصدار 1.5 - واجهة مطورة
           </div>
         </motion.div>
       </section>
