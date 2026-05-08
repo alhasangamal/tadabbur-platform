@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import ForceGraph2D from "react-force-graph-2d";
-import { Loader2, Search, X, Plus, Minus, Maximize2 } from "lucide-react";
+import { Loader2, Search, X, Plus, Minus, Maximize2, Database } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import GraphSidePanel from "../components/graph/GraphSidePanel";
 import { getRelationLabel } from "../components/graph/relationLabels";
