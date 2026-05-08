@@ -353,6 +353,36 @@ export default function GraphPage() {
     );
   }
 
+  // Handle Error state from API
+  if (graphData?.error || (!loading && (!processedData?.nodes || processedData.nodes.length === 0))) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[80vh] bg-sand-50 dark:bg-gray-900 p-8 text-center">
+        <div className="bg-white dark:bg-gray-800 p-10 rounded-[3rem] shadow-xl border border-red-100 dark:border-red-900/30 max-w-lg space-y-6">
+          <div className="w-20 h-20 bg-red-50 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
+            <Database className="w-10 h-10 text-red-500" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            {isRtl ? 'خطأ في الاتصال بقاعدة البيانات' : 'Database Connection Error'}
+          </h2>
+          <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
+            {isRtl 
+              ? 'تعذر الوصول إلى قاعدة بيانات العلاقات (Neo4j). يرجى التأكد من تشغيل السيرفر وقاعدة البيانات بشكل صحيح.' 
+              : 'Could not connect to the Knowledge Graph database (Neo4j). Please ensure the database service is running.'}
+          </p>
+          <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-2xl text-xs font-mono text-red-600 dark:text-red-400 break-all">
+            {graphData?.error || 'Empty nodes received'}
+          </div>
+          <button 
+            onClick={() => window.location.reload()}
+            className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold transition-all shadow-lg shadow-emerald-200 dark:shadow-none"
+          >
+            {isRtl ? 'إعادة المحاولة' : 'Try Again'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ width:'100%', height:'calc(100vh - 80px)', position:'relative', overflow:'hidden', background: isLight ? '#f8f6f1' : '#0f172a' }}>
 
