@@ -41,6 +41,7 @@ const RAD = {
 };
 
 function hexRgb(h) {
+  if (!h || typeof h !== 'string' || h[0] !== '#') return [128, 128, 128];
   return [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
 }
 
@@ -141,7 +142,7 @@ export default function GraphPage() {
 
   // ─── NODE DRAWING (i-quran.com style) ───
   const drawNode = useCallback((node, ctx, gs) => {
-    const c = COL[node.type] || COL.default;
+    const c = COL[node.type] || COL[node.type?.toLowerCase()] || COL.default;
     const [cr, cg, cb] = hexRgb(c);
     const isSel = selectedEntity?.id === node.id;
     const isHov = hoverNodeRef.current?.id === node.id;

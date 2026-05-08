@@ -16,9 +16,16 @@ load_dotenv()
 
 app = FastAPI(title="Tadabbur Graph API")
 
+origins = [
+    "http://localhost:3000",
+    "https://tadabbur-platform.vercel.app",
+    "https://tadabbur-platform-git-main-alhasangamals-projects.vercel.app",
+    "https://tadabbur-platform.onrender.com",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
