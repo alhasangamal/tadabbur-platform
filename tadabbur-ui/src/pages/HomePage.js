@@ -86,6 +86,11 @@ export default function HomePage() {
           <p className="text-emerald-50 text-lg md:text-2xl max-w-3xl leading-relaxed font-light opacity-90">
             {isRtl ? "منصة شاملة لتدبّر القرآن — استكشف البنية العددية والمعمارية الموضوعية والأنماط اللغوية للقرآن الكريم برؤية تقنية معاصرة." : "A comprehensive platform for Quranic contemplation."}
           </p>
+          
+          <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-100 text-[10px] font-bold uppercase tracking-[0.2em] mt-4">
+            <Sparkles className="w-3 h-3 text-gold-400" />
+            V1.5 - MODERNIZED INTERFACE
+          </div>
         </motion.div>
       </section>
 

@@ -56,20 +56,8 @@ const AppLayout = ({ children }) => {
   const [mobileScienceOpen, setMobileScienceOpen] = React.useState(false);
   const [worshipMenuOpen, setWorshipMenuOpen] = React.useState(false);
   const [mobileWorshipOpen, setMobileWorshipOpen] = React.useState(false);
-  const [showScroll, setShowScroll] = React.useState(false);
 
-  React.useEffect(() => {
-    const checkScroll = () => {
-      if (!showScroll && window.pageYOffset > 400) {
-        setShowScroll(true);
-      } else if (showScroll && window.pageYOffset <= 400) {
-        setShowScroll(false);
-      }
-    };
-
-    window.addEventListener('scroll', checkScroll);
-    return () => window.removeEventListener('scroll', checkScroll);
-  }, [showScroll]);
+  // Scroll logic removed in favor of BackToTop component
 
   const navLinks = [
     { name: 'home', path: '/', icon: Book },
@@ -615,18 +603,7 @@ const AppLayout = ({ children }) => {
       {location.pathname === '/' && <StatsFooter />}
 
       <AnimatePresence>
-        {showScroll && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className={`fixed bottom-8 ${isRtl ? 'left-8' : 'right-8'} p-3 bg-emerald-600 text-white rounded-full shadow-xl hover:bg-emerald-700 transition-colors z-[100]`}
-            title="العودة للأعلى"
-          >
-            <ArrowUp className="w-6 h-6" />
-          </motion.button>
-        )}
+        {/* showScroll handled by BackToTop component */}
       </AnimatePresence>
     </div>
   );

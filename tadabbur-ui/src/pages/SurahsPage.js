@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useQuranData } from '../context/QuranDataContext';
 import { Search, Loader2, MapPin, Moon, Sun, ArrowDown01, ArrowUp10, ArrowUp } from 'lucide-react';
+import DataFilterHeader from '../components/common/DataFilterHeader';
 
 const MotionLink = motion(Link);
 
@@ -78,58 +79,15 @@ export default function SurahsPage() {
 
   return (
     <div className="w-full space-y-8 animate-fade pb-10">
-      {/* Header & Controls */}
-      <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-xl border border-emerald-50 dark:border-gray-700 transition-all duration-300 relative z-30">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{t.title}</h1>
-            <p className="text-gray-500 dark:text-gray-400">{t.desc}</p>
-          </div>
-          <div className="text-4xl font-serif text-emerald-100 dark:text-gray-700 opacity-50 select-none flex items-center gap-2" dir="ltr">
-            <span>114</span>
-            <span>/</span>
-            <span className="text-emerald-500 dark:text-emerald-400 font-bold">{filteredSurahs.length}</span>
-          </div>
-        </div>
-
-        {/* Filters Box */}
-        <div className="flex flex-col md:flex-row gap-4 bg-sand-50 dark:bg-gray-900/50 p-4 rounded-2xl border border-gray-100 dark:border-gray-700">
-          <div className="relative flex-1">
-            <Search className={`absolute ${isRtl ? 'right-4' : 'left-4'} top-1/2 -transform-y-1/2 text-gray-400 w-5 h-5`} style={{ transform: 'translateY(-50%)' }} />
-            <input 
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder={t.searchParams}
-              className={`w-full bg-white dark:bg-gray-800 border-none rounded-xl py-3 ${isRtl ? 'pr-12 pl-4' : 'pl-12 pr-4'} shadow-sm focus:ring-2 focus:ring-emerald-500 outline-none text-gray-700 dark:text-gray-200 transition-shadow`}
-            />
-          </div>
-
-          <div className="flex gap-2 p-1 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
-            {['all', 'Makki', 'Madani'].map(type => (
-              <button
-                key={type}
-                onClick={() => setFilterType(type)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  filterType === type 
-                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-400' 
-                    : 'text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-400'
-                }`}
-              >
-                {type === 'all' ? t.all : type === 'Makki' ? t.makki : t.madani}
-              </button>
-            ))}
-          </div>
-
-          <button
-            onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
-            className="flex items-center gap-2 px-4 py-3 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm transition-colors"
-            title={sortOrder === 'asc' ? t.sortAsc : t.sortDesc}
-          >
-            {sortOrder === 'asc' ? <ArrowDown01 className="w-5 h-5"/> : <ArrowUp10 className="w-5 h-5"/>}
-          </button>
-        </div>
-      </div>
+      <DataFilterHeader 
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        categories={['all', 'Makki', 'Madani']}
+        selectedCategory={filterType}
+        setSelectedCategory={setFilterType}
+        placeholder={t.searchParams}
+        isRtl={isRtl}
+      />
 
       {/* Grid */}
       <div 
