@@ -90,10 +90,6 @@ export default function HomePage() {
             منصة شاملة لتدبّر القرآن — استكشف البنية العددية والمعمارية الموضوعية والأنماط اللغوية للقرآن الكريم برؤية تقنية معاصرة.
           </p>
           
-          <div className="flex items-center gap-3 px-6 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-emerald-100 text-xs font-bold uppercase tracking-[0.3em] mt-8 shadow-xl">
-            <Sparkles className="w-4 h-4 text-gold-400" />
-            <span className="font-kufi">إصدار 1.5 - واجهة عالمية</span>
-          </div>
         </motion.div>
       </section>
 
