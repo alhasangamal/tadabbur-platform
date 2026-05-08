@@ -82,8 +82,8 @@ export default function HomePage() {
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
           </div>
           
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] quran-text !text-white !shadow-none !leading-[2.5] py-4" style={{ direction: 'rtl' }}>
-             كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ 
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white drop-shadow-lg leading-relaxed py-2" style={{ direction: 'rtl' }}>
+             ﴿ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ ﴾
           </h1>
 
           <p className="text-emerald-50 text-lg md:text-3xl max-w-4xl leading-relaxed font-light opacity-90 font-kufi">
