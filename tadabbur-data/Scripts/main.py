@@ -402,42 +402,51 @@ def get_entity_verses_by_slug(slug: str):
 
 @app.get("/graph")
 def get_graph_data():
-    # Matches all relationship types between entities
-    query = """
-    MATCH (s:Entity)-[r]->(t:Entity)
-    RETURN 
-        s.slug AS s_slug, s.name_ar AS s_name, s.name_en AS s_name_en, s.entity_type AS s_type,
-        t.slug AS t_slug, t.name_ar AS t_name, t.name_en AS t_name_en, t.entity_type AS t_type,
-        r.source_basis AS label,
-        type(r) AS relation_type,
-        r.evidence_notes AS evidence_notes
-    LIMIT 2000
-    """
-    with driver.session() as session:
-        records = session.run(query)
-        nodes = {}
-        links = []
-        for rec in records:
-            if rec["s_slug"] not in nodes:
-                nodes[rec["s_slug"]] = {
-                    "id": rec["s_slug"], "label": rec["s_name"],
-                    "name_en": rec["s_name_en"], "type": rec["s_type"],
-                    "x": None, "y": None
-                }
-            if rec["t_slug"] not in nodes:
-                nodes[rec["t_slug"]] = {
-                    "id": rec["t_slug"], "label": rec["t_name"],
-                    "name_en": rec["t_name_en"], "type": rec["t_type"],
-                    "x": None, "y": None
-                }
-            links.append({
-                "source": rec["s_slug"],
-                "target": rec["t_slug"],
-                "label": rec["label"] or rec["relation_type"] or "",
-                "relation_type": rec["relation_type"],
-                "evidence_notes": rec["evidence_notes"]
-            })
-    return {"nodes": list(nodes.values()), "links": links}
+    try:
+        # Matches all relationship types between entities
+        query = """
+        MATCH (s:Entity)-[r]->(t:Entity)
+        RETURN 
+            s.slug AS s_slug, s.name_ar AS s_name, s.name_en AS s_name_en, s.entity_type AS s_type,
+            t.slug AS t_slug, t.name_ar AS t_name, t.name_en AS t_name_en, t.entity_type AS t_type,
+            r.source_basis AS label,
+            type(r) AS relation_type,
+            r.evidence_notes AS evidence_notes
+        LIMIT 2000
+        """
+        with driver.session() as session:
+            records = session.run(query)
+            nodes = {}
+            links = []
+            for rec in records:
+                # Safety check for required fields
+                if not rec["s_slug"] or not rec["t_slug"]:
+                    continue
+                    
+                if rec["s_slug"] not in nodes:
+                    nodes[rec["s_slug"]] = {
+                        "id": rec["s_slug"], "label": rec["s_name"] or rec["s_slug"],
+                        "name_en": rec["s_name_en"] or "", "type": rec["s_type"] or "default",
+                        "x": None, "y": None
+                    }
+                if rec["t_slug"] not in nodes:
+                    nodes[rec["t_slug"]] = {
+                        "id": rec["t_slug"], "label": rec["t_name"] or rec["t_slug"],
+                        "name_en": rec["t_name_en"] or "", "type": rec["t_type"] or "default",
+                        "x": None, "y": None
+                    }
+                links.append({
+                    "source": rec["s_slug"],
+                    "target": rec["t_slug"],
+                    "label": rec["label"] or rec["relation_type"] or "",
+                    "relation_type": rec["relation_type"],
+                    "evidence_notes": rec["evidence_notes"]
+                })
+        return {"nodes": list(nodes.values()), "links": links}
+    except Exception as e:
+        print(f"Graph Error: {str(e)}")
+        # Fallback to empty graph instead of 500 error
+        return {"nodes": [], "links": [], "error": str(e)}
 
 
 @app.get("/topics/entity/{slug}")
