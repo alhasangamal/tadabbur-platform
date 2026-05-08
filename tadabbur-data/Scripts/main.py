@@ -26,7 +26,7 @@ app.add_middleware(
 
 # Initialize Neo4j Driver gracefully
 try:
-    NEO4J_URI = os.getenv("NEO4J_URI", "neo4j+s://00655889.databases.neo4j.io")
+    NEO4J_URI = os.getenv("NEO4J_URI", "neo4j+s://944adc2b.databases.neo4j.io")
     NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
     NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "123456789")
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
