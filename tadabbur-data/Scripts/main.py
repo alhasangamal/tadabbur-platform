@@ -24,12 +24,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Neo4j
-NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
-NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
-NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "123456789")
-
-driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+# Initialize Neo4j Driver gracefully
+try:
+    NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+    NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+    NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "123456789")
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    # Test connection
+    driver.verify_connectivity()
+    print("Connected to Neo4j successfully")
+except Exception as e:
+    print(f"Failed to connect to Neo4j: {e}")
+    driver = None
 
 # PostgreSQL
 def get_pg_conn():
@@ -243,6 +249,8 @@ def list_entities(limit: int = 100, skip: int = 0):
     SKIP $skip
     LIMIT $limit
     """
+    if not driver:
+        return {"count": 0, "items": [], "error": "Database connection not available"}
     with driver.session() as session:
         records = session.run(query, skip=skip, limit=limit)
         data = [record.data() for record in records]
@@ -263,6 +271,8 @@ def search_entities(q: str):
            e.entity_type AS entity_type
     LIMIT 50
     """
+    if not driver:
+        return {"query": q, "items": [], "error": "Database connection not available"}
     with driver.session() as session:
         records = session.run(query, q=q)
         data = [record.data() for record in records]
@@ -279,6 +289,8 @@ def get_entity_details(slug: str):
            e.name_en AS name_en,
            e.entity_type AS entity_type
     """
+    if not driver:
+        return {"found": False, "slug": slug, "error": "Database connection not available"}
     with driver.session() as session:
         record = session.run(query, slug=slug).single()
         if not record:
@@ -321,6 +333,8 @@ def get_all_graph_relations():
         r.evidence_notes AS evidence_notes
     LIMIT 2000
     """
+    if not driver:
+        return {"relations": [], "error": "Database connection not available"}
     with driver.session() as session:
         records = session.run(query)
         data = [record.data() for record in records]
@@ -368,6 +382,8 @@ def get_shortest_path(from_slug: str = Query(...), to_slug: str = Query(...)):
     MATCH p = shortestPath((a)-[*]-(b))
     RETURN p
     """
+    if not driver:
+        return {"from": from_slug, "to": to_slug, "path_found": False, "nodes": [], "relationships": [], "error": "Database connection not available"}
     with driver.session() as session:
         record = session.run(query, from_slug=from_slug, to_slug=to_slug).single()
         if not record:
@@ -414,6 +430,8 @@ def get_graph_data():
             r.evidence_notes AS evidence_notes
         LIMIT 2000
         """
+        if not driver:
+            return {"nodes": [], "links": [], "error": "Database connection not available"}
         with driver.session() as session:
             records = session.run(query)
             nodes = {}
