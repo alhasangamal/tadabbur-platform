@@ -275,7 +275,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <Gavel className="w-4 h-4" />
-                  <span>{isRtl ? 'الأحكام' : 'Jurisprudence'}</span>
+                  <span>الأحكام</span>
                   <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${jurisMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
 
@@ -301,7 +301,7 @@ const AppLayout = ({ children }) => {
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                            <span className="text-sm font-medium">{link.name}</span>
                           </Link>
                         ))}
                       </div>
@@ -327,7 +327,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>{isRtl ? 'البلاغة' : 'Rhetoric'}</span>
+                  <span>البلاغة</span>
                   <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${rhetoricMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
 
@@ -353,7 +353,7 @@ const AppLayout = ({ children }) => {
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                            <span className="text-sm font-medium">{link.name}</span>
                           </Link>
                         ))}
                       </div>
@@ -379,7 +379,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <Library className="w-4 h-4" />
-                  <span>{isRtl ? 'القصص' : 'Stories'}</span>
+                  <span>القصص</span>
                   <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${storiesMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
 
@@ -405,7 +405,7 @@ const AppLayout = ({ children }) => {
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                            <span className="text-sm font-medium">{link.name}</span>
                           </Link>
                         ))}
                       </div>
@@ -431,7 +431,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <FlaskConical className="w-4 h-4" />
-                  <span>{isRtl ? 'العلوم' : 'Science'}</span>
+                  <span>العلوم</span>
                   <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${scienceMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
 
@@ -457,7 +457,7 @@ const AppLayout = ({ children }) => {
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                            <span className="text-sm font-medium">{link.name}</span>
                           </Link>
                         ))}
                       </div>
@@ -483,7 +483,7 @@ const AppLayout = ({ children }) => {
                   }`}
                 >
                   <Church className="w-4 h-4" />
-                  <span>{isRtl ? 'العبادات' : 'Worship'}</span>
+                  <span>العبادات</span>
                   <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${worshipMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
 
@@ -509,7 +509,7 @@ const AppLayout = ({ children }) => {
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{isRtl ? link.nameAr : link.nameEn}</span>
+                            <span className="text-sm font-medium">{link.name}</span>
                           </Link>
                         ))}
                       </div>
