@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Reem+Kufi:wght@400;500;600;700;800;900&display=swap');
+
 
 
 @layer base {
@@ -30,9 +32,10 @@
     --b: #eaddcf;
     
     /* Glassmorphism */
-    --glass: rgba(255, 255, 255, 0.85);
+    --glass: rgba(255, 255, 255, 0.75);
     --glass-border: rgba(255, 255, 255, 0.4);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    --glass-shadow: 0 12px 40px 0 rgba(16, 185, 129, 0.08);
+    --glass-blur: blur(12px);
   }
 
   /* Dark mode support placeholder */
@@ -76,13 +79,14 @@
 
   /* Typography */
   .quran-text {
-    @apply text-xl md:text-2xl text-center;
-    font-family: 'Amiri Quran', 'Amiri', serif;
+    @apply text-2xl md:text-4xl text-center;
+    font-family: 'Amiri', serif;
     direction: rtl;
     font-feature-settings: "ss01", "ss02", "cv01";
     word-spacing: 0.15em;
-    line-height: 2.4;
-    color: #1a1a2e;
+    line-height: 2.2;
+    color: #064e3b;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.05);
   }
   .dark .quran-text {
     color: #e2e8f0;
