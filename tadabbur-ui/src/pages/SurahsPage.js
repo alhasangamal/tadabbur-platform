@@ -21,7 +21,7 @@ const SURAH_JUZ_MAP = [
 export default function SurahsPage() {
   const { lang, isRtl, surahsList, loading } = useQuranData();
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterType, setFilterType] = useState('all'); // all, Meccan, Medinan
+  const [filterType, setFilterType] = useState('الكل'); // الكل, مكية, مدنية
   const [sortOrder, setSortOrder] = useState('asc'); // asc, desc (by number)
 
   const filteredSurahs = useMemo(() => {
@@ -32,9 +32,9 @@ export default function SurahsPage() {
         const isMakkiData = type.includes('mak') || type.includes('mec');
         const isMadaniData = type.includes('mad') || type.includes('med');
         
-        const matchType = filterType === 'all' 
+        const matchType = filterType === 'الكل' 
           ? true 
-          : filterType === 'Makki' ? isMakkiData : isMadaniData;
+          : filterType === 'مكية' ? isMakkiData : isMadaniData;
         
         return matchSearch && matchType;
       })
@@ -82,7 +82,7 @@ export default function SurahsPage() {
       <DataFilterHeader 
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        categories={['all', 'Makki', 'Madani']}
+        categories={['الكل', 'مكية', 'مدنية']}
         selectedCategory={filterType}
         setSelectedCategory={setFilterType}
         placeholder={t.searchParams}

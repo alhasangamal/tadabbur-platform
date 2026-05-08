@@ -14,21 +14,6 @@ const RELATION_TYPE_AR = {
   MENTIONED_WITH: 'ذُكر مع',
 };
 
-const RELATION_TYPE_EN = {
-  RELATES: 'Relates to',
-  RELATED_TO: 'Related to',
-  FATHER_OF: 'Father of',
-  SON_OF: 'Son of',
-  WIFE_OF: 'Wife of',
-  HUSBAND_OF: 'Husband of',
-  BROTHER_OF: 'Brother of',
-  SISTER_OF: 'Sister of',
-  SENT_TO: 'Sent to',
-  BELONGS_TO: 'Belongs to',
-  PART_OF: 'Part of',
-  LOCATED_IN: 'Located in',
-  MENTIONED_WITH: 'Mentioned with',
-};
 
 export function normalizeRelationType(value) {
   if (!value) return 'RELATES';
@@ -52,7 +37,7 @@ export function getRelationLabel(relation, lang = 'ar') {
   if (rawLabel) return rawLabel;
 
   const type = normalizeRelationType(relation?.relation_type || relation?.type);
-  const labels = lang === 'ar' ? RELATION_TYPE_AR : RELATION_TYPE_EN;
+  const labels = RELATION_TYPE_AR;
 
-  return labels[type] || (lang === 'ar' ? 'علاقة' : 'Relation');
+  return labels[type] || 'علاقة';
 }
