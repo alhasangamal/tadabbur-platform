@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import {
   Book, MessageSquare, Bookmark, Database, Star, ScrollText, Send, Bot,
-  Info
+  Info, Sparkles
 } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 
