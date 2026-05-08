@@ -187,7 +187,7 @@ const AppLayout = ({ children }) => {
         style={{ scaleX: scrollYProgress }}
       />
 
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 border-b border-emerald-100 dark:border-gray-700 shadow-sm transition-colors duration-300 w-full">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[var(--glass)] border-b border-[var(--glass-border)] shadow-[var(--glass-shadow)] transition-colors duration-300 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-3 h-20 md:hidden w-full">
             <button
@@ -203,13 +203,13 @@ const AppLayout = ({ children }) => {
               className="flex min-w-0 items-center justify-center gap-2 flex-1"
               onClick={closeAllMenus}
             >
-              <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
+              <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg ring-1 ring-white/20">
                 <Book className="w-5 h-5 text-gold-500" />
               </div>
               <span className="min-w-0 truncate text-lg font-bold tracking-tight font-serif flex items-baseline gap-1">
-                <span className="text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>
-                <span className="text-gold-600 dark:text-gold-500 text-xl border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>
-                <span className="text-emerald-800 dark:text-emerald-400">{t(lang, 'platform_name_last')}</span>
+                <span className="text-emerald-950 dark:text-emerald-100 font-kufi">{t(lang, 'platform_name')}</span>
+                <span className="text-gold-600 dark:text-gold-500 text-xl border-b-2 border-gold-400/30 font-kufi">{t(lang, 'platform_name_mid')}</span>
+                <span className="text-emerald-900 dark:text-emerald-400 font-kufi">{t(lang, 'platform_name_last')}</span>
               </span>
             </Link>
 
@@ -225,16 +225,16 @@ const AppLayout = ({ children }) => {
           <div className="hidden md:flex justify-between items-center gap-3 h-20">
             <Link
               to="/"
-              className="flex min-w-0 items-center gap-2 sm:gap-3"
+              className="flex min-w-0 items-center gap-2 sm:gap-3 group"
               onClick={closeAllMenus}
             >
-              <div className="shrink-0 p-2 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow-lg">
-                <Book className="w-5 h-5 sm:w-6 sm:h-6 text-gold-500" />
+              <div className="shrink-0 p-2.5 bg-gradient-to-br from-emerald-600 to-emerald-900 rounded-2xl shadow-xl ring-1 ring-white/20 group-hover:scale-110 transition-transform duration-500">
+                <Book className="w-6 h-6 text-gold-400" />
               </div>
-              <span className="min-w-0 truncate text-lg sm:text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1 sm:gap-1.5">
-                <span className="truncate text-emerald-900 dark:text-emerald-300">{t(lang, 'platform_name')}</span>
-                <span className="truncate text-gold-600 dark:text-gold-500 text-xl sm:text-3xl pb-1 border-b-2 border-gold-400/30">{t(lang, 'platform_name_mid')}</span>
-                <span className="text-emerald-800 dark:text-emerald-400">{t(lang, 'platform_name_last')}</span>
+              <span className="min-w-0 truncate text-lg sm:text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1 sm:gap-2">
+                <span className="truncate text-emerald-950 dark:text-emerald-50 font-kufi">{t(lang, 'platform_name')}</span>
+                <span className="truncate text-gold-600 dark:text-gold-500 text-xl sm:text-3xl pb-1 border-b-4 border-gold-400/30 font-kufi group-hover:border-gold-500 transition-colors">{t(lang, 'platform_name_mid')}</span>
+                <span className="text-emerald-900 dark:text-emerald-400 font-kufi">{t(lang, 'platform_name_last')}</span>
               </span>
             </Link>
 
@@ -286,7 +286,7 @@ const AppLayout = ({ children }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       onMouseLeave={() => setJurisMenuOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                      className="absolute top-full left-0 mt-2 w-64 bg-[var(--glass)] backdrop-blur-2xl rounded-[2rem] shadow-[var(--glass-shadow)] border border-[var(--glass-border)] overflow-hidden z-[60] p-2"
                     >
                       <div className="p-2 space-y-1">
                         {jurisprudenceLinks.map((link) => (
@@ -294,10 +294,10 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setJurisMenuOpen(false)}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                            className={`flex items-center gap-3 px-5 py-4 rounded-2xl transition-all duration-300 ${
                               location.pathname === link.path
-                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
-                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 font-bold scale-[1.02]'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-700 dark:hover:text-emerald-400'
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
@@ -338,7 +338,7 @@ const AppLayout = ({ children }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       onMouseLeave={() => setRhetoricMenuOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                      className="absolute top-full left-0 mt-2 w-64 bg-[var(--glass)] backdrop-blur-2xl rounded-[2rem] shadow-[var(--glass-shadow)] border border-[var(--glass-border)] overflow-hidden z-[60] p-2"
                     >
                       <div className="p-2 space-y-1">
                         {rhetoricLinks.map((link) => (
@@ -346,10 +346,10 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setRhetoricMenuOpen(false)}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                            className={`flex items-center gap-3 px-5 py-4 rounded-2xl transition-all duration-300 ${
                               location.pathname === link.path
-                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
-                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 font-bold scale-[1.02]'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-700 dark:hover:text-emerald-400'
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
@@ -390,7 +390,7 @@ const AppLayout = ({ children }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       onMouseLeave={() => setStoriesMenuOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                      className="absolute top-full left-0 mt-2 w-64 bg-[var(--glass)] backdrop-blur-2xl rounded-[2rem] shadow-[var(--glass-shadow)] border border-[var(--glass-border)] overflow-hidden z-[60] p-2"
                     >
                       <div className="p-2 space-y-1">
                         {storiesLinks.map((link) => (
@@ -398,10 +398,10 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setStoriesMenuOpen(false)}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                            className={`flex items-center gap-3 px-5 py-4 rounded-2xl transition-all duration-300 ${
                               location.pathname === link.path
-                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
-                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 font-bold scale-[1.02]'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-700 dark:hover:text-emerald-400'
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
@@ -442,7 +442,7 @@ const AppLayout = ({ children }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       onMouseLeave={() => setScienceMenuOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                      className="absolute top-full left-0 mt-2 w-64 bg-[var(--glass)] backdrop-blur-2xl rounded-[2rem] shadow-[var(--glass-shadow)] border border-[var(--glass-border)] overflow-hidden z-[60] p-2"
                     >
                       <div className="p-2 space-y-1">
                         {scienceLinks.map((link) => (
@@ -450,10 +450,10 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setScienceMenuOpen(false)}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                            className={`flex items-center gap-3 px-5 py-4 rounded-2xl transition-all duration-300 ${
                               location.pathname === link.path
-                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
-                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 font-bold scale-[1.02]'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-700 dark:hover:text-emerald-400'
                             }`}
                           >
                             <link.icon className="w-4 h-4" />
@@ -494,7 +494,7 @@ const AppLayout = ({ children }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       onMouseLeave={() => setWorshipMenuOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-emerald-50 dark:border-gray-700 overflow-hidden z-[60]"
+                      className="absolute top-full left-0 mt-2 w-64 bg-[var(--glass)] backdrop-blur-2xl rounded-[2rem] shadow-[var(--glass-shadow)] border border-[var(--glass-border)] overflow-hidden z-[60] p-2"
                     >
                       <div className="p-2 space-y-1">
                         {worshipLinks.map((link) => (
@@ -502,10 +502,10 @@ const AppLayout = ({ children }) => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setWorshipMenuOpen(false)}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                            className={`flex items-center gap-3 px-5 py-4 rounded-2xl transition-all duration-300 ${
                               location.pathname === link.path
-                                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold'
-                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50/50 dark:hover:bg-gray-700 hover:text-emerald-600'
+                                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 font-bold scale-[1.02]'
+                                : 'text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-700 dark:hover:text-emerald-400'
                             }`}
                           >
                             <link.icon className="w-4 h-4" />

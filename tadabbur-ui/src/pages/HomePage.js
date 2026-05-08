@@ -49,7 +49,7 @@ export default function HomePage() {
         </script>
       </Helmet>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#064e3b] via-[#022c22] to-[#065f46] shadow-2xl p-10 md:p-20 text-center transform-gpu">
+      <section className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-[#064e3b] via-[#022c22] to-[#042f2e] shadow-2xl p-10 md:p-24 text-center transform-gpu border border-emerald-400/20">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div 
@@ -58,7 +58,7 @@ export default function HomePage() {
               scale: [1, 1.2, 1, 1.1, 1]
             }}
             transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-            className="absolute -top-1/2 -right-1/4 w-[100%] h-[100%] opacity-[0.03] border-[2px] border-gold-500 rounded-full"
+            className="absolute -top-1/2 -right-1/4 w-[120%] h-[120%] opacity-[0.05] border-[2px] border-gold-500 rounded-full"
           />
           <motion.div 
             animate={{ 
@@ -66,30 +66,33 @@ export default function HomePage() {
               scale: [1, 1.1, 1.2, 1, 1]
             }}
             transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-            className="absolute -bottom-1/2 -left-1/4 w-[80%] h-[80%] opacity-[0.02] border-[1px] border-gold-400 rounded-[40%]"
+            className="absolute -bottom-1/2 -left-1/4 w-[100%] h-[100%] opacity-[0.04] border-[1px] border-emerald-400 rounded-[40%]"
           />
-          <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M30 0l2.5 10h10l-7.5 7.5L37.5 30 30 22.5 22.5 30l2.5-12.5L17.5 10h10L30 0z\' fill=\'%23d4af37\' fill-opacity=\'1\'/%3E%3C/svg%3E")' }} />
+          <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M30 0l2.5 10h10l-7.5 7.5L37.5 30 30 22.5 22.5 30l2.5-12.5L17.5 10h10L30 0z\' fill=\'%23d4af37\' fill-opacity=\'1\'/%3E%3C/svg%3E")' }} />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#022c22] via-transparent to-transparent" />
         </div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative z-10 flex flex-col items-center max-w-5xl mx-auto space-y-10"
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="relative z-10 flex flex-col items-center max-w-5xl mx-auto space-y-12"
         >
-          <div className="inline-block px-8 py-2.5 rounded-full bg-emerald-950/40 border border-gold-500/30 text-gold-400 text-sm md:text-lg font-serif tracking-widest shadow-inner backdrop-blur-sm">
+          <div className="inline-block px-10 py-3 rounded-full bg-emerald-950/40 border border-gold-500/20 text-gold-400 text-sm md:text-xl font-kufi tracking-widest shadow-2xl backdrop-blur-md">
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-5xl font-serif font-bold text-white leading-tight drop-shadow-lg" style={{ lineHeight: '1.6' }}>
-            ﴿ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ ﴾
+          
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-serif font-bold text-white leading-[1.4] drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] quran-text !text-white !shadow-none" style={{ direction: 'rtl' }}>
+             كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ 
           </h1>
-          <p className="text-emerald-50 text-lg md:text-2xl max-w-3xl leading-relaxed font-light opacity-90">
+
+          <p className="text-emerald-50 text-lg md:text-3xl max-w-4xl leading-relaxed font-light opacity-90 font-kufi">
             منصة شاملة لتدبّر القرآن — استكشف البنية العددية والمعمارية الموضوعية والأنماط اللغوية للقرآن الكريم برؤية تقنية معاصرة.
           </p>
           
-          <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-100 text-[10px] font-bold uppercase tracking-[0.2em] mt-4">
-            <Sparkles className="w-3 h-3 text-gold-400" />
-            إصدار 1.5 - واجهة مطورة
+          <div className="flex items-center gap-3 px-6 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-emerald-100 text-xs font-bold uppercase tracking-[0.3em] mt-8 shadow-xl">
+            <Sparkles className="w-4 h-4 text-gold-400" />
+            <span className="font-kufi">إصدار 1.5 - واجهة عالمية</span>
           </div>
         </motion.div>
       </section>
