@@ -1,0 +1,1142 @@
+[
+  {
+    "surah_number": 1,
+    "surah_name_ar": "الفاتحة",
+    "surah_name_en": "Al-Fatihah",
+    "revelation_type": "Makki",
+    "verses_count": 7,
+    "summary_ar": "أم الكتاب — خلاصة القرآن كله: حمد وعبادة واستعانة وهداية",
+    "summary_en": "mother of the book — summary of the entire quran: praise, worship, guidance",
+    "reason_of_naming": "سُميت «الفاتحة» لأنها تفتتح القرآن الكريم. وتُسمى أيضًا «أم الكتاب» لأنها تجمع جوهر موضوعات القرآن: الحمد والعبادة والهداية والدعاء. وهي أول سورة تُقرأ في كل ركعة من الصلاة."
+  },
+  {
+    "surah_number": 2,
+    "surah_name_ar": "البقرة",
+    "surah_name_en": "Al-Baqarah",
+    "revelation_type": "Madani",
+    "verses_count": 286,
+    "summary_ar": "دستور الاستخلاف — التكاليف الشرعية والمنهج الرباني في الأرض",
+    "summary_en": "charter of vicegerency — divine law and god's methodology on earth",
+    "reason_of_naming": "سُميت بقصة البقرة التي أمر الله بني إسرائيل بذبحها (الآيات 67-73). التسمية تُبرز كثرة أسئلتهم وتردّدهم في الطاعة — درس في الانقياد للأمر الإلهي."
+  },
+  {
+    "surah_number": 3,
+    "surah_name_ar": "آل عمران",
+    "surah_name_en": "Aal Imran",
+    "revelation_type": "Madani",
+    "verses_count": 200,
+    "summary_ar": "آل عمران 3 steadfastness on truth — patience, perseverance, and confronting doubts الثبات على الحق — الصبر والمرابطة ومواجهة الشبهات",
+    "summary_en": "aal imran",
+    "reason_of_naming": "سُميت بآل عمران، والد مريم أم عيسى. تخاطب السورة النصارى حول حقيقة عيسى ومريم، مما يجعل هذه العائلة محورية في الحوار بين الأديان."
+  },
+  {
+    "surah_number": 4,
+    "surah_name_ar": "النساء",
+    "surah_name_en": "An-Nisa",
+    "revelation_type": "Madani",
+    "verses_count": 176,
+    "summary_ar": "العدل في الحقوق — حقوق المرأة واليتامى والمستضعفين",
+    "summary_en": "justice in rights — women's rights, orphans, and the vulnerable",
+    "reason_of_naming": "سُميت «النساء» لاحتوائها على أكثر التشريعات تفصيلاً بشأن حقوق المرأة — الميراث والزواج والطلاق والحماية الاجتماعية. أسست حقوقًا ثورية للمرأة في جزيرة العرب في القرن السابع."
+  },
+  {
+    "surah_number": 5,
+    "surah_name_ar": "المائدة",
+    "surah_name_en": "Al-Ma'idah",
+    "revelation_type": "Madani",
+    "verses_count": 120,
+    "summary_ar": "المائدة 5 fulfillment of covenants — perfection of religion الوفاء بالعقود — إتمام الدين وإكمال النعمة",
+    "summary_en": "al-ma'idah",
+    "reason_of_naming": "سُميت بـ«المائدة» التي طلب حواريّو عيسى إنزالها من السماء (الآيات 112-115). ترمز لاختبار الإيمان عبر الآيات والمعجزات الإلهية."
+  },
+  {
+    "surah_number": 6,
+    "surah_name_ar": "الأنعام",
+    "surah_name_en": "Al-An'am",
+    "revelation_type": "Makki",
+    "verses_count": 165,
+    "summary_ar": "الأنعام 6 establishing monotheism — rational proofs of allah's oneness تقرير التوحيد — الحجج العقلية على وحدانية الله",
+    "summary_en": "al-an'am",
+    "reason_of_naming": "سُميت بـ«الأنعام» إشارة إلى عادة العرب الجاهلية في تخصيص بعض المواشي للأصنام (الآيات 136-139). تدحض السورة هذه الخرافات وتؤسس التوحيد الخالص."
+  },
+  {
+    "surah_number": 7,
+    "surah_name_ar": "الأعراف",
+    "surah_name_en": "Al-A'raf",
+    "revelation_type": "Makki",
+    "verses_count": 206,
+    "summary_ar": "الأعراف 7 conflict between truth and falsehood through history الصراع بين الحق والباطل عبر التاريخ — عاقبة المكذبين",
+    "summary_en": "al-a'raf",
+    "reason_of_naming": "سُميت بـ«الأعراف»، وهو سور بين الجنة والنار يقف عليه أصحاب الحسنات والسيئات المتساوية (الآيات 46-49). يرمز للحساب الفاصل بين الحق والباطل."
+  },
+  {
+    "surah_number": 8,
+    "surah_name_ar": "الأنفال",
+    "surah_name_en": "Al-Anfal",
+    "revelation_type": "Madani",
+    "verses_count": 75,
+    "summary_ar": "أحكام الجهاد — آداب النصر والغنائم والعلاقة مع العدو",
+    "summary_en": "rulings of jihad — ethics of victory, spoils, and dealing with enemies",
+    "reason_of_naming": "سُميت «الأنفال» لأنها تبدأ بسؤال توزيع الغنائم بعد غزوة بدر. تُعلّم أن النصر والرزق من الله لا من الجهد البشري وحده."
+  },
+  {
+    "surah_number": 9,
+    "surah_name_ar": "التوبة",
+    "surah_name_en": "At-Tawbah",
+    "revelation_type": "Madani",
+    "verses_count": 129,
+    "summary_ar": "البراءة من المشركين — الحسم في العلاقة مع ناقضي العهود",
+    "summary_en": "disavowal from polytheists — decisiveness with treaty violators",
+    "reason_of_naming": "سُميت «التوبة» للتوبة التي تتخللها، خاصة قصة الثلاثة الذين تخلفوا عن تبوك ثم غُفر لهم (الآيات 117-118). وهي السورة الوحيدة التي لا تبدأ بالبسملة، إشارة إلى نبرتها الحازمة."
+  },
+  {
+    "surah_number": 10,
+    "surah_name_ar": "يونس",
+    "surah_name_en": "Yunus",
+    "revelation_type": "Makki",
+    "verses_count": 109,
+    "summary_ar": "الإيمان بالقدر وصدق القرآن",
+    "summary_en": "faith in divine decree and the quran's authenticity",
+    "reason_of_naming": "سُميت باسم النبي يونس الذي تاب قومه قبل العذاب فنجوا (الآية 98). وهم الأمة الوحيدة في القرآن التي نجت بعد الإنذار — مما يُبرز قوة التوبة الجماعية."
+  },
+  {
+    "surah_number": 11,
+    "surah_name_ar": "هود",
+    "surah_name_en": "Hud",
+    "revelation_type": "Makki",
+    "verses_count": 123,
+    "summary_ar": "الاستقامة — قصص أنبياء الثبات",
+    "summary_en": "steadfastness — prophetic stories of perseverance",
+    "reason_of_naming": "سُميت باسم النبي هود الذي أُرسل إلى قبيلة عاد العظيمة. تؤكد السورة الاستقامة على الطريق المستقيم عبر قصص أنبياء متعددين ثبتوا رغم الرفض."
+  },
+  {
+    "surah_number": 12,
+    "surah_name_ar": "يوسف",
+    "surah_name_en": "Yusuf",
+    "revelation_type": "Makki",
+    "verses_count": 111,
+    "summary_ar": "أحسن القصص — الأمل بعد البلاء والصبر على المحن",
+    "summary_en": "the best of stories — hope after trials and patience through tribulations",
+    "reason_of_naming": "سُميت باسم النبي يوسف. تتميز بأنها السورة الوحيدة التي تروي قصة واحدة كاملة من البداية إلى النهاية. القرآن نفسه يسميها «أحسن القصص» — سيرة الغيرة والابتلاء والصبر والانتصار النهائي."
+  },
+  {
+    "surah_number": 13,
+    "surah_name_ar": "الرعد",
+    "surah_name_en": "Ar-Ra'd",
+    "revelation_type": "Madani",
+    "verses_count": 43,
+    "summary_ar": "الرعد 13 signs in nature and truth of revelation آيات الله في الطبيعة وحقيقة الوحي",
+    "summary_en": "ar-ra'd",
+    "reason_of_naming": "سُميت بـ«الرعد» الذي يسبّح بحمد الله (الآية 13). تُبيّن أن حتى الظواهر الطبيعية تشهد على الحقيقة الإلهية."
+  },
+  {
+    "surah_number": 14,
+    "surah_name_ar": "إبراهيم",
+    "surah_name_en": "Ibrahim",
+    "revelation_type": "Makki",
+    "verses_count": 52,
+    "summary_ar": "شكر النعم وإرث إبراهيم",
+    "summary_en": "gratitude for blessings and abraham's legacy",
+    "reason_of_naming": "سُميت باسم النبي إبراهيم الذي يختتم دعاؤه لمكة وذريته السورة (الآيات 35-41). دعاؤه نموذج للشكر والتضرع — المحورين الرئيسيين للسورة."
+  },
+  {
+    "surah_number": 15,
+    "surah_name_ar": "الحجر",
+    "surah_name_en": "Al-Hijr",
+    "revelation_type": "Makki",
+    "verses_count": 99,
+    "summary_ar": "حفظ القرآن وعقوبة المكذبين",
+    "summary_en": "preservation of the quran and punishment of deniers",
+    "reason_of_naming": "سُميت بمنطقة الحِجر الصخرية حيث نحت قوم ثمود بيوتهم في الجبال (الآيات 80-84). رغم حضارتهم المبهرة أُهلكوا لرفضهم النبي صالح."
+  },
+  {
+    "surah_number": 16,
+    "surah_name_ar": "النحل",
+    "surah_name_en": "An-Nahl",
+    "revelation_type": "Makki",
+    "verses_count": 128,
+    "summary_ar": "نِعَم الله في الخلق والشكر",
+    "summary_en": "blessings of allah in creation and gratitude",
+    "reason_of_naming": "سُميت بـ«النحل» — مخلوق أوحى إليه الله لإنتاج العسل الشافي (الآيات 68-69). النحلة نموذج لكيفية عمل نعم الله عبر مخلوقات تبدو صغيرة."
+  },
+  {
+    "surah_number": 17,
+    "surah_name_ar": "الإسراء",
+    "surah_name_en": "Al-Isra",
+    "revelation_type": "Makki",
+    "verses_count": 111,
+    "summary_ar": "الإسراء والوصايا الأخلاقية",
+    "summary_en": "the night journey and ethical commandments",
+    "reason_of_naming": "سُميت بـ«الإسراء» حين أُسري بالنبي محمد ﷺ من مكة إلى القدس في ليلة واحدة (الآية 1). هذه الرحلة المعجزة أكدت مكانة النبي وربطت بين المسجدين الحرامين."
+  },
+  {
+    "surah_number": 18,
+    "surah_name_ar": "الكهف",
+    "surah_name_en": "Al-Kahf",
+    "revelation_type": "Makki",
+    "verses_count": 110,
+    "summary_ar": "أربع فتن: الدين والمال والعلم والسلطة — والحماية منها",
+    "summary_en": "four trials: faith, wealth, knowledge, and power — and protection from them",
+    "reason_of_naming": "سُميت بـ«الكهف» حيث لجأ فتية مؤمنون حفاظًا على إيمانهم من ملك طاغية (الآيات 9-26). أوصى النبي ﷺ بقراءتها كل جمعة لحمايتها من الفتن."
+  },
+  {
+    "surah_number": 19,
+    "surah_name_ar": "مريم",
+    "surah_name_en": "Maryam",
+    "revelation_type": "Makki",
+    "verses_count": 98,
+    "summary_ar": "الرحمة الإلهية — رعاية الله لعباده الضعفاء والمحتاجين",
+    "summary_en": "divine mercy — allah's care for his weak and needy servants",
+    "reason_of_naming": "سُميت بمريم أم عيسى — المرأة الوحيدة المذكورة باسمها في القرآن. طهارتها وعبادتها وأمومتها المعجزة تجعلها قدوة للبشرية جمعاء. تُليت السورة على ملك الحبشة النصراني أثناء الهجرة الأولى."
+  },
+  {
+    "surah_number": 20,
+    "surah_name_ar": "طه",
+    "surah_name_en": "Taha",
+    "revelation_type": "Makki",
+    "verses_count": 135,
+    "summary_ar": "رسالة موسى الكاملة — من الدعوة إلى المواجهة",
+    "summary_en": "moses's complete mission — from call to confrontation",
+    "reason_of_naming": "تبدأ بالحرفين «طه»، أحد الحروف المقطعة الغامضة في القرآن. يرى بعض العلماء أنه اسم للنبي محمد ﷺ، وآخرون يعتبرونه نداءً إلهيًا لتطمينه."
+  },
+  {
+    "surah_number": 21,
+    "surah_name_ar": "الأنبياء",
+    "surah_name_en": "Al-Anbiya",
+    "revelation_type": "Makki",
+    "verses_count": 112,
+    "summary_ar": "وحدة الرسالة النبوية عبر جميع الرسل",
+    "summary_en": "unity of the prophetic message across all messengers",
+    "reason_of_naming": "سُميت «الأنبياء» لذكرها أكبر مجموعة من الأنبياء في سورة واحدة (16 نبيًا). تُثبت أن جميع الأنبياء حملوا رسالة واحدة موحدة."
+  },
+  {
+    "surah_number": 22,
+    "surah_name_ar": "الحج",
+    "surah_name_en": "Al-Hajj",
+    "revelation_type": "Madani",
+    "verses_count": 78,
+    "summary_ar": "الحج والعبادة ويوم القيامة",
+    "summary_en": "pilgrimage, worship, and the day of judgment",
+    "reason_of_naming": "سُميت بـ«الحج» — المناسك التي أسسها إبراهيم وأحياها الإسلام (الآيات 26-37). تتميز باحتوائها على سجدتي تلاوة واجبتين."
+  },
+  {
+    "surah_number": 23,
+    "surah_name_ar": "المؤمنون",
+    "surah_name_en": "Al-Mu'minun",
+    "revelation_type": "Makki",
+    "verses_count": 118,
+    "summary_ar": "المؤمنون 23 qualities of successful believers صفات المؤمنين الفالحين",
+    "summary_en": "al-mu'minun",
+    "reason_of_naming": "سُميت «المؤمنون» لأنها تبدأ بالصفات المميزة للمؤمنين الفالحين (الآيات 1-11). هذه الصفات تشكل خريطة روحية من الخشوع إلى وراثة الفردوس."
+  },
+  {
+    "surah_number": 24,
+    "surah_name_ar": "النور",
+    "surah_name_en": "An-Nur",
+    "revelation_type": "Madani",
+    "verses_count": 64,
+    "summary_ar": "حماية المجتمع — آداب الاستئذان والحجاب ومكافحة الإشاعة",
+    "summary_en": "protecting society — etiquette, modesty, and fighting rumors",
+    "reason_of_naming": "سُميت بـ«النور» من آية النور العظيمة (الآية 35) التي تصف هداية الله نورًا على نور. تُشرّع السورة آدابًا اجتماعية تحمي «نور» المجتمع الطاهر."
+  },
+  {
+    "surah_number": 25,
+    "surah_name_ar": "الفرقان",
+    "surah_name_en": "Al-Furqan",
+    "revelation_type": "Makki",
+    "verses_count": 77,
+    "summary_ar": "الفرقان بين الحق والباطل",
+    "summary_en": "the criterion between truth and falsehood",
+    "reason_of_naming": "سُميت «الفرقان» — إشارة إلى القرآن بوصفه المعيار الذي يفرّق بين الحق والباطل (الآية 1). الاسم يجسّد محور السورة في التمييز الواضح بين الهدى والضلال."
+  },
+  {
+    "surah_number": 26,
+    "surah_name_ar": "الشعراء",
+    "surah_name_en": "Ash-Shu'ara",
+    "revelation_type": "Makki",
+    "verses_count": 227,
+    "summary_ar": "الشعراء 26 prophetic missions with the repeated refrain: 'your lord is the almighty, the merciful' الرسالات النبوية بلازمة: إن ربك لهو العزيز الرحيم",
+    "summary_en": "ash-shu'ara",
+    "reason_of_naming": "سُميت «الشعراء» لأن خاتمتها تميّز الوحي الإلهي عن مجرد الشعر (الآيات 224-227). الشعراء يتبعون كل هوى، لكن المؤمنين يعملون بأقوالهم."
+  },
+  {
+    "surah_number": 27,
+    "surah_name_ar": "النمل",
+    "surah_name_en": "An-Naml",
+    "revelation_type": "Makki",
+    "verses_count": 93,
+    "summary_ar": "العلم والسلطة — مُلك سليمان كهبة إلهية",
+    "summary_en": "knowledge and power — solomon's kingdom as divine gift",
+    "reason_of_naming": "سُميت بـ«النمل» التي حذّرت قبيلتها من جيش سليمان القادم (الآية 18). وعي هذا المخلوق الصغير يُبيّن أن كل الخلق يدرك الآيات الإلهية."
+  },
+  {
+    "surah_number": 28,
+    "surah_name_ar": "القصص",
+    "surah_name_en": "Al-Qasas",
+    "revelation_type": "Makki",
+    "verses_count": 88,
+    "summary_ar": "سيرة موسى الكاملة — من الولادة إلى النبوة",
+    "summary_en": "moses's complete biography — from birth to prophethood",
+    "reason_of_naming": "سُميت «القصص» لأنها تروي أكمل سيرة لموسى — من الولادة حتى النبوة. وتتضمن قصة قارون كعبرة تحذيرية."
+  },
+  {
+    "surah_number": 29,
+    "surah_name_ar": "العنكبوت",
+    "surah_name_en": "Al-Ankabut",
+    "revelation_type": "Makki",
+    "verses_count": 69,
+    "summary_ar": "اختبارات الإيمان وهشاشة الباطل",
+    "summary_en": "tests of faith and the fragility of falsehood",
+    "reason_of_naming": "سُميت بـ«العنكبوت» التي وُصف بيتها بأوهن البيوت (الآية 41) — مَثَلٌ لمن يتخذ أولياء من دون الله."
+  },
+  {
+    "surah_number": 30,
+    "surah_name_ar": "الروم",
+    "surah_name_en": "Ar-Rum",
+    "revelation_type": "Makki",
+    "verses_count": 60,
+    "summary_ar": "نبوءة انتصار الروم وآيات في الخلق",
+    "summary_en": "prophecy of roman victory and signs in creation",
+    "reason_of_naming": "سُميت «الروم» للنبوءة بأن الروم البيزنطيين، المهزومين من الفرس، سينتصرون في 3-9 سنوات (الآيات 1-5). تحققت هذه النبوءة، مثبتةً المصدر الإلهي للقرآن."
+  },
+  {
+    "surah_number": 31,
+    "surah_name_ar": "لقمان",
+    "surah_name_en": "Luqman",
+    "revelation_type": "Makki",
+    "verses_count": 34,
+    "summary_ar": "الحكمة والتوجيه الأبوي",
+    "summary_en": "wisdom and parental guidance",
+    "reason_of_naming": "سُميت باسم الحكيم لقمان الذي أسدى لابنه نصائح خالدة (الآيات 12-19). رغم أنه ليس نبيًا، منحه الله الحكمة ليكون نموذجًا للتوجيه الأبوي."
+  },
+  {
+    "surah_number": 32,
+    "surah_name_ar": "السجدة",
+    "surah_name_en": "As-Sajdah",
+    "revelation_type": "Makki",
+    "verses_count": 30,
+    "summary_ar": "الخلق والبعث وحقيقة القرآن",
+    "summary_en": "creation, resurrection, and truth of the quran",
+    "reason_of_naming": "سُميت «السجدة» لآية سجود المؤمنين عند سماع القرآن (الآية 15). كان النبي ﷺ يقرؤها كل جمعة في صلاة الفجر."
+  },
+  {
+    "surah_number": 33,
+    "surah_name_ar": "الأحزاب",
+    "surah_name_en": "Al-Ahzab",
+    "revelation_type": "Madani",
+    "verses_count": 73,
+    "summary_ar": "غزوة الخندق والإصلاحات الاجتماعية وبيت النبي ﷺ",
+    "summary_en": "battle of the trench, social reforms, prophet's household",
+    "reason_of_naming": "سُميت «الأحزاب» — تحالف القبائل الذي حاصر المدينة في غزوة الخندق (الآيات 9-27). هزيمتهم بالتدخل الإلهي كانت نقطة تحول في التاريخ الإسلامي."
+  },
+  {
+    "surah_number": 34,
+    "surah_name_ar": "سبأ",
+    "surah_name_en": "Saba",
+    "revelation_type": "Makki",
+    "verses_count": 54,
+    "summary_ar": "الشكر مقابل الجحود — دروس من سبأ",
+    "summary_en": "gratitude vs ingratitude — lessons from sheba",
+    "reason_of_naming": "سُميت بمملكة سبأ في اليمن التي تنعّم أهلها بنعم الله لكنهم جحدوا، فانهار سدّهم العظيم وحضارتهم (الآيات 15-21)."
+  },
+  {
+    "surah_number": 35,
+    "surah_name_ar": "فاطر",
+    "surah_name_en": "Fatir",
+    "revelation_type": "Makki",
+    "verses_count": 45,
+    "summary_ar": "الله الفاطر — القدرة الخلاقة واستجابة البشر",
+    "summary_en": "allah the originator — creative power and human response",
+    "reason_of_naming": "سُميت «فاطر» — الله الذي ابتدع السماوات والأرض من العدم (الآية 1). الاسم يؤكد القدرة الخلاقة الإلهية التي لا سابقة لها ولا مثيل."
+  },
+  {
+    "surah_number": 36,
+    "surah_name_ar": "يس",
+    "surah_name_en": "Ya-Sin",
+    "revelation_type": "Makki",
+    "verses_count": 83,
+    "summary_ar": "قلب القرآن — إثبات الرسالة والبعث والقدرة الإلهية",
+    "summary_en": "heart of the quran — proving the message, resurrection, and divine power",
+    "reason_of_naming": "تبدأ بالحرفين «يس»، من الحروف المقطعة الغامضة. سمّاها النبي ﷺ «قلب القرآن» لأنها تجسّد بقوة محاور القرآن الثلاثة: التوحيد والنبوة والبعث."
+  },
+  {
+    "surah_number": 37,
+    "surah_name_ar": "الصافات",
+    "surah_name_en": "As-Saffat",
+    "revelation_type": "Makki",
+    "verses_count": 182,
+    "summary_ar": "الملائكة وابتلاءات الأنبياء وانتصار الحق",
+    "summary_en": "angels, prophetic trials, and victory of truth",
+    "reason_of_naming": "سُميت بالملائكة «الصافات» — الآية 1 تصف الملائكة مصطفة في العبادة، راسمة مشهدًا كونيًا من النظام الإلهي."
+  },
+  {
+    "surah_number": 38,
+    "surah_name_ar": "ص",
+    "surah_name_en": "Sad",
+    "revelation_type": "Makki",
+    "verses_count": 88,
+    "summary_ar": "السلطة النبوية — دروس من داود وسليمان",
+    "summary_en": "prophetic authority — lessons from david and solomon",
+    "reason_of_naming": "تبدأ بحرف «ص». الحرف بمثابة قسم يلفت الانتباه للقرآن كتاب ذكر. تركز السورة على السلطة النبوية وعواقب التكبر."
+  },
+  {
+    "surah_number": 39,
+    "surah_name_ar": "الزمر",
+    "surah_name_en": "Az-Zumar",
+    "revelation_type": "Makki",
+    "verses_count": 75,
+    "summary_ar": "الإخلاص في العبادة والتباين في المصائر",
+    "summary_en": "sincerity in worship and contrast of final outcomes",
+    "reason_of_naming": "سُميت «الزمر» لأنه يوم القيامة سيُساق الناس إلى الجنة والنار في زُمَر متميزة (الآيات 71-75)."
+  },
+  {
+    "surah_number": 40,
+    "surah_name_ar": "غافر",
+    "surah_name_en": "Ghafir",
+    "revelation_type": "Makki",
+    "verses_count": 85,
+    "summary_ar": "الغافر — الإيمان تحت الطغيان",
+    "summary_en": "the forgiver — faith under tyranny",
+    "reason_of_naming": "سُميت «غافر» من الآية 3 التي تصف الله بأنه غافر الذنب وقابل التوب. وتُعرف أيضًا بـ«المؤمن» نسبة لمؤمن آل فرعون."
+  },
+  {
+    "surah_number": 41,
+    "surah_name_ar": "فصلت",
+    "surah_name_en": "Fussilat",
+    "revelation_type": "Makki",
+    "verses_count": 54,
+    "summary_ar": "القرآن المفصَّل — الخلق والآيات",
+    "summary_en": "the quran explained in detail — creation and signs",
+    "reason_of_naming": "سُميت «فصلت» — آيات القرآن فُصّلت وبُيّنت (الآية 3). وتُعرف أيضًا بـ«حم السجدة» لآية السجدة فيها."
+  },
+  {
+    "surah_number": 42,
+    "surah_name_ar": "الشورى",
+    "surah_name_en": "Ash-Shura",
+    "revelation_type": "Makki",
+    "verses_count": 53,
+    "summary_ar": "الشورى ووحدة الوحي الإلهي",
+    "summary_en": "consultation and unity of divine revelation",
+    "reason_of_naming": "سُميت «الشورى» من الآية 38 التي تؤسس الشورى مبدأً جوهريًا في حكم المجتمع إلى جانب الصلاة والإنفاق."
+  },
+  {
+    "surah_number": 43,
+    "surah_name_ar": "الزخرف",
+    "surah_name_en": "Az-Zukhruf",
+    "revelation_type": "Makki",
+    "verses_count": 89,
+    "summary_ar": "زخرف الدنيا مقابل الحقيقة",
+    "summary_en": "vanity of worldly adornment vs truth",
+    "reason_of_naming": "سُميت «الزخرف» — الآية 35 تبيّن أن الذهب والترف مجرد زينة دنيوية، لا دليل على الحق أو الفضل الإلهي."
+  },
+  {
+    "surah_number": 44,
+    "surah_name_ar": "الدخان",
+    "surah_name_en": "Ad-Dukhan",
+    "revelation_type": "Makki",
+    "verses_count": 59,
+    "summary_ar": "التحذير من العذاب وليلة القدر",
+    "summary_en": "warning of punishment and the night of decree",
+    "reason_of_naming": "سُميت «الدخان» — علامة عذاب أُنبئ بها في الآية 10، فُسّرت إما كدخان حقيقي أو المجاعة التي ضربت قريشًا."
+  },
+  {
+    "surah_number": 45,
+    "surah_name_ar": "الجاثية",
+    "surah_name_en": "Al-Jathiyah",
+    "revelation_type": "Makki",
+    "verses_count": 37,
+    "summary_ar": "المحاسبة للجميع — الجثو أمام الله",
+    "summary_en": "accountability for all — kneeling before allah",
+    "reason_of_naming": "سُميت «الجاثية» — يوم القيامة كل أمة تجثو أمام الله في انتظار كتابها (الآية 28)."
+  },
+  {
+    "surah_number": 46,
+    "surah_name_ar": "الأحقاف",
+    "surah_name_en": "Al-Ahqaf",
+    "revelation_type": "Makki",
+    "verses_count": 35,
+    "summary_ar": "بر الوالدين ودروس من عاد",
+    "summary_en": "kindness to parents and lessons from 'ad",
+    "reason_of_naming": "سُميت «الأحقاف» حيث عاش قوم عاد قبل إهلاكهم (الآية 21). حضارتهم المبهرة في الصحراء لم تنقذهم من العذاب الإلهي."
+  },
+  {
+    "surah_number": 47,
+    "surah_name_ar": "محمد",
+    "surah_name_en": "Muhammad",
+    "revelation_type": "Madani",
+    "verses_count": 38,
+    "summary_ar": "القتال في سبيل الله وكشف النفاق",
+    "summary_en": "fighting for allah's cause and exposing hypocrisy",
+    "reason_of_naming": "سُميت باسم النبي محمد ﷺ (الآية 2). وهي إحدى أربع سور تذكر النبي باسمه. تتناول واقع القتال دفاعًا عن الإيمان."
+  },
+  {
+    "surah_number": 48,
+    "surah_name_ar": "الفتح",
+    "surah_name_en": "Al-Fath",
+    "revelation_type": "Madani",
+    "verses_count": 29,
+    "summary_ar": "الفتح المبين — صلح الحديبية",
+    "summary_en": "the manifest victory — treaty of hudaybiyyah",
+    "reason_of_naming": "سُميت «الفتح» — إشارة إلى صلح الحديبية (الآية 1) الذي بدا في البداية تراجعًا لكنه أثبت أنه أعظم انتصار استراتيجي للإسلام."
+  },
+  {
+    "surah_number": 49,
+    "surah_name_ar": "الحجرات",
+    "surah_name_en": "Al-Hujurat",
+    "revelation_type": "Madani",
+    "verses_count": 18,
+    "summary_ar": "أخلاق المجتمع المسلم — آداب التعامل والأخوة الإنسانية",
+    "summary_en": "ethics of muslim society — manners and human brotherhood",
+    "reason_of_naming": "سُميت «الحجرات» — غرف زوجات النبي ﷺ. كان الأعراب ينادون النبي من خارجها — فتعلّم السورة الأدب وحسن السلوك الاجتماعي."
+  },
+  {
+    "surah_number": 50,
+    "surah_name_ar": "ق",
+    "surah_name_en": "Qaf",
+    "revelation_type": "Makki",
+    "verses_count": 45,
+    "summary_ar": "الموت والبعث وتسجيل الأعمال",
+    "summary_en": "death, resurrection, and recording of deeds",
+    "reason_of_naming": "تبدأ بحرف «ق». كان النبي ﷺ يكثر من قراءتها في صلاة الجمعة. تركز على الموت والبعث والملكين الكاتبين."
+  },
+  {
+    "surah_number": 51,
+    "surah_name_ar": "الذاريات",
+    "surah_name_en": "Adh-Dhariyat",
+    "revelation_type": "Makki",
+    "verses_count": 60,
+    "summary_ar": "الغاية من الخلق — عبادة الله وحده",
+    "summary_en": "purpose of creation — worship allah alone",
+    "reason_of_naming": "سُميت «الذاريات» — تبدأ بالقسم بالرياح والسحب والسفن والملائكة، مشيرة إلى قدرة الله على الطبيعة."
+  },
+  {
+    "surah_number": 52,
+    "surah_name_ar": "الطور",
+    "surah_name_en": "At-Tur",
+    "revelation_type": "Makki",
+    "verses_count": 49,
+    "summary_ar": "القسَم واليقين بالحكم الإلهي",
+    "summary_en": "oaths and certainty of judgment",
+    "reason_of_naming": "سُميت «الطور» — جبل سيناء حيث كلّم الله موسى (الآية 1). القسم بهذا الجبل المقدس يفتتح سورة عن الحكم الإلهي."
+  },
+  {
+    "surah_number": 53,
+    "surah_name_ar": "النجم",
+    "surah_name_en": "An-Najm",
+    "revelation_type": "Makki",
+    "verses_count": 62,
+    "summary_ar": "صدق الوحي والمعراج",
+    "summary_en": "revelation's authenticity and the ascension",
+    "reason_of_naming": "سُميت «النجم» — تبدأ بالقسم بالنجم إذا هوى، ثم تصف رؤية النبي لجبريل ليلة المعراج."
+  },
+  {
+    "surah_number": 54,
+    "surah_name_ar": "القمر",
+    "surah_name_en": "Al-Qamar",
+    "revelation_type": "Makki",
+    "verses_count": 55,
+    "summary_ar": "يُسر القرآن وعقوبة المكذبين",
+    "summary_en": "ease of the quran and punishment of deniers",
+    "reason_of_naming": "سُميت «القمر» الذي انشق معجزة للنبي ﷺ (الآية 1). تتكرر لازمة «ولقد يسّرنا القرآن للذكر» أربع مرات."
+  },
+  {
+    "surah_number": 55,
+    "surah_name_ar": "الرحمن",
+    "surah_name_en": "Ar-Rahman",
+    "revelation_type": "Madani",
+    "verses_count": 78,
+    "summary_ar": "نعم الله التي لا تحصى — فبأي آلاء ربكما تكذبان",
+    "summary_en": "allah's countless blessings — which favors of your lord will you deny?",
+    "reason_of_naming": "سُميت «الرحمن» — اسم الله ذو الرحمة المطلقة يفتتح السورة. تتكرر لازمة «فبأي آلاء ربكما تكذبان» 31 مرة، مما جعلها تُعرف بـ«عروس القرآن»."
+  },
+  {
+    "surah_number": 56,
+    "surah_name_ar": "الواقعة",
+    "surah_name_en": "Al-Waqi'ah",
+    "revelation_type": "Makki",
+    "verses_count": 96,
+    "summary_ar": "الواقعة 56 reality of the hereafter — three categories of people on judgment day حقيقة الآخرة — أصناف الناس الثلاثة يوم القيامة",
+    "summary_en": "al-waqi'ah",
+    "reason_of_naming": "سُميت «الواقعة» — يوم القيامة الذي لا يستطيع أحد إنكاره أو منعه (الآية 1). قال النبي ﷺ: من قرأ الواقعة كل ليلة لم تصبه فاقة."
+  },
+  {
+    "surah_number": 57,
+    "surah_name_ar": "الحديد",
+    "surah_name_en": "Al-Hadid",
+    "revelation_type": "Madani",
+    "verses_count": 29,
+    "summary_ar": "الإنفاق في سبيل الله وطبيعة الحياة الدنيا",
+    "summary_en": "spending in allah's cause and nature of worldly life",
+    "reason_of_naming": "سُميت «الحديد» الذي «أنزله» الله فيه بأس شديد ومنافع للناس (الآية 25). كلمة «أنزل» تشير إلى الأصل الكوني للحديد، المعروف للعلم الحديث."
+  },
+  {
+    "surah_number": 58,
+    "surah_name_ar": "المجادلة",
+    "surah_name_en": "Al-Mujadila",
+    "revelation_type": "Madani",
+    "verses_count": 22,
+    "summary_ar": "العدل الإلهي في الشؤون الشخصية",
+    "summary_en": "divine justice in personal matters",
+    "reason_of_naming": "سُميت «المجادلة» — خولة بنت ثعلبة التي رفعت قضيتها للنبي بشأن ظهار زوجها الظالم. سمع الله شكواها من فوق سبع سماوات."
+  },
+  {
+    "surah_number": 59,
+    "surah_name_ar": "الحشر",
+    "surah_name_en": "Al-Hashr",
+    "revelation_type": "Madani",
+    "verses_count": 24,
+    "summary_ar": "إجلاء بني النضير وأسماء الله الحسنى",
+    "summary_en": "expulsion of banu nadir and allah's beautiful names",
+    "reason_of_naming": "سُميت «الحشر» — إشارة إلى إجلاء بني النضير من المدينة. تُختتم بمجموعة عظيمة من أسماء الله الحسنى."
+  },
+  {
+    "surah_number": 60,
+    "surah_name_ar": "الممتحنة",
+    "surah_name_en": "Al-Mumtahina",
+    "revelation_type": "Madani",
+    "verses_count": 13,
+    "summary_ar": "الولاء والبيعة وامتحان المهاجرات",
+    "summary_en": "loyalty, allegiance, and testing women emigrants",
+    "reason_of_naming": "سُميت «الممتحنة» — النساء المهاجرات إلى المدينة كنّ يُمتحنّ في صدق إيمانهن قبل قبولهن (الآية 10)."
+  },
+  {
+    "surah_number": 61,
+    "surah_name_ar": "الصف",
+    "surah_name_en": "As-Saff",
+    "revelation_type": "Madani",
+    "verses_count": 14,
+    "summary_ar": "الوحدة والجهاد في سبيل الله",
+    "summary_en": "unity and struggle for allah's cause",
+    "reason_of_naming": "سُميت «الصف» — المؤمنون يقفون صفًا واحدًا يقاتلون في سبيل الله (الآية 4)، كبنيان مرصوص."
+  },
+  {
+    "surah_number": 62,
+    "surah_name_ar": "الجمعة",
+    "surah_name_en": "Al-Jumu'ah",
+    "revelation_type": "Madani",
+    "verses_count": 11,
+    "summary_ar": "الجمعة 62 friday prayer and the unlettered prophet's mission صلاة الجمعة ورسالة النبي الأمي",
+    "summary_en": "al-jumu'ah",
+    "reason_of_naming": "سُميت «الجمعة» — يوم صلاة الجماعة. تؤسس السورة صلاة الجمعة فريضة وتنتقد من يتركها للتجارة."
+  },
+  {
+    "surah_number": 63,
+    "surah_name_ar": "المنافقون",
+    "surah_name_en": "Al-Munafiqun",
+    "revelation_type": "Madani",
+    "verses_count": 11,
+    "summary_ar": "كشف خصائص المنافقين ومخاطرهم",
+    "summary_en": "exposing the characteristics and dangers of hypocrites",
+    "reason_of_naming": "سُميت «المنافقون» — كشف مباشر لخصائصهم وخطرهم من داخل المجتمع المسلم."
+  },
+  {
+    "surah_number": 64,
+    "surah_name_ar": "التغابن",
+    "surah_name_en": "At-Taghabun",
+    "revelation_type": "Madani",
+    "verses_count": 18,
+    "summary_ar": "يوم التغابن — الخسران والفوز",
+    "summary_en": "day of reckoning — mutual loss and gain",
+    "reason_of_naming": "سُميت «التغابن» — يوم القيامة حين يُكشف الرابحون والخاسرون الحقيقيون (الآية 9)."
+  },
+  {
+    "surah_number": 65,
+    "surah_name_ar": "الطلاق",
+    "surah_name_en": "At-Talaq",
+    "revelation_type": "Madani",
+    "verses_count": 12,
+    "summary_ar": "أحكام الطلاق والتوكل على الله",
+    "summary_en": "divorce legislation and trust in allah",
+    "reason_of_naming": "سُميت «الطلاق» — تقدم تشريعًا مفصلاً لعملية الطلاق والعدة وحقوق السكن، ضمانًا للعدل بين الطرفين."
+  },
+  {
+    "surah_number": 66,
+    "surah_name_ar": "التحريم",
+    "surah_name_en": "At-Tahrim",
+    "revelation_type": "Madani",
+    "verses_count": 12,
+    "summary_ar": "شؤون بيت النبي ونماذج من النساء",
+    "summary_en": "household matters and models of women",
+    "reason_of_naming": "سُميت «التحريم» — حرّم النبي ﷺ على نفسه شيئًا إرضاءً لزوجاته، فعاتبه الله برفق (الآية 1)."
+  },
+  {
+    "surah_number": 67,
+    "surah_name_ar": "الملك",
+    "surah_name_en": "Al-Mulk",
+    "revelation_type": "Makki",
+    "verses_count": 30,
+    "summary_ar": "التفكر في ملكوت الله — الموت والحياة ابتلاء واختبار",
+    "summary_en": "contemplating god's dominion — life and death are a test",
+    "reason_of_naming": "سُميت «الملك» — تفتتح بإعلان أن المُلك كله لله. قال النبي ﷺ إنها تشفع لقارئها وتقيه عذاب القبر."
+  },
+  {
+    "surah_number": 68,
+    "surah_name_ar": "القلم",
+    "surah_name_en": "Al-Qalam",
+    "revelation_type": "Makki",
+    "verses_count": 52,
+    "summary_ar": "القلم — أخلاق النبي وتحذيرات",
+    "summary_en": "the pen — prophet's character and warnings",
+    "reason_of_naming": "سُميت «القلم» — أول أداة للمعرفة. تبدأ بالقسم بالقلم وما يسطرون، مؤكدة خُلُق النبي الكريم."
+  },
+  {
+    "surah_number": 69,
+    "surah_name_ar": "الحاقة",
+    "surah_name_en": "Al-Haqqah",
+    "revelation_type": "Makki",
+    "verses_count": 52,
+    "summary_ar": "الحاقة — إهلاك المكذبين",
+    "summary_en": "the inevitable — destruction of deniers",
+    "reason_of_naming": "سُميت «الحاقة» — يوم القيامة الذي لا بد أن يقع (الآيات 1-3). السؤال الثلاثي «ما الحاقة؟» يخلق تأكيدًا دراميًا."
+  },
+  {
+    "surah_number": 70,
+    "surah_name_ar": "المعارج",
+    "surah_name_en": "Al-Ma'arij",
+    "revelation_type": "Makki",
+    "verses_count": 44,
+    "summary_ar": "المعارج 70 human impatience and the day of judgment عجلة الإنسان ويوم القيامة",
+    "summary_en": "al-ma'arij",
+    "reason_of_naming": "سُميت «المعارج» — الملائكة تعرج إلى الله عبرها (الآية 3). تصف طبيعة الإنسان ويوم القيامة."
+  },
+  {
+    "surah_number": 71,
+    "surah_name_ar": "نوح",
+    "surah_name_en": "Nuh",
+    "revelation_type": "Makki",
+    "verses_count": 28,
+    "summary_ar": "دعوة نوح الطويلة والرفض المستمر",
+    "summary_en": "noah's prolonged call and persistent rejection",
+    "reason_of_naming": "سُميت باسم النبي نوح — السورة بأكملها مكرسة لرسالته التي استمرت 950 سنة ورفض قومه المستمر."
+  },
+  {
+    "surah_number": 72,
+    "surah_name_ar": "الجن",
+    "surah_name_en": "Al-Jinn",
+    "revelation_type": "Makki",
+    "verses_count": 28,
+    "summary_ar": "الجن — قبول القرآن وعالم الغيب",
+    "summary_en": "the jinn — accepting the quran and the unseen",
+    "reason_of_naming": "سُميت «الجن» — مجموعة من الجن سمعوا القرآن فآمنوا فورًا (الآية 1). تكشف عالم الجن الغيبي وعلاقتهم بالإيمان."
+  },
+  {
+    "surah_number": 73,
+    "surah_name_ar": "المزمل",
+    "surah_name_en": "Al-Muzzammil",
+    "revelation_type": "Makki",
+    "verses_count": 20,
+    "summary_ar": "قيام الليل والإعداد الروحي",
+    "summary_en": "night prayer and spiritual preparation",
+    "reason_of_naming": "سُميت «المزمل» — مخاطبة النبي ﷺ المتلفف في ثيابه. أمره الله بقيام الليل إعدادًا روحيًا للرسالة الثقيلة القادمة."
+  },
+  {
+    "surah_number": 74,
+    "surah_name_ar": "المدثر",
+    "surah_name_en": "Al-Muddaththir",
+    "revelation_type": "Makki",
+    "verses_count": 56,
+    "summary_ar": "قم فأنذر — النداء للعمل",
+    "summary_en": "rise and warn — the call to action",
+    "reason_of_naming": "سُميت «المدثر» — بعد الوحي الثاني، عاد النبي ﷺ مرتجفًا وطلب أن يُدثَّر. فأمره الله: قم فأنذر!"
+  },
+  {
+    "surah_number": 75,
+    "surah_name_ar": "القيامة",
+    "surah_name_en": "Al-Qiyamah",
+    "revelation_type": "Makki",
+    "verses_count": 40,
+    "summary_ar": "القيامة وخروج الروح",
+    "summary_en": "resurrection and the soul's departure",
+    "reason_of_naming": "سُميت «القيامة» — تبدأ بالقسم بيوم القيامة، مؤكدة أن الله قادر على جمع حتى بنان الإنسان."
+  },
+  {
+    "surah_number": 76,
+    "surah_name_ar": "الإنسان",
+    "surah_name_en": "Al-Insan",
+    "revelation_type": "Madani",
+    "verses_count": 31,
+    "summary_ar": "من العدم إلى كائن مختار",
+    "summary_en": "from nothing to a being of choice",
+    "reason_of_naming": "سُميت «الإنسان» — تتبع البشرية من نطفة إلى كائن مختار بين الشكر والكفر."
+  },
+  {
+    "surah_number": 77,
+    "surah_name_ar": "المرسلات",
+    "surah_name_en": "Al-Mursalat",
+    "revelation_type": "Makki",
+    "verses_count": 50,
+    "summary_ar": "لازمة «ويل للمكذبين»",
+    "summary_en": "refrain of 'woe to the deniers'",
+    "reason_of_naming": "سُميت «المرسلات» — إشارة إلى الرياح أو الملائكة المرسلة. تتكرر لازمة «ويل يومئذ للمكذبين» عشر مرات."
+  },
+  {
+    "surah_number": 78,
+    "surah_name_ar": "النبأ",
+    "surah_name_en": "An-Naba",
+    "revelation_type": "Makki",
+    "verses_count": 40,
+    "summary_ar": "النبأ العظيم — البعث حقيقة يقينية",
+    "summary_en": "the great news — resurrection is certain",
+    "reason_of_naming": "سُميت «النبأ» — البعث الذي يتساءل عنه الناس ويختلفون (الآيات 1-3)."
+  },
+  {
+    "surah_number": 79,
+    "surah_name_ar": "النازعات",
+    "surah_name_en": "An-Nazi'at",
+    "revelation_type": "Makki",
+    "verses_count": 46,
+    "summary_ar": "النازعات 79 angels, moses, and the hour الملائكة وموسى والساعة",
+    "summary_en": "an-nazi'at",
+    "reason_of_naming": "سُميت «النازعات» — الملائكة التي تنزع الأرواح عند الموت، بعضها بشدة وبعضها برفق."
+  },
+  {
+    "surah_number": 80,
+    "surah_name_ar": "عبس",
+    "surah_name_en": "Abasa",
+    "revelation_type": "Makki",
+    "verses_count": 42,
+    "summary_ar": "المساواة في معاملة طالبي الحق",
+    "summary_en": "equal treatment of all seekers of truth",
+    "reason_of_naming": "سُميت «عبس» — حين عبس النبي ﷺ في وجه أعمى (ابن أم مكتوم) قاطع حديثه مع زعماء قريش. عاتبه الله: الباحث الصادق أولى بالاهتمام."
+  },
+  {
+    "surah_number": 81,
+    "surah_name_ar": "التكوير",
+    "surah_name_en": "At-Takwir",
+    "revelation_type": "Makki",
+    "verses_count": 29,
+    "summary_ar": "الانقلاب الكوني يوم القيامة",
+    "summary_en": "cosmic upheaval on judgment day",
+    "reason_of_naming": "سُميت «التكوير» — حين تُكوَّر الشمس وينهار النظام الكوني يوم القيامة."
+  },
+  {
+    "surah_number": 82,
+    "surah_name_ar": "الانفطار",
+    "surah_name_en": "Al-Infitar",
+    "revelation_type": "Makki",
+    "verses_count": 19,
+    "summary_ar": "السماء تنشق والأعمال تُكشف",
+    "summary_en": "the sky breaks and deeds are exposed",
+    "reason_of_naming": "سُميت «الانفطار» — السماء تنفطر يوم القيامة."
+  },
+  {
+    "surah_number": 83,
+    "surah_name_ar": "المطففين",
+    "surah_name_en": "Al-Mutaffifin",
+    "revelation_type": "Makki",
+    "verses_count": 36,
+    "summary_ar": "الأمانة التجارية وسجلات الأعمال",
+    "summary_en": "commercial honesty and records of deeds",
+    "reason_of_naming": "سُميت «المطففين» — الذين يغشون في الكيل والميزان. كانت من أوائل ما نزل في المدينة لمعالجة الغش التجاري."
+  },
+  {
+    "surah_number": 84,
+    "surah_name_ar": "الانشقاق",
+    "surah_name_en": "Al-Inshiqaq",
+    "revelation_type": "Makki",
+    "verses_count": 25,
+    "summary_ar": "السماء تطيع ربها — مصيران",
+    "summary_en": "sky obeys its lord — two outcomes",
+    "reason_of_naming": "سُميت «الانشقاق» — السماء تنشق وتطيع ربها يوم القيامة."
+  },
+  {
+    "surah_number": 85,
+    "surah_name_ar": "البروج",
+    "surah_name_en": "Al-Buruj",
+    "revelation_type": "Makki",
+    "verses_count": 22,
+    "summary_ar": "اضطهاد المؤمنين والعدل الإلهي",
+    "summary_en": "persecution of believers and divine justice",
+    "reason_of_naming": "سُميت «البروج» — الأبراج في السماء. تستحضر السورة أصحاب الأخدود الذين أُحرقوا أحياء لإيمانهم."
+  },
+  {
+    "surah_number": 86,
+    "surah_name_ar": "الطارق",
+    "surah_name_en": "At-Tariq",
+    "revelation_type": "Makki",
+    "verses_count": 17,
+    "summary_ar": "كل نفس عليها حافظ",
+    "summary_en": "every soul has a guardian",
+    "reason_of_naming": "سُميت «الطارق» — نجم ثاقب يظهر ليلاً، يرمز لنور الهداية الذي يخترق الظلام."
+  },
+  {
+    "surah_number": 87,
+    "surah_name_ar": "الأعلى",
+    "surah_name_en": "Al-A'la",
+    "revelation_type": "Makki",
+    "verses_count": 19,
+    "summary_ar": "الأعلى 87 glorify allah — success is in purification سبّح الله — الفلاح في التزكية",
+    "summary_en": "al-a'la",
+    "reason_of_naming": "سُميت «الأعلى» — سبّح اسم ربك الأعلى. أحبها النبي ﷺ وكان يقرؤها في صلاة الجمعة والعيد."
+  },
+  {
+    "surah_number": 88,
+    "surah_name_ar": "الغاشية",
+    "surah_name_en": "Al-Ghashiyah",
+    "revelation_type": "Makki",
+    "verses_count": 26,
+    "summary_ar": "مشاهد يوم القيامة",
+    "summary_en": "scenes of judgment day",
+    "reason_of_naming": "سُميت «الغاشية» — يوم القيامة الذي يغشى الخلق أجمعين."
+  },
+  {
+    "surah_number": 89,
+    "surah_name_ar": "الفجر",
+    "surah_name_en": "Al-Fajr",
+    "revelation_type": "Makki",
+    "verses_count": 30,
+    "summary_ar": "العدل الإلهي واختبار الرخاء",
+    "summary_en": "divine justice and the test of prosperity",
+    "reason_of_naming": "سُميت «الفجر» — يمثل النور الذي يخترق الظلام، استعارة للعدل الإلهي الآتي بعد ابتلاءات الدنيا."
+  },
+  {
+    "surah_number": 90,
+    "surah_name_ar": "البلد",
+    "surah_name_en": "Al-Balad",
+    "revelation_type": "Makki",
+    "verses_count": 20,
+    "summary_ar": "كفاح الإنسان والعقبة الشاقة",
+    "summary_en": "human struggle and the steep path of virtue",
+    "reason_of_naming": "سُميت «البلد» — مكة المكرمة حيث يقيم النبي ﷺ."
+  },
+  {
+    "surah_number": 91,
+    "surah_name_ar": "الشمس",
+    "surah_name_en": "Ash-Shams",
+    "revelation_type": "Makki",
+    "verses_count": 15,
+    "summary_ar": "تزكية النفس",
+    "summary_en": "purification of the soul",
+    "reason_of_naming": "سُميت «الشمس» — تبدأ بأطول سلسلة أقسام في القرآن (11 قسمًا) تتوج بتزكية النفس."
+  },
+  {
+    "surah_number": 92,
+    "surah_name_ar": "الليل",
+    "surah_name_en": "Al-Layl",
+    "revelation_type": "Makki",
+    "verses_count": 21,
+    "summary_ar": "مسلكان وعاقبتهما",
+    "summary_en": "two paths and their outcomes",
+    "reason_of_naming": "سُميت «الليل» — مقارنة الليل والنهار كاستعارة لمسلكين متعاكسين من السعي البشري."
+  },
+  {
+    "surah_number": 93,
+    "surah_name_ar": "الضحى",
+    "surah_name_en": "Ad-Duha",
+    "revelation_type": "Makki",
+    "verses_count": 11,
+    "summary_ar": "عناية الله بالنبي ﷺ",
+    "summary_en": "allah's care for the prophet ﷺ",
+    "reason_of_naming": "سُميت «الضحى» — بعد انقطاع الوحي، طمأن الله النبي ﷺ أنه لم يتركه. كما أن نور الصباح يعقب الظلام، فالعناية الإلهية دائمة."
+  },
+  {
+    "surah_number": 94,
+    "surah_name_ar": "الشرح",
+    "surah_name_en": "Ash-Sharh",
+    "revelation_type": "Makki",
+    "verses_count": 8,
+    "summary_ar": "اليسر بعد العسر",
+    "summary_en": "relief after difficulty",
+    "reason_of_naming": "سُميت «الشرح» — شرح الله صدر النبي ﷺ وملأه بالنور والحكمة والسكينة."
+  },
+  {
+    "surah_number": 95,
+    "surah_name_ar": "التين",
+    "surah_name_en": "At-Tin",
+    "revelation_type": "Makki",
+    "verses_count": 8,
+    "summary_ar": "كرامة الإنسان والانحطاط",
+    "summary_en": "human dignity and moral decline",
+    "reason_of_naming": "سُميت «التين» — القسم بالتين والزيتون (رمزا الأرض المقدسة) مع طور سيناء ومكة، ربطًا بين الأماكن المقدسة."
+  },
+  {
+    "surah_number": 96,
+    "surah_name_ar": "العلق",
+    "surah_name_en": "Al-Alaq",
+    "revelation_type": "Makki",
+    "verses_count": 19,
+    "summary_ar": "أول الوحي — الأمر بالقراءة",
+    "summary_en": "first revelation — the command to read",
+    "reason_of_naming": "سُميت «العلق» — الآيات الخمس الأولى كانت أول وحي نزل على محمد ﷺ في غار حراء، بدءًا بـ«اقرأ!»"
+  },
+  {
+    "surah_number": 97,
+    "surah_name_ar": "القدر",
+    "surah_name_en": "Al-Qadr",
+    "revelation_type": "Makki",
+    "verses_count": 5,
+    "summary_ar": "ليلة القدر — خير من ألف شهر",
+    "summary_en": "the night of decree — better than a thousand months",
+    "reason_of_naming": "سُميت «القدر» — الليلة المباركة التي أُنزل فيها القرآن أولاً، وهي خير من ألف شهر (حوالي 83 سنة)."
+  },
+  {
+    "surah_number": 98,
+    "surah_name_ar": "البينة",
+    "surah_name_en": "Al-Bayyinah",
+    "revelation_type": "Madani",
+    "verses_count": 8,
+    "summary_ar": "البينة والعبادة المخلصة",
+    "summary_en": "the clear evidence and sincere worship",
+    "reason_of_naming": "سُميت «البينة» — النبي ﷺ جاء بينة واضحة من الله للبشرية جمعاء."
+  },
+  {
+    "surah_number": 99,
+    "surah_name_ar": "الزلزلة",
+    "surah_name_en": "Az-Zalzalah",
+    "revelation_type": "Madani",
+    "verses_count": 8,
+    "summary_ar": "الأرض تكشف كل الأسرار",
+    "summary_en": "the earth reveals all secrets",
+    "reason_of_naming": "سُميت «الزلزلة» — الأرض ستُزلزل بشدة يوم القيامة وتكشف كل ما حدث عليها."
+  },
+  {
+    "surah_number": 100,
+    "surah_name_ar": "العاديات",
+    "surah_name_en": "Al-Adiyat",
+    "revelation_type": "Makki",
+    "verses_count": 11,
+    "summary_ar": "جحود الإنسان وحب المال",
+    "summary_en": "human ingratitude and love of wealth",
+    "reason_of_naming": "سُميت «العاديات» — خيول الحرب التي تعدو عند الفجر، رمزًا لنشاط الإنسان — مقابل جحوده."
+  },
+  {
+    "surah_number": 101,
+    "surah_name_ar": "القارعة",
+    "surah_name_en": "Al-Qari'ah",
+    "revelation_type": "Makki",
+    "verses_count": 11,
+    "summary_ar": "القارعة 101 the weighing of deeds وزن الأعمال",
+    "summary_en": "al-qari'ah",
+    "reason_of_naming": "سُميت «القارعة» — اسم ليوم القيامة الذي يقرع القلوب بالرعب."
+  },
+  {
+    "surah_number": 102,
+    "surah_name_ar": "التكاثر",
+    "surah_name_en": "At-Takathur",
+    "revelation_type": "Makki",
+    "verses_count": 8,
+    "summary_ar": "التنافس يُلهي عن الحقيقة",
+    "summary_en": "competition distracts from truth",
+    "reason_of_naming": "سُميت «التكاثر» — التنافس على المزيد من المال والأولاد والمكانة الذي يلهي عن الآخرة."
+  },
+  {
+    "surah_number": 103,
+    "surah_name_ar": "العصر",
+    "surah_name_en": "Al-Asr",
+    "revelation_type": "Makki",
+    "verses_count": 3,
+    "summary_ar": "معادلة النجاة",
+    "summary_en": "the formula for salvation",
+    "reason_of_naming": "سُميت «العصر» — رغم أنها 3 آيات فقط، قال الإمام الشافعي لو لم تنزل إلا هذه السورة لكفت هداية. تتضمن معادلة النجاة البشرية الكاملة."
+  },
+  {
+    "surah_number": 104,
+    "surah_name_ar": "الهمزة",
+    "surah_name_en": "Al-Humazah",
+    "revelation_type": "Makki",
+    "verses_count": 9,
+    "summary_ar": "ويل للمغتابين والكانزين",
+    "summary_en": "woe to slanderers and hoarders",
+    "reason_of_naming": "سُميت «الهمزة» — الذين يسخرون ويغتابون الناس ويكنزون المال ظانين أنه يخلّدهم."
+  },
+  {
+    "surah_number": 105,
+    "surah_name_ar": "الفيل",
+    "surah_name_en": "Al-Fil",
+    "revelation_type": "Makki",
+    "verses_count": 5,
+    "summary_ar": "حماية الله للكعبة",
+    "summary_en": "allah's protection of the ka'bah",
+    "reason_of_naming": "سُميت «الفيل» — جيش أبرهة زحف بالفيلة لهدم الكعبة فأهلكه الله بطير أبابيل. حدث ذلك عام ولادة النبي ﷺ."
+  },
+  {
+    "surah_number": 106,
+    "surah_name_ar": "قريش",
+    "surah_name_en": "Quraysh",
+    "revelation_type": "Makki",
+    "verses_count": 4,
+    "summary_ar": "شكر الأمن والرزق",
+    "summary_en": "gratitude for safety and provision",
+    "reason_of_naming": "سُميت بقبيلة قريش، قبيلة النبي ﷺ وحراس الكعبة. أنعم الله عليهم بالأمن والتجارة — فليعبدوه شكرًا."
+  },
+  {
+    "surah_number": 107,
+    "surah_name_ar": "الماعون",
+    "surah_name_en": "Al-Ma'un",
+    "revelation_type": "Makki",
+    "verses_count": 7,
+    "summary_ar": "الماعون 107 faith demands social responsibility الإيمان يوجب المسؤولية الاجتماعية",
+    "summary_en": "al-ma'un",
+    "reason_of_naming": "سُميت «الماعون» — رفض حتى أصغر أعمال المعروف يكشف مرضًا روحيًا عميقًا، مرتبطًا بتكذيب الدين نفسه."
+  },
+  {
+    "surah_number": 108,
+    "surah_name_ar": "الكوثر",
+    "surah_name_en": "Al-Kawthar",
+    "revelation_type": "Makki",
+    "verses_count": 3,
+    "summary_ar": "الكوثر — عطاء إلهي للنبي ﷺ",
+    "summary_en": "divine abundance to the prophet",
+    "reason_of_naming": "سُميت «الكوثر» — نهر في الجنة أُعطي للنبي محمد ﷺ. أقصر سورة، لكنها تحمل رسالة عميقة: عطاء الله لا حدود له."
+  },
+  {
+    "surah_number": 109,
+    "surah_name_ar": "الكافرون",
+    "surah_name_en": "Al-Kafirun",
+    "revelation_type": "Makki",
+    "verses_count": 6,
+    "summary_ar": "التمايز الديني والحرية",
+    "summary_en": "religious distinction and freedom",
+    "reason_of_naming": "سُميت «الكافرون» — تؤسس التمايز الواضح وحرية الدين: لكم دينكم ولي دين."
+  },
+  {
+    "surah_number": 110,
+    "surah_name_ar": "النصر",
+    "surah_name_en": "An-Nasr",
+    "revelation_type": "Madani",
+    "verses_count": 3,
+    "summary_ar": "النصر واكتمال رسالة النبي ﷺ",
+    "summary_en": "victory and the prophet's mission fulfilled",
+    "reason_of_naming": "سُميت «النصر» — آخر سورة كاملة نزلت، مشيرة إلى اكتمال رسالة النبي ﷺ واقتراب رحيله عن الدنيا."
+  },
+  {
+    "surah_number": 111,
+    "surah_name_ar": "المسد",
+    "surah_name_en": "Al-Masad",
+    "revelation_type": "Makki",
+    "verses_count": 5,
+    "summary_ar": "هلاك أعداء النبي ﷺ",
+    "summary_en": "downfall of the prophet's enemies",
+    "reason_of_naming": "سُميت «المسد» — حبل من ليف النخل في جيد زوجة أبي لهب. السورة الموضع الوحيد في القرآن حيث يُدان عدو محدد باسمه."
+  },
+  {
+    "surah_number": 112,
+    "surah_name_ar": "الإخلاص",
+    "surah_name_en": "Al-Ikhlas",
+    "revelation_type": "Makki",
+    "verses_count": 4,
+    "summary_ar": "خالص التوحيد — صفات الله في أربع آيات تعدل ثلث القرآن",
+    "summary_en": "pure monotheism — god's attributes in four verses equal to one-third of the quran",
+    "reason_of_naming": "سُميت «الإخلاص» — تقدم أنقى تعريف لوحدانية الله. قال النبي ﷺ إنها تعدل ثلث القرآن لأنها تعرّف ذات الله."
+  },
+  {
+    "surah_number": 113,
+    "surah_name_ar": "الفلق",
+    "surah_name_en": "Al-Falaq",
+    "revelation_type": "Makki",
+    "verses_count": 5,
+    "summary_ar": "الاستعاذة من الشرور الخارجية",
+    "summary_en": "seeking refuge from external evils",
+    "reason_of_naming": "سُميت «الفلق» — الاستعاذة برب الذي يفلق ظلام الليل بالفجر، رمزًا للحماية من الشرور الخارجية."
+  },
+  {
+    "surah_number": 114,
+    "surah_name_ar": "الناس",
+    "surah_name_en": "An-Nas",
+    "revelation_type": "Makki",
+    "verses_count": 6,
+    "summary_ar": "الاستعاذة من الوسوسة — ختام القرآن بالحماية من الشر الخفي",
+    "summary_en": "seeking refuge from whispering — quran ends with protection from hidden evil",
+    "reason_of_naming": "سُميت «الناس» — السورة الأخيرة تستعيذ بالله ربًا وملكًا وإلهًا للناس من الوسواس الخناس. تختتم القرآن بدعاء حماية."
+  }
+]

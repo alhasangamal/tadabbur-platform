@@ -1,0 +1,234 @@
+﻿entity_id,slug,name_ar,name_en,entity_type
+1,allah,الله,Allah,concept
+2,adam,آدم,Adam,prophet
+3,idris,إدريس,Idris,prophet
+4,noah,نوح,Noah,prophet
+5,hud,هود,Hud,prophet
+6,salih,صالح,Salih,prophet
+7,ibrahim,إبراهيم,Ibrahim,prophet
+8,lot,لوط,Lot,prophet
+9,ismail,إسماعيل,Ismail,prophet
+10,isaac,إسحاق,Isaac,prophet
+11,jacob,يعقوب,Jacob,prophet
+12,joseph,يوسف,Joseph,prophet
+13,shuaib,شعيب,Shuaib,prophet
+14,moses,موسى,Moses,prophet
+15,aaron,هارون,Aaron,prophet
+16,david,داود,David,prophet
+17,solomon,سليمان,Solomon,prophet
+18,job,أيوب,Job,prophet
+19,dhul-kifl,ذو الكفل,Dhul-Kifl,prophet
+20,jonah,يونس,Jonah,prophet
+21,elias,إلياس,Elias,prophet
+22,elisha,اليسع,Elisha,prophet
+23,zachariah,زكريا,Zachariah,prophet
+24,john,يحيى,John,prophet
+25,jesus,عيسى,Jesus,prophet
+26,muhammad,محمد,Muhammad,prophet
+27,mary,مريم,Mary,person
+28,imran,عمران,Imran,person
+29,luqman,لقمان,Luqman,person
+30,dhul-qarnayn,ذو القرنين,Dhul-Qarnayn,person
+31,pharaoh,فرعون,Pharaoh,person
+32,haman,هامان,Haman,person
+33,qarun,قارون,Qarun,person
+34,azar,آزر,Azar,person
+35,wife_of_pharaoh,امرأة فرعون,Wife_of_Pharaoh,person
+36,al-samiri,السامري,Al-Samiri,person
+37,goliath,جالوت,Goliath,person
+38,talut,طالوت,Talut,person
+39,al-aziz,العزيز,Al-Aziz,person
+40,wife_of_al-aziz,امرأة العزيز,Wife_of_Al-Aziz,person
+41,abu_lahab,أبو لهب,Abu_Lahab,person
+42,wife_of_abu_lahab,امرأة أبي لهب,Wife_of_Abu_Lahab,person
+43,zayd,زيد بن حارثة,Zayd,person
+44,al-khidr,الخضر,Al-Khidr,person
+45,sons_of_adam,ابنا آدم,Sons_of_Adam,person
+46,gabriel,جبريل,Gabriel,angel
+47,michael,ميكائيل,Michael,angel
+48,angel_of_death,ملك الموت,Angel_of_Death,angel
+49,harut,هاروت,Harut,angel
+50,marut,ماروت,Marut,angel
+51,angels,الملائكة,Angels,angel
+52,iblis,إبليس,Iblis,jinn
+53,satan,الشيطان,Satan,jinn
+54,jinn,الجن,Jinn,jinn
+55,children_of_israel,بنو إسرائيل,Children_of_Israel,nation
+56,people_of_noah,قوم نوح,People_of_Noah,nation
+57,aad,عاد,Aad,nation
+58,thamud,ثمود,Thamud,nation
+59,people_of_lot,قوم لوط,People_of_Lot,nation
+60,people_of_madyan,أصحاب مدين,People_of_Madyan,nation
+61,people_of_tubba,قوم تبع,People_of_Tubba,nation
+62,people_of_al-rass,أصحاب الرس,People_of_Al-Rass,nation
+63,people_of_al-aykah,أصحاب الأيكة,People_of_Al-Aykah,nation
+64,quraysh,قريش,Quraysh,nation
+65,people_of_elephant,أصحاب الفيل,People_of_Elephant,nation
+66,people_of_cave,أصحاب الكهف,People_of_Cave,nation
+67,people_of_ditch,أصحاب الأخدود,People_of_Ditch,nation
+68,romans,الروم,Romans,nation
+69,hypocrites,المنافقون,Hypocrites,group
+70,people_of_book,أهل الكتاب,People_of_Book,group
+71,polytheists,المشركون,Polytheists,group
+72,ansar,الأنصار,Ansar,group
+73,muhajirin,المهاجرون,Muhajirin,group
+74,sheba,سبأ,Sheba,nation
+75,gog_and_magog,يأجوج ومأجوج,Gog_and_Magog,nation
+76,disciples,الحواريون,Disciples,group
+77,family_of_pharaoh,آل فرعون,Family_of_Pharaoh,group
+78,people_of_ibrahim,قوم إبراهيم,People_of_Ibrahim,nation
+79,people_of_pharaoh,قوم فرعون,People_of_Pharaoh,nation
+80,quran,القرآن,Quran,book
+81,torah,التوراة,Torah,book
+82,gospel,الإنجيل,Gospel,book
+83,psalms,الزبور,Psalms,book
+84,scrolls_of_ibrahim,صحف إبراهيم,Scrolls_of_Ibrahim,book
+85,al-furqan,الفرقان,Al-Furqan,book
+86,tablets,الألواح,Tablets,book
+87,makkah,مكة,Makkah,place
+88,madinah,المدينة,Madinah,place
+89,egypt,مصر,Egypt,place
+90,kaaba,الكعبة,Kaaba,place
+91,mount_sinai,طور سيناء,Mount_Sinai,place
+92,badr,بدر,Badr,place
+93,hunayn,حنين,Hunayn,place
+94,al-aqsa,الأقصى,Al-Aqsa,place
+95,al-masjid_al-haram,المسجد الحرام,Al-Masjid_Al-Haram,place
+96,paradise,جنة,Paradise,place
+97,hell,النار,Hell,place
+98,al-araf,الأعراف,Al-Araf,place
+99,babylon,بابل,Babylon,place
+100,al-ahqaf,الأحقاف,Al-Ahqaf,place
+101,iram,إرم,Iram,place
+102,al-hijr,الحجر,Al-Hijr,place
+103,sidrat_al-muntaha,سدرة المنتهى,Sidrat_Al-Muntaha,place
+104,earth,الأرض,Earth,place
+105,heavens,السماوات,Heavens,place
+106,great_flood,الطوفان,Great_Flood,event
+107,day_of_judgment,يوم القيامة,Day_of_Judgment,event
+108,night_journey,الإسراء,Night_Journey,event
+109,ascension,المعراج,Ascension,event
+110,battle_of_badr,غزوة بدر,Battle_of_Badr,event
+111,battle_of_uhud,غزوة أحد,Battle_of_Uhud,event
+112,battle_of_trench,غزوة الأحزاب,Battle_of_Trench,event
+113,conquest_of_makkah,فتح مكة,Conquest_of_Makkah,event
+114,treaty_of_hudaybiyyah,صلح الحديبية,Treaty_of_Hudaybiyyah,event
+115,golden_calf,العجل,Golden_Calf,object
+116,ark_of_noah,سفينة نوح,Ark_of_Noah,object
+117,staff_of_moses,عصا موسى,Staff_of_Moses,object
+118,ark_of_covenant,تابوت,Ark_of_Covenant,object
+119,she-camel_of_salih,ناقة صالح,She-Camel_of_Salih,object
+120,table_spread,مائدة عيسى,Table_Spread,object
+121,humanity,الإنسانية,Humanity,concept
+122,eve,حواء,Eve,person
+123,israel,إسرائيل,Israel,alias
+124,disbelieving_son_of_noah,ابن نوح الكافر,Disbelieving_Son_of_Noah,person
+125,mother_of_moses,أم موسى,Mother_of_Moses,person
+126,egyptian_man,رجل مصري,Egyptian_Man,person
+127,wife_of_noah,امرأة نوح,Wife_of_Noah,person
+128,wife_of_lot,امرأة لوط,Wife_of_Lot,person
+129,brothers_of_joseph,إخوة يوسف,Brothers_of_Joseph,group
+130,the_ship,السفينة,The_Ship,object
+131,the_boy,الغلام,The_Boy,person
+132,the_wall,الجدار,The_Wall,object
+133,the_cave,الكهف,The_Cave,place
+134,309_years,309 سنوات,309_Years,duration
+135,pharaoh_of_egypt,فرعون مصر,Pharaoh_of_Egypt,person
+136,the_whale,الحوت,The_Whale,creature
+137,queen_of_sheba,ملكة سبأ,Queen_of_Sheba,person
+138,dam_of_marib,سدّ مأرب,Dam_of_Marib,structure
+139,the_prophets,النبيين,The_Prophets,group
+140,twelve_tribes,الأسباط,Twelve_Tribes,group
+141,mothers_of_believers,أمهات المؤمنين,Mothers_of_Believers,group
+142,mankind,الناس,Mankind,concept
+143,the_chamber,المحراب,The_Chamber,place
+144,the_wilderness,التيه,The_Wilderness,place
+145,the_wind,الريح,The_Wind,element
+146,the_birds,الطير,The_Birds,creature
+147,zaynab_bint_jahsh,زينب بنت جحش,Zaynab_bint_Jahsh,person
+148,the_muslims,المسلمون,The_Muslims,group
+149,believer_of_pharaoh_family,مؤمن آل فرعون,Believer_of_Pharaoh_Family,person
+150,the_sorcerers,السحرة,The_Sorcerers,group
+151,mother_of_mary,أم مريم,Mother_of_Mary,person
+152,son_of_luqman,ابن لقمان,Son_of_Luqman,person
+153,the_idols,الأصنام,The_Idols,object
+154,بني_آدم,بني آدم,Sons of Adam,concept
+155,uzayr,عزير,Uzayr,person
+156,namrud,النمرود,Nimrod,person
+157,magicians_of_pharaoh,سحرة فرعون,Magicians_of_Pharaoh,group
+158,israfil,إسرافيل,Israfil,angel
+159,malik,مالك,Malik,angel
+160,sheba_kingdom,مملكة سبأ,Kingdom_of_Sheba,place
+161,uhud,أُحد,Uhud,place
+162,the_trench,الخندق,The_Trench,place
+163,red_sea,البحر,The_Sea,place
+164,mountains,الجبال,Mountains,element
+165,cow_of_israel,بقرة بني إسرائيل,Cow_of_Israel,creature
+166,hoopoe,الهدهد,Hoopoe,creature
+167,ant,النملة,The_Ant,creature
+168,crow,الغراب,The_Crow,creature
+169,dog_of_cave,كلب أصحاب الكهف,Dog_of_Cave,creature
+170,wolf_joseph,الذئب,The_Wolf,creature
+171,donkey_uzayr,حمار عزير,Donkey_of_Uzayr,creature
+172,spider,العنكبوت,The_Spider,creature
+173,bee,النحل,The_Bee,creature
+174,sabbath_breakers,أصحاب السبت,Sabbath_Breakers,group
+175,people_of_garden,أصحاب الجنة,People_of_Garden,group
+176,people_of_village,أصحاب القرية,People_of_Village,group
+177,shirt_joseph,قميص يوسف,Shirt_of_Joseph,object
+178,throne_sheba,عرش سبأ,Throne_of_Sheba,object
+179,plagues_egypt,آيات مصر,Plagues_of_Egypt,event
+180,idols_nuh,أصنام قوم نوح,Idols_of_Noah_People,object
+181,wadd,ودّ,Wadd,object
+182,suwa,سُواع,Suwa,object
+183,yaghuth,يغوث,Yaghuth,object
+184,yauq,يعوق,Yauq,object
+185,nasr,نسر,Nasr,object
+186,baal,بعل,Baal,object
+187,al_lat,اللات,Al-Lat,object
+188,al_uzza,العزى,Al-Uzza,object
+189,manat,مناة,Manat,object
+190,ruined_town,القرية الخربة,Ruined_Town,place
+191,messengers_village,رسل القرية,Messengers_of_Village,group
+192,man_two_gardens,صاحب الجنتين,Man_of_Two_Gardens,person
+193,two_women_madyan,المرأتان,Two_Women_of_Madyan,person
+194,950_years,950 سنة,950_Years,duration
+195,40_nights,40 ليلة,40_Nights,duration
+196,40_years,40 سنة,40_Years,duration
+197,100_years,100 سنة,100_Years,duration
+198,30_plus_10,30+10 ليلة,30_Plus_10_Nights,duration
+199,palace_of_haman,صرح هامان,Palace_of_Haman,structure
+200,barrier_of_dhulqarnayn,ردم ذي القرنين,Barrier_of_Dhul-Qarnayn,structure
+201,3_days,3 أيام,3_Days,duration
+202,3_nights,3 ليال,3_Nights,duration
+203,twelve_springs,12 عيناً,Twelve_Springs,object
+204,manna_quails,المنّ والسلوى,Manna_and_Quails,object
+205,clouds_shade,الغمام,Clouds_of_Shade,element
+206,staff_solomon,منسأة سليمان,Staff_of_Solomon,object
+207,jews,اليهود,Jews,group
+208,christians,النصارى,Christians,group
+209,sabeans,الصابئون,Sabeans,group
+210,magians,المجوس,Magians,group
+211,bedouins,الأعراب,Bedouins,group
+212,yathrib,يثرب,Yathrib,place
+213,bakkah,بكّة,Bakkah,place
+214,mount_judi,الجودي,Mount_Judi,place
+215,valley_tuwa,الوادي المقدس طوى,Valley_of_Tuwa,place
+216,madyan_place,مدين,Madyan,place
+217,throne_of_god,العرش,Throne_of_God,object
+218,kursi,الكرسي,Footstool,object
+219,preserved_tablet,اللوح المحفوظ,Preserved_Tablet,object
+220,the_pen,القلم,The_Pen,object
+221,the_scales,الميزان,The_Scales,object
+222,the_sirat,الصراط,The_Sirat,concept
+223,al_barzakh,البرزخ,Al-Barzakh,concept
+224,zaqqum,شجرة الزقوم,Zaqqum_Tree,creature
+225,kawthar,الكوثر,Al-Kawthar,place
+226,salsabil,سلسبيل,Salsabil,place
+227,tasnim,تسنيم,Tasnim,place
+228,tooba,طوبى,Tooba,concept
+229,the_fly,الذباب,The_Fly,creature
+230,laylat_al_qadr,ليلة القدر,Night_of_Power,event
+231,bayat_ridwan,بيعة الرضوان,Pledge_of_Ridwan,event
+232,horses_solomon,الصافنات الجياد,Horses_of_Solomon,creature
+233,beast_of_earth,دابة الأرض,Beast_of_Earth,creature
