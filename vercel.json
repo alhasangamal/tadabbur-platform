@@ -1,4 +1,0 @@
-{
-  "buildCommand": "npm --prefix tadabbur-ui install && npm --prefix tadabbur-ui run build",
-  "outputDirectory": "tadabbur-ui/build"
-}

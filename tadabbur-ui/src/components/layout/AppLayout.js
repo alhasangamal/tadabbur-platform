@@ -62,6 +62,7 @@ const AppLayout = ({ children }) => {
     { name: 'home', path: '/', icon: Book },
     { name: 'surahs', path: '/surahs', icon: Library },
     { name: 'graph', path: '/graph', icon: Network },
+    { name: 'bookmarks', path: '/bookmarks', icon: Sparkles },
   ];
 
   const jurisprudenceLinks = [
@@ -237,7 +238,7 @@ const AppLayout = ({ children }) => {
               </span>
             </Link>
 
-            <nav className="hidden md:flex gap-6 items-center">
+            <nav className="hidden xl:flex gap-4 items-center">
               {navLinks.map((link) => {
                 const active = location.pathname === link.path;
                 return (
