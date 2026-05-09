@@ -12,23 +12,6 @@
     --accent-gold: #d4af37;
     --accent-emerald: #064e3b;
     
-    /* Legacy variables for backward compatibility during transition */
-    --bg: #fdfcf8;
-    --s1: #f9f6f0;
-    --s2: #eaddcf;
-    --c: #ffffff;
-    --c2: #f9f6f0;
-    --g: #d4af37;
-    --gl: #eab308;
-    --gd: #a16207;
-    --gg: rgba(212, 175, 55, 0.1);
-    --t: #064e3b;
-    --td: #022c22;
-    --x: #1f2937;
-    --x2: #4b5563;
-    --x3: #6b7280;
-    --b: #eaddcf;
-    
     /* Glassmorphism - Premium Polish */
     --glass: rgba(255, 255, 255, 0.85);
     --glass-border: rgba(255, 255, 255, 0.5);
@@ -56,11 +39,6 @@
     --glass: rgba(15, 23, 42, 0.88);
     --glass-border: rgba(51, 65, 85, 0.6);
     --glass-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
-  }
-    --x3: #9ca3af;
-    --b: #374151;
-    --glass: rgba(17, 24, 39, 0.85);
-    --glass-border: rgba(75, 85, 99, 0.4);
   }
 
   body {
