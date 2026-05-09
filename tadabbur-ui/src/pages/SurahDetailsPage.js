@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import { useQuranData } from "../context/QuranDataContext";
-import { useAudio, RECITERS } from "../context/AudioContext";
-import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, Play, Pause, ChevronDown, BookMarked, X, Share2 } from "lucide-react";
-import { toast } from "react-hot-toast";
+import { useAudio } from "../context/AudioContext";
+import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, ChevronDown, BookMarked, X } from "lucide-react";
+
 
 const TAFSIR_OPTIONS = [
   { id: 14, name: 'تفسير ابن كثير', slug: 'ar-tafsir-ibn-kathir' },
@@ -21,8 +21,8 @@ const TAFSIR_OPTIONS = [
 
 export default function SurahDetailsPage() {
   const { id } = useParams();
-  const { isRtl, theme, surahs } = useQuranData();
-  const { playSurah, isPlaying, currentSurah, isLoading: audioLoading, resetAudio } = useAudio();
+  const { isRtl, surahs } = useQuranData();
+  const { playSurah, isPlaying, currentSurah, isLoading: audioLoading } = useAudio();
   
   const [expandedTopic, setExpandedTopic] = useState(null);
   const [topicVerses, setTopicVerses] = useState({}); // Cache for verses
@@ -167,10 +167,7 @@ export default function SurahDetailsPage() {
     setTafsirPagination(null);
   };
 
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    toast.success(isRtl ? "تم نسخ رابط السورة بنجاح" : "Surah link copied successfully!");
-  };
+
  
   const stripHtml = (html) => {
     if (!html) return '';

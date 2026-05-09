@@ -3,14 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { toBlob } from 'html-to-image';
 import { toast } from 'react-hot-toast';
 import { 
-  X as CloseIcon, 
   Copy, 
   Check, 
-  Send, 
-  MessageCircle, 
   Share2,
-  BookOpen,
-  Globe
+  BookOpen
 } from 'lucide-react';
 
 const WhatsAppIcon = () => (

@@ -1,16 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Search, 
   History, 
   BookOpen, 
   X, 
   Sparkles, 
-  ScrollText,
-  MapPin,
   ChevronLeft,
-  Filter,
-  Layers,
   Quote
 } from 'lucide-react';
 import asbabData from '../data/asbab_data.json';

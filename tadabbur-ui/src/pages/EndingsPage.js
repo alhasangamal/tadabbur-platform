@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, BookOpen, Lightbulb, ChevronDown, Hash, MapPin, Filter, Layers, Sparkles, BarChart3, Moon } from "lucide-react";
+import { Search, BookOpen, Lightbulb, ChevronDown, MapPin, Filter, Layers, Sparkles, BarChart3, Moon } from "lucide-react";
 import { List } from "react-window";
 import { useQuranData } from "../context/QuranDataContext";
 import endingsData from "../data/quran_endings.json";
@@ -34,7 +34,7 @@ const ReferenceRow = ({ index, style, references }) => {
 };
 
 export default function EndingsPage() {
-  const { isRtl, surahsList } = useQuranData();
+  useQuranData();
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedPair, setExpandedPair] = useState(null);
   const [activeTab, setActiveTab] = useState("pairs"); // pairs | repeats | topics | density | revelation | insights
@@ -87,7 +87,7 @@ export default function EndingsPage() {
   ];
 
   // --- NEW: Topics Data ---
-  const themeMapping = {
+  const themeMapping = useMemo(() => ({
     "الرحمة والمغفرة": ["غفور", "رحيم", "رؤوف", "تواب", "عفو"],
     "العلم والحكمة": ["حكيم", "عليم"],
     "القوة والحكم": ["عزيز", "قوي", "متين", "جبار", "قهار", "مقتدر"],
@@ -95,7 +95,7 @@ export default function EndingsPage() {
     "الفضل والقدرة": ["قدير", "واسع", "فضل", "رزاق", "وهاب"],
     "العدل والتحذير": ["عقاب", "حساب", "منتقم", "خزي"],
     "الجلال الإلهي": ["جلال", "إكرام", "علي", "كبير", "مجيد", "حميد", "غني", "واحد"]
-  };
+  }), []);
 
   const topicData = useMemo(() => {
     // We count each unique verse reference once for its primary theme
@@ -115,34 +115,8 @@ export default function EndingsPage() {
     return Object.entries(themeCounts)
       .map(([theme, count]) => ({ theme, count }))
       .sort((a, b) => b.count - a.count);
-  }, []);
+  }, [themeMapping]);
 
-  // --- NEW: Density Data ---
-  const densityData = useMemo(() => {
-    if (!surahsList.length) return [];
-    
-    const surahStats = surahsList.map(s => {
-      const endingsInSurah = endingsData.reduce((count, p) => {
-        return count + p.references.filter(r => r.surah === s.name_ar || r.surah === s.surah_name_ar).length;
-      }, 0);
-      
-      const versesCount = s.verses_count || 1;
-      const density = (endingsInSurah / versesCount) * 100;
-      
-      return {
-        id: s.id,
-        name: s.name_ar || s.surah_name_ar,
-        verses: versesCount,
-        endings: endingsInSurah,
-        density: density
-      };
-    });
-
-    return surahStats
-      .filter(s => s.endings > 0)
-      .sort((a, b) => b.density - a.density)
-      .slice(0, 10);
-  }, [surahsList]);
 
   // --- NEW: Revelation Data ---
   // (Using static data from revelation_data.json as requested)

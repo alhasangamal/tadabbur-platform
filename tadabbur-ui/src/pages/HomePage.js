@@ -1,14 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import {
-  Book, MessageSquare, Bookmark, Database, Star, ScrollText, Send, Bot,
-  Info, Sparkles
-} from "lucide-react";
+import { } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 
 export default function HomePage() {
-  const { lang, isRtl } = useQuranData();
+  useQuranData();
 
   const containerVars = {
     hidden: { opacity: 0 },

@@ -9,7 +9,6 @@ import {
   ScrollText,
   Bookmark,
   ChevronLeft,
-  ChevronRight,
   Hash
 } from 'lucide-react';
 import dialoguesData from '../data/dialogues_data.json';
@@ -32,7 +31,6 @@ const DialoguesPage = () => {
   // Filter logic
   const filteredDialogues = useMemo(() => {
     return dialoguesData.filter(d => {
-      const searchLower = searchTerm.toLowerCase();
       const matchesSearch = d.الحوار.includes(searchTerm) || 
                            d.السورة.includes(searchTerm) ||
                            d.النص.includes(searchTerm) ||

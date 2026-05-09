@@ -1,15 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Search, 
-  Sparkles, 
   X, 
   BookOpen, 
-  Activity,
-  Layers,
-  Hash,
-  ChevronLeft,
-  Star,
+  Star, 
   Info
 } from 'lucide-react';
 import asmaData from '../data/asma_data.json';

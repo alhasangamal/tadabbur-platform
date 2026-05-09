@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ArrowLeftRight, BookOpen, Layers, Filter, CheckCircle2, AlertCircle } from "lucide-react";
+import { ArrowLeftRight, BookOpen, Layers, AlertCircle } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import nasikhData from "../data/nasikh_data.json";
 import DataFilterHeader from "../components/common/DataFilterHeader";

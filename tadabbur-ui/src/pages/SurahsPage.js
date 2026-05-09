@@ -1,9 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useQuranData } from '../context/QuranDataContext';
-import { Search, Loader2, MapPin, Moon, Sun, ArrowDown01, ArrowUp10, ArrowUp, Book, Layers } from 'lucide-react';
+import { Loader2, MapPin, Moon, Book, Layers } from 'lucide-react';
 import DataFilterHeader from '../components/common/DataFilterHeader';
 
 const MotionLink = motion(Link);
@@ -22,7 +21,7 @@ export default function SurahsPage() {
   const { lang, isRtl, surahsList, loading } = useQuranData();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('الكل'); // الكل, مكية, مدنية
-  const [sortOrder, setSortOrder] = useState('asc'); // asc, desc (by number)
+  const [sortOrder] = useState('asc'); // asc, desc (by number)
 
   const filteredSurahs = useMemo(() => {
     return (surahsList || [])

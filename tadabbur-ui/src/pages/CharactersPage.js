@@ -1,16 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Search, 
   Users, 
   BookOpen, 
-  ChevronLeft, 
   X, 
-  Info, 
   Sparkles, 
   History, 
-  ScrollText,
-  User as UserIcon,
   Tag as TagIcon
 } from 'lucide-react';
 import charactersData from '../data/characters_data.json';

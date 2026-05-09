@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Scale, BookOpen, Layers, Tag as TagIcon, Info, Lightbulb, Zap, ArrowRightLeft } from "lucide-react";
+import { Search, Scale, BookOpen, Zap, ArrowRightLeft } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import contrastsData from "../data/contrasts_data.json";
 import DataFilterHeader from "../components/common/DataFilterHeader";

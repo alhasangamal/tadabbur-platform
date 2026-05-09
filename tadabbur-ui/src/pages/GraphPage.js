@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
+import React, { useState, useCallback, useRef, useMemo } from "react";
 import ForceGraph2D from "react-force-graph-2d";
-import { Loader2, Search, X, Plus, Minus, Maximize2, Database } from "lucide-react";
+import { Loader2, X, Plus, Minus, Maximize2, Database } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import GraphSidePanel from "../components/graph/GraphSidePanel";
 import { getRelationLabel } from "../components/graph/relationLabels";
@@ -55,7 +55,7 @@ export default function GraphPage() {
   const graphRef = useRef();
 
   const isLight = theme !== 'dark';
-  const bg = isLight ? '#f8f6f1' : '#0f172a';
+
 
   // Process links to handle deduplication, bidirectional/multi-relationships with curvature
   const processedData = useMemo(() => {
@@ -214,7 +214,7 @@ export default function GraphPage() {
     }
 
     ctx.restore();
-  }, [selectedEntity, lang, isLight, filteredData, graphData, processedData]);
+  }, [selectedEntity, lang, isLight, filteredData, processedData]);
 
   // ─── LINK DRAWING (Curved for multi-links) ───
   const drawLink = useCallback((link, ctx, gs) => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { X, Loader2, ExternalLink } from "lucide-react";
+import { Loader2, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useQuranData } from "../../context/QuranDataContext";
@@ -55,7 +55,7 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
     fetchRels();
     setExpandedRel(null);
     setVersesData({});
-  }, [entity]);
+  }, [entity, API_BASE]);
 
   const handleExpand = async (relIndex, evidenceNotes) => {
     if (expandedRel === relIndex) {

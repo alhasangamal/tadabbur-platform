@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Sparkles, BookOpen, Layers, Filter, CheckCircle2, Image as ImageIcon } from "lucide-react";
+import { Sparkles, BookOpen, Layers } from "lucide-react";
 import { useQuranData } from "../context/QuranDataContext";
 import amthalData from "../data/amthal_data.json";
 import DataFilterHeader from "../components/common/DataFilterHeader";

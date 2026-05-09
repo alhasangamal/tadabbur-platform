@@ -9,10 +9,8 @@ import {
   ScrollText,
   Star,
   Clock,
-  MapPin,
   Trees,
   CloudLightning,
-  CheckCircle2,
   ChevronLeft
 } from 'lucide-react';
 import aqsamData from '../data/aqsam_data.json';
@@ -42,7 +40,6 @@ const AqsamPage = () => {
 
   const filteredData = useMemo(() => {
     return aqsamData.filter(d => {
-      const searchLower = searchTerm.toLowerCase();
       const matchesSearch = d.القسم.includes(searchTerm) || 
                            d.السورة.includes(searchTerm) ||
                            d.النص.includes(searchTerm) ||

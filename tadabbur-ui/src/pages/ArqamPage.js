@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Search, 
   Binary, 
   Hash, 
   BookOpen, 
@@ -10,7 +9,6 @@ import {
   Calculator,
   Compass,
   Milestone,
-  Fingerprint,
   ChevronLeft
 } from 'lucide-react';
 import arqamData from '../data/arqam_data.json';
@@ -39,7 +37,6 @@ const ArqamPage = () => {
 
   const filteredData = useMemo(() => {
     return arqamData.filter(d => {
-      const searchLower = searchTerm.toLowerCase();
       const matchesSearch = d.الرقم.includes(searchTerm) || 
                            d.السورة.includes(searchTerm) ||
                            d.النص.includes(searchTerm) ||

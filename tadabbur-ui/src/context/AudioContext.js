@@ -132,6 +132,7 @@ export const AudioProvider = ({ children }) => {
     if (currentSurah && (isPlaying || isLoading)) {
         playSurah(currentSurah, true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reciterId]);
 
   useEffect(() => {
@@ -165,10 +166,7 @@ export const AudioProvider = ({ children }) => {
     };
   }, [timings, versesMap, currentVerse]);
 
-  const cleanText = (html) => {
-    if (!html || typeof html !== 'string') return '';
-    return html.replace(/<[^>]*>?/gm, '');
-  };
+
 
   const val = {
     currentSurah,

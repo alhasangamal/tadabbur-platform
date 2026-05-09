@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAudio, RECITERS } from '../../context/AudioContext';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ChevronDown, X } from 'lucide-react';
 
 const AudioPlayer = () => {
@@ -18,7 +18,6 @@ const AudioPlayer = () => {
     } = useAudio();
 
     const [isMuted, setIsMuted] = useState(false);
-    const [volume, setVolume] = useState(1);
 
     if (!currentSurah && !isLoading) return null;
 

@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { 
-  Search, 
   Hand, 
   CloudRain, 
   Sun, 
@@ -14,8 +13,7 @@ import {
   Shield,
   Zap,
   ChevronLeft,
-  Share2,
-  Download
+  Share2
 } from 'lucide-react';
 import ShareModal from '../components/common/ShareModal';
 import duasData from '../data/duas_data.json';
@@ -65,7 +63,6 @@ const DuasPage = () => {
 
   const filteredData = useMemo(() => {
     return duasData.filter(d => {
-      const searchLower = searchTerm.toLowerCase();
       const matchesSearch = d.الدعاء.includes(searchTerm) || 
                            d.السورة.includes(searchTerm) ||
                            d.النص.includes(searchTerm) ||

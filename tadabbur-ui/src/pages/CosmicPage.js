@@ -1,9 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Search, 
   Globe, 
-  Moon, 
   Sun, 
   Zap, 
   X, 
@@ -16,8 +14,7 @@ import {
   Bookmark,
   Compass,
   ArrowUpRight,
-  Share2,
-  BookOpen
+  Share2
 } from 'lucide-react';
 import cosmicData from '../data/cosmic_data.json';
 import ShareModal from '../components/common/ShareModal';
@@ -52,7 +49,6 @@ const CosmicPage = () => {
   // Filter logic
   const filteredData = useMemo(() => {
     return cosmicData.filter(d => {
-      const searchLower = searchTerm.toLowerCase();
       const matchesSearch = d.الآية.includes(searchTerm) || 
                            d.السورة.includes(searchTerm) ||
                            d.النص.includes(searchTerm) ||

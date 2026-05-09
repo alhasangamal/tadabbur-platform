@@ -15,7 +15,6 @@ import {
   Scale,
   Sparkles,
   Copy,
-  ArrowUp,
   User,
   Menu,
   X,
@@ -26,7 +25,6 @@ import {
   Scroll,
   Binary,
   Church,
-  Bot,
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { t } from '../../locales';
@@ -225,20 +223,20 @@ const AppLayout = ({ children }) => {
           <div className="hidden md:flex justify-between items-center gap-3 h-20">
             <Link
               to="/"
-              className="flex min-w-0 items-center gap-2 sm:gap-3 group"
+              className="flex min-w-0 items-center gap-1.5 sm:gap-2 group shrink-0"
               onClick={closeAllMenus}
             >
-              <div className="shrink-0 p-2.5 bg-gradient-to-br from-emerald-600 to-emerald-900 rounded-2xl shadow-xl ring-1 ring-white/20 group-hover:scale-110 transition-transform duration-500">
-                <Book className="w-6 h-6 text-gold-400" />
+              <div className="shrink-0 p-1.5 sm:p-2.5 bg-gradient-to-br from-emerald-600 to-emerald-900 rounded-xl sm:rounded-2xl shadow-xl ring-1 ring-white/20 group-hover:scale-110 transition-transform duration-500">
+                <Book className="w-5 h-5 sm:w-6 h-6 text-gold-400" />
               </div>
-              <span className="min-w-0 truncate text-lg sm:text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1 sm:gap-2">
+              <span className="min-w-0 truncate text-base lg:text-lg 2xl:text-2xl font-bold tracking-tight font-serif flex items-baseline gap-1 sm:gap-2">
                 <span className="truncate text-emerald-950 dark:text-emerald-50 font-kufi">{t(lang, 'platform_name')}</span>
-                <span className="truncate text-gold-600 dark:text-gold-500 text-xl sm:text-3xl pb-1 border-b-4 border-gold-400/30 font-kufi group-hover:border-gold-500 transition-colors">{t(lang, 'platform_name_mid')}</span>
+                <span className="truncate text-gold-600 dark:text-gold-500 text-lg lg:text-xl 2xl:text-3xl pb-1 border-b-2 2xl:border-b-4 border-gold-400/30 font-kufi group-hover:border-gold-500 transition-colors">{t(lang, 'platform_name_mid')}</span>
                 <span className="text-emerald-900 dark:text-emerald-400 font-kufi">{t(lang, 'platform_name_last')}</span>
               </span>
             </Link>
 
-            <nav className="hidden xl:flex gap-4 items-center">
+            <nav className="hidden xl:flex gap-1.5 2xl:gap-4 items-center">
               {navLinks.map((link) => {
                 const active = location.pathname === link.path;
                 return (
@@ -246,11 +244,11 @@ const AppLayout = ({ children }) => {
                     key={link.path}
                     to={link.path}
                     onClick={closeDesktopMenus}
-                    className={`flex items-center gap-2 font-medium transition-all ${
+                    className={`flex items-center gap-1.5 2xl:gap-2 font-medium transition-all text-xs 2xl:text-sm ${
                       active
                         ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500'
                         : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
-                    } py-2`}
+                    } py-2 px-1 2xl:px-0`}
                   >
                     <link.icon className="w-4 h-4" />
                     <span>{t(lang, link.name)}</span>
@@ -268,7 +266,7 @@ const AppLayout = ({ children }) => {
                     setWorshipMenuOpen(false);
                   }}
                   onClick={() => setJurisMenuOpen((open) => !open)}
-                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                  className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all py-2 px-1 2xl:px-0 border-b-2 text-xs 2xl:text-sm ${
                     isJurisActive
                       ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
                       : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
@@ -320,7 +318,7 @@ const AppLayout = ({ children }) => {
                     setWorshipMenuOpen(false);
                   }}
                   onClick={() => setRhetoricMenuOpen((open) => !open)}
-                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                  className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all py-2 px-1 2xl:px-0 border-b-2 text-xs 2xl:text-sm ${
                     isRhetoricActive
                       ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
                       : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
@@ -372,7 +370,7 @@ const AppLayout = ({ children }) => {
                     setWorshipMenuOpen(false);
                   }}
                   onClick={() => setStoriesMenuOpen((open) => !open)}
-                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                  className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all py-2 px-1 2xl:px-0 border-b-2 text-xs 2xl:text-sm ${
                     isStoriesActive
                       ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
                       : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
@@ -424,7 +422,7 @@ const AppLayout = ({ children }) => {
                     setWorshipMenuOpen(false);
                   }}
                   onClick={() => setScienceMenuOpen((open) => !open)}
-                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                  className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all py-2 px-1 2xl:px-0 border-b-2 text-xs 2xl:text-sm ${
                     isScienceActive
                       ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
                       : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
@@ -476,7 +474,7 @@ const AppLayout = ({ children }) => {
                     setScienceMenuOpen(false);
                   }}
                   onClick={() => setWorshipMenuOpen((open) => !open)}
-                  className={`flex items-center gap-2 font-medium transition-all py-2 border-b-2 ${
+                  className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all py-2 px-1 2xl:px-0 border-b-2 text-xs 2xl:text-sm ${
                     isWorshipActive
                       ? 'text-emerald-700 dark:text-emerald-400 border-emerald-500'
                       : 'text-gray-600 dark:text-gray-400 border-transparent hover:text-emerald-600 dark:hover:text-emerald-400'
@@ -521,11 +519,11 @@ const AppLayout = ({ children }) => {
               <Link
                 to="/about"
                 onClick={closeDesktopMenus}
-                className={`flex items-center gap-2 font-medium transition-all ${
+                className={`flex items-center gap-1 2xl:gap-2 font-medium transition-all text-xs 2xl:text-sm ${
                   location.pathname === '/about'
                     ? 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-500'
                     : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
-                } py-2`}
+                } py-2 px-1 2xl:px-0`}
               >
                 <User className="w-4 h-4" />
                 <span>{t(lang, 'about')}</span>
