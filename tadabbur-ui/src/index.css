@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Reem+Kufi:wght@400;500;600;700;800;900&display=swap');
-
-
 
 @layer base {
   :root {
@@ -31,25 +29,34 @@
     --x3: #6b7280;
     --b: #eaddcf;
     
-    /* Glassmorphism */
-    --glass: rgba(255, 255, 255, 0.75);
-    --glass-border: rgba(255, 255, 255, 0.4);
-    --glass-shadow: 0 12px 40px 0 rgba(16, 185, 129, 0.08);
-    --glass-blur: blur(12px);
+    /* Glassmorphism - Premium Polish */
+    --glass: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    --glass-blur: blur(20px);
   }
 
-  /* Dark mode support placeholder */
   .dark {
-    --bg-sand: #111827;
-    --text-primary: #f3f4f6;
-    --text-secondary: #9ca3af;
-    --bg: #111827;
-    --s1: #1f2937;
-    --s2: #374151;
-    --c: #1f2937;
-    --c2: #111827;
-    --x: #f9fafb;
-    --x2: #e5e7eb;
+    --bg-sand: #020617;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --bg: #020617;
+    --s1: #0f172a;
+    --s2: #1e293b;
+    --c: #0f172a;
+    --c2: #020617;
+    --x: #f8fafc;
+    --x2: #cbd5e1;
+    --x3: #94a3b8;
+    --b: #1e293b;
+    --t: #10b981;
+    --td: #059669;
+
+    /* Dark Glass */
+    --glass: rgba(15, 23, 42, 0.88);
+    --glass-border: rgba(51, 65, 85, 0.6);
+    --glass-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
+  }
     --x3: #9ca3af;
     --b: #374151;
     --glass: rgba(17, 24, 39, 0.85);
