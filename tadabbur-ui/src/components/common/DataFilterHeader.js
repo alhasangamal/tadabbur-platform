@@ -46,7 +46,7 @@ const DataFilterHeader = ({
       {/* Categories Scroll Area */}
       {categories && categories.length > 1 && (
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-3 px-4 overflow-x-auto no-scrollbar pb-4 -mx-4">
+          <div className="flex flex-wrap items-center gap-3 pb-2">
             <div className="flex items-center gap-2 pr-4 border-l border-emerald-100 dark:border-gray-800 shrink-0">
               <Filter className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
               <span className="text-xs font-black text-emerald-900/40 dark:text-emerald-100/20 uppercase tracking-widest">التصنيفات</span>
