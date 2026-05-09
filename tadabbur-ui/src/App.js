@@ -26,7 +26,6 @@ const ContrastsPage = lazy(() => import("./pages/ContrastsPage"));
 const StoriesPage = lazy(() => import("./pages/StoriesPage"));
 const SurahsPage = lazy(() => import("./pages/SurahsPage"));
 const SurahDetailsPage = lazy(() => import("./pages/SurahDetailsPage"));
-const SearchResultsPage = lazy(() => import("./pages/SearchResultsPage"));
 const BookmarksPage = lazy(() => import("./pages/BookmarksPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const EndingsPage = lazy(() => import("./pages/EndingsPage"));
@@ -97,7 +96,6 @@ function App() {
                       <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/graph" element={<GraphPage />} />
-                        <Route path="/search" element={<SearchResultsPage />} />
                         <Route path="/bookmarks" element={<BookmarksPage />} />
                         <Route path="/surahs" element={<SurahsPage />} />
                         <Route path="/surahs/:id" element={<SurahDetailsPage />} />
