@@ -18,7 +18,7 @@ export const translations = {
     duas: "الأدعية القرآنية",
     asma: "أسماء الله الحسنى",
 
-    search_placeholder: "البحث الشامل في المنصة...",
+    search_placeholder: "البحث في المنصة...",
     platform_name: "منصة",
     platform_name_mid: "تدبـر",
     platform_name_last: "القرآن",

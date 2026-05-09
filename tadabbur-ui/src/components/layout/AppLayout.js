@@ -31,7 +31,6 @@ import {
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { t } from '../../locales';
 import StatsFooter from './StatsFooter';
-import CommandPalette from './CommandPalette';
 
 
 const AppLayout = ({ children }) => {
@@ -598,7 +597,6 @@ const AppLayout = ({ children }) => {
         {children}
       </main>
 
-      <CommandPalette />
 
       {location.pathname === '/' && <StatsFooter />}
 

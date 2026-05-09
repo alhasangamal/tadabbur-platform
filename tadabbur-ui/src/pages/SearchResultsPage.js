@@ -85,7 +85,7 @@ export default function SearchResultsPage() {
     <div className="space-y-12 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade font-sans">
       <Helmet>
         <title>{isRtl ? 'نتائج البحث | منصة تدبر' : 'Search Results | Tadabbur'}</title>
-        <meta name="description" content={isRtl ? 'نتائج البحث الشامل في آيات وأحكام وقصص القرآن الكريم.' : 'Global search results for Quranic verses, rulings, and stories.'} />
+        <meta name="description" content={isRtl ? 'نتائج البحث في آيات وأحكام وقصص القرآن الكريم.' : 'Search results for Quranic verses, rulings, and stories.'} />
       </Helmet>
       <section className="text-center space-y-4 mb-12">
         <h1 className="title-primary flex items-center justify-center gap-4">
