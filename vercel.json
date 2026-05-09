@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd tadabbur-ui && npm install && npm run build",
+  "outputDirectory": "tadabbur-ui/build",
+  "framework": "create-react-app"
+}
