@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm --prefix tadabbur-ui install && npm --prefix tadabbur-ui run build"
+    "build": "npm --prefix tadabbur-ui install && npm --prefix tadabbur-ui run build && cp -r tadabbur-ui/build ./public"
   }
 }
