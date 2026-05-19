@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { useQuery } from '@tanstack/react-query';
 import { 
-  Sun, Moon, Shield, BookOpen, Heart, Zap, Sparkles, 
-  X, Copy, Play, Pause, Check, Home, CloudRain, Briefcase, Volume2, Search, Loader
+  Sun, Moon, Shield, BookOpen, Heart, Sparkles, 
+  X, Copy, Pause, Check, Home, CloudRain, Briefcase, Volume2, Search, Loader
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
@@ -38,11 +38,6 @@ const DhikrCard = ({ dhikr, onCopy, playingId, onPlayPause }) => {
         toast.success('تم إتمام الذكر', { icon: '✨' });
       }
     }
-  };
-
-  const handleReset = (e) => {
-    e.stopPropagation();
-    setCount(dhikr.count || 1);
   };
 
   const hasAudio = !!dhikr.audio;

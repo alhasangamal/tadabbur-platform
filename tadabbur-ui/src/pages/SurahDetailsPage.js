@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import { useQuranData } from "../context/QuranDataContext";
-import { Loader2, ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, ChevronDown, BookMarked, BookOpenCheck, Headphones } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, ChevronDown, BookMarked, BookOpenCheck, Headphones } from "lucide-react";
 import { useMp3Quran } from "../context/Mp3QuranContext";
 import AudioTafsirSection from "../components/AudioTafsirSection";
 import MushafReadingSection from "../components/surah/MushafReadingSection";
