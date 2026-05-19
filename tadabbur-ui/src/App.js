@@ -8,11 +8,13 @@ import ErrorBoundary from "./components/common/ErrorBoundary";
 import { QuranDataProvider, useQuranData } from "./context/QuranDataContext";
 import { AudioProvider } from "./context/AudioContext";
 import { BookmarkProvider } from "./context/BookmarkContext";
+import { Mp3QuranProvider } from "./context/Mp3QuranContext";
 import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AudioPlayer from "./components/audio/AudioPlayer";
 import VerseSyncDisplay from "./components/audio/VerseSyncDisplay";
 import BackToTop from "./components/common/BackToTop";
+import GlobalMp3Player from "./components/GlobalMp3Player";
 
 // Lazy Loaded Pages
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -37,6 +39,7 @@ const ArqamPage = lazy(() => import("./pages/ArqamPage"));
 const AsbabPage = lazy(() => import("./pages/AsbabPage"));
 const DuasPage = lazy(() => import("./pages/DuasPage"));
 const AsmaPage = lazy(() => import("./pages/AsmaPage"));
+const HisnMuslimPage = lazy(() => import("./pages/HisnMuslimPage"));
 
 function ThemedToaster() {
   const { theme } = useQuranData();
@@ -86,8 +89,9 @@ function App() {
       <HelmetProvider>
         <QuranDataProvider>
           <AudioProvider>
-            <BookmarkProvider>
-              {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+            <Mp3QuranProvider>
+              <BookmarkProvider>
+                {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
               <Router>
                 <ThemedToaster />
                 <AppLayout>
@@ -114,6 +118,7 @@ function App() {
                         <Route path="/asbab" element={<AsbabPage />} />
                         <Route path="/duas" element={<DuasPage />} />
                         <Route path="/asma" element={<AsmaPage />} />
+                        <Route path="/hisnmuslim" element={<HisnMuslimPage />} />
                         <Route path="/endings" element={<EndingsPage />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="*" element={<HomePage />} />
@@ -123,10 +128,12 @@ function App() {
                 </AppLayout>
                 <VerseSyncDisplay />
                 <AudioPlayer />
+                <GlobalMp3Player />
                 <BackToTop />
               </Router>
             </BookmarkProvider>
-          </AudioProvider>
+          </Mp3QuranProvider>
+        </AudioProvider>
         </QuranDataProvider>
       </HelmetProvider>
     </QueryClientProvider>

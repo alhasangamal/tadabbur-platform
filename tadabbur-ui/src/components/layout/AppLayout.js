@@ -25,6 +25,7 @@ import {
   Scroll,
   Binary,
   Church,
+  Shield,
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { t } from '../../locales';
@@ -91,6 +92,7 @@ const AppLayout = ({ children }) => {
   const worshipLinks = [
     { name: 'الأدعية القرآنية', path: '/duas', icon: Hand },
     { name: 'أسماء الله الحسنى', path: '/asma', icon: Sparkles },
+    { name: 'حصن المسلم', path: '/hisnmuslim', icon: Shield },
   ];
 
 

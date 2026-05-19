@@ -88,7 +88,6 @@ export default function AhkamPage() {
         <AnimatePresence mode="popLayout">
           {filteredData.map((item, idx) => (
             <motion.div
-              layout
               key={`${item.surah_name}-${item.ayah_number}-${idx}`}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

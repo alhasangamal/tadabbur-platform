@@ -342,7 +342,7 @@ export default function GraphPage() {
     ? graphData.nodes.filter(n => (n.label?.includes(searchValue))).slice(0, 10)
     : [];
 
-  if (loading) {
+  if (loading || !graphData?.nodes || graphData.nodes.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh]">
         <Loader2 className="w-12 h-12 text-emerald-600 animate-spin" />

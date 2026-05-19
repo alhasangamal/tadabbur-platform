@@ -40,8 +40,7 @@ export const QuranDataProvider = ({ children }) => {
             setSurahsList(s.list);
             setGraphData(g.data);
             setLoading(false);
-            // Optionally still fetch in background to refresh cache
-            // return; 
+            return; // Skip API call if cache is valid to prevent lag
           }
         } catch (e) {
           console.error("Cache parsing error", e);
@@ -51,11 +50,8 @@ export const QuranDataProvider = ({ children }) => {
 
     setLoading(true);
     try {
-      const [surahsRes, graphRes] = await Promise.all([
-        axios.get(`${API_BASE}/surahs`).catch(() => ({ data: [] })),
-        axios.get(`${API_BASE}/graph`).catch(() => ({ data: { nodes: [], links: [] } }))
-      ]);
-      
+      // 1. Fetch lightweight surahs first so the index page renders immediately
+      const surahsRes = await axios.get(`${API_BASE}/surahs`).catch(() => ({ data: [] }));
       const surahsArray = surahsRes.data || [];
       const surahsDict = {};
       surahsArray.forEach(s => {
@@ -64,9 +60,13 @@ export const QuranDataProvider = ({ children }) => {
 
       setSurahs(surahsDict);
       setSurahsList(surahsArray);
+      setLoading(false); // Turn off main loading spinner once surahs are ready
+
+      // 2. Fetch the heavy graph data in the background
+      const graphRes = await axios.get(`${API_BASE}/graph`).catch(() => ({ data: { nodes: [], links: [] } }));
       setGraphData(graphRes.data || { nodes: [], links: [] });
 
-      // Save to cache
+      // Save both to cache
       localStorage.setItem(CACHE_KEY_SURAHS, JSON.stringify({
         dict: surahsDict,
         list: surahsArray,
@@ -79,7 +79,6 @@ export const QuranDataProvider = ({ children }) => {
 
     } catch (err) {
       console.error("Data fetch error:", err);
-    } finally {
       setLoading(false);
     }
   }, []);
