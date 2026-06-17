@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import { useQuranData } from "../context/QuranDataContext";
 import { ArrowLeft, ArrowRight, BookOpen, MapPin, Moon, ChevronDown, BookMarked, BookOpenCheck, Headphones } from "lucide-react";
+import { API_BASE } from "../config";
 import { useMp3Quran } from "../context/Mp3QuranContext";
 import AudioTafsirSection from "../components/AudioTafsirSection";
 import MushafReadingSection from "../components/surah/MushafReadingSection";
@@ -85,7 +86,7 @@ export default function SurahDetailsPage() {
     }
   };
 
-  const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
+  // API_BASE is imported from config
 
   const { data: topics = [], isLoading: topicsLoading } = useQuery({
     queryKey: ['surah-topics', id],

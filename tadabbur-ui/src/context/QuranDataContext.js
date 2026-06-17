@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import axios from 'axios';
+import { API_BASE } from '../config';
 
 const QuranDataContext = createContext();
 
@@ -14,6 +15,7 @@ export const QuranDataProvider = ({ children }) => {
   const [surahsList, setSurahsList] = useState([]);
   const [graphData, setGraphData] = useState({ nodes: [], links: [] });
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme');
@@ -24,8 +26,6 @@ export const QuranDataProvider = ({ children }) => {
   const lang = 'ar';
 
   const fetchAllData = useCallback(async (force = false) => {
-    const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
-    
     // Try to load from cache first
     if (!force) {
       const cachedSurahs = localStorage.getItem(CACHE_KEY_SURAHS);
@@ -40,6 +40,7 @@ export const QuranDataProvider = ({ children }) => {
             setSurahsList(s.list);
             setGraphData(g.data);
             setLoading(false);
+            setError(null);
             return; // Skip API call if cache is valid to prevent lag
           }
         } catch (e) {
@@ -49,9 +50,10 @@ export const QuranDataProvider = ({ children }) => {
     }
 
     setLoading(true);
+    setError(null);
     try {
       // 1. Fetch lightweight surahs first so the index page renders immediately
-      const surahsRes = await axios.get(`${API_BASE}/surahs`).catch(() => ({ data: [] }));
+      const surahsRes = await axios.get(`${API_BASE}/surahs`);
       const surahsArray = surahsRes.data || [];
       const surahsDict = {};
       surahsArray.forEach(s => {
@@ -63,7 +65,10 @@ export const QuranDataProvider = ({ children }) => {
       setLoading(false); // Turn off main loading spinner once surahs are ready
 
       // 2. Fetch the heavy graph data in the background
-      const graphRes = await axios.get(`${API_BASE}/graph`).catch(() => ({ data: { nodes: [], links: [] } }));
+      const graphRes = await axios.get(`${API_BASE}/graph`).catch((err) => {
+        console.error("Failed to fetch graph data in background:", err);
+        return { data: { nodes: [], links: [] } };
+      });
       setGraphData(graphRes.data || { nodes: [], links: [] });
 
       // Save both to cache
@@ -79,6 +84,7 @@ export const QuranDataProvider = ({ children }) => {
 
     } catch (err) {
       console.error("Data fetch error:", err);
+      setError(err.message || "Failed to load Quran data");
       setLoading(false);
     }
   }, []);
@@ -102,12 +108,13 @@ export const QuranDataProvider = ({ children }) => {
     surahsList,
     graphData,
     loading,
+    error,
     theme,
     toggleTheme,
     lang,
     isRtl: true,
     refreshData: () => fetchAllData(true)
-  }), [surahs, surahsList, graphData, loading, theme, toggleTheme, fetchAllData]);
+  }), [surahs, surahsList, graphData, loading, error, theme, toggleTheme, fetchAllData]);
 
   return (
     <QuranDataContext.Provider value={value}>

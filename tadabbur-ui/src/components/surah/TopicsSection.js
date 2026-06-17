@@ -3,13 +3,13 @@ import { useQuery } from "@tanstack/react-query";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { ChevronDown, Loader2 } from "lucide-react";
+import { API_BASE } from "../../config";
 
 // Sub-component for individual topic to manage its own verse fetching
 const TopicItem = ({ topic, index, isExpanded, onToggle }) => {
   const { data: verses = [], isLoading: versesLoading } = useQuery({
     queryKey: ['topic-verses', topic.id],
     queryFn: async () => {
-      const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
       const res = await axios.get(`${API_BASE}/topics/${topic.id}/verses`);
       return res.data?.verses || [];
     },

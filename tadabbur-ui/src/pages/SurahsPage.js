@@ -18,7 +18,7 @@ const SURAH_JUZ_MAP = [
 ];
 
 export default function SurahsPage() {
-  const { lang, isRtl, surahsList, loading } = useQuranData();
+  const { lang, isRtl, surahsList, loading, error, refreshData } = useQuranData();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('الكل'); // الكل, مكية, مدنية
   const [sortOrder] = useState('asc'); // asc, desc (by number)
@@ -26,7 +26,9 @@ export default function SurahsPage() {
   const filteredSurahs = useMemo(() => {
     return (surahsList || [])
       .filter(s => {
-        const matchSearch = s.name_ar.includes(searchTerm) || s.name_en.toLowerCase().includes(searchTerm.toLowerCase());
+        const nameAr = s.name_ar || '';
+        const nameEn = s.name_en || '';
+        const matchSearch = nameAr.includes(searchTerm) || nameEn.toLowerCase().includes(searchTerm.toLowerCase());
         const type = s.revelation_type?.toLowerCase() || '';
         const isMakkiData = type.includes('mak') || type.includes('mec');
         const isMadaniData = type.includes('mad') || type.includes('med');
@@ -72,6 +74,37 @@ export default function SurahsPage() {
       <div className="flex flex-col items-center justify-center min-h-[60vh]">
         <Loader2 className="w-12 h-12 text-emerald-600 animate-spin" />
         <p className="mt-4 text-emerald-800 dark:text-emerald-400 font-medium">{isRtl ? 'جاري تحميل قائمة السور...' : 'Loading Surahs...'}</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 space-y-6">
+        <div className="w-16 h-16 bg-red-50 dark:bg-red-950/30 rounded-full flex items-center justify-center text-red-600 dark:text-red-400">
+          <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+        </div>
+        <div className="space-y-2 max-w-md">
+          <h2 className="text-2xl font-black text-gray-900 dark:text-white font-kufi">
+            {isRtl ? 'تعذر الاتصال بالخادم' : 'Server Connection Failed'}
+          </h2>
+          <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            {isRtl 
+              ? 'تأكد من اتصالك بالإنترنت، أو أن الخادم يعمل بشكل صحيح. قد يستغرق الخادم بعض الوقت للاستيقاظ عند التشغيل لأول مرة.' 
+              : 'Please check your internet connection or verify the server status. Note that cold starts on Render free tier can take up to 50 seconds.'}
+          </p>
+          <div className="bg-red-500/10 text-red-700 dark:text-red-400 text-xs font-mono p-3 rounded-xl border border-red-500/20 break-all select-all">
+            {error}
+          </div>
+        </div>
+        <button
+          onClick={refreshData}
+          className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold rounded-2xl shadow-lg hover:shadow-emerald-600/20 transition-all font-kufi flex items-center gap-2"
+        >
+          {isRtl ? 'إعادة المحاولة' : 'Try Again'}
+        </button>
       </div>
     );
   }

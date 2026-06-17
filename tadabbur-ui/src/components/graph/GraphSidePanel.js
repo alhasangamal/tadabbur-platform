@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useQuranData } from "../../context/QuranDataContext";
 import { getRelationLabel } from "./relationLabels";
+import { API_BASE } from "../../config";
 
 export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRtl }) {
   const { isLight } = useQuranData();
@@ -16,15 +17,14 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
   const [versesLoading, setVersesLoading] = useState(false);
   const [surahMap, setSurahMap] = useState({});
 
-  // Fetch surah names map once
-  const API_BASE = process.env.REACT_APP_API_URL || 'https://tadabbur-api.onrender.com';
+  // API_BASE is imported from config
 
   // Fetch surah names map once
   useEffect(() => {
     axios.get(`${API_BASE}/surahs/map`)
       .then(res => setSurahMap(res.data))
       .catch(() => {});
-  }, [API_BASE]);
+  }, []);
 
   // Format "6:71" → "الأنعام:71"
   const fmtRef = (ref) => {
@@ -55,7 +55,7 @@ export default function GraphSidePanel({ entity, onClose, typeConfig, lang, isRt
     fetchRels();
     setExpandedRel(null);
     setVersesData({});
-  }, [entity, API_BASE]);
+  }, [entity]);
 
   const handleExpand = async (relIndex, evidenceNotes) => {
     if (expandedRel === relIndex) {
